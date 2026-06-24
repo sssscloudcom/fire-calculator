@@ -1,6 +1,8 @@
 import { NavLink, useLocation } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { useTheme } from '../../context/ThemeContext'
 import { calculators } from '../../config/calculators'
+import LanguageSwitcher from '../ui/LanguageSwitcher'
 
 interface SidebarProps {
   isOpen: boolean
@@ -12,6 +14,7 @@ interface SidebarProps {
 export default function Sidebar({ isOpen, onClose, isCollapsed, onToggleCollapse }: SidebarProps) {
   const location = useLocation()
   const { theme, setTheme } = useTheme()
+  const { t } = useTranslation()
 
   const isHome = location.pathname === '/'
   
@@ -42,8 +45,8 @@ export default function Sidebar({ isOpen, onClose, isCollapsed, onToggleCollapse
           >
             <span className="text-3xl">🔥</span>
             <div>
-              <div className="font-bold text-lg text-gray-900 dark:text-gray-100">FIRE Calculators</div>
-              <div className="text-xs text-gray-500 dark:text-gray-400">Financial Independence</div>
+              <div className="font-bold text-lg text-gray-900 dark:text-gray-100">{t('app.title', 'FIRE Calculators')}</div>
+              <div className="text-xs text-gray-500 dark:text-gray-400">{t('app.description', 'Financial Independence')}</div>
             </div>
           </NavLink>
         ) : (
@@ -99,7 +102,7 @@ export default function Sidebar({ isOpen, onClose, isCollapsed, onToggleCollapse
           title={isCollapsed ? 'Home' : ''}
         >
           <span className="text-xl">🏠</span>
-          {!isCollapsed && <span>Home</span>}
+          {!isCollapsed && <span>{t('nav.home', 'Home')}</span>}
         </NavLink>
 
         {/* Recommended Books link */}
@@ -118,7 +121,7 @@ export default function Sidebar({ isOpen, onClose, isCollapsed, onToggleCollapse
           title={isCollapsed ? 'Recommended Books' : ''}
         >
           <span className="text-xl">📚</span>
-          {!isCollapsed && <span>Recommended Books</span>}
+          {!isCollapsed && <span>{t('nav.books', 'Recommended Books')}</span>}
         </NavLink>
 
         {/* Recommended Apps link */}
@@ -137,7 +140,7 @@ export default function Sidebar({ isOpen, onClose, isCollapsed, onToggleCollapse
           title={isCollapsed ? 'Recommended Apps' : ''}
         >
           <span className="text-xl">📱</span>
-          {!isCollapsed && <span>Recommended Apps</span>}
+          {!isCollapsed && <span>{t('nav.apps', 'Recommended Apps')}</span>}
         </NavLink>
 
         {/* Quiz link */}
@@ -156,13 +159,13 @@ export default function Sidebar({ isOpen, onClose, isCollapsed, onToggleCollapse
           title={isCollapsed ? 'Find Your Path' : ''}
         >
           <span className="text-xl">🧭</span>
-          {!isCollapsed && <span>Find Your Path</span>}
+          {!isCollapsed && <span>{t('nav.quiz', 'Find Your Path')}</span>}
         </NavLink>
 
         {!isCollapsed && (
           <div className="mt-4 mb-3 px-3">
             <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
-              Calculators
+              {t('nav.calculators', 'Calculators')}
             </h3>
           </div>
         )}
@@ -194,6 +197,13 @@ export default function Sidebar({ isOpen, onClose, isCollapsed, onToggleCollapse
 
       {/* Footer */}
       <div className="p-4 border-t border-gray-200 dark:border-gray-800">
+        {/* Language Switcher */}
+        {!isCollapsed && (
+          <div className="flex items-center justify-between mb-4">
+            <LanguageSwitcher />
+          </div>
+        )}
+        
         {/* Theme toggle */}
         {!isCollapsed ? (
           <div className="flex items-center justify-between mb-4">
@@ -293,7 +303,7 @@ export default function Sidebar({ isOpen, onClose, isCollapsed, onToggleCollapse
             <svg className="w-4 h-4 text-green-600 dark:text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
-            <span className="text-xs font-medium text-green-700 dark:text-green-300">100% Private & Offline</span>
+            <span className="text-xs font-medium text-green-700 dark:text-green-300">{t('common.privacy', '100% Private & Offline')}</span>
           </div>
         ) : (
           <div className="flex justify-center p-2" title="100% Private & Offline">

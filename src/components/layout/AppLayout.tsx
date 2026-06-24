@@ -1,9 +1,11 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet, Link } from 'react-router-dom'
 import Sidebar from './Sidebar'
 import { useState, useEffect } from 'react'
 import UpdatePrompt from '../UpdatePrompt'
+import { useTranslation } from 'react-i18next'
 
 export default function AppLayout() {
+  const { t } = useTranslation()
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [sidebarCollapsed, setSidebarCollapsed] = useState(() => {
     const saved = localStorage.getItem('sidebarCollapsed')
@@ -65,6 +67,39 @@ export default function AppLayout() {
             <Outlet />
           </div>
         </main>
+
+        {/* Footer */}
+        <footer className="border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 py-6">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-gray-600 dark:text-gray-400">
+                <Link 
+                  to="/privacy" 
+                  className="hover:text-fire-600 dark:hover:text-fire-400 transition-colors"
+                >
+                  {t('footer.privacy')}
+                </Link>
+                <span className="text-gray-300 dark:text-gray-700">|</span>
+                <Link 
+                  to="/terms" 
+                  className="hover:text-fire-600 dark:hover:text-fire-400 transition-colors"
+                >
+                  {t('footer.terms')}
+                </Link>
+                <span className="text-gray-300 dark:text-gray-700">|</span>
+                <Link 
+                  to="/about" 
+                  className="hover:text-fire-600 dark:hover:text-fire-400 transition-colors"
+                >
+                  {t('footer.about')}
+                </Link>
+              </div>
+              <p className="text-xs text-gray-500 dark:text-gray-500">
+                © {new Date().getFullYear()} FIRE Calculator. 100% Private.
+              </p>
+            </div>
+          </div>
+        </footer>
       </div>
       </div>
     </>

@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { ThemeProvider } from './context/ThemeContext'
+import './i18n' // Add i18n initialization
 import AppLayout from './components/layout/AppLayout'
 import Home from './pages/Home'
 import StandardFIRE from './pages/StandardFIRE'
@@ -17,6 +18,9 @@ import Books from './pages/Books'
 import Apps from './pages/Apps'
 import FIREQuiz from './pages/FIREQuiz'
 import DebtPayoff from './pages/DebtPayoff'
+import Privacy from './pages/Privacy'
+import About from './pages/About'
+import Terms from './pages/Terms'
 import './index.css'
 
 const basename = import.meta.env.BASE_URL
@@ -40,6 +44,9 @@ const router = createBrowserRouter([
       { path: 'books', element: <Books /> },
       { path: 'apps', element: <Apps /> },
       { path: 'quiz', element: <FIREQuiz /> },
+      { path: 'privacy', element: <Privacy /> },
+      { path: 'about', element: <About /> },
+      { path: 'terms', element: <Terms /> },
     ],
   },
 ], { basename })

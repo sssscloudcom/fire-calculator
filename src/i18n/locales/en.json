@@ -1,0 +1,135 @@
+{
+  "app": {
+    "title": "FIRE Calculators",
+    "description": "Private, offline-first FIRE (Financial Independence, Retire Early) calculators"
+  },
+  "nav": {
+    "home": "Home",
+    "books": "Recommended Books",
+    "apps": "Recommended Apps",
+    "quiz": "Find Your Path",
+    "calculators": "Calculators",
+    "standard": "Standard FIRE",
+    "coast": "Coast FIRE",
+    "lean": "Lean FIRE",
+    "fat": "Fat FIRE",
+    "barista": "Barista FIRE",
+    "reverse": "Reverse FIRE",
+    "withdrawal": "Withdrawal Rate",
+    "savingsRate": "Savings Rate",
+    "debtPayoff": "Debt Payoff",
+    "healthcare": "Healthcare Gap"
+  },
+  "calculator": {
+    "standard": {
+      "title": "Standard FIRE Calculator",
+      "description": "The classic 25x expenses rule — calculate your \"magic number\" for full financial independence.",
+      "fireNumber": "FIRE Number",
+      "yearsToFIRE": "Years to FIRE",
+      "fireAge": "FIRE Age",
+      "monthlyContribution": "Monthly Contribution",
+      "savingsRate": "Savings Rate",
+      "coastFireNumber": "Coast FIRE Number"
+    },
+    "coast": {
+      "title": "Coast FIRE Calculator",
+      "description": "Find how much you need now so compound growth does the rest — then coast to retirement.",
+      "coastNumber": "Coast Number",
+      "yearsToCoast": "Years to Coast",
+      "alreadyCoasting": "Already Coasting!",
+      "notYetCoasting": "Not Yet Coasting"
+    },
+    "lean": {
+      "title": "Lean FIRE Calculator",
+      "description": "Achieve FI faster with a minimalist lifestyle — perfect for frugal-minded planners.",
+      "isLean": "Is Lean FIRE",
+      "leanThreshold": "Lean Threshold"
+    },
+    "fat": {
+      "title": "Fat FIRE Calculator",
+      "description": "Retire without compromise — calculate FI while maintaining a comfortable lifestyle.",
+      "isFat": "Is Fat FIRE",
+      "fatThreshold": "Fat Threshold"
+    },
+    "barista": {
+      "title": "Barista FIRE Calculator",
+      "description": "Blend part-time work with portfolio income — retire from corporate life earlier.",
+      "baristaNumber": "Barista Number",
+      "fullFireNumber": "Full FIRE Number",
+      "yearsToBarista": "Years to Barista FIRE",
+      "partTimeIncomeNeeded": "Part-Time Income Needed",
+      "savingsFromPartTime": "Savings from Part-Time"
+    },
+    "withdrawal": {
+      "title": "Withdrawal Rate Calculator",
+      "description": "Test your portfolio's longevity — find your safe withdrawal rate for any scenario.",
+      "portfolioLongevity": "Portfolio Longevity",
+      "successRate": "Success Rate",
+      "annualWithdrawal": "Annual Withdrawal",
+      "monthlyWithdrawal": "Monthly Withdrawal"
+    },
+    "healthcare": {
+      "title": "Healthcare Gap Calculator",
+      "description": "Estimate healthcare costs between early retirement and Medicare eligibility.",
+      "gapYears": "Gap Years",
+      "totalCost": "Total Cost",
+      "annualCost": "Annual Cost"
+    }
+  },
+  "input": {
+    "currentAge": "Current Age",
+    "retirementAge": "Retirement Age",
+    "currentSavings": "Current Savings",
+    "annualContribution": "Annual Contribution",
+    "annualIncome": "Annual Income",
+    "annualExpenses": "Annual Expenses",
+    "expectedReturn": "Expected Return",
+    "inflationRate": "Inflation Rate",
+    "withdrawalRate": "Withdrawal Rate",
+    "partTimeIncome": "Part-Time Income",
+    "portfolioValue": "Portfolio Value",
+    "monthlyPremium": "Monthly Premium",
+    "annualDeductible": "Annual Deductible",
+    "annualOutOfPocket": "Annual Out-of-Pocket"
+  },
+  "output": {
+    "years": "years",
+    "months": "months",
+    "perYear": "per year",
+    "perMonth": "per month",
+    "total": "Total",
+    "average": "Average"
+  },
+  "common": {
+    "calculate": "Calculate",
+    "reset": "Reset",
+    "export": "Export to Excel",
+    "copyUrl": "Copy URL",
+    "share": "Share",
+    "disclaimer": "Disclaimer",
+    "bestFor": "Best for",
+    "privacy": "100% Private & Offline"
+  },
+  "disclaimer": {
+    "title": "Disclaimer",
+    "content": "This calculator is for educational purposes only. It is not intended to be, and should not be construed as, financial, investment, tax, or legal advice. Please consult with a qualified financial advisor, tax professional, or other appropriate professional."
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文",
+    "es": "Español",
+    "de": "Deutsch",
+    "ja": "日本語",
+    "fr": "Français",
+    "ru": "Русский",
+    "pt": "Português",
+    "id": "Bahasa Indonesia",
+    "ar": "العربية",
+    "switch": "Switch Language"
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "about": "About Us"
+  }
+}

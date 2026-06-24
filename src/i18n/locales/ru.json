@@ -1,0 +1,135 @@
+{
+  "app": {
+    "title": "FIRE Calculators",
+    "description": "Приватные, офлайн-ориентированные калькуляторы FIRE (Financial Independence, Retire Early)"
+  },
+  "nav": {
+    "home": "Главная",
+    "books": "Рекомендуемые книги",
+    "apps": "Рекомендуемые приложения",
+    "quiz": "Найди свой путь",
+    "calculators": "Калькуляторы",
+    "standard": "Стандартный FIRE",
+    "coast": "Coast FIRE",
+    "lean": "Lean FIRE",
+    "fat": "Fat FIRE",
+    "barista": "Barista FIRE",
+    "reverse": "Обратный FIRE",
+    "withdrawal": "Ставка вывода",
+    "savingsRate": "Норма сбережений",
+    "debtPayoff": "Погашение долга",
+    "healthcare": "Медицинский разрыв"
+  },
+  "calculator": {
+    "standard": {
+      "title": "Калькулятор стандартного FIRE",
+      "description": "Классическое правило 25x расходов — рассчитайте своё «магическое число» для полной финансовой независимости.",
+      "fireNumber": "Число FIRE",
+      "yearsToFIRE": "Лет до FIRE",
+      "fireAge": "Возраст FIRE",
+      "monthlyContribution": "Ежемесячный вклад",
+      "savingsRate": "Норма сбережений",
+      "coastFireNumber": "Число Coast FIRE"
+    },
+    "coast": {
+      "title": "Калькулятор Coast FIRE",
+      "description": "Узнайте, сколько нужно сейчас, чтобы сложный процент сделал остальное — затем плывите до пенсии.",
+      "coastNumber": "Число Coast",
+      "yearsToCoast": "Лет до Coast",
+      "alreadyCoasting": "Уже плывёте!",
+      "notYetCoasting": "Ещё не плывёте"
+    },
+    "lean": {
+      "title": "Калькулятор Lean FIRE",
+      "description": "Достигните ФИ быстрее с минималистичным образом жизни — идеально для бережливых планировщиков.",
+      "isLean": "Это Lean FIRE",
+      "leanThreshold": "Порог Lean"
+    },
+    "fat": {
+      "title": "Калькулятор Fat FIRE",
+      "description": "Уйдите на пенсию без компромиссов — рассчитайте ФИ при сохранении комфортного образа жизни.",
+      "isFat": "Это Fat FIRE",
+      "fatThreshold": "Порог Fat"
+    },
+    "barista": {
+      "title": "Калькулятор Barista FIRE",
+      "description": "Сочетайте работу неполный день с доходом от портфеля — уйдите из корпоративного мира раньше.",
+      "baristaNumber": "Число Barista",
+      "fullFireNumber": "Полное число FIRE",
+      "yearsToBarista": "Лет до Barista FIRE",
+      "partTimeIncomeNeeded": "Нужный доход неполный день",
+      "savingsFromPartTime": "Сбережения от неполного дня"
+    },
+    "withdrawal": {
+      "title": "Калькулятор ставки вывода",
+      "description": "Протестируйте долговечность портфеля — найдите безопасную ставку вывода для любого сценария.",
+      "portfolioLongevity": "Долговечность портфеля",
+      "successRate": "Уровень успеха",
+      "annualWithdrawal": "Годовой вывод",
+      "monthlyWithdrawal": "Ежемесячный вывод"
+    },
+    "healthcare": {
+      "title": "Калькулятор медицинского разрыва",
+      "description": "Оцените расходы на здравоохранение между ранней пенсией и правом на Medicare.",
+      "gapYears": "Годы разрыва",
+      "totalCost": "Общая стоимость",
+      "annualCost": "Годовая стоимость"
+    }
+  },
+  "input": {
+    "currentAge": "Текущий возраст",
+    "retirementAge": "Возраст выхода на пенсию",
+    "currentSavings": "Текущие сбережения",
+    "annualContribution": "Годовой вклад",
+    "annualIncome": "Годовой доход",
+    "annualExpenses": "Годовые расходы",
+    "expectedReturn": "Ожидаемая доходность",
+    "inflationRate": "Уровень инфляции",
+    "withdrawalRate": "Ставка вывода",
+    "partTimeIncome": "Доход неполный день",
+    "portfolioValue": "Стоимость портфеля",
+    "monthlyPremium": "Ежемесячная премия",
+    "annualDeductible": "Годовая франшиза",
+    "annualOutOfPocket": "Годовые личные расходы"
+  },
+  "output": {
+    "years": "лет",
+    "months": "месяцев",
+    "perYear": "в год",
+    "perMonth": "в месяц",
+    "total": "Всего",
+    "average": "В среднем"
+  },
+  "common": {
+    "calculate": "Рассчитать",
+    "reset": "Сбросить",
+    "export": "Экспорт в Excel",
+    "copyUrl": "Копировать URL",
+    "share": "Поделиться",
+    "disclaimer": "Отказ от ответственности",
+    "bestFor": "Лучше всего для",
+    "privacy": "100% Приватно и Офлайн"
+  },
+  "disclaimer": {
+    "title": "Отказ от ответственности",
+    "content": "Этот калькулятор предназначен только для образовательных целей. Он не является и не должен восприниматься как финансовая, инвестиционная, налоговая или юридическая консультация. Пожалуйста, проконсультируйтесь с квалифицированным финансовым консультантом, налоговым специалистом или другим соответствующим профессионалом."
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文",
+    "es": "Español",
+    "de": "Deutsch",
+    "ja": "日本語",
+    "fr": "Français",
+    "ru": "Русский",
+    "pt": "Português",
+    "id": "Bahasa Indonesia",
+    "ar": "العربية",
+    "switch": "Сменить язык"
+  },
+  "footer": {
+    "privacy": "Политика конфиденциальности",
+    "terms": "Условия использования",
+    "about": "О нас"
+  }
+}

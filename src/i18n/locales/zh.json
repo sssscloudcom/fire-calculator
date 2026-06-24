@@ -1,0 +1,135 @@
+{
+  "app": {
+    "title": "FIRE 财务自由计算器",
+    "description": "隐私优先、离线可用的 FIRE（财务自由，提前退休）计算器"
+  },
+  "nav": {
+    "home": "首页",
+    "books": "推荐书籍",
+    "apps": "推荐应用",
+    "quiz": "找到你的路径",
+    "calculators": "计算器",
+    "standard": "标准 FIRE",
+    "coast": "滑行 FIRE",
+    "lean": "极简 FIRE",
+    "fat": "富足 FIRE",
+    "barista": "咖啡师 FIRE",
+    "reverse": "逆向 FIRE",
+    "withdrawal": "提取率",
+    "savingsRate": "储蓄率",
+    "debtPayoff": "还债规划",
+    "healthcare": "医疗缺口"
+  },
+  "calculator": {
+    "standard": {
+      "title": "标准 FIRE 计算器",
+      "description": "经典的 25 倍年度支出法则 — 计算实现完全财务自由所需的\"魔法数字\"。",
+      "fireNumber": "FIRE 目标金额",
+      "yearsToFIRE": "距离 FIRE 年限",
+      "fireAge": "FIRE 年龄",
+      "monthlyContribution": "月度储蓄",
+      "savingsRate": "储蓄率",
+      "coastFireNumber": "滑行 FIRE 金额"
+    },
+    "coast": {
+      "title": "滑行 FIRE 计算器",
+      "description": "计算现在需要多少资金，然后让复利完成剩余工作 — 之后便可滑行至退休。",
+      "coastNumber": "滑行起点金额",
+      "yearsToCoast": "滑行年限",
+      "alreadyCoasting": "已达滑行状态！",
+      "notYetCoasting": "尚未达到滑行状态"
+    },
+    "lean": {
+      "title": "极简 FIRE 计算器",
+      "description": "以极简生活方式更快实现财务自由 — 适合崇尚节俭的规划者。",
+      "isLean": "符合极简 FIRE",
+      "leanThreshold": "极简阈值"
+    },
+    "fat": {
+      "title": "富足 FIRE 计算器",
+      "description": "退休不妥协 — 在保持舒适生活的同时计算财务自由。",
+      "isFat": "符合富足 FIRE",
+      "fatThreshold": "富足阈值"
+    },
+    "barista": {
+      "title": "咖啡师 FIRE 计算器",
+      "description": "结合兼职工作与投资组合收入 — 提早告别全职职场生活。",
+      "baristaNumber": "咖啡师 FIRE 金额",
+      "fullFireNumber": "完整 FIRE 金额",
+      "yearsToBarista": "咖啡师 FIRE 年限",
+      "partTimeIncomeNeeded": "所需兼职收入",
+      "savingsFromPartTime": "兼职节省金额"
+    },
+    "withdrawal": {
+      "title": "提取率计算器",
+      "description": "测试投资组合的持久性 — 找到适合任何情况的安全提取率。",
+      "portfolioLongevity": "组合持续时间",
+      "successRate": "成功率",
+      "annualWithdrawal": "年度提取额",
+      "monthlyWithdrawal": "月度提取额"
+    },
+    "healthcare": {
+      "title": "医疗缺口计算器",
+      "description": "估算提前退休到医保资格之间的医疗费用。",
+      "gapYears": "缺口年限",
+      "totalCost": "总费用",
+      "annualCost": "年度费用"
+    }
+  },
+  "input": {
+    "currentAge": "当前年龄",
+    "retirementAge": "退休年龄",
+    "currentSavings": "当前储蓄",
+    "annualContribution": "年度储蓄额",
+    "annualIncome": "年度收入",
+    "annualExpenses": "年度支出",
+    "expectedReturn": "预期收益率",
+    "inflationRate": "通货膨胀率",
+    "withdrawalRate": "提取率",
+    "partTimeIncome": "兼职收入",
+    "portfolioValue": "投资组合价值",
+    "monthlyPremium": "月度保费",
+    "annualDeductible": "年度免赔额",
+    "annualOutOfPocket": "年度自付额"
+  },
+  "output": {
+    "years": "年",
+    "months": "月",
+    "perYear": "每年",
+    "perMonth": "每月",
+    "total": "总计",
+    "average": "平均"
+  },
+  "common": {
+    "calculate": "计算",
+    "reset": "重置",
+    "export": "导出 Excel",
+    "copyUrl": "复制链接",
+    "share": "分享",
+    "disclaimer": "免责声明",
+    "bestFor": "适合人群",
+    "privacy": "100% 隐私 & 离线可用"
+  },
+  "disclaimer": {
+    "title": "免责声明",
+    "content": "本计算器仅供教育目的。不构成金融、投资、税务或法律建议。请咨询合格的财务顾问、税务专业人士或其他适当的专业人士。"
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文",
+    "es": "Español",
+    "de": "Deutsch",
+    "ja": "日本語",
+    "fr": "Français",
+    "ru": "Русский",
+    "pt": "Português",
+    "id": "Bahasa Indonesia",
+    "ar": "العربية",
+    "switch": "切换语言"
+  },
+  "footer": {
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "about": "关于我们"
+  }
+}

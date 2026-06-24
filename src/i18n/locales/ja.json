@@ -1,0 +1,135 @@
+{
+  "app": {
+    "title": "FIRE Calculators",
+    "description": "プライベート、オフライン優先のFIRE（Financial Independence, Retire Early）計算ツール"
+  },
+  "nav": {
+    "home": "ホーム",
+    "books": "おすすめ書籍",
+    "apps": "おすすめアプリ",
+    "quiz": "あなたの道を見つける",
+    "calculators": "計算ツール",
+    "standard": "標準FIRE",
+    "coast": "Coast FIRE",
+    "lean": "Lean FIRE",
+    "fat": "Fat FIRE",
+    "barista": "Barista FIRE",
+    "reverse": "リバースFIRE",
+    "withdrawal": "引き出し率",
+    "savingsRate": "貯蓄率",
+    "debtPayoff": "債務返済",
+    "healthcare": "医療ギャップ"
+  },
+  "calculator": {
+    "standard": {
+      "title": "標準FIRE計算ツール",
+      "description": "古典的な25倍支出ルール — 完全な財政独立のための「マジックナンバー」を計算。",
+      "fireNumber": "FIREナンバー",
+      "yearsToFIRE": "FIREまでの年数",
+      "fireAge": "FIRE年齢",
+      "monthlyContribution": "月間拠出額",
+      "savingsRate": "貯蓄率",
+      "coastFireNumber": "Coast FIREナンバー"
+    },
+    "coast": {
+      "title": "Coast FIRE計算ツール",
+      "description": "今どれだけ必要かを見つけ、複利が残りを担う — その後リタイアまで滑走。",
+      "coastNumber": "Coastナンバー",
+      "yearsToCoast": "Coastまでの年数",
+      "alreadyCoasting": "既に滑走中！",
+      "notYetCoasting": "まだ滑走していません"
+    },
+    "lean": {
+      "title": "Lean FIRE計算ツール",
+      "description": "ミニマリストライフスタイルでFIをより早く達成 — 倹約家に最適。",
+      "isLean": "Lean FIREか",
+      "leanThreshold": "Lean閾値"
+    },
+    "fat": {
+      "title": "Fat FIRE計算ツール",
+      "description": "妥協なく引退 — 快適なライフスタイルを維持しながらFIを計算。",
+      "isFat": "Fat FIREか",
+      "fatThreshold": "Fat閾値"
+    },
+    "barista": {
+      "title": "Barista FIRE計算ツール",
+      "description": "パートタイム勤務とポートフォリオ収入を組み合わせ — 企業人生から早く卒業。",
+      "baristaNumber": "Baristaナンバー",
+      "fullFireNumber": "完全FIREナンバー",
+      "yearsToBarista": "Barista FIREまでの年数",
+      "partTimeIncomeNeeded": "必要なパートタイム収入",
+      "savingsFromPartTime": "パートタイムからの貯蓄"
+    },
+    "withdrawal": {
+      "title": "引き出し率計算ツール",
+      "description": "ポートフォリオの持続性をテスト — あらゆるシナリオで安全な引き出し率を見つける。",
+      "portfolioLongevity": "ポートフォリオ持続性",
+      "successRate": "成功率",
+      "annualWithdrawal": "年間引き出し",
+      "monthlyWithdrawal": "月間引き出し"
+    },
+    "healthcare": {
+      "title": "医療ギャップ計算ツール",
+      "description": "早期引退からMedicare適格までの医療費を見積もり。",
+      "gapYears": "ギャップ年数",
+      "totalCost": "総費用",
+      "annualCost": "年間費用"
+    }
+  },
+  "input": {
+    "currentAge": "現在の年齢",
+    "retirementAge": "引退年齢",
+    "currentSavings": "現在の貯蓄",
+    "annualContribution": "年間拠出額",
+    "annualIncome": "年間収入",
+    "annualExpenses": "年間支出",
+    "expectedReturn": "期待リターン",
+    "inflationRate": "インフレ率",
+    "withdrawalRate": "引き出し率",
+    "partTimeIncome": "パートタイム収入",
+    "portfolioValue": "ポートフォリオ価値",
+    "monthlyPremium": "月額保険料",
+    "annualDeductible": "年間控除額",
+    "annualOutOfPocket": "年間自己負担"
+  },
+  "output": {
+    "years": "年",
+    "months": "ヶ月",
+    "perYear": "年あたり",
+    "perMonth": "月あたり",
+    "total": "合計",
+    "average": "平均"
+  },
+  "common": {
+    "calculate": "計算",
+    "reset": "リセット",
+    "export": "Excelにエクスポート",
+    "copyUrl": "URLをコピー",
+    "share": "共有",
+    "disclaimer": "免責事項",
+    "bestFor": "最適な対象",
+    "privacy": "100% プライベート & オフライン"
+  },
+  "disclaimer": {
+    "title": "免責事項",
+    "content": "この計算ツールは教育目的のみです。金融、投資、税務、法的アドバイスとして意図されておらず、そのように解釈されるべきではありません。適格なファイナンシャルアドバイザー、税務専門家、その他適切な専門家にご相談ください。"
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文",
+    "es": "Español",
+    "de": "Deutsch",
+    "ja": "日本語",
+    "fr": "Français",
+    "ru": "Русский",
+    "pt": "Português",
+    "id": "Bahasa Indonesia",
+    "ar": "العربية",
+    "switch": "言語を切り替え"
+  },
+  "footer": {
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "about": "私たちについて"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "app": {
+    "title": "FIRE Calculators",
+    "description": "Calculateurs FIRE privés et hors-ligne (Financial Independence, Retire Early)"
+  },
+  "nav": {
+    "home": "Accueil",
+    "books": "Livres recommandés",
+    "apps": "Applications recommandées",
+    "quiz": "Trouvez votre voie",
+    "calculators": "Calculateurs",
+    "standard": "FIRE Standard",
+    "coast": "Coast FIRE",
+    "lean": "Lean FIRE",
+    "fat": "Fat FIRE",
+    "barista": "Barista FIRE",
+    "reverse": "FIRE Inversé",
+    "withdrawal": "Taux de retrait",
+    "savingsRate": "Taux d'épargne",
+    "debtPayoff": "Remboursement de dettes",
+    "healthcare": "Écart santé"
+  },
+  "calculator": {
+    "standard": {
+      "title": "Calculateur FIRE Standard",
+      "description": "La règle classique des 25x les dépenses — calculez votre « nombre magique » pour une indépendance financière complète.",
+      "fireNumber": "Nombre FIRE",
+      "yearsToFIRE": "Années jusqu'au FIRE",
+      "fireAge": "Âge FIRE",
+      "monthlyContribution": "Contribution mensuelle",
+      "savingsRate": "Taux d'épargne",
+      "coastFireNumber": "Nombre Coast FIRE"
+    },
+    "coast": {
+      "title": "Calculateur Coast FIRE",
+      "description": "Découvrez combien vous devez épargner maintenant pour laisser les intérêts composés faire le reste — puis laissez-vous porter jusqu'à la retraite.",
+      "coastNumber": "Nombre Coast",
+      "yearsToCoast": "Années jusqu'au Coast",
+      "alreadyCoasting": "Déjà en mode Coast !",
+      "notYetCoasting": "Pas encore en mode Coast"
+    },
+    "lean": {
+      "title": "Calculateur Lean FIRE",
+      "description": "Atteignez l'IF plus rapidement avec un style de vie minimaliste — parfait pour les planificateurs économes.",
+      "isLean": "Est Lean FIRE",
+      "leanThreshold": "Seuil Lean"
+    },
+    "fat": {
+      "title": "Calculateur Fat FIRE",
+      "description": "Prenez votre retraite sans compromis — calculez l'IF tout en maintenant un style de vie confortable.",
+      "isFat": "Est Fat FIRE",
+      "fatThreshold": "Seuil Fat"
+    },
+    "barista": {
+      "title": "Calculateur Barista FIRE",
+      "description": "Combinez travail à temps partiel et revenus de portefeuille — quittez le monde corporatif plus tôt.",
+      "baristaNumber": "Nombre Barista",
+      "fullFireNumber": "Nombre FIRE complet",
+      "yearsToBarista": "Années jusqu'au Barista FIRE",
+      "partTimeIncomeNeeded": "Revenu temps partiel requis",
+      "savingsFromPartTime": "Épargne du temps partiel"
+    },
+    "withdrawal": {
+      "title": "Calculateur de taux de retrait",
+      "description": "Testez la longévité de votre portefeuille — trouvez votre taux de retrait sûr pour tout scénario.",
+      "portfolioLongevity": "Longévité du portefeuille",
+      "successRate": "Taux de réussite",
+      "annualWithdrawal": "Retrait annuel",
+      "monthlyWithdrawal": "Retrait mensuel"
+    },
+    "healthcare": {
+      "title": "Calculateur d'écart santé",
+      "description": "Estimez les coûts de santé entre la retraite anticipée et l'éligibilité à la Medicare.",
+      "gapYears": "Années d'écart",
+      "totalCost": "Coût total",
+      "annualCost": "Coût annuel"
+    }
+  },
+  "input": {
+    "currentAge": "Âge actuel",
+    "retirementAge": "Âge de retraite",
+    "currentSavings": "Épargne actuelle",
+    "annualContribution": "Contribution annuelle",
+    "annualIncome": "Revenu annuel",
+    "annualExpenses": "Dépenses annuelles",
+    "expectedReturn": "Rendement attendu",
+    "inflationRate": "Taux d'inflation",
+    "withdrawalRate": "Taux de retrait",
+    "partTimeIncome": "Revenu temps partiel",
+    "portfolioValue": "Valeur du portefeuille",
+    "monthlyPremium": "Prime mensuelle",
+    "annualDeductible": "Franchise annuelle",
+    "annualOutOfPocket": "Coûts annuels à charge"
+  },
+  "output": {
+    "years": "années",
+    "months": "mois",
+    "perYear": "par an",
+    "perMonth": "par mois",
+    "total": "Total",
+    "average": "Moyenne"
+  },
+  "common": {
+    "calculate": "Calculer",
+    "reset": "Réinitialiser",
+    "export": "Exporter vers Excel",
+    "copyUrl": "Copier l'URL",
+    "share": "Partager",
+    "disclaimer": "Avertissement",
+    "bestFor": "Idéal pour",
+    "privacy": "100% Privé & Hors-ligne"
+  },
+  "disclaimer": {
+    "title": "Avertissement",
+    "content": "Ce calculateur est uniquement à des fins éducatives. Il n'est pas destiné à être, et ne doit pas être interprété comme, un conseil financier, d'investissement, fiscal ou juridique. Veuillez consulter un conseiller financier qualifié, un professionnel fiscal ou autre professionnel approprié."
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文",
+    "es": "Español",
+    "de": "Deutsch",
+    "ja": "日本語",
+    "fr": "Français",
+    "ru": "Русский",
+    "pt": "Português",
+    "id": "Bahasa Indonesia",
+    "ar": "العربية",
+    "switch": "Changer de langue"
+  },
+  "footer": {
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "about": "À propos"
+  }
+}

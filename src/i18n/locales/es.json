@@ -1,0 +1,135 @@
+{
+  "app": {
+    "title": "FIRE Calculators",
+    "description": "Calculadoras FIRE privadas y offline-first (Financial Independence, Retire Early)"
+  },
+  "nav": {
+    "home": "Inicio",
+    "books": "Libros Recomendados",
+    "apps": "Aplicaciones Recomendadas",
+    "quiz": "Encuentra Tu Camino",
+    "calculators": "Calculadoras",
+    "standard": "FIRE Estándar",
+    "coast": "Coast FIRE",
+    "lean": "Lean FIRE",
+    "fat": "Fat FIRE",
+    "barista": "Barista FIRE",
+    "reverse": "FIRE Inverso",
+    "withdrawal": "Tasa de Retiro",
+    "savingsRate": "Tasa de Ahorro",
+    "debtPayoff": "Pago de Deudas",
+    "healthcare": "Brecha Sanitaria"
+  },
+  "calculator": {
+    "standard": {
+      "title": "Calculadora FIRE Estándar",
+      "description": "La regla clásica de 25x los gastos — calcula tu \"número mágico\" para independencia financiera completa.",
+      "fireNumber": "Número FIRE",
+      "yearsToFIRE": "Años hasta FIRE",
+      "fireAge": "Edad FIRE",
+      "monthlyContribution": "Contribución Mensual",
+      "savingsRate": "Tasa de Ahorro",
+      "coastFireNumber": "Número Coast FIRE"
+    },
+    "coast": {
+      "title": "Calculadora Coast FIRE",
+      "description": "Descubre cuánto necesitas ahora para que el interés compuesto haga el resto — luego navega hasta la jubilación.",
+      "coastNumber": "Número Coast",
+      "yearsToCoast": "Años hasta Coast",
+      "alreadyCoasting": "¡Ya Navegando!",
+      "notYetCoasting": "Aún No Navegando"
+    },
+    "lean": {
+      "title": "Calculadora Lean FIRE",
+      "description": "Alcanza FI más rápido con un estilo de vida minimalista — perfecto para planificadores frugales.",
+      "isLean": "Es Lean FIRE",
+      "leanThreshold": "Umbral Lean"
+    },
+    "fat": {
+      "title": "Calculadora Fat FIRE",
+      "description": "Jubílate sin compromisos — calcula FI manteniendo un estilo de vida confortable.",
+      "isFat": "Es Fat FIRE",
+      "fatThreshold": "Umbral Fat"
+    },
+    "barista": {
+      "title": "Calculadora Barista FIRE",
+      "description": "Combina trabajo a tiempo parcial con ingresos del portafolio — deja la vida corporativa antes.",
+      "baristaNumber": "Número Barista",
+      "fullFireNumber": "Número FIRE Completo",
+      "yearsToBarista": "Años hasta Barista FIRE",
+      "partTimeIncomeNeeded": "Ingreso Tiempo Parcial Necesario",
+      "savingsFromPartTime": "Ahorros del Tiempo Parcial"
+    },
+    "withdrawal": {
+      "title": "Calculadora de Tasa de Retiro",
+      "description": "Prueba la longevidad de tu portafolio — encuentra tu tasa de retiro segura para cualquier escenario.",
+      "portfolioLongevity": "Longevidad del Portafolio",
+      "successRate": "Tasa de Éxito",
+      "annualWithdrawal": "Retiro Anual",
+      "monthlyWithdrawal": "Retiro Mensual"
+    },
+    "healthcare": {
+      "title": "Calculadora de Brecha Sanitaria",
+      "description": "Estima los costos sanitarios entre la jubilación anticipada y la elegibilidad para Medicare.",
+      "gapYears": "Años de Brecha",
+      "totalCost": "Costo Total",
+      "annualCost": "Costo Anual"
+    }
+  },
+  "input": {
+    "currentAge": "Edad Actual",
+    "retirementAge": "Edad de Jubilación",
+    "currentSavings": "Ahorros Actuales",
+    "annualContribution": "Contribución Anual",
+    "annualIncome": "Ingreso Anual",
+    "annualExpenses": "Gastos Anuales",
+    "expectedReturn": "Retorno Esperado",
+    "inflationRate": "Tasa de Inflación",
+    "withdrawalRate": "Tasa de Retiro",
+    "partTimeIncome": "Ingreso Tiempo Parcial",
+    "portfolioValue": "Valor del Portafolio",
+    "monthlyPremium": "Prima Mensual",
+    "annualDeductible": "Deducible Anual",
+    "annualOutOfPocket": "Gastos de Bolsillo Anuales"
+  },
+  "output": {
+    "years": "años",
+    "months": "meses",
+    "perYear": "por año",
+    "perMonth": "por mes",
+    "total": "Total",
+    "average": "Promedio"
+  },
+  "common": {
+    "calculate": "Calcular",
+    "reset": "Reiniciar",
+    "export": "Exportar a Excel",
+    "copyUrl": "Copiar URL",
+    "share": "Compartir",
+    "disclaimer": "Aviso Legal",
+    "bestFor": "Mejor para",
+    "privacy": "100% Privado y Offline"
+  },
+  "disclaimer": {
+    "title": "Aviso Legal",
+    "content": "Esta calculadora es solo con fines educativos. No pretende ser, ni debe interpretarse como, asesoramiento financiero, de inversión, fiscal o legal. Por favor, consulta con un asesor financiero cualificado, profesional fiscal u otro profesional apropiado."
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文",
+    "es": "Español",
+    "de": "Deutsch",
+    "ja": "日本語",
+    "fr": "Français",
+    "ru": "Русский",
+    "pt": "Português",
+    "id": "Bahasa Indonesia",
+    "ar": "العربية",
+    "switch": "Cambiar Idioma"
+  },
+  "footer": {
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "about": "Acerca de"
+  }
+}

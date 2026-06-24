@@ -1,119 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  
-  <!-- Homepage -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://myfirenumber.com/</loc>
-    <lastmod>2026-04-04</lastmod>
+    <loc>https://firecalc.nextapi.pro/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Standard FIRE Calculator -->
   <url>
-    <loc>https://myfirenumber.com/standard</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://firecalc.nextapi.pro/standard</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <!-- Coast FIRE Calculator -->
   <url>
-    <loc>https://myfirenumber.com/coast</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://firecalc.nextapi.pro/coast</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <!-- Lean FIRE Calculator -->
   <url>
-    <loc>https://myfirenumber.com/lean</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <!-- Fat FIRE Calculator -->
-  <url>
-    <loc>https://myfirenumber.com/fat</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <!-- Barista FIRE Calculator -->
-  <url>
-    <loc>https://myfirenumber.com/barista</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <!-- Reverse FIRE Calculator -->
-  <url>
-    <loc>https://myfirenumber.com/reverse</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://firecalc.nextapi.pro/lean</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <!-- Withdrawal Rate Calculator -->
   <url>
-    <loc>https://myfirenumber.com/withdrawal</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://firecalc.nextapi.pro/fat</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <!-- Savings Rate Calculator -->
   <url>
-    <loc>https://myfirenumber.com/savings-rate</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://firecalc.nextapi.pro/barista</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <!-- Debt Payoff Calculator -->
   <url>
-    <loc>https://myfirenumber.com/debt-payoff</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://firecalc.nextapi.pro/withdrawal</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <!-- Healthcare Gap Calculator -->
   <url>
-    <loc>https://myfirenumber.com/healthcare</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://firecalc.nextapi.pro/savings-rate</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <!-- Books Page -->
   <url>
-    <loc>https://myfirenumber.com/books</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://firecalc.nextapi.pro/reverse</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Apps Page -->
   <url>
-    <loc>https://myfirenumber.com/apps</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://firecalc.nextapi.pro/debt-payoff</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Quiz Page -->
   <url>
-    <loc>https://myfirenumber.com/quiz</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://firecalc.nextapi.pro/healthcare</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  
+  <url>
+    <loc>https://firecalc.nextapi.pro/books</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://firecalc.nextapi.pro/apps</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://firecalc.nextapi.pro/quiz</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://firecalc.nextapi.pro/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://firecalc.nextapi.pro/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://firecalc.nextapi.pro/terms</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>

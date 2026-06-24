@@ -1,0 +1,135 @@
+{
+  "app": {
+    "title": "FIRE Calculators",
+    "description": "Kalkulator FIRE privat dan offline-first (Financial Independence, Retire Early)"
+  },
+  "nav": {
+    "home": "Beranda",
+    "books": "Buku Rekomendasi",
+    "apps": "Aplikasi Rekomendasi",
+    "quiz": "Temukan Jalannya",
+    "calculators": "Kalkulator",
+    "standard": "FIRE Standar",
+    "coast": "Coast FIRE",
+    "lean": "Lean FIRE",
+    "fat": "Fat FIRE",
+    "barista": "Barista FIRE",
+    "reverse": "FIRE Terbalik",
+    "withdrawal": "Tarik Penarikan",
+    "savingsRate": "Tabungan",
+    "debtPayoff": "Pelunasan Utang",
+    "healthcare": "Celah Kesehatan"
+  },
+  "calculator": {
+    "standard": {
+      "title": "Kalkulator FIRE Standar",
+      "description": "Aturan klasik 25x pengeluaran — hitung \"angka ajaib\" Anda untuk kemandirian finansial penuh.",
+      "fireNumber": "Angka FIRE",
+      "yearsToFIRE": "Tahun ke FIRE",
+      "fireAge": "Usia FIRE",
+      "monthlyContribution": "Kontribusi Bulanan",
+      "savingsRate": "Tabungan",
+      "coastFireNumber": "Angka Coast FIRE"
+    },
+    "coast": {
+      "title": "Kalkulator Coast FIRE",
+      "description": "Temukan berapa yang Anda butuhkan sekarang agar bunga majemuk melakukan sisanya — lalu santai hingga pensiun.",
+      "coastNumber": "Angka Coast",
+      "yearsToCoast": "Tahun ke Coast",
+      "alreadyCoasting": "Sudah Santai!",
+      "notYetCoasting": "Belum Santai"
+    },
+    "lean": {
+      "title": "Kalkulator Lean FIRE",
+      "description": "Capai FI lebih cepat dengan gaya hidup minimalis — sempurna untuk perencana hemat.",
+      "isLean": "Lean FIRE",
+      "leanThreshold": "Ambang Lean"
+    },
+    "fat": {
+      "title": "Kalkulator Fat FIRE",
+      "description": "Pensiun tanpa kompromi — hitung FI sambil mempertahankan gaya hidup nyaman.",
+      "isFat": "Fat FIRE",
+      "fatThreshold": "Ambang Fat"
+    },
+    "barista": {
+      "title": "Kalkulator Barista FIRE",
+      "description": "Gabungkan kerja paruh waktu dengan pendapatan portofolio — keluar dari dunia korporat lebih awal.",
+      "baristaNumber": "Angka Barista",
+      "fullFireNumber": "Angka FIRE Penuh",
+      "yearsToBarista": "Tahun ke Barista FIRE",
+      "partTimeIncomeNeeded": "Pendapatan Paruh Waktu Dibutuhkan",
+      "savingsFromPartTime": "Tabungan dari Paruh Waktu"
+    },
+    "withdrawal": {
+      "title": "Kalkulator Tarik Penarikan",
+      "description": "Uji keawetan portofolio Anda — temukan tarif penarikan aman untuk skenario apa pun.",
+      "portfolioLongevity": "Keawetan Portofolio",
+      "successRate": "Tingkat Keberhasilan",
+      "annualWithdrawal": "Penarikan Tahunan",
+      "monthlyWithdrawal": "Penarikan Bulanan"
+    },
+    "healthcare": {
+      "title": "Kalkulator Celah Kesehatan",
+      "description": "Perkirakan biaya kesehatan antara pensiun dini dan kelayakan Medicare.",
+      "gapYears": "Tahun Celah",
+      "totalCost": "Biaya Total",
+      "annualCost": "Biaya Tahunan"
+    }
+  },
+  "input": {
+    "currentAge": "Usia Saat Ini",
+    "retirementAge": "Usia Pensiun",
+    "currentSavings": "Tabungan Saat Ini",
+    "annualContribution": "Kontribusi Tahunan",
+    "annualIncome": "Pendapatan Tahunan",
+    "annualExpenses": "Pengeluaran Tahunan",
+    "expectedReturn": "Pengembalian yang Diharapkan",
+    "inflationRate": "Tingkat Inflasi",
+    "withdrawalRate": "Tarif Penarikan",
+    "partTimeIncome": "Pendapatan Paruh Waktu",
+    "portfolioValue": "Nilai Portofolio",
+    "monthlyPremium": "Premi Bulanan",
+    "annualDeductible": "Deductible Tahunan",
+    "annualOutOfPocket": "Biaya Tunai Tahunan"
+  },
+  "output": {
+    "years": "tahun",
+    "months": "bulan",
+    "perYear": "per tahun",
+    "perMonth": "per bulan",
+    "total": "Total",
+    "average": "Rata-rata"
+  },
+  "common": {
+    "calculate": "Hitung",
+    "reset": "Reset",
+    "export": "Ekspor ke Excel",
+    "copyUrl": "Salin URL",
+    "share": "Bagikan",
+    "disclaimer": "Penyangkalan",
+    "bestFor": "Terbaik untuk",
+    "privacy": "100% Privat & Offline"
+  },
+  "disclaimer": {
+    "title": "Penyangkalan",
+    "content": "Kalkulator ini hanya untuk tujuan edukasi. Ini tidak dimaksudkan sebagai, dan tidak boleh ditafsirkan sebagai, saran keuangan, investasi, pajak, atau hukum. Silakan konsultasikan dengan penasihat keuangan yang berkualitas, profesional pajak, atau profesional lain yang sesuai."
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文",
+    "es": "Español",
+    "de": "Deutsch",
+    "ja": "日本語",
+    "fr": "Français",
+    "ru": "Русский",
+    "pt": "Português",
+    "id": "Bahasa Indonesia",
+    "ar": "العربية",
+    "switch": "Ganti Bahasa"
+  },
+  "footer": {
+    "privacy": "Kebijakan Privasi",
+    "terms": "Ketentuan Layanan",
+    "about": "Tentang Kami"
+  }
+}

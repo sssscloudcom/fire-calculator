@@ -1,0 +1,135 @@
+{
+  "app": {
+    "title": "FIRE Calculators",
+    "description": "Private, offline-first FIRE (Financial Independence, Retire Early) Rechner"
+  },
+  "nav": {
+    "home": "Startseite",
+    "books": "Empfohlene Bücher",
+    "apps": "Empfohlene Apps",
+    "quiz": "Finde deinen Weg",
+    "calculators": "Rechner",
+    "standard": "Standard FIRE",
+    "coast": "Coast FIRE",
+    "lean": "Lean FIRE",
+    "fat": "Fat FIRE",
+    "barista": "Barista FIRE",
+    "reverse": "Reverse FIRE",
+    "withdrawal": "Entnahmerate",
+    "savingsRate": "Sparrate",
+    "debtPayoff": "Schuldentilgung",
+    "healthcare": "Gesundheitslücke"
+  },
+  "calculator": {
+    "standard": {
+      "title": "Standard FIRE Rechner",
+      "description": "Die klassische 25x-Ausgaben-Regel — berechne deine magische Zahl für vollständige finanzielle Unabhängigkeit.",
+      "fireNumber": "FIRE-Zahl",
+      "yearsToFIRE": "Jahre bis FIRE",
+      "fireAge": "FIRE-Alter",
+      "monthlyContribution": "Monatlicher Beitrag",
+      "savingsRate": "Sparrate",
+      "coastFireNumber": "Coast FIRE-Zahl"
+    },
+    "coast": {
+      "title": "Coast FIRE Rechner",
+      "description": "Finde heraus, wie viel du jetzt brauchst, damit der Zinseszinseffekt den Rest erledigt — dann kannst du bis zur Rente entspannen.",
+      "coastNumber": "Coast-Zahl",
+      "yearsToCoast": "Jahre bis Coast",
+      "alreadyCoasting": "Bereits am Coasten!",
+      "notYetCoasting": "Noch nicht am Coasten"
+    },
+    "lean": {
+      "title": "Lean FIRE Rechner",
+      "description": "Erreiche FI schneller mit einem minimalistischen Lebensstil — perfekt für sparsame Planer.",
+      "isLean": "Ist Lean FIRE",
+      "leanThreshold": "Lean-Schwellenwert"
+    },
+    "fat": {
+      "title": "Fat FIRE Rechner",
+      "description": "Ruhstand ohne Kompromisse — berechne FI bei Beibehaltung eines komfortablen Lebensstils.",
+      "isFat": "Ist Fat FIRE",
+      "fatThreshold": "Fat-Schwellenwert"
+    },
+    "barista": {
+      "title": "Barista FIRE Rechner",
+      "description": "Kombiniere Teilzeitarbeit mit Portfolio-Einkommen — verlasse früher das Unternehmensleben.",
+      "baristaNumber": "Barista-Zahl",
+      "fullFireNumber": "Volle FIRE-Zahl",
+      "yearsToBarista": "Jahre bis Barista FIRE",
+      "partTimeIncomeNeeded": "Benötigtes Teilzeiteinkommen",
+      "savingsFromPartTime": "Ersparnisse aus Teilzeit"
+    },
+    "withdrawal": {
+      "title": "Entnahmerate-Rechner",
+      "description": "Teste die Langlebigkeit deines Portfolios — finde deine sichere Entnahmerate für jedes Szenario.",
+      "portfolioLongevity": "Portfolio-Langlebigkeit",
+      "successRate": "Erfolgsrate",
+      "annualWithdrawal": "Jährliche Entnahme",
+      "monthlyWithdrawal": "Monatliche Entnahme"
+    },
+    "healthcare": {
+      "title": "Gesundheitslücken-Rechner",
+      "description": "Schätze die Gesundheitskosten zwischen Frühpensionierung und Medicare-Berechtigung.",
+      "gapYears": "Lückenjahre",
+      "totalCost": "Gesamtkosten",
+      "annualCost": "Jährliche Kosten"
+    }
+  },
+  "input": {
+    "currentAge": "Aktuelles Alter",
+    "retirementAge": "Rentenalter",
+    "currentSavings": "Aktuelle Ersparnisse",
+    "annualContribution": "Jährlicher Beitrag",
+    "annualIncome": "Jährliches Einkommen",
+    "annualExpenses": "Jährliche Ausgaben",
+    "expectedReturn": "Erwartete Rendite",
+    "inflationRate": "Inflationsrate",
+    "withdrawalRate": "Entnahmerate",
+    "partTimeIncome": "Teilzeiteinkommen",
+    "portfolioValue": "Portfoliowert",
+    "monthlyPremium": "Monatliche Prämie",
+    "annualDeductible": "Jährliche Selbstbeteiligung",
+    "annualOutOfPocket": "Jährliche Selbstbehalte"
+  },
+  "output": {
+    "years": "Jahre",
+    "months": "Monate",
+    "perYear": "pro Jahr",
+    "perMonth": "pro Monat",
+    "total": "Gesamt",
+    "average": "Durchschnitt"
+  },
+  "common": {
+    "calculate": "Berechnen",
+    "reset": "Zurücksetzen",
+    "export": "Nach Excel exportieren",
+    "copyUrl": "URL kopieren",
+    "share": "Teilen",
+    "disclaimer": "Haftungsausschluss",
+    "bestFor": "Am besten für",
+    "privacy": "100% Privat & Offline"
+  },
+  "disclaimer": {
+    "title": "Haftungsausschluss",
+    "content": "Dieser Rechner dient nur zu Bildungszwecken. Er ist nicht als finanzielle, Anlage-, Steuer- oder Rechtsberatung gedacht und sollte nicht als solche ausgelegt werden. Bitte konsultiere einen qualifizierten Finanzberater, Steuerfachmann oder anderen entsprechenden Fachmann."
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文",
+    "es": "Español",
+    "de": "Deutsch",
+    "ja": "日本語",
+    "fr": "Français",
+    "ru": "Русский",
+    "pt": "Português",
+    "id": "Bahasa Indonesia",
+    "ar": "العربية",
+    "switch": "Sprache wechseln"
+  },
+  "footer": {
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "about": "Über uns"
+  }
+}

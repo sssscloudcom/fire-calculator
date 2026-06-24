@@ -1,78 +1,90 @@
-import { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 interface SEOProps {
-  title?: string
-  description?: string
-  keywords?: string
-  canonicalPath?: string
-  ogImage?: string
-  ogType?: 'website' | 'article'
+  title?: string;
+  description?: string;
+  keywords?: string;
+  canonicalPath?: string;
 }
 
-/**
- * SEO component for dynamically updating meta tags per page
- * Updates document title and meta tags based on current route
- */
+const BASE_URL = 'https://firecalc.nextapi.pro';
+
 export default function SEO({
-  title = 'FIRE Calculators - Free Financial Independence Calculator',
-  description = 'Free FIRE calculators to plan your path to Financial Independence, Retire Early. 100% private, works offline, no tracking.',
-  keywords = 'FIRE calculator, financial independence calculator, retire early calculator',
+  title,
+  description,
+  keywords,
   canonicalPath = '',
-  ogImage = 'https://myfirenumber.com/pwa-512x512.png',
-  ogType = 'website',
-}: SEOProps) {
-  const location = useLocation()
-  
+}: SEOProps = {}) {
+  const location = useLocation();
+  const { i18n } = useTranslation();
+  const lang = i18n.language;
+
+  const path = canonicalPath || location.pathname;
+  const url = `${BASE_URL}${path}`;
+
   useEffect(() => {
-    // Update document title
-    document.title = title
-    
-    // Update or create meta tags
-    const updateMetaTag = (name: string, content: string, isProperty = false) => {
-      const attribute = isProperty ? 'property' : 'name'
-      let element = document.querySelector(`meta[${attribute}="${name}"]`) as HTMLMetaElement
-      
-      if (!element) {
-        element = document.createElement('meta')
-        element.setAttribute(attribute, name)
-        document.head.appendChild(element)
-      }
-      
-      element.setAttribute('content', content)
+    // Update lang attribute
+    document.documentElement.lang = lang;
+
+    // Update title
+    if (title) {
+      document.title = title;
     }
-    
-    // Build canonical URL
-    const baseUrl = 'https://myfirenumber.com'
-    const canonical = `${baseUrl}${canonicalPath || location.pathname}`
-    
-    // Update standard meta tags
-    updateMetaTag('description', description)
-    updateMetaTag('keywords', keywords)
-    
-    // Update Open Graph tags
-    updateMetaTag('og:title', title, true)
-    updateMetaTag('og:description', description, true)
-    updateMetaTag('og:url', canonical, true)
-    updateMetaTag('og:image', ogImage, true)
-    updateMetaTag('og:type', ogType, true)
-    
-    // Update Twitter Card tags
-    updateMetaTag('twitter:title', title)
-    updateMetaTag('twitter:description', description)
-    updateMetaTag('twitter:image', ogImage)
-    updateMetaTag('twitter:url', canonical)
-    
-    // Update canonical link
-    let canonicalLink = document.querySelector('link[rel="canonical"]') as HTMLLinkElement
-    if (!canonicalLink) {
-      canonicalLink = document.createElement('link')
-      canonicalLink.setAttribute('rel', 'canonical')
-      document.head.appendChild(canonicalLink)
+
+    // Update meta tags
+    if (description) {
+      const descMeta = document.querySelector('meta[name="description"]');
+      if (descMeta) descMeta.setAttribute('content', description);
+      
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.setAttribute('content', description);
+      
+      const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+      if (twitterDesc) twitterDesc.setAttribute('content', description);
     }
-    canonicalLink.setAttribute('href', canonical)
-    
-  }, [title, description, keywords, canonicalPath, ogImage, ogType, location.pathname])
-  
-  return null
+
+    if (keywords) {
+      const keywordsMeta = document.querySelector('meta[name="keywords"]');
+      if (keywordsMeta) keywordsMeta.setAttribute('content', keywords);
+    }
+
+    // Update OG title
+    if (title) {
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.setAttribute('content', title);
+      
+      const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+      if (twitterTitle) twitterTitle.setAttribute('content', title);
+    }
+
+    // Update canonical
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.setAttribute('href', url);
+
+    // Update OG URL
+    const ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl) ogUrl.setAttribute('content', url);
+
+    // Update hreflang links
+    const existingHreflangs = document.querySelectorAll('link[hreflang]');
+    existingHreflangs.forEach(el => el.remove());
+
+    const languages = [
+      { lang: 'en', href: `${url}?lang=en` },
+      { lang: 'zh', href: `${url}?lang=zh` },
+      { lang: 'x-default', href: url },
+    ];
+
+    languages.forEach(({ lang: l, href }) => {
+      const link = document.createElement('link');
+      link.rel = 'alternate';
+      link.setAttribute('hreflang', l);
+      link.href = href;
+      document.head.appendChild(link);
+    });
+  }, [title, description, keywords, url, lang]);
+
+  return null;
 }

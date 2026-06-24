@@ -1,0 +1,135 @@
+{
+  "app": {
+    "title": "FIRE Calculators",
+    "description": "حاسبات FIRE خاصة وتعمل بدون اتصال (Financial Independence, Retire Early)"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "books": "كتب موصى بها",
+    "apps": "تطبيقات موصى بها",
+    "quiz": "اعثر على طريقك",
+    "calculators": "الحاسبات",
+    "standard": "FIRE القياسي",
+    "coast": "Coast FIRE",
+    "lean": "Lean FIRE",
+    "fat": "Fat FIRE",
+    "barista": "Barista FIRE",
+    "reverse": "FIRE العكسي",
+    "withdrawal": "معدل السحب",
+    "savingsRate": "معدل الادخار",
+    "debtPayoff": "سداد الديون",
+    "healthcare": "فجوة الرعاية الصحية"
+  },
+  "calculator": {
+    "standard": {
+      "title": "حاسبة FIRE القياسي",
+      "description": "قاعدة 25x الكلاسيكية للنفقات — احسب \"الرقم السحري\" الخاص بك للاستقلال المالي الكامل.",
+      "fireNumber": "رقم FIRE",
+      "yearsToFIRE": "سنوات حتى FIRE",
+      "fireAge": "عمر FIRE",
+      "monthlyContribution": "المساهمة الشهرية",
+      "savingsRate": "معدل الادخار",
+      "coastFireNumber": "رقم Coast FIRE"
+    },
+    "coast": {
+      "title": "حاسبة Coast FIRE",
+      "description": "اكتشف كم تحتاج الآن لكي يقوم الفائدة المركبة بالباقي — ثم استرخِ حتى التقاعد.",
+      "coastNumber": "رقم Coast",
+      "yearsToCoast": "سنوات حتى Coast",
+      "alreadyCoasting": "alreadyCoasting!",
+      "notYetCoasting": "ليس بعدًا في وضع Coast"
+    },
+    "lean": {
+      "title": "حاسبة Lean FIRE",
+      "description": "حقق الاستقلال المالي أسرع بأسلوب حياة بسيط — مثالي للمخططين المقتصدين.",
+      "isLean": "هل هو Lean FIRE",
+      "leanThreshold": "حد Lean"
+    },
+    "fat": {
+      "title": "حاسبة Fat FIRE",
+      "description": "تقاعد بدون تنازلات — احسب الاستقلال المالي مع الحفاظ على أسلوب حياة مريح.",
+      "isFat": "هل هو Fat FIRE",
+      "fatThreshold": "حد Fat"
+    },
+    "barista": {
+      "title": "حاسبة Barista FIRE",
+      "description": "اجمع بين العمل الجزئي ودخل المحفظة — اترك الحياة المؤسسية مبكرًا.",
+      "baristaNumber": "رقم Barista",
+      "fullFireNumber": "رقم FIRE الكامل",
+      "yearsToBarista": "سنوات حتى Barista FIRE",
+      "partTimeIncomeNeeded": "الدخل الجزئي المطلوب",
+      "savingsFromPartTime": "الادخار من العمل الجزئي"
+    },
+    "withdrawal": {
+      "title": "حاسبة معدل السحب",
+      "description": "اختبر عمر محفظتك — اعثر على معدل سحب آمن لأي سيناريو.",
+      "portfolioLongevity": "عمر المحفظة",
+      "successRate": "معدل النجاح",
+      "annualWithdrawal": "السحب السنوي",
+      "monthlyWithdrawal": "السحب الشهري"
+    },
+    "healthcare": {
+      "title": "حاسبة فجوة الرعاية الصحية",
+      "description": "قدر تكاليف الرعاية الصحية بين التقاعد المبكر والأهلية لـ Medicare.",
+      "gapYears": "سنوات الفجوة",
+      "totalCost": "التكلفة الإجمالية",
+      "annualCost": "التكلفة السنوية"
+    }
+  },
+  "input": {
+    "currentAge": "العمر الحالي",
+    "retirementAge": "عمر التقاعد",
+    "currentSavings": "الادخار الحالي",
+    "annualContribution": "المساهمة السنوية",
+    "annualIncome": "الدخل السنوي",
+    "annualExpenses": "النفقات السنوية",
+    "expectedReturn": "العائد المتوقع",
+    "inflationRate": "معدل التضخم",
+    "withdrawalRate": "معدل السحب",
+    "partTimeIncome": "الدخل الجزئي",
+    "portfolioValue": "قيمة المحفظة",
+    "monthlyPremium": "القسط الشهري",
+    "annualDeductible": "الخصم السنوي",
+    "annualOutOfPocket": "التكاليف السنوية من الجيب"
+  },
+  "output": {
+    "years": "سنوات",
+    "months": "شهور",
+    "perYear": "سنويًا",
+    "perMonth": "شهريًا",
+    "total": "المجموع",
+    "average": "المتوسط"
+  },
+  "common": {
+    "calculate": "احسب",
+    "reset": "إعادة تعيين",
+    "export": "تصدير إلى Excel",
+    "copyUrl": "نسخ الرابط",
+    "share": "مشاركة",
+    "disclaimer": "إخلاء المسؤولية",
+    "bestFor": "الأفضل لـ",
+    "privacy": "100% خاص وبدون اتصال"
+  },
+  "disclaimer": {
+    "title": "إخلاء المسؤولية",
+    "content": "هذه الحاسبة للأغراض التعليمية فقط. ليست المقصودة، ولا يجب تفسيرها كـ، نصيحة مالية أو استثمارية أو ضريبية أو قانونية. يرجى استشارة مستشار مالي مؤهل أو محترف ضرائب أو محترف آخر مناسب."
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文",
+    "es": "Español",
+    "de": "Deutsch",
+    "ja": "日本語",
+    "fr": "Français",
+    "ru": "Русский",
+    "pt": "Português",
+    "id": "Bahasa Indonesia",
+    "ar": "العربية",
+    "switch": "تغيير اللغة"
+  },
+  "footer": {
+    "privacy": "سياسة الخصوصية",
+    "terms": "شروط الخدمة",
+    "about": "عنا"
+  }
+}
