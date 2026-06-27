@@ -77,7 +77,7 @@ export default function WithdrawalRate() {
               {t('withdrawalRate.title')}
             </h1>
             <p className="text-gray-600 dark:text-gray-400 mt-1">
-              Test your portfolio's longevity and find your safe withdrawal rate.
+              {t('withdrawalRate.subtitle')}
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -93,9 +93,7 @@ export default function WithdrawalRate() {
           <div>
             <h3 className="font-semibold text-sky-900 dark:text-sky-100">The 4% Rule</h3>
             <p className="text-sm text-sky-700 dark:text-sky-300 mt-1">
-              The famous "4% rule" from the Trinity Study suggests withdrawing 4% of your portfolio in year one, 
-              then adjusting for inflation each year. This has historically provided a 95%+ success rate over 
-              30-year retirements. However, longer retirements may require lower rates (3-3.5%).
+              {t('withdrawalRate.fourPercentRule.content')}
             </p>
           </div>
         </div>
@@ -105,7 +103,7 @@ export default function WithdrawalRate() {
         {/* Inputs */}
         <Card className="lg:col-span-1">
           <CardHeader>
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Your Portfolio</h2>
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('common.yourPortfolio')}</h2>
           </CardHeader>
           <CardContent className="space-y-4">
             <CurrencyInput
@@ -160,28 +158,28 @@ export default function WithdrawalRate() {
               highlight
             />
             <ResultCard
-              label="Monthly Withdrawal"
+              label={t('withdrawalRate.rateAnalysis.monthly')}
               value={results.monthlyWithdrawal}
               format="currency"
             />
             <ResultCard
-              label="Portfolio Lasts"
+              label={t('withdrawalRate.rateAnalysis.portfolioLasts')}
               value={results.portfolioLongevity}
               format="years"
-              subtext={results.portfolioLongevity >= params.retirementYears ? 'Sustainable' : 'May run out'}
+              subtext={results.portfolioLongevity >= params.retirementYears ? t('withdrawalRate.rateAnalysis.sustainable') : t('withdrawalRate.rateAnalysis.tooHigh')}}
             />
             <ResultCard
-              label="Success Rate"
+              label={t('withdrawalRate.rateAnalysis.status')}
               value={results.successRate}
               format="percent"
-              subtext={results.successRate >= 1 ? 'Good' : 'Risky'}
+              subtext={results.successRate >= 1 ? t('output.good') : t('output.risky')}}
             />
           </div>
 
           {/* Chart */}
           <Card>
             <CardHeader>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Portfolio Balance Over Time</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('withdrawalRate.portfolioBalanceOverTime')}</h2>
             </CardHeader>
             <CardContent>
               <WithdrawalChart
@@ -196,7 +194,7 @@ export default function WithdrawalRate() {
             <CardHeader>
               <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('withdrawalRate.withdrawalRateLabel')} Analysis</h2>
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                Compare different withdrawal rates for your portfolio of {formatCurrency(params.portfolioValue)}
+                {t('withdrawalRate.rateAnalysis.desc', { portfolioValue: formatCurrency(params.portfolioValue) })}
               </p>
             </CardHeader>
             <CardContent>
@@ -204,11 +202,11 @@ export default function WithdrawalRate() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-gray-200 dark:border-gray-700">
-                      <th className="text-left py-3 px-4 font-semibold text-gray-900 dark:text-gray-100">Rate</th>
-                      <th className="text-left py-3 px-4 font-semibold text-gray-900 dark:text-gray-100">{t('withdrawalRate.annualWithdrawalLabel')}</th>
-                      <th className="text-left py-3 px-4 font-semibold text-gray-900 dark:text-gray-100">Monthly</th>
-                      <th className="text-left py-3 px-4 font-semibold text-gray-900 dark:text-gray-100">Portfolio Lasts</th>
-                      <th className="text-left py-3 px-4 font-semibold text-gray-900 dark:text-gray-100">Status</th>
+                      <th className="text-left py-3 px-4 font-semibold text-gray-900 dark:text-gray-100">{t('withdrawalRate.rateAnalysis.rate')}</th>
+                      <th className="text-left py-3 px-4 font-semibold text-gray-900 dark:text-gray-100">{t('withdrawalRate.rateAnalysis.annualWithdrawal')}</th>
+                      <th className="text-left py-3 px-4 font-semibold text-gray-900 dark:text-gray-100">{t('withdrawalRate.rateAnalysis.monthly')}</th>
+                      <th className="text-left py-3 px-4 font-semibold text-gray-900 dark:text-gray-100">{t('withdrawalRate.rateAnalysis.portfolioLasts')}</th>
+                      <th className="text-left py-3 px-4 font-semibold text-gray-900 dark:text-gray-100">{t('withdrawalRate.rateAnalysis.status')}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -228,7 +226,7 @@ export default function WithdrawalRate() {
                             </span>
                             {analysis.rate === params.withdrawalRate && (
                               <span className="ml-2 text-xs bg-sky-100 dark:bg-sky-800 text-sky-700 dark:text-sky-300 px-2 py-0.5 rounded">
-                                Selected
+                                {t('reverseFire.selected')}
                               </span>
                             )}
                           </td>
@@ -249,14 +247,14 @@ export default function WithdrawalRate() {
                                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                 </svg>
-                                Sustainable
+                                {t('withdrawalRate.rateAnalysis.sustainable')}
                               </span>
                             ) : (
                               <span className="inline-flex items-center gap-1 text-red-600 dark:text-red-400">
                                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                                 </svg>
-                                Too High
+                                {t('withdrawalRate.rateAnalysis.tooHigh')}
                               </span>
                             )}
                           </td>
@@ -272,7 +270,7 @@ export default function WithdrawalRate() {
           {/* Recommendations */}
           <Card>
             <CardHeader>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Recommendations</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('withdrawalRate.recommendations.title')}</h2>
             </CardHeader>
             <CardContent className="prose dark:prose-invert max-w-none text-sm">
               {results.portfolioLongevity >= params.retirementYears ? (
