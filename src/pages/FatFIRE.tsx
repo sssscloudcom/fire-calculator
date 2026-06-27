@@ -229,50 +229,50 @@ export default function FatFIRE() {
           {/* Fat FIRE Lifestyle Examples */}
           <Card>
             <CardHeader>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">What Fat FIRE Lifestyle Includes</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('fatFire.lifestyleTitle')}</h2>
             </CardHeader>
             <CardContent>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="flex gap-3">
                   <span className="text-xl">🏡</span>
                   <div>
-                    <h4 className="font-medium text-gray-900 dark:text-gray-100">Premium Housing</h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Nice home in desirable area, no compromise on space</p>
+                    <h4 className="font-medium text-gray-900 dark:text-gray-100">{t('fatFire.lifestyle.premiumHousing.title')}</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">{t('fatFire.lifestyle.premiumHousing.desc')}</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-xl">✈️</span>
                   <div>
-                    <h4 className="font-medium text-gray-900 dark:text-gray-100">Travel Freedom</h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Multiple trips per year, business class options</p>
+                    <h4 className="font-medium text-gray-900 dark:text-gray-100">{t('fatFire.lifestyle.travelFreedom.title')}</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">{t('fatFire.lifestyle.travelFreedom.desc')}</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-xl">🍽️</span>
                   <div>
                     <h4 className="font-medium text-gray-900 dark:text-gray-100">Dining & Entertainment</h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Fine dining, concerts, premium experiences</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">{t('fatFire.lifestyle.dining.desc')}</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-xl">🏥</span>
                   <div>
-                    <h4 className="font-medium text-gray-900 dark:text-gray-100">Healthcare</h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Premium insurance, elective procedures, wellness</p>
+                    <h4 className="font-medium text-gray-900 dark:text-gray-100">{t('fatFire.lifestyle.healthcare.title')}</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">{t('fatFire.lifestyle.healthcare.desc')}</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-xl">🎁</span>
                   <div>
-                    <h4 className="font-medium text-gray-900 dark:text-gray-100">Generosity</h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Help family, charitable giving, leave legacy</p>
+                    <h4 className="font-medium text-gray-900 dark:text-gray-100">{t('fatFire.lifestyle.generosity.title')}</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">{t('fatFire.lifestyle.generosity.desc')}</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-xl">🛡️</span>
                   <div>
-                    <h4 className="font-medium text-gray-900 dark:text-gray-100">Security Buffer</h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Extra cushion for market downturns or surprises</p>
+                    <h4 className="font-medium text-gray-900 dark:text-gray-100">{t('fatFire.lifestyle.securityBuffer.title')}</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">{t('fatFire.lifestyle.securityBuffer.desc')}</p>
                   </div>
                 </div>
               </div>

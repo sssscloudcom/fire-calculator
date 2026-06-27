@@ -102,7 +102,7 @@ export default function LeanFIRE() {
         <div className="flex gap-3">
           <span className="text-2xl">🌿</span>
           <div>
-            <h3 className="font-semibold text-green-900 dark:text-green-100">What is Lean FIRE?</h3>
+            <h3 className="font-semibold text-green-900 dark:text-green-100">{t('leanFire.whatIs.title')}</h3>
             <p className="text-sm text-green-700 dark:text-green-300 mt-1">
               Lean FIRE means achieving financial independence with minimal expenses (typically ≤$40,000/year 
               for a household). It requires living frugally but allows you to retire much earlier than 

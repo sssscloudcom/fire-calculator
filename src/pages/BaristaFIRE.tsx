@@ -286,38 +286,38 @@ export default function BaristaFIRE() {
             </CardContent>
           </Card>
 
-          {/* Benefits of Barista FIRE */}
+          {/* {t('baristaFire.benefitsTitle')} */}
           <Card>
             <CardHeader>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Benefits of Barista FIRE</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('baristaFire.benefitsTitle')}</h2>
             </CardHeader>
             <CardContent>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="flex gap-3">
                   <span className="text-xl">🏥</span>
                   <div>
-                    <h4 className="font-medium text-gray-900 dark:text-gray-100">Health Insurance</h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Many part-time jobs offer benefits, bridging to Medicare</p>
+                    <h4 className="font-medium text-gray-900 dark:text-gray-100">{t('baristaFire.benefits.healthInsurance.title')}</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">{t('baristaFire.benefits.healthInsurance.desc')}</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-xl">🤝</span>
                   <div>
-                    <h4 className="font-medium text-gray-900 dark:text-gray-100">Social Connection</h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Stay engaged with a community and routine</p>
+                    <h4 className="font-medium text-gray-900 dark:text-gray-100">{t('baristaFire.benefits.socialConnection.title')}</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">{t('baristaFire.benefits.socialConnection.desc')}</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-xl">⚡</span>
                   <div>
-                    <h4 className="font-medium text-gray-900 dark:text-gray-100">Earlier Freedom</h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Leave your corporate job years earlier</p>
+                    <h4 className="font-medium text-gray-900 dark:text-gray-100">{t('baristaFire.benefits.earlierFreedom.title')}</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">{t('baristaFire.benefits.earlierFreedom.desc')}</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-xl">🎯</span>
                   <div>
-                    <h4 className="font-medium text-gray-900 dark:text-gray-100">Lower Target</h4>
+                    <h4 className="font-medium text-gray-900 dark:text-gray-100">{t('baristaFire.benefits.lowerTarget.title')}</h4>
                     <p className="text-sm text-gray-600 dark:text-gray-400">Need {reductionPercent.toFixed(0)}% less in your portfolio</p>
                   </div>
                 </div>
