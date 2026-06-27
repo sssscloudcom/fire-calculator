@@ -20,6 +20,125 @@
     "debtPayoff": "Debt Payoff",
     "healthcare": "Healthcare Gap"
   },
+  "quiz": {
+    "questions": {
+      "currentAge": {
+        "title": "How old are you?",
+        "subtitle": "This helps us understand your timeline"
+      },
+      "retirementAge": {
+        "title": "When do you want to achieve financial independence?",
+        "subtitle": "Your target age for FIRE"
+      },
+      "currentSavings": {
+        "title": "How much do you currently have saved/invested?",
+        "subtitle": "Include all retirement accounts and investments"
+      },
+      "annualIncome": {
+        "title": "What's your current annual household income?",
+        "subtitle": "Before taxes"
+      },
+      "annualExpenses": {
+        "title": "What are your current annual expenses?",
+        "subtitle": "Or what you expect to spend in retirement"
+      },
+      "lifestyle": {
+        "title": "What lifestyle do you want in retirement?",
+        "subtitle": "This impacts your target savings amount"
+      },
+      "workPreference": {
+        "title": "What's your ideal work situation after reaching FI?",
+        "subtitle": "How you want to spend your time"
+      },
+      "primaryGoal": {
+        "title": "What's most important to you?",
+        "subtitle": "Your primary motivation for FIRE"
+      }
+    },
+    "choices": {
+      "lifestyle": {
+        "minimal": { "label": "Minimal/Frugal", "desc": "Living simply, $30K-$40K/year" },
+        "moderate": { "label": "Moderate", "desc": "Comfortable basics, $40K-$70K/year" },
+        "comfortable": { "label": "Comfortable", "desc": "No major sacrifices, $70K-$100K/year" },
+        "luxury": { "label": "Luxury/Fat", "desc": "High-end lifestyle, $100K+/year" }
+      },
+      "workPreference": {
+        "quit": { "label": "Quit Completely", "desc": "Never work again" },
+        "partTime": { "label": "Part-Time Work", "desc": "Work for benefits or extra income" },
+        "coast": { "label": "Coast Mode", "desc": "Low-stress job covering expenses" },
+        "flexible": { "label": "Stay Flexible", "desc": "Keep options open" }
+      },
+      "primaryGoal": {
+        "retireEarly": { "label": "Retire ASAP", "desc": "Leave workforce as early as possible" },
+        "financialSecurity": { "label": "Financial Security", "desc": "Peace of mind and freedom" },
+        "maintainLifestyle": { "label": "Maintain Lifestyle", "desc": "Retire without sacrifice" },
+        "flexibility": { "label": "Flexibility", "desc": "Options and work-life balance" }
+      }
+    },
+    "recommendations": {
+      "lean": {
+        "title": "Lean FIRE",
+        "reason": "Your minimalist lifestyle and lower expenses make Lean FIRE achievable",
+        "description": "Achieve FI faster by living frugally. Requires less savings but demands lifestyle discipline.",
+        "benefits": ["Retire years earlier than traditional FIRE", "Need less total savings to reach your goal", "Forces intentional spending habits", "Freedom with minimalist lifestyle"]
+      },
+      "fat": {
+        "title": "Fat FIRE",
+        "reason": "Your desire for a comfortable lifestyle without compromise aligns with Fat FIRE",
+        "description": "Achieve FI while maintaining a luxurious or upper-middle-class lifestyle. Requires more savings but no sacrifices.",
+        "benefits": ["Retire without lifestyle changes", "Extra buffer for market downturns", "Travel, dining, and experiences without worry", "Help family and leave a legacy"]
+      },
+      "barista": {
+        "title": "Barista FIRE",
+        "reason": "Your interest in part-time work makes Barista FIRE an ideal stepping stone",
+        "description": "Blend portfolio income with part-time work. Reach FI faster while maintaining health benefits and social connections.",
+        "benefits": ["Quit corporate job years earlier", "Part-time work covers some expenses", "Health insurance from employer", "Stay active and socially engaged"]
+      },
+      "coast": {
+        "title": "Coast FIRE",
+        "reason": "Your timeline and age make Coast FIRE a strategic approach",
+        "description": "Save aggressively now, then let compound growth do the work. Perfect for young savers wanting flexibility.",
+        "benefits": ["Save hard early, then ease off", "Compound growth does the heavy lifting", "Take lower-paying but fulfilling work", "Reduces pressure in your 30s-40s"]
+      },
+      "reverse": {
+        "title": "Reverse FIRE",
+        "reason": "Your specific retirement age goal calls for a targeted savings strategy",
+        "description": "Work backwards from your target age to calculate exactly what you need to save monthly.",
+        "benefits": ["Clear monthly savings target", "Goal-oriented approach", "Adjust timeline or savings as needed", "Perfect for deadline-driven planners"]
+      },
+      "savingsRate": {
+        "title": "Savings Rate Calculator",
+        "reason": "Understanding your savings rate is the foundation for all FIRE paths",
+        "description": "Your savings rate is the most important metric in FIRE. This calculator shows exactly how it impacts your timeline.",
+        "benefits": ["See direct impact of saving more", "Most important FIRE metric", "Works for any income level", "Clear path to financial freedom"]
+      },
+      "standard": {
+        "title": "Standard FIRE",
+        "reason": "The classic FIRE approach fits your balanced goals and timeline",
+        "description": "The traditional 25x expenses rule. A proven, balanced approach to financial independence.",
+        "benefits": ["Time-tested 4% withdrawal rule", "Balanced approach for most people", "Comprehensive planning framework", "Retire at traditional age or earlier"]
+      }
+    },
+    "results": {
+      "title": "Your Recommended Path",
+      "subtitle": "Based on your answers, here's the best FIRE strategy for you",
+      "whyWorks": "Why this path works for you:",
+      "goToCalculator": "Go to {{title}} Calculator →",
+      "startOver": "Start Over",
+      "exploreOther": "Want to explore other paths?",
+      "exploreOtherDesc": "All FIRE paths can work depending on your circumstances. Feel free to explore multiple calculators to find what resonates with you.",
+      "viewAllCalculators": "View All Calculators"
+    },
+    "progress": {
+      "question": "Question {{current}} of {{total}}",
+      "percent": "{{percent}}% complete"
+    },
+    "navigation": {
+      "previous": "Previous",
+      "next": "Next",
+      "getRecommendation": "Get Recommendation"
+    }
+  },
   "calculator": {
     "standard": {
       "title": "Standard FIRE Calculator",

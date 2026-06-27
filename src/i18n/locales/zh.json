@@ -20,6 +20,125 @@
     "debtPayoff": "还债规划",
     "healthcare": "医疗缺口"
   },
+  "quiz": {
+    "questions": {
+      "currentAge": {
+        "title": "你今年多大？",
+        "subtitle": "这有助于我们了解你的时间线"
+      },
+      "retirementAge": {
+        "title": "你希望何时实现财务自由？",
+        "subtitle": "你的 FIRE 目标年龄"
+      },
+      "currentSavings": {
+        "title": "你目前有多少储蓄/投资？",
+        "subtitle": "包括所有退休账户和投资"
+      },
+      "annualIncome": {
+        "title": "你目前的家庭年收入是多少？",
+        "subtitle": "税前收入"
+      },
+      "annualExpenses": {
+        "title": "你目前的年度支出是多少？",
+        "subtitle": "或者你预计退休后的支出"
+      },
+      "lifestyle": {
+        "title": "你希望退休后过什么样的生活？",
+        "subtitle": "这会影响你的目标储蓄金额"
+      },
+      "workPreference": {
+        "title": "实现财务自由后，你理想的工作状态是什么？",
+        "subtitle": "你希望如何支配时间"
+      },
+      "primaryGoal": {
+        "title": "对你来说最重要的是什么？",
+        "subtitle": "你追求 FIRE 的主要动力"
+      }
+    },
+    "choices": {
+      "lifestyle": {
+        "minimal": { "label": "极简/节俭", "desc": "简单生活，每年3-4万美元" },
+        "moderate": { "label": "适中", "desc": "舒适基本生活，每年4-7万美元" },
+        "comfortable": { "label": "舒适", "desc": "无重大牺牲，每年7-10万美元" },
+        "luxury": { "label": "富裕/Fat", "desc": "高端生活，每年10万美元以上" }
+      },
+      "workPreference": {
+        "quit": { "label": "完全退休", "desc": "不再工作" },
+        "partTime": { "label": "兼职工作", "desc": "为福利或额外收入工作" },
+        "coast": { "label": "滑行模式", "desc": "低压力工作覆盖支出" },
+        "flexible": { "label": "保持灵活", "desc": "保留选择空间" }
+      },
+      "primaryGoal": {
+        "retireEarly": { "label": "尽早退休", "desc": "尽早离开职场" },
+        "financialSecurity": { "label": "财务安全", "desc": "安心与自由" },
+        "maintainLifestyle": { "label": "维持生活水准", "desc": "退休不降级" },
+        "flexibility": { "label": "灵活性", "desc": "选择与工作生活平衡" }
+      }
+    },
+    "recommendations": {
+      "lean": {
+        "title": "极简 FIRE",
+        "reason": "你的极简生活方式和较低支出使极简 FIRE 可以实现",
+        "description": "通过节俭生活更快实现财务自由。需要的储蓄较少，但需要生活自律。",
+        "benefits": ["比传统 FIRE 提前几年退休", "需要较少的总储蓄即可达成目标", "培养有意识的消费习惯", "极简生活方式带来的自由"]
+      },
+      "fat": {
+        "title": "富足 FIRE",
+        "reason": "你对舒适生活不妥协的渴望与富足 FIRE 相符",
+        "description": "在保持奢华或中上阶层生活方式的同时实现财务自由。需要更多储蓄，但无需牺牲。",
+        "benefits": ["退休无需改变生活方式", "为市场下跌提供额外缓冲", "旅行、餐饮和体验无忧", "帮助家人并留下遗产"]
+      },
+      "barista": {
+        "title": "咖啡师 FIRE",
+        "reason": "你对兼职工作的兴趣使咖啡师 FIRE 成为理想的过渡方案",
+        "description": "将投资组合收入与兼职工作结合。在保持健康保险和社交联系的同时更快实现财务自由。",
+        "benefits": ["提前几年离开公司工作", "兼职工作覆盖部分支出", "雇主提供的健康保险", "保持活跃和社交参与"]
+      },
+      "coast": {
+        "title": "滑行 FIRE",
+        "reason": "你的时间线和年龄使滑行 FIRE 成为战略性选择",
+        "description": "现在积极储蓄，然后让复利增长完成工作。适合想要灵活性的年轻储蓄者。",
+        "benefits": ["早期努力储蓄，之后放松", "复利增长承担主要工作", "从事低薪但充实的工作", "减轻30-40多岁的压力"]
+      },
+      "reverse": {
+        "title": "逆向 FIRE",
+        "reason": "你的具体退休年龄目标需要针对性的储蓄策略",
+        "description": "从你的目标年龄倒推，精确计算每月需要储蓄的金额。",
+        "benefits": ["明确的月度储蓄目标", "以目标为导向的方法", "根据需要调整时间线或储蓄", "适合以截止日期为导向的规划者"]
+      },
+      "savingsRate": {
+        "title": "储蓄率计算器",
+        "reason": "了解你的储蓄率是所有 FIRE 路径的基础",
+        "description": "储蓄率是 FIRE 中最重要的指标。此计算器准确显示它如何影响你的时间线。",
+        "benefits": ["直接看到增加储蓄的影响", "最重要的 FIRE 指标", "适用于任何收入水平", "通往财务自由的明确路径"]
+      },
+      "standard": {
+        "title": "标准 FIRE",
+        "reason": "经典的 FIRE 方法适合你平衡的目标和时间线",
+        "description": "传统的25倍支出规则。一种经过验证、平衡的财务自由方法。",
+        "benefits": ["经过时间考验的4%提取规则", "适合大多数人的平衡方法", "全面的规划框架", "在传统年龄或更早退休"]
+      }
+    },
+    "results": {
+      "title": "你的推荐路径",
+      "subtitle": "根据你的回答，这是最适合你的 FIRE 策略",
+      "whyWorks": "为什么这条路径适合你：",
+      "goToCalculator": "前往{{title}}计算器 →",
+      "startOver": "重新开始",
+      "exploreOther": "想探索其他路径？",
+      "exploreOtherDesc": "所有 FIRE 路径都可以根据你的情况发挥作用。欢迎探索多个计算器，找到最适合你的方案。",
+      "viewAllCalculators": "查看所有计算器"
+    },
+    "progress": {
+      "question": "第{{current}}题，共{{total}}题",
+      "percent": "已完成{{percent}}%"
+    },
+    "navigation": {
+      "previous": "上一步",
+      "next": "下一步",
+      "getRecommendation": "获取推荐"
+    }
+  },
   "calculator": {
     "standard": {
       "title": "标准 FIRE 计算器",

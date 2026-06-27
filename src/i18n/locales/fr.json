@@ -20,6 +20,125 @@
     "debtPayoff": "Remboursement de dettes",
     "healthcare": "Écart santé"
   },
+  "quiz": {
+    "questions": {
+      "currentAge": {
+        "title": "Quel âge avez-vous ?",
+        "subtitle": "Cela nous aide à comprendre votre chronologie"
+      },
+      "retirementAge": {
+        "title": "Quand voulez-vous atteindre l'indépendance financière ?",
+        "subtitle": "Votre âge cible pour FIRE"
+      },
+      "currentSavings": {
+        "title": "Combien avez-vous actuellement épargné/investi ?",
+        "subtitle": "Inclure tous les comptes de retraite et investissements"
+      },
+      "annualIncome": {
+        "title": "Quel est votre revenu annuel familial actuel ?",
+        "subtitle": "Avant impôts"
+      },
+      "annualExpenses": {
+        "title": "Quelles sont vos dépenses annuelles actuelles ?",
+        "subtitle": "Ou ce que vous prévoyez dépenser à la retraite"
+      },
+      "lifestyle": {
+        "title": "Quel style de vie voulez-vous à la retraite ?",
+        "subtitle": "Cela impacte votre montant d'épargne cible"
+      },
+      "workPreference": {
+        "title": "Quelle est votre situation de travail idéale après FI ?",
+        "subtitle": "Comment vous voulez passer votre temps"
+      },
+      "primaryGoal": {
+        "title": "Qu'est-ce qui est le plus important pour vous ?",
+        "subtitle": "Votre motivation principale pour FIRE"
+      }
+    },
+    "choices": {
+      "lifestyle": {
+        "minimal": { "label": "Minimaliste/Frugal", "desc": "Vivre simplement, 30K-40K$/an" },
+        "moderate": { "label": "Modéré", "desc": "Confort de base, 40K-70K$/an" },
+        "comfortable": { "label": "Confortable", "desc": "Sans sacrifice majeur, 70K-100K$/an" },
+        "luxury": { "label": "Luxe/Fat", "desc": "Style de vie haut de gamme, 100K+$/an" }
+      },
+      "workPreference": {
+        "quit": { "label": "Arrêter Complètement", "desc": "Ne plus jamais travailler" },
+        "partTime": { "label": "Travail à Temps Partiel", "desc": "Travailler pour les avantages ou revenus supplémentaires" },
+        "coast": { "label": "Mode Coast", "desc": "Travail peu stressant couvrant les dépenses" },
+        "flexible": { "label": "Rester Flexible", "desc": "Garder des options ouvertes" }
+      },
+      "primaryGoal": {
+        "retireEarly": { "label": "Prendre sa Retraite ASAP", "desc": "Quitter le monde du travail le plus tôt possible" },
+        "financialSecurity": { "label": "Sécurité Financière", "desc": "Tranquillité d'esprit et liberté" },
+        "maintainLifestyle": { "label": "Maintenir le Style de Vie", "desc": "Prendre sa retraite sans sacrifice" },
+        "flexibility": { "label": "Flexibilité", "desc": "Options et équilibre travail-vie" }
+      }
+    },
+    "recommendations": {
+      "lean": {
+        "title": "Lean FIRE",
+        "reason": "Votre style de vie minimaliste et vos dépenses plus faibles rendent Lean FIRE accessible",
+        "description": "Atteignez l'IF plus rapidement en vivant frugalement. Moins d'épargne nécessaire mais discipline de vie requise.",
+        "benefits": ["Prendre sa retraite des années avant le FIRE traditionnel", "Moins d'épargne totale nécessaire pour atteindre votre objectif", "Force des habitudes de dépenses intentionnelles", "Liberté avec un style de vie minimaliste"]
+      },
+      "fat": {
+        "title": "Fat FIRE",
+        "reason": "Votre désir d'un style de vie confortable sans compromission correspond à Fat FIRE",
+        "description": "Atteignez l'IF tout en maintenant un style de vie luxueux ou de classe moyenne supérieure. Plus d'épargne nécessaire mais aucun sacrifice.",
+        "benefits": ["Prendre sa retraite sans changements de style de vie", "Tampon supplémentaire pour les baisses du marché", "Voyages, restaurants et expériences sans souci", "Aider la famille et laisser un héritage"]
+      },
+      "barista": {
+        "title": "Barista FIRE",
+        "reason": "Votre intérêt pour le travail à temps partiel fait de Barista FIRE une étape idéale",
+        "description": "Combinez revenus de portefeuille et travail à temps partiel. Atteignez l'IF plus rapidement tout en maintenant avantages sociaux et connexions.",
+        "benefits": ["Quitter le travail de bureau des années plus tôt", "Le travail à temps partiel couvre certaines dépenses", "Assurance maladie de l'employeur", "Rester actif et socialement engagé"]
+      },
+      "coast": {
+        "title": "Coast FIRE",
+        "reason": "Votre chronologie et âge font de Coast FIRE une approche stratégique",
+        "description": "Épargnez agressivement maintenant, puis laissez la croissance composée faire le travail. Parfait pour les épargnants jeunes voulant de la flexibilité.",
+        "benefits": ["Épargner dur au début, puis se détendre", "La croissance composée fait le gros du travail", "Accepter un travail moins rémunérateur mais épanouissant", "Réduit la pression dans vos 30-40 ans"]
+      },
+      "reverse": {
+        "title": "FIRE Inversé",
+        "reason": "Votre objectif d'âge de retraite spécifique nécessite une stratégie d'épargne ciblée",
+        "description": "Travaillez à rebours depuis votre âge cible pour calculer exactement ce que vous devez épargner mensuellement.",
+        "benefits": ["Objectif d'épargne mensuel clair", "Approche orientée objectifs", "Ajuster la chronologie ou l'épargne selon les besoins", "Parfait pour les planificateurs orientés deadlines"]
+      },
+      "savingsRate": {
+        "title": "Calculateur de Taux d'Épargne",
+        "reason": "Comprendre votre taux d'épargne est la base de tous les chemins FIRE",
+        "description": "Votre taux d'épargne est la métrique la plus importante dans FIRE. Ce calculateur montre exactement comment il impacte votre chronologie.",
+        "benefits": ["Voir l'impact direct d'épargner plus", "La métrique FIRE la plus importante", "Fonctionne pour tous les niveaux de revenu", "Chemin clair vers la liberté financière"]
+      },
+      "standard": {
+        "title": "FIRE Standard",
+        "reason": "L'approche FIRE classique correspond à vos objectifs équilibrés et votre chronologie",
+        "description": "La règle traditionnelle des 25x les dépenses. Une approche éprouvée et équilibrée vers l'indépendance financière.",
+        "benefits": ["Règle de retrait de 4% éprouvée", "Approche équilibrée pour la plupart des gens", "Cadre de planification complet", "Prendre sa retraite à l'âge traditionnel ou avant"]
+      }
+    },
+    "results": {
+      "title": "Votre Chemin Recommandé",
+      "subtitle": "Selon vos réponses, voici la meilleure stratégie FIRE pour vous",
+      "whyWorks": "Pourquoi ce chemin fonctionne pour vous :",
+      "goToCalculator": "Aller au Calculateur {{title}} →",
+      "startOver": "Recommencer",
+      "exploreOther": "Voulez-vous explorer d'autres chemins ?",
+      "exploreOtherDesc": "Tous les chemins FIRE peuvent fonctionner selon vos circonstances. N'hésitez pas à explorer plusieurs calculateurs pour trouver ce qui vous correspond.",
+      "viewAllCalculators": "Voir Tous les Calculateurs"
+    },
+    "progress": {
+      "question": "Question {{current}} sur {{total}}",
+      "percent": "{{percent}}% complété"
+    },
+    "navigation": {
+      "previous": "Précédent",
+      "next": "Suivant",
+      "getRecommendation": "Obtenir la Recommandation"
+    }
+  },
   "calculator": {
     "standard": {
       "title": "Calculateur FIRE Standard",

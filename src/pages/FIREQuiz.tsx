@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { Card, CardHeader, CardContent } from '../components/ui'
 import SEO from '../components/SEO'
 import { calculatorSEO } from '../config/seo'
@@ -27,6 +28,7 @@ interface Recommendation {
 
 export default function FIREQuiz() {
   const navigate = useNavigate()
+  const { t } = useTranslation()
   const [step, setStep] = useState(0)
   const [answers, setAnswers] = useState<QuizAnswers>({})
   const [recommendation, setRecommendation] = useState<Recommendation | null>(null)
@@ -36,8 +38,8 @@ export default function FIREQuiz() {
   const questions = [
     {
       id: 'currentAge',
-      title: 'How old are you?',
-      subtitle: 'This helps us understand your timeline',
+      title: t('quiz.questions.currentAge.title', 'How old are you?'),
+      subtitle: t('quiz.questions.currentAge.subtitle', 'This helps us understand your timeline'),
       type: 'number',
       placeholder: '30',
       min: 18,
@@ -45,8 +47,8 @@ export default function FIREQuiz() {
     },
     {
       id: 'retirementAge',
-      title: 'When do you want to achieve financial independence?',
-      subtitle: 'Your target age for FIRE',
+      title: t('quiz.questions.retirementAge.title', 'When do you want to achieve financial independence?'),
+      subtitle: t('quiz.questions.retirementAge.subtitle', 'Your target age for FIRE'),
       type: 'number',
       placeholder: '50',
       min: (answers.currentAge || 18) + 1,
@@ -54,59 +56,59 @@ export default function FIREQuiz() {
     },
     {
       id: 'currentSavings',
-      title: 'How much do you currently have saved/invested?',
-      subtitle: 'Include all retirement accounts and investments',
+      title: t('quiz.questions.currentSavings.title', 'How much do you currently have saved/invested?'),
+      subtitle: t('quiz.questions.currentSavings.subtitle', 'Include all retirement accounts and investments'),
       type: 'currency',
       placeholder: '100,000',
     },
     {
       id: 'annualIncome',
-      title: 'What\'s your current annual household income?',
-      subtitle: 'Before taxes',
+      title: t('quiz.questions.annualIncome.title', "What's your current annual household income?"),
+      subtitle: t('quiz.questions.annualIncome.subtitle', 'Before taxes'),
       type: 'currency',
       placeholder: '80,000',
     },
     {
       id: 'annualExpenses',
-      title: 'What are your current annual expenses?',
-      subtitle: 'Or what you expect to spend in retirement',
+      title: t('quiz.questions.annualExpenses.title', 'What are your current annual expenses?'),
+      subtitle: t('quiz.questions.annualExpenses.subtitle', 'Or what you expect to spend in retirement'),
       type: 'currency',
       placeholder: '50,000',
     },
     {
       id: 'lifestyle',
-      title: 'What lifestyle do you want in retirement?',
-      subtitle: 'This impacts your target savings amount',
+      title: t('quiz.questions.lifestyle.title', 'What lifestyle do you want in retirement?'),
+      subtitle: t('quiz.questions.lifestyle.subtitle', 'This impacts your target savings amount'),
       type: 'choice',
       choices: [
-        { value: 'minimal', label: 'Minimal/Frugal', desc: 'Living simply, $30K-$40K/year' },
-        { value: 'moderate', label: 'Moderate', desc: 'Comfortable basics, $40K-$70K/year' },
-        { value: 'comfortable', label: 'Comfortable', desc: 'No major sacrifices, $70K-$100K/year' },
-        { value: 'luxury', label: 'Luxury/Fat', desc: 'High-end lifestyle, $100K+/year' },
+        { value: 'minimal', label: t('quiz.choices.lifestyle.minimal.label', 'Minimal/Frugal'), desc: t('quiz.choices.lifestyle.minimal.desc', 'Living simply, $30K-$40K/year') },
+        { value: 'moderate', label: t('quiz.choices.lifestyle.moderate.label', 'Moderate'), desc: t('quiz.choices.lifestyle.moderate.desc', 'Comfortable basics, $40K-$70K/year') },
+        { value: 'comfortable', label: t('quiz.choices.lifestyle.comfortable.label', 'Comfortable'), desc: t('quiz.choices.lifestyle.comfortable.desc', 'No major sacrifices, $70K-$100K/year') },
+        { value: 'luxury', label: t('quiz.choices.lifestyle.luxury.label', 'Luxury/Fat'), desc: t('quiz.choices.lifestyle.luxury.desc', 'High-end lifestyle, $100K+/year') },
       ],
     },
     {
       id: 'workPreference',
-      title: 'What\'s your ideal work situation after reaching FI?',
-      subtitle: 'How you want to spend your time',
+      title: t('quiz.questions.workPreference.title', "What's your ideal work situation after reaching FI?"),
+      subtitle: t('quiz.questions.workPreference.subtitle', 'How you want to spend your time'),
       type: 'choice',
       choices: [
-        { value: 'quit-completely', label: 'Quit Completely', desc: 'Never work again' },
-        { value: 'part-time', label: 'Part-Time Work', desc: 'Work for benefits or extra income' },
-        { value: 'coast', label: 'Coast Mode', desc: 'Low-stress job covering expenses' },
-        { value: 'flexible', label: 'Stay Flexible', desc: 'Keep options open' },
+        { value: 'quit-completely', label: t('quiz.choices.workPreference.quit.label', 'Quit Completely'), desc: t('quiz.choices.workPreference.quit.desc', 'Never work again') },
+        { value: 'part-time', label: t('quiz.choices.workPreference.partTime.label', 'Part-Time Work'), desc: t('quiz.choices.workPreference.partTime.desc', 'Work for benefits or extra income') },
+        { value: 'coast', label: t('quiz.choices.workPreference.coast.label', 'Coast Mode'), desc: t('quiz.choices.workPreference.coast.desc', 'Low-stress job covering expenses') },
+        { value: 'flexible', label: t('quiz.choices.workPreference.flexible.label', 'Stay Flexible'), desc: t('quiz.choices.workPreference.flexible.desc', 'Keep options open') },
       ],
     },
     {
       id: 'primaryGoal',
-      title: 'What\'s most important to you?',
-      subtitle: 'Your primary motivation for FIRE',
+      title: t('quiz.questions.primaryGoal.title', "What's most important to you?"),
+      subtitle: t('quiz.questions.primaryGoal.subtitle', 'Your primary motivation for FIRE'),
       type: 'choice',
       choices: [
-        { value: 'retire-early', label: 'Retire ASAP', desc: 'Leave workforce as early as possible' },
-        { value: 'financial-security', label: 'Financial Security', desc: 'Peace of mind and freedom' },
-        { value: 'maintain-lifestyle', label: 'Maintain Lifestyle', desc: 'Retire without sacrifice' },
-        { value: 'flexibility', label: 'Flexibility', desc: 'Options and work-life balance' },
+        { value: 'retire-early', label: t('quiz.choices.primaryGoal.retireEarly.label', 'Retire ASAP'), desc: t('quiz.choices.primaryGoal.retireEarly.desc', 'Leave workforce as early as possible') },
+        { value: 'financial-security', label: t('quiz.choices.primaryGoal.financialSecurity.label', 'Financial Security'), desc: t('quiz.choices.primaryGoal.financialSecurity.desc', 'Peace of mind and freedom') },
+        { value: 'maintain-lifestyle', label: t('quiz.choices.primaryGoal.maintainLifestyle.label', 'Maintain Lifestyle'), desc: t('quiz.choices.primaryGoal.maintainLifestyle.desc', 'Retire without sacrifice') },
+        { value: 'flexibility', label: t('quiz.choices.primaryGoal.flexibility.label', 'Flexibility'), desc: t('quiz.choices.primaryGoal.flexibility.desc', 'Options and work-life balance') },
       ],
     },
   ]
@@ -124,15 +126,15 @@ export default function FIREQuiz() {
     if (lifestyle === 'minimal' || (expenseLevel < 40000 && primaryGoal === 'retire-early')) {
       return {
         path: '/lean',
-        title: 'Lean FIRE',
+        title: t('quiz.recommendations.lean.title', 'Lean FIRE'),
         icon: '🌿',
-        reason: 'Your minimalist lifestyle and lower expenses make Lean FIRE achievable',
-        description: 'Achieve FI faster by living frugally. Requires less savings but demands lifestyle discipline.',
+        reason: t('quiz.recommendations.lean.reason', 'Your minimalist lifestyle and lower expenses make Lean FIRE achievable'),
+        description: t('quiz.recommendations.lean.description', 'Achieve FI faster by living frugally. Requires less savings but demands lifestyle discipline.'),
         benefits: [
-          'Retire years earlier than traditional FIRE',
-          'Need less total savings to reach your goal',
-          'Forces intentional spending habits',
-          'Freedom with minimalist lifestyle',
+          t('quiz.recommendations.lean.benefits.0', 'Retire years earlier than traditional FIRE'),
+          t('quiz.recommendations.lean.benefits.1', 'Need less total savings to reach your goal'),
+          t('quiz.recommendations.lean.benefits.2', 'Forces intentional spending habits'),
+          t('quiz.recommendations.lean.benefits.3', 'Freedom with minimalist lifestyle'),
         ],
       }
     }
@@ -141,15 +143,15 @@ export default function FIREQuiz() {
     if (lifestyle === 'luxury' || (expenseLevel >= 100000 && primaryGoal === 'maintain-lifestyle')) {
       return {
         path: '/fat',
-        title: 'Fat FIRE',
+        title: t('quiz.recommendations.fat.title', 'Fat FIRE'),
         icon: '💎',
-        reason: 'Your desire for a comfortable lifestyle without compromise aligns with Fat FIRE',
-        description: 'Achieve FI while maintaining a luxurious or upper-middle-class lifestyle. Requires more savings but no sacrifices.',
+        reason: t('quiz.recommendations.fat.reason', 'Your desire for a comfortable lifestyle without compromise aligns with Fat FIRE'),
+        description: t('quiz.recommendations.fat.description', 'Achieve FI while maintaining a luxurious or upper-middle-class lifestyle. Requires more savings but no sacrifices.'),
         benefits: [
-          'Retire without lifestyle changes',
-          'Extra buffer for market downturns',
-          'Travel, dining, and experiences without worry',
-          'Help family and leave a legacy',
+          t('quiz.recommendations.fat.benefits.0', 'Retire without lifestyle changes'),
+          t('quiz.recommendations.fat.benefits.1', 'Extra buffer for market downturns'),
+          t('quiz.recommendations.fat.benefits.2', 'Travel, dining, and experiences without worry'),
+          t('quiz.recommendations.fat.benefits.3', 'Help family and leave a legacy'),
         ],
       }
     }
@@ -158,15 +160,15 @@ export default function FIREQuiz() {
     if (workPreference === 'part-time' || (yearsToFIRE < 10 && primaryGoal === 'flexibility')) {
       return {
         path: '/barista',
-        title: 'Barista FIRE',
+        title: t('quiz.recommendations.barista.title', 'Barista FIRE'),
         icon: '☕',
-        reason: 'Your interest in part-time work makes Barista FIRE an ideal stepping stone',
-        description: 'Blend portfolio income with part-time work. Reach FI faster while maintaining health benefits and social connections.',
+        reason: t('quiz.recommendations.barista.reason', 'Your interest in part-time work makes Barista FIRE an ideal stepping stone'),
+        description: t('quiz.recommendations.barista.description', 'Blend portfolio income with part-time work. Reach FI faster while maintaining health benefits and social connections.'),
         benefits: [
-          'Quit corporate job years earlier',
-          'Part-time work covers some expenses',
-          'Health insurance from employer',
-          'Stay active and socially engaged',
+          t('quiz.recommendations.barista.benefits.0', 'Quit corporate job years earlier'),
+          t('quiz.recommendations.barista.benefits.1', 'Part-time work covers some expenses'),
+          t('quiz.recommendations.barista.benefits.2', 'Health insurance from employer'),
+          t('quiz.recommendations.barista.benefits.3', 'Stay active and socially engaged'),
         ],
       }
     }
@@ -175,15 +177,15 @@ export default function FIREQuiz() {
     if (workPreference === 'coast' || (currentAge || 30) < 35 && yearsToFIRE > 20) {
       return {
         path: '/coast',
-        title: 'Coast FIRE',
+        title: t('quiz.recommendations.coast.title', 'Coast FIRE'),
         icon: '⛵',
-        reason: 'Your timeline and age make Coast FIRE a strategic approach',
-        description: 'Save aggressively now, then let compound growth do the work. Perfect for young savers wanting flexibility.',
+        reason: t('quiz.recommendations.coast.reason', 'Your timeline and age make Coast FIRE a strategic approach'),
+        description: t('quiz.recommendations.coast.description', 'Save aggressively now, then let compound growth do the work. Perfect for young savers wanting flexibility.'),
         benefits: [
-          'Save hard early, then ease off',
-          'Compound growth does the heavy lifting',
-          'Take lower-paying but fulfilling work',
-          'Reduces pressure in your 30s-40s',
+          t('quiz.recommendations.coast.benefits.0', 'Save hard early, then ease off'),
+          t('quiz.recommendations.coast.benefits.1', 'Compound growth does the heavy lifting'),
+          t('quiz.recommendations.coast.benefits.2', 'Take lower-paying but fulfilling work'),
+          t('quiz.recommendations.coast.benefits.3', 'Reduces pressure in your 30s-40s'),
         ],
       }
     }
@@ -192,15 +194,15 @@ export default function FIREQuiz() {
     if (primaryGoal === 'retire-early' && yearsToFIRE < 15) {
       return {
         path: '/reverse',
-        title: 'Reverse FIRE',
+        title: t('quiz.recommendations.reverse.title', 'Reverse FIRE'),
         icon: '🔄',
-        reason: 'Your specific retirement age goal calls for a targeted savings strategy',
-        description: 'Work backwards from your target age to calculate exactly what you need to save monthly.',
+        reason: t('quiz.recommendations.reverse.reason', 'Your specific retirement age goal calls for a targeted savings strategy'),
+        description: t('quiz.recommendations.reverse.description', 'Work backwards from your target age to calculate exactly what you need to save monthly.'),
         benefits: [
-          'Clear monthly savings target',
-          'Goal-oriented approach',
-          'Adjust timeline or savings as needed',
-          'Perfect for deadline-driven planners',
+          t('quiz.recommendations.reverse.benefits.0', 'Clear monthly savings target'),
+          t('quiz.recommendations.reverse.benefits.1', 'Goal-oriented approach'),
+          t('quiz.recommendations.reverse.benefits.2', 'Adjust timeline or savings as needed'),
+          t('quiz.recommendations.reverse.benefits.3', 'Perfect for deadline-driven planners'),
         ],
       }
     }
@@ -209,15 +211,15 @@ export default function FIREQuiz() {
     if (primaryGoal === 'financial-security') {
       return {
         path: '/savings-rate',
-        title: 'Savings Rate Calculator',
+        title: t('quiz.recommendations.savingsRate.title', 'Savings Rate Calculator'),
         icon: '🧮',
-        reason: 'Understanding your savings rate is the foundation for all FIRE paths',
-        description: 'Your savings rate is the most important metric in FIRE. This calculator shows exactly how it impacts your timeline.',
+        reason: t('quiz.recommendations.savingsRate.reason', 'Understanding your savings rate is the foundation for all FIRE paths'),
+        description: t('quiz.recommendations.savingsRate.description', 'Your savings rate is the most important metric in FIRE. This calculator shows exactly how it impacts your timeline.'),
         benefits: [
-          'See direct impact of saving more',
-          'Most important FIRE metric',
-          'Works for any income level',
-          'Clear path to financial freedom',
+          t('quiz.recommendations.savingsRate.benefits.0', 'See direct impact of saving more'),
+          t('quiz.recommendations.savingsRate.benefits.1', 'Most important FIRE metric'),
+          t('quiz.recommendations.savingsRate.benefits.2', 'Works for any income level'),
+          t('quiz.recommendations.savingsRate.benefits.3', 'Clear path to financial freedom'),
         ],
       }
     }
@@ -225,15 +227,15 @@ export default function FIREQuiz() {
     // Default to Standard FIRE
     return {
       path: '/standard',
-      title: 'Standard FIRE',
+      title: t('quiz.recommendations.standard.title', 'Standard FIRE'),
       icon: '🎯',
-      reason: 'The classic FIRE approach fits your balanced goals and timeline',
-      description: 'The traditional 25x expenses rule. A proven, balanced approach to financial independence.',
+      reason: t('quiz.recommendations.standard.reason', 'The classic FIRE approach fits your balanced goals and timeline'),
+      description: t('quiz.recommendations.standard.description', 'The traditional 25x expenses rule. A proven, balanced approach to financial independence.'),
       benefits: [
-        'Time-tested 4% withdrawal rule',
-        'Balanced approach for most people',
-        'Comprehensive planning framework',
-        'Retire at traditional age or earlier',
+        t('quiz.recommendations.standard.benefits.0', 'Time-tested 4% withdrawal rule'),
+        t('quiz.recommendations.standard.benefits.1', 'Balanced approach for most people'),
+        t('quiz.recommendations.standard.benefits.2', 'Comprehensive planning framework'),
+        t('quiz.recommendations.standard.benefits.3', 'Retire at traditional age or earlier'),
       ],
     }
   }
@@ -297,10 +299,10 @@ export default function FIREQuiz() {
           {/* Header */}
           <div className="text-center">
             <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">
-              Your Recommended Path
+              {t('quiz.results.title', 'Your Recommended Path')}
             </h1>
             <p className="text-gray-600 dark:text-gray-400">
-              Based on your answers, here's the best FIRE strategy for you
+              {t('quiz.results.subtitle', "Based on your answers, here's the best FIRE strategy for you")}
             </p>
           </div>
 
@@ -325,7 +327,7 @@ export default function FIREQuiz() {
 
             <div className="mb-6">
               <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">
-                Why this path works for you:
+                {t('quiz.results.whyWorks', 'Why this path works for you:')}
               </h3>
               <ul className="space-y-2">
                 {recommendation.benefits.map((benefit, index) => (
@@ -344,13 +346,13 @@ export default function FIREQuiz() {
                 onClick={handleGoToCalculator}
                 className="flex-1 bg-fire-600 hover:bg-fire-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
               >
-                Go to {recommendation.title} Calculator →
+                {t('quiz.results.goToCalculator', 'Go to {title} Calculator →', { title: recommendation.title })}
               </button>
               <button
                 onClick={handleStartOver}
                 className="px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
               >
-                Start Over
+                {t('quiz.results.startOver', 'Start Over')}
               </button>
             </div>
           </CardContent>
@@ -360,18 +362,18 @@ export default function FIREQuiz() {
         <Card>
           <CardHeader>
             <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
-              Want to explore other paths?
+              {t('quiz.results.exploreOther', 'Want to explore other paths?')}
             </h3>
           </CardHeader>
           <CardContent>
             <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-              All FIRE paths can work depending on your circumstances. Feel free to explore multiple calculators to find what resonates with you.
+              {t('quiz.results.exploreOtherDesc', 'All FIRE paths can work depending on your circumstances. Feel free to explore multiple calculators to find what resonates with you.')}
             </p>
             <button
               onClick={() => navigate('/')}
               className="text-fire-600 dark:text-fire-400 hover:underline"
             >
-              View All Calculators
+              {t('quiz.results.viewAllCalculators', 'View All Calculators')}
             </button>
           </CardContent>
         </Card>
@@ -389,10 +391,10 @@ export default function FIREQuiz() {
         <div>
           <div className="flex justify-between items-center mb-2">
             <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-              Question {step + 1} of {questions.length}
+              {t('quiz.progress.question', 'Question {current} of {total}', { current: step + 1, total: questions.length })}
             </span>
             <span className="text-sm text-gray-500 dark:text-gray-400">
-              {Math.round(((step + 1) / questions.length) * 100)}% complete
+              {t('quiz.progress.percent', '{percent}% complete', { percent: Math.round(((step + 1) / questions.length) * 100) })}
             </span>
           </div>
           <div className="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
@@ -477,14 +479,14 @@ export default function FIREQuiz() {
           disabled={step === 0}
           className="px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          ← Previous
+          ← {t('quiz.navigation.previous', 'Previous')}
         </button>
         <button
           onClick={handleNext}
           disabled={!canProceed}
           className="flex-1 bg-fire-600 hover:bg-fire-700 text-white font-medium py-3 px-6 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {step === questions.length - 1 ? 'Get Recommendation' : 'Next →'}
+          {step === questions.length - 1 ? t('quiz.navigation.getRecommendation', 'Get Recommendation') : `${t('quiz.navigation.next', 'Next')} →`}
         </button>
       </div>
     </div>

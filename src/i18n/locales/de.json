@@ -20,6 +20,125 @@
     "debtPayoff": "Schuldentilgung",
     "healthcare": "Gesundheitslücke"
   },
+  "quiz": {
+    "questions": {
+      "currentAge": {
+        "title": "Wie alt bist du?",
+        "subtitle": "Dies hilft uns, deinen Zeitrahmen zu verstehen"
+      },
+      "retirementAge": {
+        "title": "Wann möchtest du finanzielle Unabhängigkeit erreichen?",
+        "subtitle": "Dein Zielalter für FIRE"
+      },
+      "currentSavings": {
+        "title": "Wie viel hast du aktuell gespart/investiert?",
+        "subtitle": "Alle Altersvorsorgekonten und Investments einbeziehen"
+      },
+      "annualIncome": {
+        "title": "Wie hoch ist dein aktuelles jährliches Haushaltseinkommen?",
+        "subtitle": "Vor Steuern"
+      },
+      "annualExpenses": {
+        "title": "Wie hoch sind deine aktuellen jährlichen Ausgaben?",
+        "subtitle": "Oder was du im Ruhestand erwarten zu ausgibst"
+      },
+      "lifestyle": {
+        "title": "Welchen Lebensstil möchtest du im Ruhestand?",
+        "subtitle": "Dies beeinflusst deine Sparzielsumme"
+      },
+      "workPreference": {
+        "title": "Was ist deine ideale Arbeits situation nach FI?",
+        "subtitle": "Wie du deine Zeit verbringen möchtest"
+      },
+      "primaryGoal": {
+        "title": "Was ist dir am wichtigsten?",
+        "subtitle": "Deine Hauptmotivation für FIRE"
+      }
+    },
+    "choices": {
+      "lifestyle": {
+        "minimal": { "label": "Minimal/Frugal", "desc": "Einfach leben, $30K-$40K/Jahr" },
+        "moderate": { "label": "Moderat", "desc": "Komfortable Basics, $40K-$70K/Jahr" },
+        "comfortable": { "label": "Komfortable", "desc": "Keine großen Einschnitte, $70K-$100K/Jahr" },
+        "luxury": { "label": "Luxus/Fat", "desc": "High-End Lebensstil, $100K+/Jahr" }
+      },
+      "workPreference": {
+        "quit": { "label": "Vollständig Aufgeben", "desc": "Nie wieder arbeiten" },
+        "partTime": { "label": "Teilzeitarbeit", "desc": "Für Vorteile oder zusätzliches Einkommen arbeiten" },
+        "coast": { "label": "Coast Modus", "desc": "Stressarmen Job, der Ausgaben deckt" },
+        "flexible": { "label": "Flexibel Bleiben", "desc": "Optionen offen halten" }
+      },
+      "primaryGoal": {
+        "retireEarly": { "label": "Schnellstmöglich Ruhestand", "desc": "Arbeitswelt früh verlassen" },
+        "financialSecurity": { "label": "Finanzielle Sicherheit", "desc": "Seelenfrieden und Freiheit" },
+        "maintainLifestyle": { "label": "Lebensstil Beibehalten", "desc": "Ruhestand ohne Opfer" },
+        "flexibility": { "label": "Flexibilität", "desc": "Optionen und Work-Life-Balance" }
+      }
+    },
+    "recommendations": {
+      "lean": {
+        "title": "Lean FIRE",
+        "reason": "Dein minimalistischer Lebensstil und niedrigere Ausgaben machen Lean FIRE erreichbar",
+        "description": "Erreiche FI schneller durch frugales Leben. Weniger Sparbedarf, aber Lebensstil-Disziplin erforderlich.",
+        "benefits": ["Jahre früher in Ruhestand als traditionelles FIRE", "Weniger Gesamtsparsumme für dein Ziel", "Erzwingt absichtliche Ausgabegewohnheiten", "Freiheit mit minimalistischem Lebensstil"]
+      },
+      "fat": {
+        "title": "Fat FIRE",
+        "reason": "Dein Wunsch nach komfortablem Lebensstil ohne Kompromisse passt zu Fat FIRE",
+        "description": "Erreiche FI bei Beibehaltung eines luxuriösen oder oberen Mittelklasse-Lebensstils. Mehr Sparbedarf, aber keine Opfer.",
+        "benefits": ["Ruhestand ohne Lebensstiländerungen", "Extra Puffer für Marktschwankungen", "Reisen, Restaurants und Erlebnisse ohne Sorgen", "Familie helfen und ein Vermächtnis hinterlassen"]
+      },
+      "barista": {
+        "title": "Barista FIRE",
+        "reason": "Dein Interesse an Teilzeitarbeit macht Barista FIRE ideal",
+        "description": "Kombiniere Portfolio-Einkommen mit Teilzeitarbeit. Erreiche FI schneller bei Gesundheitsschutz und sozialen Verbindungen.",
+        "benefits": ["Jahre früher Corporate-Job verlassen", "Teilzeitarbeit deckt einige Ausgaben", "Krankenversicherung vom Arbeitgeber", "Aktiv und sozial verbunden bleiben"]
+      },
+      "coast": {
+        "title": "Coast FIRE",
+        "reason": "Dein Zeitrahmen und Alter machen Coast FIRE strategisch",
+        "description": "Jetzt aggressiv sparen, dann Zinseszins die Arbeit machen lassen. Perfekt für junge Sparer, die Flexibilität wollen.",
+        "benefits": ["Früh hart sparen, dann entspannen", "Zinseszins macht die Schwerstarbeit", "Niedriger bezahlte aber erfüllende Arbeit annehmen", "Reduziert Druck in deinen 30ern-40ern"]
+      },
+      "reverse": {
+        "title": "Reverse FIRE",
+        "reason": "Dein spezifisches Ruhestands-Zielalter erfordert eine gezielte Sparstrategie",
+        "description": "Arbeite rückwärts von deinem Zielalter, um genau zu berechnen, was monatlich sparen musst.",
+        "benefits": ["Klares monatliches Sparziel", "Zielorientierter Ansatz", "Zeitrahmen oder Sparsumme nach Bedarf anpassen", "Perfekt für deadline-getriebene Planer"]
+      },
+      "savingsRate": {
+        "title": "Sparrate-Rechner",
+        "reason": "Deine Sparrate verstehen ist die Basis für alle FIRE-Pfade",
+        "description": "Deine Sparrate ist die wichtigste FIRE-Kennzahl. Dieser Rechner zeigt genau, wie sie deinen Zeitrahmen beeinflusst.",
+        "benefits": ["Direkten Einfluss von mehr Sparen sehen", "Die wichtigste FIRE-Kennzahl", "Funktioniert für jedes Einkommen", "Klarer Weg zur finanziellen Freiheit"]
+      },
+      "standard": {
+        "title": "Standard FIRE",
+        "reason": "Der klassische FIRE-Ansatz passt zu deinen balanced Zielen und Zeitrahmen",
+        "description": "Die traditionelle 25x-Ausgaben-Regel. Ein bewährter, balanced Ansatz zur finanziellen Unabhängigkeit.",
+        "benefits": ["Zeitgeprüfte 4%-Entnahmeregel", "Balanced Ansatz für die meisten", "Umfassender Planungsrahmen", "Ruhestand im traditionellen Alter oder früher"]
+      }
+    },
+    "results": {
+      "title": "Dein Empfohlener Pfad",
+      "subtitle": "Basierend auf deinen Antworten, hier ist die beste FIRE-Strategie für dich",
+      "whyWorks": "Warum dieser Pfad für dich funktioniert:",
+      "goToCalculator": "Zum {{title}} Rechner →",
+      "startOver": "Neu Starten",
+      "exploreOther": "Möchtest du andere Pfade erkunden?",
+      "exploreOtherDesc": "Alle FIRE-Pfade können funktionieren, je nach deinen Umständen. Erkunde mehrere Rechner, um zu finden, was mit dir resoniert.",
+      "viewAllCalculators": "Alle Rechner Anzeigen"
+    },
+    "progress": {
+      "question": "Frage {{current}} von {{total}}",
+      "percent": "{{percent}}% vollständig"
+    },
+    "navigation": {
+      "previous": "Zurück",
+      "next": "Weiter",
+      "getRecommendation": "Empfehlung Erhalten"
+    }
+  },
   "calculator": {
     "standard": {
       "title": "Standard FIRE Rechner",

@@ -20,6 +20,125 @@
     "debtPayoff": "Pelunasan Utang",
     "healthcare": "Celah Kesehatan"
   },
+  "quiz": {
+    "questions": {
+      "currentAge": {
+        "title": "Berapa usia Anda?",
+        "subtitle": "Ini membantu kami memahami timeline Anda"
+      },
+      "retirementAge": {
+        "title": "Kapan Anda ingin mencapai independensi finansial?",
+        "subtitle": "Usia target FIRE Anda"
+      },
+      "currentSavings": {
+        "title": "Berapa yang Anda simpan/investasikan saat ini?",
+        "subtitle": "Termasuk semua rekening pensiun dan investasi"
+      },
+      "annualIncome": {
+        "title": "Berapa pendapatan keluarga tahunan Anda saat ini?",
+        "subtitle": "Sebelum pajak"
+      },
+      "annualExpenses": {
+        "title": "Berapa pengeluaran tahunan Anda saat ini?",
+        "subtitle": "Atau yang Anda harapkan keluar saat pensiun"
+      },
+      "lifestyle": {
+        "title": "Gaya hidup apa yang Anda inginkan saat pensiun?",
+        "subtitle": "Ini mempengaruhi jumlah tabungan target Anda"
+      },
+      "workPreference": {
+        "title": "Apa situasi kerja ideal Anda setelah mencapai FI?",
+        "subtitle": "Bagaimana Anda ingin menghabiskan waktu"
+      },
+      "primaryGoal": {
+        "title": "Apa yang paling penting untuk Anda?",
+        "subtitle": "Motivasi utama Anda untuk FIRE"
+      }
+    },
+    "choices": {
+      "lifestyle": {
+        "minimal": { "label": "Minimal/Frugal", "desc": "Hidup sederhana, $30K-$40K/tahun" },
+        "moderate": { "label": "Moderat", "desc": "Kenyamanan dasar, $40K-$70K/tahun" },
+        "comfortable": { "label": "Nyaman", "desc": "Tanpa pengorbanan besar, $70K-$100K/tahun" },
+        "luxury": { "label": "Luxury/Fat", "desc": "Gaya hidup tinggi, $100K+/tahun" }
+      },
+      "workPreference": {
+        "quit": { "label": "Berhenti Sepenuhnya", "desc": "Tidak bekerja lagi" },
+        "partTime": { "label": "Kerja Paruh Waktu", "desc": "Bekerja untuk tunjangan atau pendapatan extra" },
+        "coast": { "label": "Mode Coast", "desc": "Kerja rendah stres menutupi pengeluaran" },
+        "flexible": { "label": "Tetap Fleksibel", "desc": "Biarkan opsi terbuka" }
+      },
+      "primaryGoal": {
+        "retireEarly": { "label": "Pensiun ASAP", "desc": "Keluar dari pekerjaan secepat mungkin" },
+        "financialSecurity": { "label": "Keamanan Finansial", "desc": "Ketenangan dan kebebasan" },
+        "maintainLifestyle": { "label": "Pertahankan Gaya Hidup", "desc": "Pensiun tanpa pengorbanan" },
+        "flexibility": { "label": "Fleksibilitas", "desc": "Opsi dan keseimbangan kerja-hidup" }
+      }
+    },
+    "recommendations": {
+      "lean": {
+        "title": "Lean FIRE",
+        "reason": "Gaya hidup minimalis dan pengeluaran lebih rendah Anda membuat Lean FIRE terjangkau",
+        "description": "Capai FI lebih cepat dengan hidup hemat. Membutuhkan lebih sedikit tabungan tapi menuntut disiplin gaya hidup.",
+        "benefits": ["Pensiun tahun lebih awal dari FIRE tradisional", "Butuh lebih sedikit tabungan total untuk mencapai tujuan", "Memaksa kebiasaan pengeluaran yang intentional", "Kebebasan dengan gaya hidup minimalis"]
+      },
+      "fat": {
+        "title": "Fat FIRE",
+        "reason": "Keinginan gaya hidup nyaman tanpa kompromi sesuai dengan Fat FIRE",
+        "description": "Capai FI dengan mempertahankan gaya hidup mewah atau middle-upper class. Membutuhkan lebih banyak tabungan tapi tanpa pengorbanan.",
+        "benefits": ["Pensiun tanpa perubahan gaya hidup", "Buffer ekstra untuk penurunan pasar", "Travel, dining, dan experiences tanpa khawatir", "Bantu keluarga dan tinggalan legacy"]
+      },
+      "barista": {
+        "title": "Barista FIRE",
+        "reason": "Ketertarikan Anda pada kerja paruh waktu membuat Barista FIRE menjadi stepping stone ideal",
+        "description": "Gabungkan pendapatan portofolio dengan kerja paruh waktu. Capai FI lebih cepat dengan mempertahankan tunjangan kesehatan dan koneksi sosial.",
+        "benefits": ["Keluar kerja korporat tahun lebih awal", "Kerja paruh waktu menutupi beberapa pengeluaran", "Asuransi kesehatan dari employer", "Tetap aktif dan socially engaged"]
+      },
+      "coast": {
+        "title": "Coast FIRE",
+        "reason": "Timeline dan usia Anda membuat Coast FIRE pendekatan strategis",
+        "description": "Tabung agresif sekarang, lalu biarkan compound growth melakukan kerja. Sempurna untuk penabung muda yang ingin fleksibilitas.",
+        "benefits": ["Tabung keras awal, lalu rileks", "Compound growth melakukan kerja berat", "Ambil kerja kurang dibayar tapi fulfilling", "Mengurangi tekanan di 30s-40s Anda"]
+      },
+      "reverse": {
+        "title": "FIRE Terbalik",
+        "reason": "Target usia pensiun spesifik Anda membutuhkan strategi tabungan targeted",
+        "description": "Kerja mundur dari usia target untuk menghitung persis apa yang Anda butuhkan tabung bulanan.",
+        "benefits": ["Target tabungan bulanan yang jelas", "Pendekatan goal-oriented", "Adjust timeline atau tabungan sesuai kebutuhan", "Sempurna untuk planner deadline-driven"]
+      },
+      "savingsRate": {
+        "title": "Kalkulator Tabungan",
+        "reason": "Memahami rate tabungan Anda adalah fondasi untuk semua path FIRE",
+        "description": "Rate tabungan Anda adalah metrik paling penting dalam FIRE. Kalkulator ini menunjukkan persis bagaimana impact timeline Anda.",
+        "benefits": ["Lihat impact langsung dari tabung lebih", "Metrik FIRE paling penting", "Works untuk level pendapatan any", "Path jelas ke kebebasan finansial"]
+      },
+      "standard": {
+        "title": "FIRE Standar",
+        "reason": "Pendekatan FIRE klasik cocok dengan goals balanced dan timeline Anda",
+        "description": "Aturan tradisional 25x expenses. Pendekatan proven, balanced untuk independensi finansial.",
+        "benefits": ["Aturan withdrawal 4% time-tested", "Pendekatan balanced untuk most people", "Framework planning comprehensive", "Pensiun di usia tradisional atau lebih awal"]
+      }
+    },
+    "results": {
+      "title": "Path Rekomendasi Anda",
+      "subtitle": "Berdasarkan jawaban Anda, ini strategi FIRE terbaik untuk Anda",
+      "whyWorks": "Mengapa path ini works untuk Anda:",
+      "goToCalculator": "Ke Kalkulator {{title}} →",
+      "startOver": "Mulai Lagi",
+      "exploreOther": "Ingin explore path lain?",
+      "exploreOtherDesc": "Semua path FIRE bisa bekerja tergantung situasi Anda. Bebas explore kalkulator multiple untuk menemukan yang resonate dengan Anda.",
+      "viewAllCalculators": "Lihat Semua Kalkulator"
+    },
+    "progress": {
+      "question": "Pertanyaan {{current}} dari {{total}}",
+      "percent": "{{percent}}% selesai"
+    },
+    "navigation": {
+      "previous": "Sebelumnya",
+      "next": "Berikutnya",
+      "getRecommendation": "Dapatkan Rekomendasi"
+    }
+  },
   "calculator": {
     "standard": {
       "title": "Kalkulator FIRE Standar",

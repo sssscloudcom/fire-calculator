@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { ThemeProvider } from './context/ThemeContext'
 import './i18n' // Add i18n initialization
+import i18n from './i18n'
 import AppLayout from './components/layout/AppLayout'
 import Home from './pages/Home'
 import StandardFIRE from './pages/StandardFIRE'
@@ -22,6 +23,28 @@ import Privacy from './pages/Privacy'
 import About from './pages/About'
 import Terms from './pages/Terms'
 import './index.css'
+
+// Dynamic SEO meta tags based on language
+function updateSEO() {
+  const lang = i18n.language || 'en'
+  document.documentElement.lang = lang
+  
+  // Update meta locale
+  const ogLocale = document.querySelector('meta[property="og:locale"]')
+  if (ogLocale) {
+    const localeMap: Record<string, string> = {
+      en: 'en_US', zh: 'zh_CN', es: 'es_ES', ja: 'ja_JP',
+      de: 'de_DE', fr: 'fr_FR', ru: 'ru_RU', pt: 'pt_BR', id: 'id_ID', ar: 'ar_SA'
+    }
+    ogLocale.setAttribute('content', localeMap[lang] || 'en_US')
+  }
+}
+
+// Update SEO on initial load
+updateSEO()
+
+// Update SEO when language changes
+i18n.on('languageChanged', updateSEO)
 
 const basename = import.meta.env.BASE_URL
 

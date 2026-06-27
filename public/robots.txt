@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://myfirenumber.com/sitemap.xml
+Sitemap: https://fire.nextapi.pro/sitemap.xml

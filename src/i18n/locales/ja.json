@@ -20,6 +20,125 @@
     "debtPayoff": "債務返済",
     "healthcare": "医療ギャップ"
   },
+  "quiz": {
+    "questions": {
+      "currentAge": {
+        "title": "あなたは何歳ですか？",
+        "subtitle": "これはタイムラインを理解するのに役立ちます"
+      },
+      "retirementAge": {
+        "title": "いつ財政独立を達成したいですか？",
+        "subtitle": "FIREの目標年齢"
+      },
+      "currentSavings": {
+        "title": "現在いくら貯蓄/投資していますか？",
+        "subtitle": "すべての退職口座と投資を含む"
+      },
+      "annualIncome": {
+        "title": "現在の年間世帯収入は？",
+        "subtitle": "税引前"
+      },
+      "annualExpenses": {
+        "title": "現在の年間支出は？",
+        "subtitle": "または退職後に費消する予想額"
+      },
+      "lifestyle": {
+        "title": "退職後どのようなライフスタイルを希望しますか？",
+        "subtitle": "これは目標貯蓄額に影響します"
+      },
+      "workPreference": {
+        "title": "FI達成後の理想的な仕事状況は？",
+        "subtitle": "時間をどのように使いたいか"
+      },
+      "primaryGoal": {
+        "title": "あなたにとって最も重要なことは？",
+        "subtitle": "FIREの主要な動機"
+      }
+    },
+    "choices": {
+      "lifestyle": {
+        "minimal": { "label": "ミニマル/倹約", "desc": "シンプルな生活、年3-4万ドル" },
+        "moderate": { "label": "適度", "desc": "基本的な快適さ、年4-7万ドル" },
+        "comfortable": { "label": "快適", "desc": "大きな犠牲なし、年7-10万ドル" },
+        "luxury": { "label": "豪華/Fat", "desc": "高級ライフスタイル、年10万ドル以上" }
+      },
+      "workPreference": {
+        "quit": { "label": "完全に辞める", "desc": "二度と働かない" },
+        "partTime": { "label": "パートタイム勤務", "desc": "福利厚生または追加収入のため" },
+        "coast": { "label": "Coastモード", "desc": "低ストレスの仕事で支出をカバー" },
+        "flexible": { "label": "柔軟性を保つ", "desc": "オプションを開放的に" }
+      },
+      "primaryGoal": {
+        "retireEarly": { "label": "ASAPで引退", "desc": "可能な限り早く労働を離れる" },
+        "financialSecurity": { "label": "財政安全感", "desc": "心安と自由" },
+        "maintainLifestyle": { "label": "ライフスタイル維持", "desc": "犠牲なしで引退" },
+        "flexibility": { "label": "柔軟性", "desc": "オプションとワークライフバランス" }
+      }
+    },
+    "recommendations": {
+      "lean": {
+        "title": "Lean FIRE",
+        "reason": "あなたのミニマルライフスタイルと低支出がLean FIREを実現可能に",
+        "description": "倹約生活でFIをより早く達成。より少ない貯蓄で可能ですが、ライフスタイルの規律が必要です。",
+        "benefits": ["従来のFIREより数年早く引退", "目標達成に必要な総貯蓄が少ない", "意図的な支出習慣を育成", "ミニマルライフスタイルでの自由"]
+      },
+      "fat": {
+        "title": "Fat FIRE",
+        "reason": "妥協のない快適ライフスタイルへの希望がFat FIREに合致",
+        "description": "豪華または上層中産階級のライフスタイルを維持してFI達成。より多くの貯蓄が必要ですが、犠牲はありません。",
+        "benefits": ["ライフスタイル変更なしで引退", "市場下落に対する追加バッファ", "旅行、食事、体験を心配なく", "家族を助け、遺産を残す"]
+      },
+      "barista": {
+        "title": "Barista FIRE",
+        "reason": "パートタイム勤務への興味がBarista FIREを理想的なステップに",
+        "description": "ポートフォリオ収入とパートタイム勤務を組み合わせ。健康保険と社会的つながりを維持しながらFIをより早く達成。",
+        "benefits": ["数年早く企業の仕事を辞める", "パートタイム収入で一部支出をカバー", "雇用者からの健康保険", "アクティブで社会的につながり続ける"]
+      },
+      "coast": {
+        "title": "Coast FIRE",
+        "reason": "タイムラインと年齢がCoast FIREを戦略的アプローチに",
+        "description": "今は積極的に貯蓄、その後は複利成長に任せる。柔軟性を求める若い貯蓄者に最適。",
+        "benefits": ["初期に集中的に貯蓄、その後緩める", "複利成長が重労働を担う", "低報酬でも満足感のある仕事", "30代-40代の圧力を軽減"]
+      },
+      "reverse": {
+        "title": "リバースFIRE",
+        "reason": "具体的な引退年齢目標がターゲット貯蓄戦略を必要",
+        "description": "目標年齢から逆算して月々の貯蓄額を正確に計算。",
+        "benefits": ["明確な月間貯蓄目標", "目標指向のアプローチ", "タイムラインまたは貯蓄を必要に応じて調整", "期限駆動型プランナーに最適"]
+      },
+      "savingsRate": {
+        "title": "貯蓄率計算ツール",
+        "reason": "貯蓄率を理解することはすべてのFIREパスの基礎",
+        "description": "貯蓄率はFIREで最も重要な指標。この計算ツールはタイムラインへの影響を正確に表示。",
+        "benefits": ["より多く貯蓄する直接的影響を見る", "最も重要なFIRE指標", "あらゆる収入レベルで有効", "財政自由への明確な道"]
+      },
+      "standard": {
+        "title": "標準FIRE",
+        "reason": "古典的なFIREアプローチがバランスした目標とタイムラインに合致",
+        "description": "従来の25倍支出ルール。証明された、バランスした財政独立アプローチ。",
+        "benefits": ["時間試験された4%引き出しルール", "大多数にとってバランスしたアプローチ", "包括的な計画フレームワーク", "従来年齢またはそれより早く引退"]
+      }
+    },
+    "results": {
+      "title": "あなたの推奨パス",
+      "subtitle": "回答に基づき、あなたに最適なFIRE戦略",
+      "whyWorks": "このパスが適している理由：",
+      "goToCalculator": "{{title}}計算ツールへ →",
+      "startOver": "やり直す",
+      "exploreOther": "他のパスを探検したい？",
+      "exploreOtherDesc": "すべてのFIREパスは状況によって可能です。複数の計算ツールを探検して、あなたに響くものを見つけてください。",
+      "viewAllCalculators": "すべての計算ツールを見る"
+    },
+    "progress": {
+      "question": "質問{{current}}/{{total}}",
+      "percent": "{{percent}}%完了"
+    },
+    "navigation": {
+      "previous": "前へ",
+      "next": "次へ",
+      "getRecommendation": "推奨を取得"
+    }
+  },
   "calculator": {
     "standard": {
       "title": "標準FIRE計算ツール",

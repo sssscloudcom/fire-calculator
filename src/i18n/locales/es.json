@@ -20,6 +20,125 @@
     "debtPayoff": "Pago de Deudas",
     "healthcare": "Brecha Sanitaria"
   },
+  "quiz": {
+    "questions": {
+      "currentAge": {
+        "title": "¿Cuántos años tienes?",
+        "subtitle": "Esto nos ayuda a entender tu cronograma"
+      },
+      "retirementAge": {
+        "title": "¿Cuándo quieres alcanzar la independencia financiera?",
+        "subtitle": "Tu edad objetivo para FIRE"
+      },
+      "currentSavings": {
+        "title": "¿Cuánto tienes ahorrado/invertido actualmente?",
+        "subtitle": "Incluye todas las cuentas de retiro e inversiones"
+      },
+      "annualIncome": {
+        "title": "¿Cuál es tu ingreso familiar anual actual?",
+        "subtitle": "Antes de impuestos"
+      },
+      "annualExpenses": {
+        "title": "¿Cuáles son tus gastos anuales actuales?",
+        "subtitle": "O lo que esperas gastar en la jubilación"
+      },
+      "lifestyle": {
+        "title": "¿Qué estilo de vida quieres en la jubilación?",
+        "subtitle": "Esto afecta tu cantidad de ahorro objetivo"
+      },
+      "workPreference": {
+        "title": "¿Cuál es tu situación laboral ideal después de alcanzar FI?",
+        "subtitle": "Cómo quieres pasar tu tiempo"
+      },
+      "primaryGoal": {
+        "title": "¿Qué es más importante para ti?",
+        "subtitle": "Tu motivación principal para FIRE"
+      }
+    },
+    "choices": {
+      "lifestyle": {
+        "minimal": { "label": "Minimalista/Frugal", "desc": "Viviendo simplemente, $30K-$40K/año" },
+        "moderate": { "label": "Moderado", "desc": "Comodidades básicas, $40K-$70K/año" },
+        "comfortable": { "label": "Confortable", "desc": "Sin sacrificios importantes, $70K-$100K/año" },
+        "luxury": { "label": "Luxury/Fat", "desc": "Estilo de vida de alta gama, $100K+/año" }
+      },
+      "workPreference": {
+        "quit": { "label": "Renunciar Completamente", "desc": "Nunca trabajar de nuevo" },
+        "partTime": { "label": "Trabajo Parcial", "desc": "Trabajar por beneficios o ingresos extra" },
+        "coast": { "label": "Modo Coast", "desc": "Trabajo de baja presión que cubre gastos" },
+        "flexible": { "label": "Mantener Flexible", "desc": "Mantener opciones abiertas" }
+      },
+      "primaryGoal": {
+        "retireEarly": { "label": "Jubilarse ASAP", "desc": "Salir del trabajo lo antes posible" },
+        "financialSecurity": { "label": "Seguridad Financiera", "desc": "Paz mental y libertad" },
+        "maintainLifestyle": { "label": "Mantener Estilo de Vida", "desc": "Jubilarse sin sacrificio" },
+        "flexibility": { "label": "Flexibilidad", "desc": "Opciones y equilibrio trabajo-vida" }
+      }
+    },
+    "recommendations": {
+      "lean": {
+        "title": "Lean FIRE",
+        "reason": "Tu estilo de vida minimalista y gastos más bajos hacen que Lean FIRE sea alcanzable",
+        "description": "Logra FI más rápido viviendo frugalmente. Requiere menos ahorros pero exige disciplina de vida.",
+        "benefits": ["Jubilarse años antes del FIRE tradicional", "Necesitas menos ahorros totales para alcanzar tu meta", "Fomenta hábitos de gastos intencionales", "Libertad con estilo de vida minimalista"]
+      },
+      "fat": {
+        "title": "Fat FIRE",
+        "reason": "Tu deseo de un estilo de vida cómodo sin compromisos se alinea con Fat FIRE",
+        "description": "Logra FI mientras mantienes un estilo de vida lujoso o de clase media alta. Requiere más ahorros pero sin sacrificios.",
+        "benefits": ["Jubilarse sin cambios de estilo de vida", "Buffer extra para caídas del mercado", "Viajes, restaurantes y experiencias sin preocupación", "Ayudar a la familia y dejar un legado"]
+      },
+      "barista": {
+        "title": "Barista FIRE",
+        "reason": "Tu interés en trabajo parcial hace que Barista FIRE sea un escalón ideal",
+        "description": "Combina ingresos del portafolio con trabajo parcial. Logra FI más rápido mientras mantienes beneficios de salud y conexiones sociales.",
+        "benefits": ["Renunciar al trabajo corporativo años antes", "El trabajo parcial cubre algunos gastos", "Seguro de salud del empleador", "Mantenerse activo y socialmente conectado"]
+      },
+      "coast": {
+        "title": "Coast FIRE",
+        "reason": "Tu cronograma y edad hacen que Coast FIRE sea una estrategia ideal",
+        "description": "Ahorra agresivamente ahora, luego deja que el crecimiento compuesto haga el trabajo. Perfecto para ahorradores jóvenes que quieren flexibilidad.",
+        "benefits": ["Ahorrar duro al principio, luego relajarse", "El crecimiento compuesto hace el trabajo pesado", "Tomar trabajo menos remunerado pero satisfactorio", "Reduce la presión en tus 30s-40s"]
+      },
+      "reverse": {
+        "title": "FIRE Inverso",
+        "reason": "Tu objetivo específico de edad de jubilación requiere una estrategia de ahorro dirigida",
+        "description": "Trabaja hacia atrás desde tu edad objetivo para calcular exactamente lo que necesitas ahorrar mensualmente.",
+        "benefits": ["Objetivo de ahorro mensual claro", "Enfoque orientado a metas", "Ajustar cronograma o ahorros según sea necesario", "Perfecto para planificadores orientados a deadlines"]
+      },
+      "savingsRate": {
+        "title": "Calculadora de Tasa de Ahorro",
+        "reason": "Entender tu tasa de ahorro es la base para todos los caminos FIRE",
+        "description": "Tu tasa de ahorro es la métrica más importante en FIRE. Esta calculadora muestra exactamente cómo impacta tu cronograma.",
+        "benefits": ["Ver impacto directo de ahorrar más", "La métrica FIRE más importante", "Funciona para cualquier nivel de ingresos", "Camino claro hacia la libertad financiera"]
+      },
+      "standard": {
+        "title": "FIRE Estándar",
+        "reason": "El enfoque FIRE clásico se ajusta a tus objetivos equilibrados y cronograma",
+        "description": "La regla tradicional de 25x gastos. Un enfoque probado y equilibrado para la independencia financiera.",
+        "benefits": ["Regla de retiro del 4% probada por el tiempo", "Enfoque equilibrado para la mayoría", "Marco de planificación integral", "Jubilarse a edad tradicional o antes"]
+      }
+    },
+    "results": {
+      "title": "Tu Camino Recomendado",
+      "subtitle": "Basado en tus respuestas, aquí está la mejor estrategia FIRE para ti",
+      "whyWorks": "Por qué este camino funciona para ti:",
+      "goToCalculator": "Ir a Calculadora {{title}} →",
+      "startOver": "Comenzar de Nuevo",
+      "exploreOther": "¿Quieres explorar otros caminos?",
+      "exploreOtherDesc": "Todos los caminos FIRE pueden funcionar según tus circunstancias. Siéntete libre de explorar múltiples calculadoras para encontrar lo que resuena con ti.",
+      "viewAllCalculators": "Ver Todas las Calculadoras"
+    },
+    "progress": {
+      "question": "Pregunta {{current}} de {{total}}",
+      "percent": "{{percent}}% completado"
+    },
+    "navigation": {
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "getRecommendation": "Obtener Recomendación"
+    }
+  },
   "calculator": {
     "standard": {
       "title": "Calculadora FIRE Estándar",
