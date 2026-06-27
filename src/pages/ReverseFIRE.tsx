@@ -165,15 +165,15 @@ export default function ReverseFIRE() {
           </CardHeader>
           <CardContent className="space-y-4">
             <AgeInput
-              label="Current Age"
+              label={t('input.currentAge')}
               value={params.currentAge}
               onChange={(v) => setParam('currentAge', v)}
             />
             <AgeInput
-              label="Target FIRE Age"
+              label={t('reverseFire.targetFireAge')}
               value={params.retirementAge}
               onChange={(v) => setParam('retirementAge', v)}
-              tooltip="When do you want to achieve FIRE?"
+              tooltip={t('reverseFire.targetFireAgeTooltip')}
               min={params.currentAge + 1}
             />
             <CurrencyInput
@@ -182,7 +182,7 @@ export default function ReverseFIRE() {
               onChange={(v) => setParam('currentSavings', v)}
             />
             <CurrencyInput
-              label="Annual Expenses in Retirement"
+              label={t('reverseFire.annualExpensesInRetirement')}
               value={params.annualExpenses}
               onChange={(v) => setParam('annualExpenses', v)}
             />
@@ -194,14 +194,14 @@ export default function ReverseFIRE() {
               max={0.15}
             />
             <PercentageInput
-              label="Inflation Rate"
+              label={t('input.inflationRate')}
               value={params.inflationRate}
               onChange={(v) => setParam('inflationRate', v)}
               min={0}
               max={0.10}
             />
             <PercentageInput
-              label="Safe Withdrawal Rate"
+              label={t('input.safeWithdrawalRate')}
               value={params.withdrawalRate}
               onChange={(v) => setParam('withdrawalRate', v)}
               min={0.02}

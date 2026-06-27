@@ -1,4 +1,5 @@
 import { useMemo } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useCalculatorParams } from '../hooks/useCalculatorParams'
 import { calculateStandardFIRE, formatCurrency } from '../utils/calculations'
 import { exportToExcel, prepareInputsForExport, prepareResultsForExport } from '../utils/excelExport'
@@ -9,6 +10,7 @@ import SEO from '../components/SEO'
 import { calculatorSEO } from '../config/seo'
 
 export default function StandardFIRE() {
+  const { t } = useTranslation()
   const { params, setParam, setParams, resetParams, copyUrl, hasCustomParams } = useCalculatorParams()
 
   const results = useMemo(() => {
@@ -100,69 +102,69 @@ export default function StandardFIRE() {
         {/* Inputs */}
         <Card className="lg:col-span-1">
           <CardHeader>
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Your Information</h2>
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('standardFire.yourInfoTitle')}</h2>
           </CardHeader>
           <CardContent className="space-y-4">
             <AgeInput
-              label="Current Age"
+              label={t('input.currentAge')}
               value={params.currentAge}
               onChange={(v) => setParam('currentAge', v)}
-              tooltip="Your current age"
+              tooltip={t('input.currentAgeTooltip')}
             />
             <AgeInput
-              label="Target Retirement Age"
+              label={t('input.targetRetirementAge')}
               value={params.retirementAge}
               onChange={(v) => setParam('retirementAge', v)}
-              tooltip="The age you want to retire"
+              tooltip={t('standardFire.targetRetirementAgeTooltip')}
             />
             <CurrencyInput
-              label="Current Savings"
+              label={t('input.currentSavings')}
               value={params.currentSavings}
               onChange={(v) => setParam('currentSavings', v)}
-              tooltip="Total invested assets (401k, IRA, brokerage)"
+              tooltip={t('standardFire.currentSavingsTooltip')}
             />
             <CurrencyInput
-              label="Annual Contribution"
+              label={t('input.annualContribution')}
               value={params.annualContribution}
               onChange={(v) => setParam('annualContribution', v)}
-              tooltip="How much you save and invest per year"
+              tooltip={t('input.annualContributionTooltip')}
               allowMonthlyToggle
             />
             <CurrencyInput
-              label="Annual Net Income"
+              label={t('standardFire.annualNetIncome')}
               value={params.annualIncome}
               onChange={(v) => setParam('annualIncome', v)}
-              tooltip="Your net (take-home) annual income after taxes"
+              tooltip={t('standardFire.annualNetIncomeTooltip')}
               allowMonthlyToggle
             />
             <CurrencyInput
-              label="Annual Expenses"
+              label={t('input.annualExpenses')}
               value={params.annualExpenses}
               onChange={(v) => setParam('annualExpenses', v)}
-              tooltip="Your expected yearly spending in retirement"
+              tooltip={t('input.annualExpensesTooltip')}
               allowMonthlyToggle
             />
             <PercentageInput
-              label="Expected Return"
+              label={t('input.expectedReturn')}
               value={params.expectedReturn}
               onChange={(v) => setParam('expectedReturn', v)}
-              tooltip="Average annual investment return (7% is typical for stocks)"
+              tooltip={t('input.expectedReturnTooltip')}
               min={0}
               max={0.20}
             />
             <PercentageInput
-              label="Inflation Rate"
+              label={t('input.inflationRate')}
               value={params.inflationRate}
               onChange={(v) => setParam('inflationRate', v)}
-              tooltip="Expected annual inflation (3% is historical average)"
+              tooltip={t('input.inflationRateTooltip')}
               min={0}
               max={0.10}
             />
             <PercentageInput
-              label="Safe Withdrawal Rate"
+              label={t('input.safeWithdrawalRate')}
               value={params.withdrawalRate}
               onChange={(v) => setParam('withdrawalRate', v)}
-              tooltip="The 4% rule - withdraw 4% of portfolio yearly"
+              tooltip={t('input.swrTooltip')}
               min={0.02}
               max={0.06}
             />
@@ -174,20 +176,20 @@ export default function StandardFIRE() {
           {/* Key Metrics */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <ResultCard
-              label="FIRE Number"
+              label={t('standardFire.fireNumber')}
               value={results.fireNumber}
               format="currency"
               highlight
-              subtext="Target portfolio value"
+              subtext={t('output.targetPortfolioValue')}
             />
             <ResultCard
-              label="Years to FIRE"
+              label={t('standardFire.yearsToFire')}
               value={results.yearsToFIRE}
               format="years"
               subtext={`At age ${Math.round(results.fireAge)}`}
             />
             <ResultCard
-              label="Savings Rate"
+              label={t('standardFire.savingsRate')}
               value={results.savingsRate}
               format="percent"
               subtext={`${formatCurrency(results.monthlyContribution)}/month`}
@@ -197,7 +199,7 @@ export default function StandardFIRE() {
           {/* Chart */}
           <Card>
             <CardHeader>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Portfolio Projection</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('standardFire.projectionTitle')}</h2>
             </CardHeader>
             <CardContent>
               <ProjectionChart
@@ -212,7 +214,7 @@ export default function StandardFIRE() {
           {/* Additional Info */}
           <Card>
             <CardHeader>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Understanding Your Results</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('standardFire.understandingTitle')}</h2>
             </CardHeader>
             <CardContent className="prose dark:prose-invert max-w-none text-sm">
               <p>

@@ -280,7 +280,16 @@
     "portfolioValue": "Valor do Portfólio",
     "monthlyPremium": "Prêmio Mensal",
     "annualDeductible": "Franquia Anual",
-    "annualOutOfPocket": "Desembolso Anual"
+    "annualOutOfPocket": "Desembolso Anual",
+    "targetRetirementAge": "Target Retirement Age",
+    "safeWithdrawalRate": "Safe Withdrawal Rate",
+    "currentAgeTooltip": "Your current age",
+    "targetRetirementAgeTooltip": "Traditional retirement age (e.g., 60-67)",
+    "annualExpensesTooltip": "Total yearly spending needs",
+    "annualContributionTooltip": "How much you're currently saving per year",
+    "expectedReturnTooltip": "Average annual investment return (7% is typical for stocks)",
+    "inflationRateTooltip": "Expected annual inflation (3% is historical average)",
+    "swrTooltip": "The 4% rule - withdraw 4% of portfolio yearly"
   },
   "output": {
     "years": "anos",
@@ -288,7 +297,10 @@
     "perYear": "por ano",
     "perMonth": "por mês",
     "total": "Total",
-    "average": "Média"
+    "average": "Média",
+    "targetPortfolioValue": "Target portfolio value",
+    "good": "Good",
+    "risky": "Risky"
   },
   "common": {
     "calculate": "Calcular",
@@ -298,7 +310,14 @@
     "share": "Compartilhar",
     "disclaimer": "Aviso Legal",
     "bestFor": "Melhor para",
-    "privacy": "100% Privado e Offline"
+    "privacy": "100% Privado e Offline",
+    "yourInformation": "Your Information",
+    "portfolioProjection": "Portfolio Projection",
+    "yourGoals": "Your Goals",
+    "yourPortfolio": "Your Portfolio",
+    "investmentDetails": "Investment Details",
+    "progressToBaristaFire": "Progress to Barista FIRE",
+    "progressToCoastFire": "Progress to Coast FIRE"
   },
   "disclaimer": {
     "title": "Aviso Legal",
@@ -365,7 +384,13 @@
         "title": "Lower Target",
         "desc": "Need {percent}% less in your portfolio"
       }
-    }
+    },
+    "benefitsTitle": "Benefits of Barista FIRE",
+    "content": "Barista FIRE (named after the stereotype of working part-time at Starbucks for benefits) means having enough invested to cover most expenses, while working a part-time or low-stress job to cover the gap and potentially access health insurance benefits.",
+    "yearsToBaristaFire": "Years to Barista FIRE",
+    "partTimeAnnualIncome": "Part-Time Annual Income",
+    "withoutPartTimeWork": "Without part-time work",
+    "partTimeIncomeTooltip": "Expected yearly income from part-time work"
   },
   "fatFire": {
     "title": "Fat FIRE Calculator",
@@ -408,7 +433,38 @@
         "title": "Security Buffer",
         "desc": "Extra cushion for market downturns or surprises"
       }
-    }
+    },
+    "bannerContent": "Fat FIRE means achieving financial independence while maintaining a luxurious or upper-middle-class lifestyle (typically $100,000+/year in expenses). It requires a larger nest egg but allows you to retire without sacrifice.",
+    "targetPortfolio": "Target portfolio value",
+    "lifestyleTitle": "What Fat FIRE Lifestyle Includes",
+    "lifestyle": {
+      "premiumHousing": {
+        "title": "Premium Housing",
+        "desc": "Nice home in desirable area, no compromise on space"
+      },
+      "travelFreedom": {
+        "title": "Travel Freedom",
+        "desc": "Multiple trips per year, business class options"
+      },
+      "dining": {
+        "title": "Dining & Entertainment",
+        "desc": "Fine dining, concerts, premium experiences"
+      },
+      "healthcare": {
+        "title": "Healthcare",
+        "desc": "Premium insurance, elective procedures, wellness"
+      },
+      "generosity": {
+        "title": "Generosity",
+        "desc": "Help family, charitable giving, leave legacy"
+      },
+      "securityBuffer": {
+        "title": "Security Buffer",
+        "desc": "Extra cushion for market downturns or surprises"
+      }
+    },
+    "yearsToFatFire": "Years to Fat FIRE",
+    "annualExpensesFatTooltip": "For Fat FIRE, typically $100,000+ per year"
   },
   "leanFire": {
     "title": "Lean FIRE Calculator",
@@ -446,7 +502,12 @@
         "title": "Entertainment",
         "desc": "Free hobbies, libraries, nature, community events"
       }
-    }
+    },
+    "bannerContent": "Lean FIRE means achieving financial independence with minimal expenses (typically ≤$40,000/year for a household). It requires living frugally but allows you to retire much earlier than traditional or Fat FIRE approaches.",
+    "leanTerritoryLabel": "You're in Lean territory!",
+    "basedOnExpenses": "Based on your expenses",
+    "yearsToLeanFire": "Years to Lean FIRE",
+    "annualExpensesLeanTooltip": "For Lean FIRE, keep this ≤$40,000"
   },
   "coastFire": {
     "title": "Coast FIRE Calculator",
@@ -471,7 +532,14 @@
       "content": "Your Coast FIRE Number ({coastNumber}) is the amount you need invested today such that compound growth alone will reach your full FIRE number ({fireNumber}) by age {retirementAge}.",
       "alreadyCoasting": "Congratulations! You've already reached Coast FIRE. You could stop contributing to retirement and your portfolio would still grow to {fireNumber} by age {retirementAge}. Consider switching to work you love, even if it pays less!",
       "needMore": "You need {needed} more to reach Coast FIRE. At your current savings rate, this will take approximately {years} years."
-    }
+    },
+    "bannerContent": "Coast FIRE is when you've saved enough that compound growth alone will get you to your full FIRE number by traditional retirement age — without any more contributions. You can then \"coast\" with a lower-paying job that just covers current expenses.",
+    "howWorksTitle": "How Coast FIRE Works",
+    "alreadyCoastingText": "You're already Coast FIRE!",
+    "yearsToCoastText": "{years} years to Coast FIRE",
+    "annualExpensesInRetirement": "Annual Expenses in Retirement",
+    "howWorksContent": "Your Coast FIRE Number ({coastNumber}) is the amount you need invested today such that compound growth alone will reach your full FIRE number ({fireNumber}) by age {retirementAge}.",
+    "alreadyCoasting": "Congratulations! You've already reached Coast FIRE. You could stop contributing to retirement and your portfolio would still grow to {fireNumber} by age {retirementAge}. Consider switching to work you love, even if it pays less!"
   },
   "debtPayoff": {
     "title": "Debt Payoff Calculator",
@@ -531,7 +599,19 @@
       "payoffTime": "Payoff Time",
       "totalInterest": "Total Interest",
       "winner": "Winner: {method} saves {savings} in interest and finishes {monthsDiff} months {direction}."
-    }
+    },
+    "twoMethodsTitle": "Two Proven Debt Payoff Methods",
+    "snowballLabel": "Snowball",
+    "avalancheLabel": "Avalanche",
+    "debtInfoTitle": "Debt Information",
+    "extraPaymentLabel": "Extra Monthly Payment",
+    "timeSavedLabel": "Time Saved",
+    "interestSavedLabel": "Interest Saved",
+    "winnerLabel": "Winner",
+    "addDebtsTitle": "Add Your Debts to Get Started",
+    "addDebtsDesc": "Enter your debt information in the left panel to see your payoff strategy.",
+    "totalMonthlyBudget": "Total Monthly Budget",
+    "totalMonthlyBudgetTooltip": "Total amount you can pay toward debts each month"
   },
   "healthcareGap": {
     "title": "Healthcare Gap Calculator",
@@ -586,7 +666,20 @@
         "title": "Geo-Arbitrage",
         "desc": "Retire abroad with affordable healthcare options"
       }
-    }
+    },
+    "warningTitle": "The Healthcare Gap is Real",
+    "warningContent": "If you retire before age 65 in the US, you'll need to bridge the gap until Medicare. Healthcare costs are often the #1 overlooked expense in early retirement planning. This can add {cost} or more to your FIRE number!",
+    "situationTitle": "Your Situation",
+    "totalCostLabel": "Total Healthcare Gap Cost",
+    "addToFireLabel": "Add to FIRE Number",
+    "acaSubsidyTitle": "ACA Subsidy Potential",
+    "acaSubsidyDesc": "Your retirement income affects ACA premium subsidies. Lower income = higher subsidies.",
+    "annualSubsidyLabel": "Annual subsidy",
+    "strategiesTitle": "Healthcare Gap Strategies",
+    "earlyRetirementAge": "Early Retirement Age",
+    "monthlyPremium": "Monthly Premium",
+    "annualDeductible": "Annual Deductible",
+    "estOutOfPocket": "Est. Out-of-Pocket"
   },
   "reverseFire": {
     "title": "Reverse FIRE Calculator",
@@ -616,7 +709,13 @@
     "annualSavings": "Annual Savings",
     "selected": "Selected",
     "onTrack": "$0 (on track!)",
-    "portfolioProjection": "Portfolio Projection"
+    "portfolioProjection": "Portfolio Projection",
+    "bannerContent": "Instead of calculating when you'll FIRE based on your savings, this calculator works backwards: you set your target retirement age, and it tells you exactly how much you need to save each month to get there.",
+    "howWorksTitle": "How Reverse FIRE Works",
+    "alreadyOnTrack": "You're Already on Track!",
+    "toFireByAgeDesc": "To FIRE by age {targetAge}, you need to save",
+    "targetFireAge": "Target FIRE Age",
+    "annualExpensesInRetirement": "Annual Expenses in Retirement"
   },
   "savingsRate": {
     "title": "Savings & Investment Rate Calculator",
@@ -654,7 +753,10 @@
     "totalContributions": "Total Contributions ({years} years)",
     "investmentEarnings": "Investment Earnings",
     "finalBalance": "Final Balance",
-    "inflationAdjustedValueNote": "Note: Inflation will reduce your purchasing power by {impact} over {years} years at {rate}% annual inflation."
+    "inflationAdjustedValueNote": "Note: Inflation will reduce your purchasing power by {impact} over {years} years at {rate}% annual inflation.",
+    "compoundInterestTitle": "The Power of Compound Interest",
+    "compoundInterestContent": "Consistent investing is the key to building wealth. Even small amounts invested regularly can grow substantially over time thanks to compound interest. Start early and stay consistent!",
+    "expectedAnnualReturn": "Expected Annual Return"
   },
   "withdrawalRate": {
     "title": "Withdrawal Rate Calculator",
@@ -691,7 +793,11 @@
       },
       "earlyRetirees": "For early retirees (40+ year retirements): Consider a 3-3.5% withdrawal rate for extra safety margin.",
       "flexibleSpending": "Flexible spending: Being willing to reduce spending during market downturns significantly improves success rates."
-    }
+    },
+    "fourPercentRuleTitle": "The 4% Rule",
+    "fourPercentRuleContent": "The famous \"4% rule\" from the Trinity Study suggests withdrawing 4% of your portfolio in year one, then adjusting for inflation each year. This has historically provided a 95%+ success rate over 30-year retirements. However, longer retirements may require lower rates (3-3.5%).",
+    "retirementDuration": "Retirement Duration",
+    "annualWithdrawalLabel": "Annual Withdrawal"
   },
   "legal": {
     "about": {
@@ -884,5 +990,471 @@
       "privacyPolicy": "Privacy Policy →",
       "termsOfService": "Terms of Service →"
     }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: June 2025",
+    "summary": {
+      "title": "TL;DR: Your Privacy is Our Priority",
+      "points": {
+        "browserSide": "All calculations happen 100% in your browser",
+        "noCollection": "We do not collect, store, or transmit any personal or financial information",
+        "noAccounts": "No user accounts, no databases, no server-side processing",
+        "noTracking": "No tracking, no analytics, no cookies for user data"
+      }
+    },
+    "sections": {
+      "infoCollect": {
+        "title": "1. Information We Collect",
+        "intro": "We do not collect any personal or financial information. This FIRE Calculator is designed with privacy as a core principle. Here's what that means:",
+        "dontCollect": "What We DON'T Collect:",
+        "items": {
+          "names": "Names, email addresses, or contact information",
+          "financial": "Financial data (income, expenses, savings, investments)",
+          "ip": "IP addresses or location data",
+          "browsing": "Browsing history or usage patterns",
+          "cookies": "Cookies for tracking purposes"
+        }
+      },
+      "howCalculations": {
+        "title": "2. How Your Calculations Work",
+        "intro": "All calculations are performed entirely within your web browser (client-side). When you enter financial information:",
+        "steps": {
+          "browserSide": {
+            "title": "Browser-Side Processing",
+            "desc": "All mathematical calculations happen in JavaScript running in your browser. No data is sent to our servers."
+          },
+          "urlStorage": {
+            "title": "URL-Based Storage (Optional)",
+            "desc": "Your calculation inputs are encoded in the URL when you share or bookmark. This is the only way your data persists — and it's entirely under your control."
+          },
+          "noServer": {
+            "title": "No Server Transmission",
+            "desc": "Your financial data is never transmitted to our servers for processing, storage, or any other purpose."
+          }
+        }
+      },
+      "localStorage": {
+        "title": "3. Local Storage Usage",
+        "intro": "We use browser local storage to save non-sensitive preferences only. This data never leaves your device:",
+        "table": {
+          "dataStored": "Data Stored",
+          "purpose": "Purpose",
+          "containsFinancial": "Contains Financial Data?",
+          "theme": "Theme preference",
+          "themePurpose": "Remember dark/light mode",
+          "language": "Language preference",
+          "languagePurpose": "Remember language selection",
+          "sidebar": "Sidebar collapsed state",
+          "sidebarPurpose": "Remember UI layout",
+          "no": "No"
+        },
+        "clearNote": "You can clear this data at any time through your browser settings. Clearing local storage will not affect your calculations — it only resets your preferences to defaults."
+      },
+      "thirdParty": {
+        "title": "4. Third-Party Services",
+        "googleAdsense": {
+          "title": "Google AdSense",
+          "intro": "We use Google AdSense to display advertisements. Google AdSense may collect certain information to serve relevant ads, including:",
+          "items": {
+            "device": "Device information (browser type, operating system)",
+            "location": "General location (country/region level)",
+            "adInteraction": "Ad interaction data"
+          },
+          "important": "Important: Google's ad tracking is independent of our calculator. Your financial calculations and inputs are never shared with Google or any advertiser."
+        },
+        "amazonAffiliate": {
+          "title": "Amazon Affiliate Links",
+          "content": "Some book recommendations include Amazon affiliate links. When you click these links, Amazon may collect data according to their privacy policy. This does not affect your calculator usage or data."
+        }
+      },
+      "noTracking": {
+        "title": "5. No Tracking Policy",
+        "items": {
+          "noAnalytics": {
+            "title": "No Google Analytics",
+            "desc": "We don't use Google Analytics or similar tracking tools."
+          },
+          "noPixel": {
+            "title": "No Facebook Pixel",
+            "desc": "No social media tracking pixels."
+          },
+          "noUserTracking": {
+            "title": "No User Tracking",
+            "desc": "We don't track individual users or sessions."
+          },
+          "noCrossSite": {
+            "title": "No Cross-Site Tracking",
+            "desc": "We don't follow you across other websites."
+          }
+        }
+      },
+      "dataSecurity": {
+        "title": "6. Data Security",
+        "content": "Since all calculations happen locally in your browser and we don't collect any data, there's no database to breach. Your financial information is as secure as your own device. We recommend:",
+        "recommendations": {
+          "browser": "Using a secure, up-to-date browser",
+          "device": "Keeping your device protected with a password or biometric lock",
+          "urls": "Being cautious when sharing URLs that contain your financial calculations"
+        }
+      },
+      "yourRights": {
+        "title": "7. Your Rights",
+        "intro": "Because we don't collect or store your personal data, many data protection rights are automatically satisfied:",
+        "rights": {
+          "access": "Right to Access: All your data is in your browser — you have complete access.",
+          "deletion": "Right to Deletion: Clear your browser data to delete everything.",
+          "portability": "Right to Portability: Your calculation URLs contain all your data in portable form.",
+          "object": "Right to Object: No processing to object to — your data stays with you."
+        }
+      },
+      "changes": {
+        "title": "8. Changes to This Policy",
+        "content": "We may update this privacy policy from time to time. We will notify users of any material changes by posting the new policy on this page with an updated \"Last updated\" date."
+      },
+      "contact": {
+        "title": "9. Contact Us",
+        "content": "If you have questions about this privacy policy, you can:",
+        "aboutPage": "Visit our",
+        "aboutPageSuffix": "for more information about the project",
+        "github": "View the"
+      }
+    },
+    "navigation": {
+      "termsOfService": "Terms of Service →",
+      "aboutUs": "About Us →"
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: June 2025",
+    "sections": {
+      "agreement": {
+        "title": "1. Agreement to Terms",
+        "content": "By accessing and using FIRE Calculator (available at firecalc.nextapi.pro and myfirenumber.com), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our service."
+      },
+      "disclaimer": {
+        "title": "Important Disclaimer",
+        "content": "This calculator is provided for educational and informational purposes only.",
+        "items": {
+          "notAdvice": "It is NOT financial, investment, tax, or legal advice.",
+          "hypothetical": "Results are hypothetical projections based on user inputs and assumed rates.",
+          "vary": "Actual investment returns, inflation rates, and outcomes will vary.",
+          "past": "Past performance does not guarantee future results.",
+          "consult": "You should consult with qualified professionals before making any financial decisions."
+        },
+        "notResponsible": "We are not responsible for any financial decisions you make based on calculations from this tool."
+      },
+      "serviceDescription": {
+        "title": "2. Description of Service",
+        "content": "FIRE Calculator provides free, browser-based financial planning calculators for the FIRE (Financial Independence, Retire Early) community. Our services include:",
+        "items": {
+          "calculators": "Various FIRE calculators (Standard, Coast, Lean, Fat, Barista)",
+          "withdrawal": "Withdrawal rate and savings rate calculators",
+          "reverse": "Reverse FIRE and debt payoff calculators",
+          "healthcare": "Healthcare gap planning tools",
+          "resources": "Educational resources and book recommendations"
+        },
+        "allClientSide": "All calculations are performed client-side (in your browser). We do not store your financial data on our servers."
+      },
+      "notProfessionalAdvice": {
+        "title": "3. Not Professional Advice",
+        "content": "The information provided by FIRE Calculator does not constitute:",
+        "types": {
+          "financial": {
+            "title": "Financial Advice",
+            "desc": "We do not recommend specific investments, savings strategies, or financial products."
+          },
+          "investment": {
+            "title": "Investment Advice",
+            "desc": "We do not advise on buying, selling, or holding any securities or assets."
+          },
+          "tax": {
+            "title": "Tax Advice",
+            "desc": "We do not provide guidance on tax strategies or obligations."
+          },
+          "legal": {
+            "title": "Legal Advice",
+            "desc": "We do not provide legal guidance on any matters."
+          }
+        },
+        "consult": "Always consult with qualified professionals (financial advisors, tax professionals, attorneys) before making financial decisions."
+      },
+      "userResponsibilities": {
+        "title": "4. User Responsibilities",
+        "intro": "By using our service, you agree to:",
+        "items": {
+          "personal": "Use the calculator for personal, non-commercial purposes",
+          "noReverse": "Not attempt to reverse engineer, copy, or redistribute the software",
+          "noScrape": "Not use automated tools to scrape or abuse the service",
+          "verify": "Verify all calculations with qualified professionals before making financial decisions",
+          "accept": "Accept responsibility for your own financial decisions"
+        }
+      },
+      "intellectualProperty": {
+        "title": "5. Intellectual Property",
+        "ourRights": {
+          "title": "Our Rights",
+          "content": "The FIRE Calculator software, including its design, code, logos, and content (excluding third-party content and user-generated data), is protected by intellectual property laws. While the core calculator code is open source, the following restrictions apply:",
+          "items": {
+            "view": "You may view and fork the open-source code on GitHub",
+            "branding": "You may not use our branding, logos, or domain names without permission",
+            "claim": "You may not claim the calculator as your own work",
+            "derivative": "Derivative works must comply with the applicable open-source license"
+          }
+        },
+        "thirdParty": {
+          "title": "Third-Party Content",
+          "content": "Some content on our site, such as book recommendations and affiliate links, may link to third-party websites. We are not responsible for the content, privacy practices, or terms of third-party sites."
+        }
+      },
+      "limitationOfLiability": {
+        "title": "6. Limitation of Liability",
+        "intro": "TO THE MAXIMUM EXTENT PERMITTED BY LAW:",
+        "items": {
+          "noWarranty": {
+            "title": "No Warranty",
+            "desc": "The calculator is provided \"AS IS\" without warranties of any kind, express or implied, including but not limited to accuracy, fitness for a particular purpose, or non-infringement."
+          },
+          "noGuarantee": {
+            "title": "No Guarantee of Results",
+            "desc": "We do not guarantee that calculations will be accurate or that any financial outcomes will be achieved."
+          },
+          "limitation": {
+            "title": "Limitation of Damages",
+            "desc": "We shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising from your use of the calculator."
+          }
+        }
+      },
+      "disclaimerOutcomes": {
+        "title": "7. Disclaimer of Financial Outcomes",
+        "intro": "The projections and calculations provided by FIRE Calculator are based on:",
+        "items": {
+          "inputs": "User-provided inputs which may be inaccurate",
+          "assumed": "Assumed rates (investment returns, inflation) that may not reflect reality",
+          "historical": "Historical data that may not predict future performance",
+          "simplified": "Simplified models that do not account for all real-world factors"
+        },
+        "actualDepends": "Actual financial outcomes depend on numerous factors beyond our control, including but not limited to: market conditions, tax laws, healthcare costs, inflation, unexpected expenses, and individual circumstances. Never rely solely on this calculator for financial planning."
+      },
+      "thirdPartyServices": {
+        "title": "8. Third-Party Services & Affiliate Links",
+        "googleAdsense": {
+          "title": "Google AdSense",
+          "content": "We use Google AdSense to display advertisements. Google may use cookies and similar technologies to serve ads. Your use of our service is also subject to Google's terms and privacy policy."
+        },
+        "affiliate": {
+          "title": "Affiliate Links",
+          "content": "Some links on our site (such as book recommendations) are affiliate links. If you make a purchase through these links, we may receive a small commission at no additional cost to you. This helps support the free calculator. We are not responsible for the products, services, or terms of third-party vendors."
+        }
+      },
+      "changes": {
+        "title": "9. Changes to Terms",
+        "content": "We reserve the right to modify these Terms of Service at any time. Changes will be effective immediately upon posting on this page. Your continued use of the service after changes constitutes acceptance of the new terms. We encourage you to review these terms periodically.",
+        "material": "Material changes will be indicated by updating the \"Last updated\" date at the top of this page."
+      },
+      "termination": {
+        "title": "10. Termination",
+        "content": "We reserve the right to terminate or suspend access to our service at any time, without notice, for any reason, including but not limited to violation of these Terms. Since this is a free, client-side application with no user accounts, termination means you may no longer be able to access our website."
+      },
+      "governingLaw": {
+        "title": "11. Governing Law",
+        "content": "These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law principles. Any disputes arising from these terms or use of the service shall be resolved in the appropriate courts of jurisdiction."
+      },
+      "contact": {
+        "title": "12. Contact Us",
+        "content": "If you have questions about these Terms of Service, please:",
+        "aboutPage": "Visit our",
+        "aboutPageSuffix": "for more information",
+        "github": "View the",
+        "privacy": "Read our"
+      },
+      "acknowledgment": {
+        "title": "Acknowledgment",
+        "content": "By using FIRE Calculator, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service, including the important disclaimers about financial advice."
+      }
+    },
+    "navigation": {
+      "privacyPolicy": "← Privacy Policy",
+      "aboutUs": "About Us →"
+    }
+  },
+  "home": {
+    "title": "FIRE Calculators",
+    "subtitle": "Plan your path to Financial Independence, Retire Early. Free, private, and works completely offline.",
+    "badges": {
+      "private": "100% Private",
+      "offline": "Works Offline",
+      "noTracking": "No Tracking",
+      "shareable": "Shareable URLs"
+    },
+    "quiz": {
+      "title": "Not sure which calculator to use?",
+      "desc": "Take our quick quiz to find the perfect FIRE path for your situation. Answer a few questions and we'll recommend the best calculator with your information pre-filled.",
+      "cta": "Find Your FIRE Path",
+      "note": "Takes 2-3 minutes · Personalized recommendation"
+    },
+    "chooseCalculator": "Choose Your Calculator",
+    "startCalculating": "Start calculating",
+    "books": {
+      "title": "Recommended FIRE Books",
+      "subtitle": "Essential reading to accelerate your financial independence journey.",
+      "viewAll": "View All Books & Details",
+      "affiliateNote": "Affiliate links — purchases support this free calculator at no extra cost to you."
+    },
+    "privacy": {
+      "title": "Your Privacy is Our Priority",
+      "subtitle": "We built this calculator with privacy-first principles.",
+      "features": {
+        "noStorage": {
+          "title": "No Financial Data Storage",
+          "desc": "Your financial data stays in URLs only—never stored. Only UI preferences (theme, layout) stored locally."
+        },
+        "noAnalytics": {
+          "title": "No Analytics",
+          "desc": "Zero tracking scripts. No Google Analytics, no third-party code."
+        },
+        "urlBased": {
+          "title": "URL-Based Sharing",
+          "desc": "Save your calculations in the URL. Bookmark or share — your choice."
+        },
+        "worksOffline": {
+          "title": "Works Offline",
+          "desc": "After first load, works without internet. Install as an app on your device."
+        },
+        "openSource": {
+          "title": "Open Source",
+          "desc": "Verify everything yourself. All code is available on GitHub."
+        },
+        "clientSide": {
+          "title": "Client-Side Only",
+          "desc": "All calculations run in your browser. No server processing."
+        }
+      }
+    },
+    "whatIsFire": {
+      "title": "What is FIRE?",
+      "para1": "FIRE stands for Financial Independence, Retire Early. It's a financial movement focused on extreme savings and investment to retire much earlier than traditional retirement age. The core principle is simple: save aggressively, invest wisely, and once your investments can cover your living expenses indefinitely, you achieve financial independence.",
+      "para2": "The most common FIRE calculation uses the 4% rule (or 25x rule): if you can live on 4% of your portfolio per year, you need to save 25 times your annual expenses. For example, if you spend $40,000 per year, you need $1,000,000 to be financially independent."
+    },
+    "tallyAi": {
+      "title": "Track Your Progress with Tally AI",
+      "desc": "Smart financial companion that helps you track spending, manage budgets, and achieve your FIRE goals with AI-powered insights. Perfect complement to these calculators.",
+      "cta": "Learn More About Tally AI"
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "content": "This calculator is provided for educational and informational purposes only. It is not financial, investment, tax, or legal advice. Results are hypothetical projections and actual results will vary. Please consult a qualified financial advisor before making any financial decisions."
+    },
+    "builtWith": "Built with privacy in mind. No data ever leaves your browser.",
+    "viewOnGithub": "View on GitHub"
+  },
+  "components": {
+    "progressBar": {
+      "progressToFire": "Progress to FIRE",
+      "progressToCoastFire": "Progress to Coast FIRE",
+      "progressToBaristaFire": "Progress to Barista FIRE",
+      "fireNumber": "FIRE Number",
+      "coastNumber": "Coast Number",
+      "baristaNumber": "Barista Number",
+      "current": "Current",
+      "yearsToGo": "~{years} years to go",
+      "status": {
+        "reached": "You've reached FIRE!",
+        "almostThere": "Almost there! Final stretch!",
+        "halfway": "Halfway to freedom!",
+        "greatProgress": "Great progress! Keep going!",
+        "journeyStarted": "Journey started!"
+      },
+      "ariaLabel": "{progress}% progress to {goal} goal"
+    },
+    "exportButton": {
+      "exporting": "Exporting...",
+      "exported": "Exported!",
+      "exportToExcel": "Export to Excel",
+      "title": "Export to Excel spreadsheet"
+    },
+    "urlActions": {
+      "copied": "Copied!",
+      "copyLink": "Copy Link",
+      "reset": "Reset",
+      "resetTitle": "Clear all values (URL and saved data)"
+    },
+    "languageSwitcher": {
+      "ariaLabel": "Change language"
+    },
+    "sidebar": {
+      "ariaLabels": {
+        "closeMenu": "Close menu",
+        "expandSidebar": "Expand sidebar",
+        "collapseSidebar": "Collapse sidebar",
+        "lightMode": "Light mode",
+        "darkMode": "Dark mode",
+        "systemTheme": "System theme"
+      },
+      "titles": {
+        "expandSidebar": "Expand sidebar",
+        "collapseSidebar": "Collapse sidebar",
+        "home": "Home",
+        "recommendedBooks": "Recommended Books",
+        "recommendedApps": "Recommended Apps",
+        "findYourPath": "Find Your Path",
+        "theme": "Theme",
+        "lightMode": "Light mode",
+        "darkMode": "Dark mode",
+        "systemTheme": "System theme",
+        "privacyBadge": "100% Private & Offline"
+      }
+    },
+    "appLayout": {
+      "ariaLabels": {
+        "openMenu": "Open menu"
+      },
+      "footer": "© {year} FIRE Calculator. 100% Private."
+    },
+    "debtListInput": {
+      "placeholder": "e.g., Credit Card, Car Loan",
+      "removeDebt": "Remove debt",
+      "debtNumber": "Debt #{number}"
+    },
+    "tooltip": {
+      "ariaLabel": "More information"
+    },
+    "disclaimer": {
+      "title": "⚠️ Disclaimer",
+      "para1": "This calculator is provided for educational and informational purposes only. It is not intended to be, and should not be construed as, financial, investment, tax, or legal advice.",
+      "para2": "The results shown are hypothetical projections based on the inputs you provide and assumptions about future returns, inflation, and other factors. Actual results will vary — past performance does not guarantee future results.",
+      "para3": "Before making any financial decisions, please consult with a qualified financial advisor, tax professional, or other appropriate professional who can consider your individual circumstances."
+    }
+  },
+  "standardFire": {
+    "title": "Standard FIRE Calculator",
+    "subtitle": "Calculate your path to financial independence using the 25x expenses rule.",
+    "understandingResults": "Understanding Your Results",
+    "fireNumber": "FIRE Number",
+    "yearsToFire": "Years to FIRE",
+    "annualNetIncome": "Annual Net Income",
+    "savingsRate": "Savings Rate",
+    "targetRetirementAgeTooltip": "The age you want to retire",
+    "currentSavingsTooltip": "Total invested assets (401k, IRA, brokerage)",
+    "annualNetIncomeTooltip": "Your net (take-home) annual income after taxes"
+  },
+  "apps": {
+    "title": "Recommended FIRE Apps",
+    "subtitle": "Essential apps to accelerate your financial independence journey.",
+    "smartToolsTitle": "Smart Tools for Your Journey",
+    "smartToolsDesc": "These apps complement your FIRE calculators with practical tools for budgeting, tracking, and managing your finances. More recommendations coming soon!",
+    "visitWebsite": "Visit Website",
+    "disclaimerTitle": "Disclaimer",
+    "disclaimerContent": "We are not affiliated with or endorsed by any of the apps listed above. These recommendations are provided for informational purposes only. We only recommend apps we genuinely believe will help you on your FIRE journey. Please do your own research before using any third-party service."
+  },
+  "books": {
+    "title": "Recommended FIRE Books",
+    "subtitle": "Essential reading for your financial independence journey.",
+    "knowledgeTitle": "Knowledge is Power",
+    "knowledgeDesc": "These books have helped millions achieve financial independence. Whether you're just starting out or optimizing your FIRE strategy, there's something here for everyone.",
+    "viewOnAmazon": "View on Amazon",
+    "affiliateTitle": "Affiliate Disclosure",
+    "affiliateContent": "The links above are Amazon affiliate links. If you purchase through these links, we may earn a small commission at no additional cost to you. This helps support the development of this free calculator. We only recommend books we genuinely believe will help you on your FIRE journey."
   }
 }

@@ -36,9 +36,9 @@ export default function WithdrawalRate() {
 
     // Define formulas for calculated results
     const resultFormulas: Record<string, string> = {
-      // {t('withdrawalRate.annualWithdrawalLabel')} = {t('withdrawalRate.portfolioValueLabel')} * {t('withdrawalRate.withdrawalRateLabel')}
+      // Annual Withdrawal = Portfolio Value * Withdrawal Rate
       annualWithdrawal: '{portfolioValue}*{withdrawalRate}',
-      // Monthly Withdrawal = {t('withdrawalRate.annualWithdrawalLabel')} / 12
+      // Monthly Withdrawal = Annual Withdrawal / 12
       monthlyWithdrawal: '({portfolioValue}*{withdrawalRate})/12',
     }
 
@@ -110,35 +110,35 @@ export default function WithdrawalRate() {
               label="{t('withdrawalRate.portfolioValueLabel')}"
               value={params.portfolioValue}
               onChange={(v) => setParam('portfolioValue', v)}
-              tooltip="Current total invested assets"
+              tooltip={t('withdrawalRate.portfolioValueTooltip')}
             />
             <PercentageInput
               label="{t('withdrawalRate.withdrawalRateLabel')}"
               value={params.withdrawalRate}
               onChange={(v) => setParam('withdrawalRate', v)}
-              tooltip="Percentage of portfolio to withdraw yearly"
+              tooltip={t('withdrawalRate.withdrawalRateTooltip')}
               min={0.02}
               max={0.08}
               step={0.005}
             />
             <InputGroup
-              label="Retirement Duration"
+              label={t('withdrawalRate.retirementDuration')}
               value={params.retirementYears}
               onChange={(v) => setParam('retirementYears', v)}
-              tooltip="How many years you need the portfolio to last"
+              tooltip={t('withdrawalRate.retirementDurationTooltip')}
               suffix="years"
               min={10}
               max={60}
             />
             <PercentageInput
-              label="Expected Return"
+              label={t('input.expectedReturn')}
               value={params.expectedReturn}
               onChange={(v) => setParam('expectedReturn', v)}
               min={0}
               max={0.15}
             />
             <PercentageInput
-              label="Inflation Rate"
+              label={t('input.inflationRate')}
               value={params.inflationRate}
               onChange={(v) => setParam('inflationRate', v)}
               min={0}
@@ -152,7 +152,7 @@ export default function WithdrawalRate() {
           {/* Key Metrics */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <ResultCard
-              label="{t('withdrawalRate.annualWithdrawalLabel')}"
+              label={t('withdrawalRate.annualWithdrawalLabel')}
               value={results.annualWithdrawal}
               format="currency"
               highlight
@@ -166,13 +166,13 @@ export default function WithdrawalRate() {
               label={t('withdrawalRate.rateAnalysis.portfolioLasts')}
               value={results.portfolioLongevity}
               format="years"
-              subtext={results.portfolioLongevity >= params.retirementYears ? t('withdrawalRate.rateAnalysis.sustainable') : t('withdrawalRate.rateAnalysis.tooHigh')}}
+              subtext={results.portfolioLongevity >= params.retirementYears ? t('withdrawalRate.rateAnalysis.sustainable') : t('withdrawalRate.rateAnalysis.tooHigh')}
             />
             <ResultCard
               label={t('withdrawalRate.rateAnalysis.status')}
               value={results.successRate}
               format="percent"
-              subtext={results.successRate >= 1 ? t('output.good') : t('output.risky')}}
+              subtext={results.successRate >= 1 ? t('output.good') : t('output.risky')}
             />
           </div>
 
@@ -277,30 +277,32 @@ export default function WithdrawalRate() {
                 <div className="flex gap-3 p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
                   <span className="text-xl">✅</span>
                   <p className="text-green-800 dark:text-green-200 m-0">
-                    <strong>Your withdrawal rate is sustainable!</strong> At {(params.withdrawalRate * 100).toFixed(1)}%, 
-                    your portfolio of {formatCurrency(params.portfolioValue)} should last {results.portfolioLongevity} years, 
-                    meeting your {params.retirementYears}-year goal.
+                    {t('withdrawalRate.recommendations.sustainable.content', {
+                      rate: (params.withdrawalRate * 100).toFixed(1),
+                      portfolioValue: formatCurrency(params.portfolioValue),
+                      longevity: results.portfolioLongevity,
+                      retirementYears: params.retirementYears
+                    })}
                   </p>
                 </div>
               ) : (
                 <div className="flex gap-3 p-3 bg-amber-50 dark:bg-amber-900/20 rounded-lg">
                   <span className="text-xl">⚠️</span>
                   <p className="text-amber-800 dark:text-amber-200 m-0">
-                    <strong>Consider lowering your withdrawal rate.</strong> At {(params.withdrawalRate * 100).toFixed(1)}%, 
-                    your portfolio would only last {results.portfolioLongevity} years. Try reducing to 3.5% or 3% for 
-                    a longer-lasting portfolio.
+                    {t('withdrawalRate.recommendations.considerLowering.content', {
+                      rate: (params.withdrawalRate * 100).toFixed(1),
+                      longevity: results.portfolioLongevity
+                    })}
                   </p>
                 </div>
               )}
               
               <div className="mt-4 space-y-2 text-gray-600 dark:text-gray-400">
                 <p>
-                  <strong>For early retirees (40+ year retirements):</strong> Consider a 3-3.5% withdrawal rate 
-                  for extra safety margin.
+                  {t('withdrawalRate.recommendations.earlyRetirees')}
                 </p>
                 <p>
-                  <strong>Flexible spending:</strong> Being willing to reduce spending during market downturns 
-                  significantly improves success rates.
+                  {t('withdrawalRate.recommendations.flexibleSpending')}
                 </p>
               </div>
             </CardContent>

@@ -115,31 +115,31 @@ export default function FatFIRE() {
           </CardHeader>
           <CardContent className="space-y-4">
             <AgeInput
-              label="Current Age"
+              label={t('input.currentAge')}
               value={params.currentAge}
               onChange={(v) => setParam('currentAge', v)}
             />
             <AgeInput
-              label="Target Retirement Age"
+              label={t('input.targetRetirementAge')}
               value={params.retirementAge}
               onChange={(v) => setParam('retirementAge', v)}
             />
             <CurrencyInput
-              label="Current Savings"
+              label={t('input.currentSavings')}
               value={params.currentSavings}
               onChange={(v) => setParam('currentSavings', v)}
             />
             <CurrencyInput
-              label="Annual Contribution"
+              label={t('input.annualContribution')}
               value={params.annualContribution}
               onChange={(v) => setParam('annualContribution', v)}
             />
             <div>
               <CurrencyInput
-                label="Annual Expenses (Fat)"
+                label={t('fatFire.annualExpensesFat')}
                 value={params.annualExpenses}
                 onChange={(v) => setParam('annualExpenses', v)}
-                tooltip="For Fat FIRE, typically $100,000+ per year"
+                tooltip={t('fatFire.annualExpensesFatTooltip')}
               />
               <div className="mt-2">
                 <div className="flex justify-between text-xs text-gray-500 dark:text-gray-400 mb-1">
@@ -160,24 +160,24 @@ export default function FatFIRE() {
               </div>
             </div>
             <PercentageInput
-              label="Expected Return"
+              label={t('input.expectedReturn')}
               value={params.expectedReturn}
               onChange={(v) => setParam('expectedReturn', v)}
               min={0}
               max={0.15}
             />
             <PercentageInput
-              label="Inflation Rate"
+              label={t('input.inflationRate')}
               value={params.inflationRate}
               onChange={(v) => setParam('inflationRate', v)}
               min={0}
               max={0.10}
             />
             <PercentageInput
-              label="Safe Withdrawal Rate"
+              label={t('input.safeWithdrawalRate')}
               value={params.withdrawalRate}
               onChange={(v) => setParam('withdrawalRate', v)}
-              tooltip="Fat FIRE often uses 3.5% for extra safety"
+              tooltip={t('fatFire.swrTooltip')}
               min={0.02}
               max={0.06}
             />
@@ -189,23 +189,23 @@ export default function FatFIRE() {
           {/* Key Metrics */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <ResultCard
-              label="Fat FIRE Number"
+              label={t('fatFire.fatFireNumber')}
               value={results.fireNumber}
               format="currency"
               highlight
-              subtext="Target portfolio value"
+              subtext={t('output.targetPortfolioValue')}
             />
             <ResultCard
-              label="Years to Fat FIRE"
+              label={t('fatFire.yearsToFatFire')}
               value={results.yearsToFIRE}
               format="years"
               subtext={`At age ${Math.round(results.fireAge)}`}
             />
             <ResultCard
-              label="Monthly Lifestyle"
+              label={t('fatFire.monthlyLifestyle')}
               value={params.annualExpenses / 12}
               format="currency"
-              subtext="In retirement"
+              subtext={t('fatFire.inRetirement')}
             />
           </div>
 

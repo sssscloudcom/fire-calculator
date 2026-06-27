@@ -21,11 +21,10 @@ export default function Home() {
             <span className="text-5xl animate-pulse" role="img" aria-label="Fire emoji">🔥</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-            FIRE Calculators
+            {t('home.title')}
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-6">
-            Plan your path to <strong>Financial Independence, Retire Early</strong>. 
-            Free, private, and works completely offline.
+            {t('home.subtitle')}
           </p>
         
         {/* Privacy badges */}
@@ -276,15 +275,10 @@ export default function Home() {
       <div className="prose dark:prose-invert max-w-none">
         <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">{t('home.whatIsFire.title')}</h2>
         <p className="text-gray-600 dark:text-gray-400">
-          <strong>FIRE</strong> stands for <strong>Financial Independence, Retire Early</strong>. It's a financial movement 
-          focused on extreme savings and investment to retire much earlier than traditional retirement age. 
-          The core principle is simple: save aggressively, invest wisely, and once your investments can 
-          cover your living expenses indefinitely, you achieve financial independence.
+          {t('home.whatIsFire.para1')}
         </p>
         <p className="text-gray-600 dark:text-gray-400">
-          The most common FIRE calculation uses the <strong>4% rule</strong> (or 25x rule): if you can live on 4% of 
-          your portfolio per year, you need to save 25 times your annual expenses. For example, if you 
-          spend $40,000 per year, you need $1,000,000 to be financially independent.
+          {t('home.whatIsFire.para2')}
         </p>
       </div>
 

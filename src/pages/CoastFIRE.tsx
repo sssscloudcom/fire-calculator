@@ -117,50 +117,50 @@ export default function CoastFIRE() {
           </CardHeader>
           <CardContent className="space-y-4">
             <AgeInput
-              label="Current Age"
+              label={t('input.currentAge')}
               value={params.currentAge}
               onChange={(v) => setParam('currentAge', v)}
             />
             <AgeInput
-              label="Target Retirement Age"
+              label={t('input.targetRetirementAge')}
               value={params.retirementAge}
               onChange={(v) => setParam('retirementAge', v)}
-              tooltip="Traditional retirement age (e.g., 60-67)"
+              tooltip={t('coastFire.targetRetirementAgeTooltip')}
               min={params.currentAge + 1}
               max={80}
             />
             <CurrencyInput
-              label="Current Savings"
+              label={t('input.currentSavings')}
               value={params.currentSavings}
               onChange={(v) => setParam('currentSavings', v)}
             />
             <CurrencyInput
-              label="Annual Contribution"
+              label={t('input.annualContribution')}
               value={params.annualContribution}
               onChange={(v) => setParam('annualContribution', v)}
-              tooltip="How much you're currently saving per year"
+              tooltip={t('input.annualContributionTooltip')}
             />
             <CurrencyInput
-              label="Annual Expenses in Retirement"
+              label={t('coastFire.annualExpensesInRetirement')}
               value={params.annualExpenses}
               onChange={(v) => setParam('annualExpenses', v)}
             />
             <PercentageInput
-              label="Expected Return"
+              label={t('input.expectedReturn')}
               value={params.expectedReturn}
               onChange={(v) => setParam('expectedReturn', v)}
               min={0}
               max={0.15}
             />
             <PercentageInput
-              label="Inflation Rate"
+              label={t('input.inflationRate')}
               value={params.inflationRate}
               onChange={(v) => setParam('inflationRate', v)}
               min={0}
               max={0.10}
             />
             <PercentageInput
-              label="Safe Withdrawal Rate"
+              label={t('input.safeWithdrawalRate')}
               value={params.withdrawalRate}
               onChange={(v) => setParam('withdrawalRate', v)}
               min={0.02}
@@ -185,20 +185,20 @@ export default function CoastFIRE() {
           {/* Key Metrics */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <ResultCard
-              label="Coast FIRE Number"
+              label={t('coastFire.coastFireNumber')}
               value={results.coastNumber}
               format="currency"
               highlight
-              subtext="Amount needed today"
+              subtext={t('coastFire.amountNeededToday')}
             />
             <ResultCard
-              label="Full FIRE Number"
+              label={t('coastFire.fullFireNumber')}
               value={results.fireNumber}
               format="currency"
               subtext={`At age ${params.retirementAge}`}
             />
             <ResultCard
-              label="Current Progress"
+              label={t('coastFire.currentProgress')}
               value={Math.min(1, params.currentSavings / results.coastNumber)}
               format="percent"
               subtext={`${formatCurrency(params.currentSavings)} saved`}
@@ -237,15 +237,18 @@ export default function CoastFIRE() {
             </CardHeader>
             <CardContent className="prose dark:prose-invert max-w-none text-sm">
               <p>
-                Your <strong>Coast FIRE Number</strong> ({formatCurrency(results.coastNumber)}) is the amount 
-                you need invested today such that compound growth alone will reach your full FIRE number 
-                ({formatCurrency(results.fireNumber)}) by age {params.retirementAge}.
+                {t('coastFire.howWorksContent', {
+                  coastNumber: formatCurrency(results.coastNumber),
+                  fireNumber: formatCurrency(results.fireNumber),
+                  retirementAge: params.retirementAge
+                })}
               </p>
               {results.alreadyCoasting ? (
                 <p className="text-green-600 dark:text-green-400">
-                  <strong>Congratulations!</strong> You've already reached Coast FIRE. You could stop 
-                  contributing to retirement and your portfolio would still grow to {formatCurrency(results.fireNumber)} by 
-                  age {params.retirementAge}. Consider switching to work you love, even if it pays less!
+                  {t('coastFire.alreadyCoasting', {
+                    fireNumber: formatCurrency(results.fireNumber),
+                    retirementAge: params.retirementAge
+                  })}
                 </p>
               ) : (
                 <p>

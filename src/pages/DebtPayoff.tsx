@@ -207,10 +207,10 @@ export default function DebtPayoff() {
               {mode === 'fixed' ? (
                 <>
                   <CurrencyInput
-                    label="Total Monthly Budget"
+                    label={t('debtPayoff.totalMonthlyBudget')}
                     value={monthlyBudget}
                     onChange={setMonthlyBudget}
-                    tooltip="Total amount you can pay toward debts each month"
+                    tooltip={t('debtPayoff.totalMonthlyBudgetTooltip')}
                     min={totalMinPayments}
                     showInvalidState={true}
                   />

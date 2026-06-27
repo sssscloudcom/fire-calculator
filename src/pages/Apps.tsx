@@ -1,6 +1,7 @@
 import { Card, CardHeader, CardContent } from '../components/ui'
 import SEO from '../components/SEO'
 import { calculatorSEO } from '../config/seo'
+import { useTranslation } from 'react-i18next'
 
 interface App {
   title: string
@@ -28,6 +29,7 @@ const apps: App[] = [
 ]
 
 export default function Apps() {
+  const { t } = useTranslation()
   return (
     <>
       <SEO {...calculatorSEO.apps} />
@@ -48,7 +50,7 @@ export default function Apps() {
           <div className="flex gap-3">
             <span className="text-2xl" role="img" aria-label="Light bulb emoji">💡</span>
             <div>
-            <h3 className="font-semibold text-amber-900 dark:text-amber-100">Smart Tools for Your Journey</h3>
+            <h3 className="font-semibold text-amber-900 dark:text-amber-100">{t('apps.smartToolsTitle')}</h3>
             <p className="text-sm text-amber-700 dark:text-amber-300 mt-1">
               These apps complement your FIRE calculators with practical tools for budgeting, 
               tracking, and managing your finances. More recommendations coming soon!
@@ -89,7 +91,7 @@ export default function Apps() {
                   {app.description}
                 </p>
                 <div className="mt-4 flex items-center gap-2 text-fire-600 dark:text-fire-400 text-sm font-medium">
-                  <span>Visit Website</span>
+                  <span>{t('apps.visitWebsite')}</span>
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
@@ -100,10 +102,10 @@ export default function Apps() {
         ))}
       </div>
 
-      {/* Disclaimer */}
+      {/* {t('apps.disclaimerTitle')} */}
       <Card className="bg-gray-50 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700">
         <CardHeader>
-          <h2 className="text-sm font-semibold text-gray-700 dark:text-gray-300">Disclaimer</h2>
+          <h2 className="text-sm font-semibold text-gray-700 dark:text-gray-300">{t('apps.disclaimerTitle')}</h2>
         </CardHeader>
         <CardContent>
           <p className="text-sm text-gray-600 dark:text-gray-400">

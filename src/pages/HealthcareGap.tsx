@@ -167,15 +167,15 @@ export default function HealthcareGap() {
           </CardHeader>
           <CardContent className="space-y-4">
             <AgeInput
-              label="Current Age"
+              label={t('input.currentAge')}
               value={params.currentAge}
               onChange={(v) => setParam('currentAge', v)}
             />
             <AgeInput
-              label="Early Retirement Age"
+              label={t('healthcareGap.earlyRetirementAge')}
               value={params.retirementAge}
               onChange={(v) => setParam('retirementAge', v)}
-              tooltip="When you plan to leave employer-sponsored insurance"
+              tooltip={t('healthcareGap.earlyRetirementAgeTooltip')}
               max={64}
             />
             <div className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
@@ -196,24 +196,24 @@ export default function HealthcareGap() {
               </p>
               <div className="space-y-3">
                 <CurrencyInput
-                  label="Monthly Premium"
+                  label={t('healthcareGap.monthlyPremium')}
                   value={monthlyPremium}
                   onChange={setMonthlyPremium}
-                  tooltip="Monthly health insurance premium"
+                  tooltip={t('healthcareGap.monthlyPremiumTooltip')}
                   max={3000}
                 />
                 <CurrencyInput
-                  label="Annual Deductible"
+              label={t('healthcareGap.annualDeductible')}
                   value={annualDeductible}
                   onChange={setAnnualDeductible}
-                  tooltip="Yearly deductible before insurance pays"
+                  tooltip={t('healthcareGap.annualDeductibleTooltip')}
                   max={20000}
                 />
                 <CurrencyInput
-                  label="Est. Out-of-Pocket"
+                  label={t('healthcareGap.estOutOfPocket')}
                   value={annualOutOfPocket}
                   onChange={setAnnualOutOfPocket}
-                  tooltip="Expected annual out-of-pocket medical costs"
+                  tooltip={t('healthcareGap.annualOutOfPocketTooltip')}
                   max={20000}
                 />
               </div>
@@ -241,22 +241,22 @@ export default function HealthcareGap() {
           {/* Key Metrics */}
           <div className="grid sm:grid-cols-3 gap-4">
             <ResultCard
-              label="Gap Years"
+              label={t('healthcareGap.gapYears')}
               value={results.gapYears}
               format="years"
               subtext={`Age ${params.retirementAge} to ${medicareAge}`}
             />
             <ResultCard
-              label="Year 1 Cost"
+              label={t('healthcareGap.year1Cost')}
               value={results.annualCost}
               format="currency"
-              subtext="Before inflation"
+              subtext={t('healthcareGap.beforeInflation')}
             />
             <ResultCard
-              label="Avg Annual Cost"
+              label={t('healthcareGap.avgAnnualCost')}
               value={results.avgAnnualCost}
               format="currency"
-              subtext="With inflation"
+              subtext={t('healthcareGap.withInflation')}
             />
           </div>
 
@@ -310,12 +310,12 @@ export default function HealthcareGap() {
                   <table className="w-full text-sm">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-700">
-                        <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">Age</th>
-                        <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">Year</th>
-                        <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">Premium</th>
-                        <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">Deductible</th>
+                        <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">{t('healthcareGap.table.age')}</th>
+                        <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">{t('healthcareGap.table.year')}</th>
+                        <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">{t('healthcareGap.table.premium')}</th>
+                        <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">{t('healthcareGap.table.deductible')}</th>
                         <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">Out-of-Pocket</th>
-                        <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">Total</th>
+                        <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">{t('healthcareGap.table.total')}</th>
                       </tr>
                     </thead>
                     <tbody>

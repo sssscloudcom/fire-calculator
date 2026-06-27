@@ -133,22 +133,22 @@ export default function LeanFIRE() {
           </CardHeader>
           <CardContent className="space-y-4">
             <AgeInput
-              label="Current Age"
+              label={t('input.currentAge')}
               value={params.currentAge}
               onChange={(v) => setParam('currentAge', v)}
             />
             <AgeInput
-              label="Target Retirement Age"
+              label={t('input.targetRetirementAge')}
               value={params.retirementAge}
               onChange={(v) => setParam('retirementAge', v)}
             />
             <CurrencyInput
-              label="Current Savings"
+              label={t('input.currentSavings')}
               value={params.currentSavings}
               onChange={(v) => setParam('currentSavings', v)}
             />
             <CurrencyInput
-              label="Annual Contribution"
+              label={t('input.annualContribution')}
               value={params.annualContribution}
               onChange={(v) => setParam('annualContribution', v)}
             />
@@ -157,7 +157,7 @@ export default function LeanFIRE() {
                 label={t('leanFire.annualExpensesLean')}
                 value={params.annualExpenses}
                 onChange={(v) => setParam('annualExpenses', v)}
-                tooltip="For Lean FIRE, keep this ≤$40,000"
+                tooltip={t('leanFire.annualExpensesLeanTooltip')}
                 max={100000}
               />
               <div className="mt-2">
@@ -176,21 +176,21 @@ export default function LeanFIRE() {
               </div>
             </div>
             <PercentageInput
-              label="Expected Return"
+              label={t('input.expectedReturn')}
               value={params.expectedReturn}
               onChange={(v) => setParam('expectedReturn', v)}
               min={0}
               max={0.15}
             />
             <PercentageInput
-              label="Inflation Rate"
+              label={t('input.inflationRate')}
               value={params.inflationRate}
               onChange={(v) => setParam('inflationRate', v)}
               min={0}
               max={0.10}
             />
             <PercentageInput
-              label="Safe Withdrawal Rate"
+              label={t('input.safeWithdrawalRate')}
               value={params.withdrawalRate}
               onChange={(v) => setParam('withdrawalRate', v)}
               min={0.02}
@@ -204,20 +204,20 @@ export default function LeanFIRE() {
           {/* Key Metrics */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <ResultCard
-              label="Lean FIRE Number"
+              label={t('leanFire.leanFireNumber')}
               value={results.fireNumber}
               format="currency"
               highlight
               subtext={isLean ? t('leanFire.leanTerritoryLabel') : t('leanFire.basedOnExpenses')}
             />
             <ResultCard
-              label="Years to Lean FIRE"
+              label={t('leanFire.yearsToLeanFire')}
               value={results.yearsToFIRE}
               format="years"
               subtext={`At age ${Math.round(results.fireAge)}`}
             />
             <ResultCard
-              label="Monthly Budget"
+              label={t('leanFire.monthlyBudget')}
               value={params.annualExpenses / 12}
               format="currency"
               subtext={t('leanFire.inRetirement')}

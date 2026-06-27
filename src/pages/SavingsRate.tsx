@@ -209,7 +209,7 @@ export default function SavingsRate() {
               label={t('savingsRate.startingAmount')}
               value={params.currentSavings}
               onChange={(v) => setParam('currentSavings', v)}
-              tooltip="How much you're starting with"
+              tooltip={t('savingsRate.startingAmountTooltip')}
             />
             
             {/* Contribution Frequency Toggle */}
@@ -263,14 +263,14 @@ export default function SavingsRate() {
             </div>
 
             <PercentageInput
-              label="Expected Annual Return"
+              label={t('savingsRate.expectedAnnualReturn')}
               value={params.expectedReturn}
               onChange={(v) => setParam('expectedReturn', v)}
               min={0}
               max={0.15}
             />
             <PercentageInput
-              label="Inflation Rate"
+              label={t('input.inflationRate')}
               value={params.inflationRate}
               onChange={(v) => setParam('inflationRate', v)}
               min={0}
@@ -279,10 +279,10 @@ export default function SavingsRate() {
 
             <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
               <CurrencyInput
-                label="Annual Income (Optional)"
+                label={t('savingsRate.annualIncomeOptional')}
                 value={annualIncome}
                 onChange={setAnnualIncome}
-                tooltip="For calculating your savings rate"
+                tooltip={t('savingsRate.annualIncomeTooltip')}
               />
             </div>
           </CardContent>

@@ -255,7 +255,11 @@
       }
     },
     "benefitsTitle": "Benefits of Barista FIRE",
-    "content": "Barista FIRE (named after the stereotype of working part-time at Starbucks for benefits) means having enough invested to cover most expenses, while working a part-time or low-stress job to cover the gap and potentially access health insurance benefits."
+    "content": "Barista FIRE (named after the stereotype of working part-time at Starbucks for benefits) means having enough invested to cover most expenses, while working a part-time or low-stress job to cover the gap and potentially access health insurance benefits.",
+    "yearsToBaristaFire": "Years to Barista FIRE",
+    "partTimeAnnualIncome": "Part-Time Annual Income",
+    "withoutPartTimeWork": "Without part-time work",
+    "partTimeIncomeTooltip": "Expected yearly income from part-time work"
   },
   "calculator": {
     "standard": {
@@ -383,7 +387,9 @@
         "title": "Security Buffer",
         "desc": "Extra cushion for market downturns or surprises"
       }
-    }
+    },
+    "yearsToFatFire": "Years to Fat FIRE",
+    "annualExpensesFatTooltip": "For Fat FIRE, typically $100,000+ per year"
   },
   "leanFire": {
     "title": "Lean FIRE Calculator",
@@ -424,7 +430,9 @@
       }
     },
     "leanTerritoryLabel": "You're in Lean territory!",
-    "basedOnExpenses": "Based on your expenses"
+    "basedOnExpenses": "Based on your expenses",
+    "yearsToLeanFire": "Years to Lean FIRE",
+    "annualExpensesLeanTooltip": "For Lean FIRE, keep this ≤$40,000"
   },
   "coastFire": {
     "title": "Coast FIRE Calculator",
@@ -453,7 +461,10 @@
     "bannerContent": "Coast FIRE is when you've saved enough that compound growth alone will get you to your full FIRE number by traditional retirement age — without any more contributions. You can then \"coast\" with a lower-paying job that just covers current expenses.",
     "howWorksTitle": "How Coast FIRE Works",
     "alreadyCoastingText": "You're already Coast FIRE!",
-    "yearsToCoastText": "{years} years to Coast FIRE"
+    "yearsToCoastText": "{years} years to Coast FIRE",
+    "annualExpensesInRetirement": "Annual Expenses in Retirement",
+    "howWorksContent": "Your Coast FIRE Number ({coastNumber}) is the amount you need invested today such that compound growth alone will reach your full FIRE number ({fireNumber}) by age {retirementAge}.",
+    "alreadyCoasting": "Congratulations! You've already reached Coast FIRE. You could stop contributing to retirement and your portfolio would still grow to {fireNumber} by age {retirementAge}. Consider switching to work you love, even if it pays less!"
   },
   "debtPayoff": {
     "title": "Debt Payoff Calculator",
@@ -523,7 +534,9 @@
     "interestSavedLabel": "Interest Saved",
     "winnerLabel": "Winner",
     "addDebtsTitle": "Add Your Debts to Get Started",
-    "addDebtsDesc": "Enter your debt information in the left panel to see your payoff strategy."
+    "addDebtsDesc": "Enter your debt information in the left panel to see your payoff strategy.",
+    "totalMonthlyBudget": "Total Monthly Budget",
+    "totalMonthlyBudgetTooltip": "Total amount you can pay toward debts each month"
   },
   "input": {
     "currentAge": "Current Age",
@@ -539,7 +552,16 @@
     "portfolioValue": "Portfolio Value",
     "monthlyPremium": "Monthly Premium",
     "annualDeductible": "Annual Deductible",
-    "annualOutOfPocket": "Annual Out-of-Pocket"
+    "annualOutOfPocket": "Annual Out-of-Pocket",
+    "targetRetirementAge": "Target Retirement Age",
+    "safeWithdrawalRate": "Safe Withdrawal Rate",
+    "currentAgeTooltip": "Your current age",
+    "targetRetirementAgeTooltip": "Traditional retirement age (e.g., 60-67)",
+    "annualExpensesTooltip": "Total yearly spending needs",
+    "annualContributionTooltip": "How much you're currently saving per year",
+    "expectedReturnTooltip": "Average annual investment return (7% is typical for stocks)",
+    "inflationRateTooltip": "Expected annual inflation (3% is historical average)",
+    "swrTooltip": "The 4% rule - withdraw 4% of portfolio yearly"
   },
   "output": {
     "years": "years",
@@ -547,7 +569,10 @@
     "perYear": "per year",
     "perMonth": "per month",
     "total": "Total",
-    "average": "Average"
+    "average": "Average",
+    "targetPortfolioValue": "Target portfolio value",
+    "good": "Good",
+    "risky": "Risky"
   },
   "common": {
     "calculate": "Calculate",
@@ -1199,7 +1224,11 @@
     "acaSubsidyTitle": "ACA Subsidy Potential",
     "acaSubsidyDesc": "Your retirement income affects ACA premium subsidies. Lower income = higher subsidies.",
     "annualSubsidyLabel": "Annual subsidy",
-    "strategiesTitle": "Healthcare Gap Strategies"
+    "strategiesTitle": "Healthcare Gap Strategies",
+    "earlyRetirementAge": "Early Retirement Age",
+    "monthlyPremium": "Monthly Premium",
+    "annualDeductible": "Annual Deductible",
+    "estOutOfPocket": "Est. Out-of-Pocket"
   },
   "reverseFire": {
     "title": "Reverse FIRE Calculator",
@@ -1233,7 +1262,9 @@
     "bannerContent": "Instead of calculating when you'll FIRE based on your savings, this calculator works backwards: you set your target retirement age, and it tells you exactly how much you need to save each month to get there.",
     "howWorksTitle": "How Reverse FIRE Works",
     "alreadyOnTrack": "You're Already on Track!",
-    "toFireByAgeDesc": "To FIRE by age {targetAge}, you need to save"
+    "toFireByAgeDesc": "To FIRE by age {targetAge}, you need to save",
+    "targetFireAge": "Target FIRE Age",
+    "annualExpensesInRetirement": "Annual Expenses in Retirement"
   },
   "savingsRate": {
     "title": "Savings & Investment Rate Calculator",
@@ -1273,7 +1304,8 @@
     "finalBalance": "Final Balance",
     "inflationAdjustedValueNote": "Note: Inflation will reduce your purchasing power by {impact} over {years} years at {rate}% annual inflation.",
     "compoundInterestTitle": "The Power of Compound Interest",
-    "compoundInterestContent": "Consistent investing is the key to building wealth. Even small amounts invested regularly can grow substantially over time thanks to compound interest. Start early and stay consistent!"
+    "compoundInterestContent": "Consistent investing is the key to building wealth. Even small amounts invested regularly can grow substantially over time thanks to compound interest. Start early and stay consistent!",
+    "expectedAnnualReturn": "Expected Annual Return"
   },
   "withdrawalRate": {
     "title": "Withdrawal Rate Calculator",
@@ -1302,17 +1334,19 @@
       "title": "Recommendations",
       "sustainable": {
         "title": "Your withdrawal rate is sustainable!",
-        "content": "At {rate}%, your portfolio of {portfolioValue} should last {longevity} years, meeting your {retirementYears}-year goal."
+        "content": "Your withdrawal rate is sustainable! At {rate}%, your portfolio of {portfolioValue} should last {longevity} years, meeting your {retirementYears}-year goal."
       },
       "considerLowering": {
         "title": "Consider lowering your withdrawal rate.",
-        "content": "At {rate}%, your portfolio would only last {longevity} years. Try reducing to 3.5% or 3% for a longer-lasting portfolio."
+        "content": "Consider lowering your withdrawal rate. At {rate}%, your portfolio would only last {longevity} years. Try reducing to 3.5% or 3% for a longer-lasting portfolio."
       },
       "earlyRetirees": "For early retirees (40+ year retirements): Consider a 3-3.5% withdrawal rate for extra safety margin.",
       "flexibleSpending": "Flexible spending: Being willing to reduce spending during market downturns significantly improves success rates."
     },
     "fourPercentRuleTitle": "The 4% Rule",
-    "fourPercentRuleContent": "The famous \"4% rule\" from the Trinity Study suggests withdrawing 4% of your portfolio in year one, then adjusting for inflation each year. This has historically provided a 95%+ success rate over 30-year retirements. However, longer retirements may require lower rates (3-3.5%)."
+    "fourPercentRuleContent": "The famous \"4% rule\" from the Trinity Study suggests withdrawing 4% of your portfolio in year one, then adjusting for inflation each year. This has historically provided a 95%+ success rate over 30-year retirements. However, longer retirements may require lower rates (3-3.5%).",
+    "retirementDuration": "Retirement Duration",
+    "annualWithdrawalLabel": "Annual Withdrawal"
   },
   "components": {
     "progressBar": {
@@ -1395,7 +1429,14 @@
   "standardFire": {
     "title": "Standard FIRE Calculator",
     "subtitle": "Calculate your path to financial independence using the 25x expenses rule.",
-    "understandingResults": "Understanding Your Results"
+    "understandingResults": "Understanding Your Results",
+    "fireNumber": "FIRE Number",
+    "yearsToFire": "Years to FIRE",
+    "annualNetIncome": "Annual Net Income",
+    "savingsRate": "Savings Rate",
+    "targetRetirementAgeTooltip": "The age you want to retire",
+    "currentSavingsTooltip": "Total invested assets (401k, IRA, brokerage)",
+    "annualNetIncomeTooltip": "Your net (take-home) annual income after taxes"
   },
   "apps": {
     "title": "Recommended FIRE Apps",

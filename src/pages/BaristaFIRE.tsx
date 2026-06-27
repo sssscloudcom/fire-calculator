@@ -116,25 +116,25 @@ export default function BaristaFIRE() {
           </CardHeader>
           <CardContent className="space-y-4">
             <AgeInput
-              label="Current Age"
+              label={t('input.currentAge')}
               value={params.currentAge}
               onChange={(v) => setParam('currentAge', v)}
             />
             <CurrencyInput
-              label="Current Savings"
+              label={t('input.currentSavings')}
               value={params.currentSavings}
               onChange={(v) => setParam('currentSavings', v)}
             />
             <CurrencyInput
-              label="Annual Contribution"
+              label={t('input.annualContribution')}
               value={params.annualContribution}
               onChange={(v) => setParam('annualContribution', v)}
             />
             <CurrencyInput
-              label="Annual Expenses"
+              label={t('input.annualExpenses')}
               value={params.annualExpenses}
               onChange={(v) => setParam('annualExpenses', v)}
-              tooltip="Total yearly spending needs"
+              tooltip={t('input.annualExpensesTooltip')}
             />
             
             <div className="border-t border-gray-200 dark:border-gray-700 pt-4">
@@ -142,10 +142,10 @@ export default function BaristaFIRE() {
                 ☕ {t('baristaFire.partTimeWork')}
               </h3>
               <CurrencyInput
-                label="Part-Time Annual Income"
+                label={t('baristaFire.partTimeAnnualIncome')}
                 value={params.partTimeIncome}
                 onChange={(v) => setParam('partTimeIncome', v)}
-                tooltip="Expected yearly income from part-time work"
+                tooltip={t('baristaFire.partTimeIncomeTooltip')}
               />
               <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
                 {t('baristaFire.partTimeTip')}
@@ -153,21 +153,21 @@ export default function BaristaFIRE() {
             </div>
 
             <PercentageInput
-              label="Expected Return"
+              label={t('input.expectedReturn')}
               value={params.expectedReturn}
               onChange={(v) => setParam('expectedReturn', v)}
               min={0}
               max={0.15}
             />
             <PercentageInput
-              label="Inflation Rate"
+              label={t('input.inflationRate')}
               value={params.inflationRate}
               onChange={(v) => setParam('inflationRate', v)}
               min={0}
               max={0.10}
             />
             <PercentageInput
-              label="Safe Withdrawal Rate"
+              label={t('input.safeWithdrawalRate')}
               value={params.withdrawalRate}
               onChange={(v) => setParam('withdrawalRate', v)}
               min={0.02}
@@ -199,20 +199,20 @@ export default function BaristaFIRE() {
           {/* Key Metrics */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <ResultCard
-              label="Barista FIRE Number"
+              label={t('baristaFire.baristaFireNumber')}
               value={results.baristaNumber}
               format="currency"
               highlight
-              subtext="Target portfolio value"
+              subtext={t('output.targetPortfolioValue')}
             />
             <ResultCard
-              label="Full FIRE Number"
+              label={t('baristaFire.fullFireNumber')}
               value={results.fullFireNumber}
               format="currency"
-              subtext="Without part-time work"
+              subtext={t('baristaFire.withoutPartTimeWork')}
             />
             <ResultCard
-              label="Years to Barista FIRE"
+              label={t('baristaFire.yearsToBaristaFire')}
               value={results.yearsToBaristaFIRE}
               format="years"
               icon="⏱️"
