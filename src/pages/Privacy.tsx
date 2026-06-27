@@ -26,24 +26,24 @@ export default function Privacy() {
           {/* Summary */}
           <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl p-6">
             <h2 className="text-xl font-bold text-green-800 dark:text-green-200 mb-3 flex items-center gap-2">
-              <span>✅</span> {t('legal.privacy.tldrTitle')}
+              <span>✅</span> {t('legal.privacy.summary.title')}
             </h2>
             <ul className="space-y-2 text-green-800 dark:text-green-200">
               <li className="flex items-start gap-2">
                 <span className="text-green-600 dark:text-green-400 mt-1">•</span>
-                <span><strong>All calculations happen 100% in your browser</strong> — your financial data never leaves your device</span>
+                <span><strong>{t('legal.privacy.summary.points.browserSide')}</strong></span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 dark:text-green-400 mt-1">•</span>
-                <span><strong>We do not collect, store, or transmit any personal or financial information</strong></span>
+                <span><strong>{t('legal.privacy.summary.points.noCollection')}</strong></span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 dark:text-green-400 mt-1">•</span>
-                <span><strong>No user accounts, no databases, no server-side processing</strong></span>
+                <span><strong>{t('legal.privacy.summary.points.noAccounts')}</strong></span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-600 dark:text-green-400 mt-1">•</span>
-                <span><strong>No tracking, no analytics, no cookies for user data</strong></span>
+                <span><strong>{t('legal.privacy.summary.points.noTracking')}</strong></span>
               </li>
             </ul>
           </div>
@@ -51,19 +51,19 @@ export default function Privacy() {
           {/* Section 1: {t('legal.privacy.collectTitle')} */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              1. {t('legal.privacy.collectTitle')}
+              1. {t('legal.privacy.sections.infoCollect.title')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              <strong>We do not collect any personal or financial information.</strong> This FIRE Calculator is designed with privacy as a core principle. Here's what that means:
+              <strong>{t('legal.privacy.sections.infoCollect.intro')}</strong>
             </p>
             <div className="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">What We DON'T Collect:</h3>
+              <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">{t('legal.privacy.sections.infoCollect.dontCollect')}</h3>
               <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-400">
-                <li>Names, email addresses, or contact information</li>
-                <li>Financial data (income, expenses, savings, investments)</li>
-                <li>IP addresses or location data</li>
-                <li>Browsing history or usage patterns</li>
-                <li>Cookies for tracking purposes</li>
+                <li>{t('legal.privacy.sections.infoCollect.items.names')}</li>
+                <li>{t('legal.privacy.sections.infoCollect.items.financial')}</li>
+                <li>{t('legal.privacy.sections.infoCollect.items.ip')}</li>
+                <li>{t('legal.privacy.sections.infoCollect.items.browsing')}</li>
+                <li>{t('legal.privacy.sections.infoCollect.items.cookies')}</li>
               </ul>
             </div>
           </section>
@@ -71,10 +71,10 @@ export default function Privacy() {
           {/* Section 2: How Calculations Work */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              2. {t('legal.privacy.howWorkTitle')}
+              2. {t('legal.privacy.sections.howCalculations.title')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              All calculations are performed entirely within your web browser (client-side). When you enter financial information:
+              {t('legal.privacy.sections.howCalculations.intro')}
             </p>
             <div className="space-y-4">
               <div className="flex items-start gap-4 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -82,8 +82,8 @@ export default function Privacy() {
                   <span className="text-blue-600 dark:text-blue-300 font-bold">1</span>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">Browser-Side Processing</h4>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">All mathematical calculations happen in JavaScript running in your browser. No data is sent to our servers.</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">{t('legal.privacy.sections.howCalculations.steps.browserSide.title')}</h4>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.privacy.sections.howCalculations.steps.browserSide.desc')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -91,8 +91,8 @@ export default function Privacy() {
                   <span className="text-blue-600 dark:text-blue-300 font-bold">2</span>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">URL-Based Storage (Optional)</h4>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">Your calculation inputs are encoded in the URL when you share or bookmark. This is the only way your data persists — and it's entirely under your control.</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">{t('legal.privacy.sections.howCalculations.steps.urlStorage.title')}</h4>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.privacy.sections.howCalculations.steps.urlStorage.desc')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -100,8 +100,8 @@ export default function Privacy() {
                   <span className="text-blue-600 dark:text-blue-300 font-bold">3</span>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">No Server Transmission</h4>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">Your financial data is never transmitted to our servers for processing, storage, or any other purpose.</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">{t('legal.privacy.sections.howCalculations.steps.noServer.title')}</h4>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.privacy.sections.howCalculations.steps.noServer.desc')}</p>
                 </div>
               </div>
             </div>
@@ -110,61 +110,61 @@ export default function Privacy() {
           {/* Section 3: Local Storage */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              3. {t('legal.privacy.localStorageTitle')}
+              3. {t('legal.privacy.sections.localStorage.title')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              We use browser local storage to save non-sensitive preferences only. This data never leaves your device:
+              {t('legal.privacy.sections.localStorage.intro')}
             </p>
             <div className="bg-gray-50 dark:bg-gray-800/50 rounded-lg overflow-hidden">
               <table className="w-full text-sm">
                 <thead className="bg-gray-100 dark:bg-gray-700">
                   <tr>
-                    <th className="px-4 py-3 text-left font-semibold text-gray-900 dark:text-gray-100">Data Stored</th>
-                    <th className="px-4 py-3 text-left font-semibold text-gray-900 dark:text-gray-100">Purpose</th>
-                    <th className="px-4 py-3 text-left font-semibold text-gray-900 dark:text-gray-100">Contains Financial Data?</th>
+                    <th className="px-4 py-3 text-left font-semibold text-gray-900 dark:text-gray-100">{t('legal.privacy.sections.localStorage.table.dataStored')}</th>
+                    <th className="px-4 py-3 text-left font-semibold text-gray-900 dark:text-gray-100">{t('legal.privacy.sections.localStorage.table.purpose')}</th>
+                    <th className="px-4 py-3 text-left font-semibold text-gray-900 dark:text-gray-100">{t('legal.privacy.sections.localStorage.table.containsFinancial')}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200 dark:divide-gray-600">
                   <tr>
-                    <td className="px-4 py-3 text-gray-600 dark:text-gray-400">Theme preference</td>
-                    <td className="px-4 py-3 text-gray-600 dark:text-gray-400">Remember dark/light mode</td>
-                    <td className="px-4 py-3 text-green-600 dark:text-green-400 font-medium">No</td>
+                    <td className="px-4 py-3 text-gray-600 dark:text-gray-400">{t('legal.privacy.sections.localStorage.table.theme')}</td>
+                    <td className="px-4 py-3 text-gray-600 dark:text-gray-400">{t('legal.privacy.sections.localStorage.table.themePurpose')}</td>
+                    <td className="px-4 py-3 text-green-600 dark:text-green-400 font-medium">{t('legal.privacy.sections.localStorage.table.no')}</td>
                   </tr>
                   <tr>
-                    <td className="px-4 py-3 text-gray-600 dark:text-gray-400">Language preference</td>
-                    <td className="px-4 py-3 text-gray-600 dark:text-gray-400">Remember language selection</td>
-                    <td className="px-4 py-3 text-green-600 dark:text-green-400 font-medium">No</td>
+                    <td className="px-4 py-3 text-gray-600 dark:text-gray-400">{t('legal.privacy.sections.localStorage.table.language')}</td>
+                    <td className="px-4 py-3 text-gray-600 dark:text-gray-400">{t('legal.privacy.sections.localStorage.table.languagePurpose')}</td>
+                    <td className="px-4 py-3 text-green-600 dark:text-green-400 font-medium">{t('legal.privacy.sections.localStorage.table.no')}</td>
                   </tr>
                   <tr>
-                    <td className="px-4 py-3 text-gray-600 dark:text-gray-400">Sidebar collapsed state</td>
-                    <td className="px-4 py-3 text-gray-600 dark:text-gray-400">Remember UI layout</td>
-                    <td className="px-4 py-3 text-green-600 dark:text-green-400 font-medium">No</td>
+                    <td className="px-4 py-3 text-gray-600 dark:text-gray-400">{t('legal.privacy.sections.localStorage.table.sidebar')}</td>
+                    <td className="px-4 py-3 text-gray-600 dark:text-gray-400">{t('legal.privacy.sections.localStorage.table.sidebarPurpose')}</td>
+                    <td className="px-4 py-3 text-green-600 dark:text-green-400 font-medium">{t('legal.privacy.sections.localStorage.table.no')}</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <p className="text-gray-600 dark:text-gray-400 mt-4 text-sm">
-              You can clear this data at any time through your browser settings. Clearing local storage will not affect your calculations — it only resets your preferences to defaults.
+              {t('legal.privacy.sections.localStorage.clearNote')}
             </p>
           </section>
 
           {/* Section 4: {t('legal.privacy.thirdPartyTitle')} */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              4. {t('legal.privacy.thirdPartyTitle')}
+              4. {t('legal.privacy.sections.thirdParty.title')}
             </h2>
             
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">Google AdSense</h3>
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">{t('legal.privacy.sections.thirdParty.googleAdsense.title')}</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              We use Google AdSense to display advertisements. Google AdSense may collect certain information to serve relevant ads, including:
+              {t('legal.privacy.sections.thirdParty.googleAdsense.intro')}
             </p>
             <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-400 mb-4">
-              <li>Device information (browser type, operating system)</li>
-              <li>General location (country/region level)</li>
-              <li>Ad interaction data</li>
+              <li>{t('legal.privacy.sections.thirdParty.googleAdsense.items.device')}</li>
+              <li>{t('legal.privacy.sections.thirdParty.googleAdsense.items.location')}</li>
+              <li>{t('legal.privacy.sections.thirdParty.googleAdsense.items.adInteraction')}</li>
             </ul>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              <strong>Important:</strong> Google's ad tracking is independent of our calculator. Your financial calculations and inputs are never shared with Google or any advertiser. For more information, see{' '}
+              <strong>{t('legal.privacy.sections.thirdParty.googleAdsense.important')}</strong> For more information, see{' '}
               <a 
                 href="https://policies.google.com/privacy" 
                 target="_blank" 
@@ -175,44 +175,44 @@ export default function Privacy() {
               </a>.
             </p>
 
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3 mt-6">Amazon Affiliate Links</h3>
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3 mt-6">{t('legal.privacy.sections.thirdParty.amazonAffiliate.title')}</h3>
             <p className="text-gray-600 dark:text-gray-400">
-              Some book recommendations include Amazon affiliate links. When you click these links, Amazon may collect data according to their privacy policy. This does not affect your calculator usage or data.
+              {t('legal.privacy.sections.thirdParty.amazonAffiliate.content')}
             </p>
           </section>
 
           {/* Section 5: No Tracking */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              5. {t('legal.privacy.noTrackingTitle')}
+              5. {t('legal.privacy.sections.noTracking.title')}
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="flex items-center gap-3 p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
                 <span className="text-2xl">🚫</span>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">No Google Analytics</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">We don't use Google Analytics or similar tracking tools.</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">{t('legal.privacy.sections.noTracking.items.noAnalytics.title')}</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">{t('legal.privacy.sections.noTracking.items.noAnalytics.desc')}</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
                 <span className="text-2xl">🚫</span>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">No Facebook Pixel</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">No social media tracking pixels.</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">{t('legal.privacy.sections.noTracking.items.noPixel.title')}</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">{t('legal.privacy.sections.noTracking.items.noPixel.desc')}</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
                 <span className="text-2xl">🚫</span>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">No User Tracking</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">We don't track individual users or sessions.</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">{t('legal.privacy.sections.noTracking.items.noUserTracking.title')}</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">{t('legal.privacy.sections.noTracking.items.noUserTracking.desc')}</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
                 <span className="text-2xl">🚫</span>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">No Cross-Site Tracking</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">We don't follow you across other websites.</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">{t('legal.privacy.sections.noTracking.items.noCrossSite.title')}</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">{t('legal.privacy.sections.noTracking.items.noCrossSite.desc')}</p>
                 </div>
               </div>
             </div>
@@ -221,60 +221,60 @@ export default function Privacy() {
           {/* Section 6: {t('legal.privacy.securityTitle')} */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              6. {t('legal.privacy.securityTitle')}
+              6. {t('legal.privacy.sections.dataSecurity.title')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
-              Since all calculations happen locally in your browser and we don't collect any data, there's no database to breach. Your financial information is as secure as your own device. We recommend:
+              {t('legal.privacy.sections.dataSecurity.content')}
             </p>
             <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-400 mt-4">
-              <li>Using a secure, up-to-date browser</li>
-              <li>Keeping your device protected with a password or biometric lock</li>
-              <li>Being cautious when sharing URLs that contain your financial calculations</li>
+              <li>{t('legal.privacy.sections.dataSecurity.recommendations.browser')}</li>
+              <li>{t('legal.privacy.sections.dataSecurity.recommendations.device')}</li>
+              <li>{t('legal.privacy.sections.dataSecurity.recommendations.urls')}</li>
             </ul>
           </section>
 
           {/* Section 7: Your Rights */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              7. Your Rights
+              7. {t('legal.privacy.sections.yourRights.title')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              Because we don't collect or store your personal data, many data protection rights are automatically satisfied:
+              {t('legal.privacy.sections.yourRights.intro')}
             </p>
             <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-400">
-              <li><strong>Right to Access:</strong> All your data is in your browser — you have complete access.</li>
-              <li><strong>Right to Deletion:</strong> Clear your browser data to delete everything.</li>
-              <li><strong>Right to Portability:</strong> Your calculation URLs contain all your data in portable form.</li>
-              <li><strong>Right to Object:</strong> No processing to object to — your data stays with you.</li>
+              <li><strong>{t('legal.privacy.sections.yourRights.rights.access')}</strong></li>
+              <li><strong>{t('legal.privacy.sections.yourRights.rights.deletion')}</strong></li>
+              <li><strong>{t('legal.privacy.sections.yourRights.rights.portability')}</strong></li>
+              <li><strong>{t('legal.privacy.sections.yourRights.rights.object')}</strong></li>
             </ul>
           </section>
 
           {/* Section 8: Changes */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              8. Changes to This Policy
+              8. {t('legal.privacy.sections.changes.title')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
-              We may update this privacy policy from time to time. We will notify users of any material changes by posting the new policy on this page with an updated "Last updated" date.
+              {t('legal.privacy.sections.changes.content')}
             </p>
           </section>
 
           {/* Section 9: Contact */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              9. Contact Us
+              9. {t('legal.privacy.sections.contact.title')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
-              If you have questions about this privacy policy, you can:
+              {t('legal.privacy.sections.contact.content')}
             </p>
             <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-400 mt-2">
-              <li>Visit our{' '}
+              <li>{t('legal.privacy.sections.contact.aboutPage')}{' '}
                 <Link to="/about" className="text-fire-600 dark:text-fire-400 hover:underline">
                   About page
                 </Link>
-                {' '}for more information about the project
+                {' '}{t('legal.privacy.sections.contact.aboutPageSuffix')}
               </li>
-              <li>View the{' '}
+              <li>{t('legal.privacy.sections.contact.github')}{' '}
                 <a 
                   href="https://github.com/jamesmontemagno/app-fire-calculator" 
                   target="_blank" 
@@ -293,13 +293,13 @@ export default function Privacy() {
               to="/terms" 
               className="text-fire-600 dark:text-fire-400 hover:underline"
             >
-              Terms of Service →
+              {t('legal.privacy.navigation.termsOfService')}
             </Link>
             <Link 
               to="/about" 
               className="text-fire-600 dark:text-fire-400 hover:underline"
             >
-              About Us →
+              {t('legal.privacy.navigation.aboutUs')}
             </Link>
           </div>
         </div>

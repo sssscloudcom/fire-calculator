@@ -143,7 +143,7 @@ export default function DebtPayoff() {
               {t('debtPayoff.title')}
             </h1>
             <p className="text-gray-600 dark:text-gray-400 mt-1">
-              Eliminate debt faster with Snowball or Avalanche strategies.
+              {t('debtPayoff.subtitle')}
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -158,7 +158,7 @@ export default function DebtPayoff() {
           <span className="text-2xl flex-shrink-0">💪</span>
           <div>
             <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">
-              Two Proven Debt Payoff Methods
+              {t('debtPayoff.twoMethodsTitle')}
             </h3>
             <p className="text-sm text-gray-700 dark:text-gray-300">
               <strong>{t('debtPayoff.snowballLabel')}</strong> {t('debtPayoff.snowballDesc')} 
@@ -189,7 +189,7 @@ export default function DebtPayoff() {
                 : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100'
             }`}
           >
-            Target Timeline
+            {t('debtPayoff.targetTimeline')}
           </button>
         </div>
       </div>
@@ -216,14 +216,14 @@ export default function DebtPayoff() {
                   />
                   {monthlyBudget < totalMinPayments && totalMinPayments > 0 && (
                     <p className="text-sm text-red-600 dark:text-red-400 mt-2">
-                      Budget must be at least ${totalMinPayments.toFixed(0)} (total minimum payments)
+                      {t('debtPayoff.budgetMustBeAtLeast', { minPayments: totalMinPayments.toFixed(0) })}
                     </p>
                   )}
                 </>
               ) : (
                 <div>
                   <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Target Payoff Timeline
+                    {t('debtPayoff.targetPayoffTimeline')}
                   </label>
                   <div className="flex items-center gap-3">
                     <input
@@ -234,17 +234,17 @@ export default function DebtPayoff() {
                       max={360}
                       className="flex-1 px-3 py-2 bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-fire-500 focus:border-transparent text-gray-900 dark:text-gray-100"
                     />
-                    <span className="text-sm text-gray-600 dark:text-gray-400">months</span>
+                    <span className="text-sm text-gray-600 dark:text-gray-400">{t('output.months')}</span>
                   </div>
                   <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-                    {(targetMonths / 12).toFixed(1)} years
+                    {(targetMonths / 12).toFixed(1)} {t('output.years')}
                   </p>
                 </div>
               )}
 
               <div className="mt-4">
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Extra Monthly Payment: ${extraPayment}
+                  {t('debtPayoff.extraMonthlyPayment', { amount: extraPayment })}
                 </label>
                 <input
                   type="range"
@@ -271,10 +271,10 @@ export default function DebtPayoff() {
               <CardContent className="text-center py-12">
                 <div className="text-4xl mb-3">📝</div>
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">
-                  Add Your Debts to Get Started
+                  {t('debtPayoff.addDebtsToStart.title')}
                 </h3>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Enter your debt information in the left panel to see your payoff strategy.
+                  {t('debtPayoff.addDebtsToStart.desc')}
                 </p>
               </CardContent>
             </Card>
@@ -291,7 +291,7 @@ export default function DebtPayoff() {
                         : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100'
                     }`}
                   >
-                    💪 Snowball
+                    💪 {t('debtPayoff.snowballMethod')}
                   </button>
                   <button
                     onClick={() => setStrategy('avalanche')}
@@ -301,7 +301,7 @@ export default function DebtPayoff() {
                         : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100'
                     }`}
                   >
-                    🎯 Avalanche
+                    🎯 {t('debtPayoff.avalancheMethod')}
                   </button>
                 </div>
               </div>
@@ -314,12 +314,10 @@ export default function DebtPayoff() {
                       <span className="text-2xl flex-shrink-0">💪</span>
                       <div>
                         <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">
-                          Snowball Method
+                          {t('debtPayoff.snowballMethod')}
                         </h3>
                         <p className="text-sm text-gray-700 dark:text-gray-300">
-                          Pay off debts from <strong>smallest to largest balance</strong>, regardless of interest rate. 
-                          This method provides quick wins and builds momentum as you eliminate debts one by one.
-                          Best for staying motivated on your debt-free journey.
+                          {t('debtPayoff.snowballDesc')}
                         </p>
                       </div>
                     </div>
@@ -328,12 +326,10 @@ export default function DebtPayoff() {
                       <span className="text-2xl flex-shrink-0">🎯</span>
                       <div>
                         <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">
-                          Avalanche Method
+                          {t('debtPayoff.avalancheMethod')}
                         </h3>
                         <p className="text-sm text-gray-700 dark:text-gray-300">
-                          Pay off debts from <strong>highest to lowest interest rate</strong>, regardless of balance. 
-                          This method saves you the most money on interest over time and is mathematically optimal.
-                          Best for maximizing long-term savings.
+                          {t('debtPayoff.avalancheDesc')}
                         </p>
                       </div>
                     </div>
@@ -344,21 +340,21 @@ export default function DebtPayoff() {
               {/* Key Results */}
               <div className="grid sm:grid-cols-3 gap-4">
                 <ResultCard
-                  label="Debt-Free In"
+                  label={t('debtPayoff.debtFreeIn')}
                   value={`${results?.base.totalMonths || 0} months`}
                   subtext={`${((results?.base.totalMonths || 0) / 12).toFixed(1)} years`}
                   icon="🎯"
                 />
                 <ResultCard
-                  label="Total Interest"
+                  label={t('debtPayoff.totalInterest')}
                   value={formatCurrency(results?.base.totalInterest || 0)}
-                  subtext={`Plus ${formatCurrency(totalDebt)} principal`}
+                  subtext={t('debtPayoff.plusPrincipal', { principal: formatCurrency(totalDebt) })}
                   icon="💰"
                 />
                 <ResultCard
-                  label="Monthly Payment"
+                  label={t('debtPayoff.monthlyPayment')}
                   value={formatCurrency(monthlyBudget + extraPayment)}
-                  subtext={`${formatCurrency(monthlyBudget)} base + ${formatCurrency(extraPayment)} extra`}
+                  subtext={t('debtPayoff.basePlusExtra', { base: formatCurrency(monthlyBudget), extra: formatCurrency(extraPayment) })}
                   icon="📅"
                 />
               </div>
@@ -401,7 +397,7 @@ export default function DebtPayoff() {
                 <Card>
                   <CardHeader>
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
-                      Payoff Order
+                      {t('debtPayoff.payoffOrder')}
                     </h3>
                   </CardHeader>
                   <CardContent>
@@ -419,7 +415,7 @@ export default function DebtPayoff() {
                               {debtName}
                             </div>
                             <div className="text-xs text-gray-500 dark:text-gray-400">
-                              Paid off in month {results.base.debtMilestones.find(m => m.debtName === debtName)?.month}
+                              {t('debtPayoff.paidOffInMonth', { month: results.base.debtMilestones.find(m => m.debtName === debtName)?.month })}
                             </div>
                           </div>
                           <div className="text-green-600 dark:text-green-400">
@@ -440,7 +436,7 @@ export default function DebtPayoff() {
                   <Card>
                     <CardHeader>
                       <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
-                        Debt Payoff Timeline
+                        {t('debtPayoff.debtPayoffTimeline')}
                       </h3>
                     </CardHeader>
                     <CardContent>
@@ -456,7 +452,7 @@ export default function DebtPayoff() {
                   <Card>
                     <CardHeader>
                       <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
-                        Payment Breakdown
+                        {t('debtPayoff.paymentBreakdown')}
                       </h3>
                     </CardHeader>
                     <CardContent>
@@ -468,7 +464,7 @@ export default function DebtPayoff() {
                         <div className="grid grid-cols-2 gap-4 text-center">
                           <div>
                             <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">
-                              Total Principal
+                              {t('debtPayoff.totalPrincipal')}
                             </div>
                             <div className="text-xl font-bold text-emerald-600 dark:text-emerald-400">
                               {formatCurrency(results.base.totalPrincipal)}
@@ -476,7 +472,7 @@ export default function DebtPayoff() {
                           </div>
                           <div>
                             <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">
-                              Total Interest
+                              {t('debtPayoff.totalInterestPaid')}
                             </div>
                             <div className="text-xl font-bold text-red-600 dark:text-red-400">
                               {formatCurrency(results.base.totalInterest)}
@@ -494,7 +490,7 @@ export default function DebtPayoff() {
                 <Card className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border-purple-200 dark:border-purple-800">
                   <CardHeader>
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
-                      📊 Snowball vs Avalanche Comparison
+                      📊 {t('debtPayoff.snowballVsAvalanche.title')}
                     </h3>
                   </CardHeader>
                   <CardContent>
@@ -502,17 +498,17 @@ export default function DebtPayoff() {
                       <div className="p-4 bg-white/50 dark:bg-gray-800/50 rounded-lg">
                         <div className="flex items-center gap-2 mb-3">
                           <span className="text-xl">💪</span>
-                          <h4 className="font-semibold text-gray-900 dark:text-gray-100">Snowball</h4>
+                          <h4 className="font-semibold text-gray-900 dark:text-gray-100">{t('debtPayoff.snowballMethod')}</h4>
                         </div>
                         <div className="space-y-2 text-sm">
                           <div className="flex justify-between">
-                            <span className="text-gray-600 dark:text-gray-400">Payoff Time:</span>
+                            <span className="text-gray-600 dark:text-gray-400">{t('debtPayoff.snowballVsAvalanche.payoffTime')}:</span>
                             <span className="font-medium text-gray-900 dark:text-gray-100">
-                              {comparisonResults.snowball.totalMonths} months
+                              {comparisonResults.snowball.totalMonths} {t('output.months')}
                             </span>
                           </div>
                           <div className="flex justify-between">
-                            <span className="text-gray-600 dark:text-gray-400">Total Interest:</span>
+                            <span className="text-gray-600 dark:text-gray-400">{t('debtPayoff.snowballVsAvalanche.totalInterest')}:</span>
                             <span className="font-medium text-gray-900 dark:text-gray-100">
                               {formatCurrency(comparisonResults.snowball.totalInterest)}
                             </span>
@@ -523,17 +519,17 @@ export default function DebtPayoff() {
                       <div className="p-4 bg-white/50 dark:bg-gray-800/50 rounded-lg">
                         <div className="flex items-center gap-2 mb-3">
                           <span className="text-xl">🎯</span>
-                          <h4 className="font-semibold text-gray-900 dark:text-gray-100">Avalanche</h4>
+                          <h4 className="font-semibold text-gray-900 dark:text-gray-100">{t('debtPayoff.avalancheMethod')}</h4>
                         </div>
                         <div className="space-y-2 text-sm">
                           <div className="flex justify-between">
-                            <span className="text-gray-600 dark:text-gray-400">Payoff Time:</span>
+                            <span className="text-gray-600 dark:text-gray-400">{t('debtPayoff.snowballVsAvalanche.payoffTime')}:</span>
                             <span className="font-medium text-gray-900 dark:text-gray-100">
-                              {comparisonResults.avalanche.totalMonths} months
+                              {comparisonResults.avalanche.totalMonths} {t('output.months')}
                             </span>
                           </div>
                           <div className="flex justify-between">
-                            <span className="text-gray-600 dark:text-gray-400">Total Interest:</span>
+                            <span className="text-gray-600 dark:text-gray-400">{t('debtPayoff.snowballVsAvalanche.totalInterest')}:</span>
                             <span className="font-medium text-gray-900 dark:text-gray-100">
                               {formatCurrency(comparisonResults.avalanche.totalInterest)}
                             </span>
@@ -544,15 +540,12 @@ export default function DebtPayoff() {
                     
                     <div className="mt-4 p-3 bg-green-50 dark:bg-green-900/30 rounded-lg">
                       <p className="text-sm text-gray-700 dark:text-gray-300">
-                        <strong>{t('debtPayoff.winnerLabel')}</strong> {comparisonResults.avalanche.totalInterest < comparisonResults.snowball.totalInterest ? 'Avalanche' : 'Snowball'} saves{' '}
-                        <strong className="text-green-600 dark:text-green-400">
-                          {formatCurrency(Math.abs(comparisonResults.snowball.totalInterest - comparisonResults.avalanche.totalInterest))}
-                        </strong>{' '}
-                        in interest and finishes{' '}
-                        <strong className="text-green-600 dark:text-green-400">
-                          {Math.abs(comparisonResults.snowball.totalMonths - comparisonResults.avalanche.totalMonths)} months
-                        </strong>{' '}
-                        {comparisonResults.avalanche.totalMonths < comparisonResults.snowball.totalMonths ? 'faster' : 'slower'}.
+                        {t('debtPayoff.snowballVsAvalanche.winner', {
+                          method: comparisonResults.avalanche.totalInterest < comparisonResults.snowball.totalInterest ? t('debtPayoff.avalancheMethod') : t('debtPayoff.snowballMethod'),
+                          savings: formatCurrency(Math.abs(comparisonResults.snowball.totalInterest - comparisonResults.avalanche.totalInterest)),
+                          monthsDiff: Math.abs(comparisonResults.snowball.totalMonths - comparisonResults.avalanche.totalMonths),
+                          direction: comparisonResults.avalanche.totalMonths < comparisonResults.snowball.totalMonths ? t('debtPayoff.faster') : t('debtPayoff.slower')
+                        })}
                       </p>
                     </div>
                   </CardContent>

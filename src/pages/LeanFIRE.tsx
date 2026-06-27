@@ -81,7 +81,7 @@ export default function LeanFIRE() {
               {t('leanFire.title')}
             </h1>
             <p className="text-gray-600 dark:text-gray-400 mt-1">
-              Achieve financial independence faster with a minimalist lifestyle.
+              {t('leanFire.subtitle')}
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -104,9 +104,7 @@ export default function LeanFIRE() {
           <div>
             <h3 className="font-semibold text-green-900 dark:text-green-100">{t('leanFire.whatIs.title')}</h3>
             <p className="text-sm text-green-700 dark:text-green-300 mt-1">
-              Lean FIRE means achieving financial independence with minimal expenses (typically ≤$40,000/year 
-              for a household). It requires living frugally but allows you to retire much earlier than 
-              traditional or Fat FIRE approaches.
+              {t('leanFire.bannerContent')}
             </p>
           </div>
         </div>
@@ -118,11 +116,9 @@ export default function LeanFIRE() {
           <div className="flex gap-3">
             <span className="text-2xl">⚠️</span>
             <div>
-              <h3 className="font-semibold text-amber-900 dark:text-amber-100">Expenses Above Lean Threshold</h3>
+              <h3 className="font-semibold text-amber-900 dark:text-amber-100">{t('leanFire.expensesAboveThreshold.title')}</h3>
               <p className="text-sm text-amber-700 dark:text-amber-300 mt-1">
-                Your expenses ({formatCurrency(params.annualExpenses)}) exceed the typical Lean FIRE threshold 
-                of {formatCurrency(LEAN_THRESHOLD)}. Consider the <strong>Standard FIRE</strong> or{' '}
-                <strong>Fat FIRE</strong> calculators, or reduce your expected expenses.
+                {t('leanFire.expensesAboveThreshold.content', { expenses: formatCurrency(params.annualExpenses), threshold: formatCurrency(LEAN_THRESHOLD) })}
               </p>
             </div>
           </div>
@@ -133,7 +129,7 @@ export default function LeanFIRE() {
         {/* Inputs */}
         <Card className="lg:col-span-1">
           <CardHeader>
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Your Information</h2>
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('common.yourInformation')}</h2>
           </CardHeader>
           <CardContent className="space-y-4">
             <AgeInput
@@ -158,7 +154,7 @@ export default function LeanFIRE() {
             />
             <div>
               <CurrencyInput
-                label="Annual Expenses (Lean)"
+                label={t('leanFire.annualExpensesLean')}
                 value={params.annualExpenses}
                 onChange={(v) => setParam('annualExpenses', v)}
                 tooltip="For Lean FIRE, keep this ≤$40,000"
@@ -166,7 +162,7 @@ export default function LeanFIRE() {
               />
               <div className="mt-2">
                 <div className="flex justify-between text-xs text-gray-500 dark:text-gray-400 mb-1">
-                  <span>Lean threshold</span>
+                  <span>{t('leanFire.leanThreshold')}</span>
                   <span>{formatCurrency(LEAN_THRESHOLD)}</span>
                 </div>
                 <div className="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
@@ -212,7 +208,7 @@ export default function LeanFIRE() {
               value={results.fireNumber}
               format="currency"
               highlight
-              subtext={isLean ? "You're in Lean territory!" : "Based on your expenses"}
+              subtext={isLean ? t('leanFire.leanTerritoryLabel') : t('leanFire.basedOnExpenses')}
             />
             <ResultCard
               label="Years to Lean FIRE"
@@ -224,14 +220,14 @@ export default function LeanFIRE() {
               label="Monthly Budget"
               value={params.annualExpenses / 12}
               format="currency"
-              subtext="In retirement"
+              subtext={t('leanFire.inRetirement')}
             />
           </div>
 
           {/* Chart */}
           <Card>
             <CardHeader>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Portfolio Projection</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('common.portfolioProjection')}</h2>
             </CardHeader>
             <CardContent>
               <ProjectionChart
@@ -246,36 +242,36 @@ export default function LeanFIRE() {
           {/* Lean FIRE Tips */}
           <Card>
             <CardHeader>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Lean FIRE Tips</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('leanFire.tips.title')}</h2>
             </CardHeader>
             <CardContent>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="flex gap-3">
                   <span className="text-xl">🏠</span>
                   <div>
-                    <h4 className="font-medium text-gray-900 dark:text-gray-100">Housing</h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Consider geo-arbitrage, house hacking, or paid-off housing</p>
+                    <h4 className="font-medium text-gray-900 dark:text-gray-100">{t('leanFire.tips.housing.title')}</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">{t('leanFire.tips.housing.desc')}</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-xl">🚗</span>
                   <div>
-                    <h4 className="font-medium text-gray-900 dark:text-gray-100">Transportation</h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Bike, walk, or use one reliable used car</p>
+                    <h4 className="font-medium text-gray-900 dark:text-gray-100">{t('leanFire.tips.transportation.title')}</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">{t('leanFire.tips.transportation.desc')}</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-xl">🍳</span>
                   <div>
-                    <h4 className="font-medium text-gray-900 dark:text-gray-100">Food</h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Cook at home, meal prep, grow some food</p>
+                    <h4 className="font-medium text-gray-900 dark:text-gray-100">{t('leanFire.tips.food.title')}</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">{t('leanFire.tips.food.desc')}</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-xl">🎭</span>
                   <div>
-                    <h4 className="font-medium text-gray-900 dark:text-gray-100">Entertainment</h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Free hobbies, libraries, nature, community events</p>
+                    <h4 className="font-medium text-gray-900 dark:text-gray-100">{t('leanFire.tips.entertainment.title')}</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">{t('leanFire.tips.entertainment.desc')}</p>
                   </div>
                 </div>
               </div>

@@ -26,10 +26,9 @@ export default function About() {
         <div className="prose dark:prose-invert max-w-none space-y-8">
           {/* Mission */}
           <section className="bg-gradient-to-br from-fire-50 via-orange-50 to-amber-50 dark:from-fire-900/20 dark:via-orange-900/20 dark:to-amber-900/20 rounded-2xl p-8 text-center">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">{t('legal.about.missionTitle')}</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">{t('legal.about.mission.title')}</h2>
             <p className="text-lg text-gray-700 dark:text-gray-300">
-              To provide accessible, privacy-respecting financial planning tools that help everyone pursue financial independence — 
-              <strong className="text-fire-600 dark:text-fire-400"> without compromising their personal data.</strong>
+              {t('legal.about.mission.content')}
             </p>
           </section>
 
@@ -39,20 +38,20 @@ export default function About() {
               {t('legal.about.whatIsFireTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
-              <strong>FIRE</strong> (Financial Independence, Retire Early) is a lifestyle movement focused on achieving financial freedom through aggressive saving and smart investing. The goal is to accumulate enough wealth that your investments can cover your living expenses indefinitely, giving you the freedom to retire much earlier than traditional retirement age.
+              {t('legal.about.whatIsFireContent')}
             </p>
             
             <div className="mt-6 grid sm:grid-cols-2 gap-6">
               <div className="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
                 <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">💡 {t('legal.about.corePrincipleTitle')}</h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
-                  The "4% Rule" suggests that if you withdraw 4% of your portfolio annually, your savings should last 30+ years. This means you need approximately 25x your annual expenses to achieve FIRE.
+                  {t('legal.about.corePrincipleContent')}
                 </p>
               </div>
               <div className="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
                 <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">🎯 {t('legal.about.goalTitle')}</h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
-                  Financial independence means having enough passive income (from investments) to cover your living expenses, giving you freedom to choose how you spend your time — whether that's early retirement, part-time work, or pursuing passion projects.
+                  {t('legal.about.goalContent')}
                 </p>
               </div>
             </div>
@@ -62,36 +61,36 @@ export default function About() {
               <div className="flex items-start gap-4 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                 <span className="text-2xl">💰</span>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">Standard FIRE</h4>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">The classic 25x annual expenses approach. Full financial independence with no need for additional income.</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">{t('legal.about.fireTypes.standard.title')}</h4>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.about.fireTypes.standard.desc')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4 p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
                 <span className="text-2xl">🌿</span>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">Coast FIRE</h4>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">Save enough now so compound growth carries you to traditional retirement. Stop saving early and "coast" to FI.</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">{t('legal.about.fireTypes.coast.title')}</h4>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.about.fireTypes.coast.desc')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4 p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
-                <span className="text-2xl"> minimalist</span>
+                <span className="text-2xl">🏠</span>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">Lean FIRE</h4>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">FI with a frugal lifestyle. Lower expenses mean a smaller target number, achieved faster.</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">{t('legal.about.fireTypes.lean.title')}</h4>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.about.fireTypes.lean.desc')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4 p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
                 <span className="text-2xl">✨</span>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">Fat FIRE</h4>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">FI with a comfortable or luxurious lifestyle. Higher expenses require a larger portfolio.</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">{t('legal.about.fireTypes.fat.title')}</h4>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.about.fireTypes.fat.desc')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4 p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
                 <span className="text-2xl">☕</span>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">Barista FIRE</h4>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">Partial FI combined with part-time work. Leave full-time corporate work earlier while maintaining some income.</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">{t('legal.about.fireTypes.barista.title')}</h4>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.about.fireTypes.barista.desc')}</p>
                 </div>
               </div>
             </div>
@@ -103,32 +102,32 @@ export default function About() {
               {t('legal.about.toolsTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-6">
-              We offer a comprehensive suite of calculators to help you plan every aspect of your FIRE journey:
+              {t('legal.about.toolsIntro')}
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               <div className="p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg">
-                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Standard FIRE Calculator</h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">Calculate your FIRE number and timeline to full financial independence.</p>
+                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">{t('legal.about.tools.standardFire.title')}</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.about.tools.standardFire.desc')}</p>
               </div>
               <div className="p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg">
-                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Coast FIRE Calculator</h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">Find your Coast FIRE number — when you can stop saving and let compound growth finish the job.</p>
+                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">{t('legal.about.tools.coastFire.title')}</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.about.tools.coastFire.desc')}</p>
               </div>
               <div className="p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg">
-                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Lean & Fat FIRE</h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">Calculate FI targets for minimalist or comfortable lifestyles.</p>
+                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">{t('legal.about.tools.leanFatFire.title')}</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.about.tools.leanFatFire.desc')}</p>
               </div>
               <div className="p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg">
-                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Barista FIRE Calculator</h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">Blend part-time work with investment income for earlier semi-retirement.</p>
+                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">{t('legal.about.tools.baristaFire.title')}</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.about.tools.baristaFire.desc')}</p>
               </div>
               <div className="p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg">
-                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Withdrawal Rate Calculator</h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">Test portfolio longevity and find your safe withdrawal rate.</p>
+                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">{t('legal.about.tools.withdrawalRate.title')}</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.about.tools.withdrawalRate.desc')}</p>
               </div>
               <div className="p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg">
-                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Savings Rate Calculator</h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">Calculate your savings rate and see how it impacts your FIRE timeline.</p>
+                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">{t('legal.about.tools.savingsRate.title')}</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.about.tools.savingsRate.desc')}</p>
               </div>
             </div>
           </section>
@@ -146,8 +145,8 @@ export default function About() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-gray-100">100% Free</h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">No subscriptions, no premium tiers, no hidden fees. All calculators are completely free to use.</p>
+                  <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('legal.about.features.free.title')}</h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.about.features.free.desc')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -157,8 +156,8 @@ export default function About() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-gray-100">Privacy First</h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">Your financial data stays in your browser. No accounts, no databases, no server processing.</p>
+                  <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('legal.about.features.privacy.title')}</h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.about.features.privacy.desc')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -168,8 +167,8 @@ export default function About() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-gray-100">Works Offline</h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">After initial load, the app works without internet. Install as a PWA and calculate anywhere.</p>
+                  <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('legal.about.features.offline.title')}</h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.about.features.offline.desc')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -179,8 +178,8 @@ export default function About() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-gray-100">No Tracking</h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">No analytics, no cookies, no third-party trackers. Your usage is completely private.</p>
+                  <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('legal.about.features.noTracking.title')}</h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.about.features.noTracking.desc')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -190,8 +189,8 @@ export default function About() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-gray-100">Shareable URLs</h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">Save calculations in URLs. Bookmark, share with a partner, or revisit later — your data is in the link.</p>
+                  <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('legal.about.features.shareable.title')}</h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.about.features.shareable.desc')}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -201,8 +200,8 @@ export default function About() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-gray-100">Open Source</h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">All code is publicly available. Verify our privacy claims yourself — transparency is key.</p>
+                  <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('legal.about.features.openSource.title')}</h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.about.features.openSource.desc')}</p>
                 </div>
               </div>
             </div>
@@ -214,7 +213,7 @@ export default function About() {
               {t('legal.about.openSourceTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              This calculator is open source, meaning anyone can inspect, verify, and contribute to the code. We believe transparency builds trust — especially for financial tools.
+              {t('legal.about.openSource.content')}
             </p>
             <div className="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-6">
               <div className="flex items-center gap-4 mb-4">
@@ -224,20 +223,19 @@ export default function About() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-gray-100">GitHub Repository</h3>
+                  <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('legal.about.openSource.githubTitle')}</h3>
                   <a 
                     href="https://github.com/jamesmontemagno/app-fire-calculator" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-fire-600 dark:text-fire-400 hover:underline"
                   >
-                    github.com/jamesmontemagno/app-fire-calculator
+                    {t('legal.about.openSource.githubUrl')}
                   </a>
                 </div>
               </div>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
-                Feel free to explore the code, report issues, suggest features, or contribute improvements. 
-                We welcome community involvement and feedback.
+                {t('legal.about.openSource.note')}
               </p>
             </div>
           </section>
@@ -248,39 +246,37 @@ export default function About() {
               {t('legal.about.learnMoreTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              Explore our curated resources to deepen your understanding of financial independence:
+              {t('legal.about.learnMoreIntro')}
             </p>
             <div className="flex flex-wrap gap-4">
               <Link 
                 to="/books" 
                 className="inline-flex items-center gap-2 px-4 py-2 bg-fire-100 dark:bg-fire-900/30 text-fire-700 dark:text-fire-300 rounded-lg hover:bg-fire-200 dark:hover:bg-fire-900/50 transition-colors"
               >
-                <span>📚</span> Recommended Books
+                <span>📚</span> {t('legal.about.learnMore.books')}
               </Link>
               <Link 
                 to="/apps" 
                 className="inline-flex items-center gap-2 px-4 py-2 bg-fire-100 dark:bg-fire-900/30 text-fire-700 dark:text-fire-300 rounded-lg hover:bg-fire-200 dark:hover:bg-fire-900/50 transition-colors"
               >
-                <span>📱</span> Recommended Apps
+                <span>📱</span> {t('legal.about.learnMore.apps')}
               </Link>
               <Link 
                 to="/quiz" 
                 className="inline-flex items-center gap-2 px-4 py-2 bg-fire-100 dark:bg-fire-900/30 text-fire-700 dark:text-fire-300 rounded-lg hover:bg-fire-200 dark:hover:bg-fire-900/50 transition-colors"
               >
-                <span>🧭</span> Find Your FIRE Path
+                <span>🧭</span> {t('legal.about.learnMore.quiz')}
               </Link>
             </div>
           </section>
 
           {/* Disclaimer */}
           <section className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-6">
-            <h2 className="text-lg font-semibold text-yellow-800 dark:text-yellow-200 mb-2">⚠️ Disclaimer</h2>
+            <h2 className="text-lg font-semibold text-yellow-800 dark:text-yellow-200 mb-2">⚠️ {t('legal.about.disclaimer.title')}</h2>
             <p className="text-yellow-700 dark:text-yellow-300 text-sm">
-              This calculator is for <strong>educational and informational purposes only</strong>. It is not financial, investment, tax, or legal advice. 
-              Results are hypothetical projections based on user inputs and assumed rates. <strong>Actual results will vary</strong>. 
-              Please consult a qualified financial advisor before making any financial decisions.{' '}
+              {t('legal.about.disclaimer.content')}{' '}
               <Link to="/terms" className="text-fire-600 dark:text-fire-400 hover:underline">
-                Read our full Terms of Service
+                {t('legal.about.disclaimer.link')}
               </Link>.
             </p>
           </section>
@@ -291,19 +287,19 @@ export default function About() {
               to="/" 
               className="text-fire-600 dark:text-fire-400 hover:underline"
             >
-              ← Start Calculating
+              {t('legal.about.navigation.startCalculating')}
             </Link>
             <Link 
               to="/privacy" 
               className="text-fire-600 dark:text-fire-400 hover:underline"
             >
-              Privacy Policy →
+              {t('legal.about.navigation.privacyPolicy')}
             </Link>
             <Link 
               to="/terms" 
               className="text-fire-600 dark:text-fire-400 hover:underline"
             >
-              Terms of Service →
+              {t('legal.about.navigation.termsOfService')}
             </Link>
           </div>
         </div>

@@ -78,7 +78,7 @@ export default function CoastFIRE() {
               {t('coastFire.title')}
             </h1>
             <p className="text-gray-600 dark:text-gray-400 mt-1">
-              Find out how much you need now so compound growth does the rest.
+              {t('coastFire.subtitle')}
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -92,7 +92,7 @@ export default function CoastFIRE() {
         currentSavings={params.currentSavings} 
         fireNumber={results.coastNumber}
         yearsToFIRE={results.yearsToCoast}
-        label="Progress to Coast FIRE"
+        label={t('common.progressToCoastFire')}
         targetLabel="Coast Number"
       />
 
@@ -103,9 +103,7 @@ export default function CoastFIRE() {
           <div>
             <h3 className="font-semibold text-blue-900 dark:text-blue-100">{t('coastFire.whatIs.title')}</h3>
             <p className="text-sm text-blue-700 dark:text-blue-300 mt-1">
-              Coast FIRE is when you've saved enough that compound growth alone will get you to your full FIRE 
-              number by traditional retirement age — without any more contributions. You can then "coast" 
-              with a lower-paying job that just covers current expenses.
+              {t('coastFire.bannerContent')}
             </p>
           </div>
         </div>
@@ -115,7 +113,7 @@ export default function CoastFIRE() {
         {/* Inputs */}
         <Card className="lg:col-span-1">
           <CardHeader>
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Your Information</h2>
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('common.yourInformation')}</h2>
           </CardHeader>
           <CardContent className="space-y-4">
             <AgeInput
@@ -210,17 +208,17 @@ export default function CoastFIRE() {
           {/* Chart */}
           <Card>
             <CardHeader>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Coast vs Continue Contributing</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('coastFire.coastVsContinue')}</h2>
             </CardHeader>
             <CardContent>
               <div className="mb-4 flex flex-wrap gap-4 text-sm">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-blue-500"></div>
-                  <span className="text-gray-600 dark:text-gray-400">Coast (no more contributions)</span>
+                  <span className="text-gray-600 dark:text-gray-400">{t('coastFire.coastNoMore')}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-indigo-500"></div>
-                  <span className="text-gray-600 dark:text-gray-400">Continue contributing</span>
+                  <span className="text-gray-600 dark:text-gray-400">{t('coastFire.continueContributing')}</span>
                 </div>
               </div>
               <ProjectionChart

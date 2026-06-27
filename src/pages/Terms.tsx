@@ -26,31 +26,31 @@ export default function Terms() {
           {/* Agreement */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              1. {t('legal.terms.agreementTitle')}
+              1. {t('legal.terms.sections.agreement.title')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
-              By accessing and using FIRE Calculator (available at <a href="https://firecalc.nextapi.pro" target="_blank" rel="noopener noreferrer" className="text-fire-600 dark:text-fire-400 hover:underline">firecalc.nextapi.pro</a> and <a href="https://myfirenumber.com" target="_blank" rel="noopener noreferrer" className="text-fire-600 dark:text-fire-400 hover:underline">myfirenumber.com</a>), you agree to be bound by these {t('legal.terms.title')}. If you do not agree to these terms, please do not use our service.
+              {t('legal.terms.sections.agreement.content')}
             </p>
           </section>
 
           {/* {t('legal.terms.disclaimerTitle')} */}
           <section className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl p-6">
             <h2 className="text-xl font-bold text-red-800 dark:text-red-200 mb-3 flex items-center gap-2">
-              <span>⚠️</span> {t('legal.terms.disclaimerTitle')}
+              <span>⚠️</span> {t('legal.terms.sections.disclaimer.title')}
             </h2>
             <div className="space-y-3 text-red-800 dark:text-red-200">
               <p>
-                <strong>This calculator is provided for educational and informational purposes only.</strong>
+                <strong>{t('legal.terms.sections.disclaimer.content')}</strong>
               </p>
               <ul className="list-disc list-inside space-y-1">
-                <li>It is NOT financial, investment, tax, or legal advice.</li>
-                <li>Results are hypothetical projections based on user inputs and assumed rates.</li>
-                <li>Actual investment returns, inflation rates, and outcomes will vary.</li>
-                <li>Past performance does not guarantee future results.</li>
-                <li>You should consult with qualified professionals before making any financial decisions.</li>
+                <li>{t('legal.terms.sections.disclaimer.items.notAdvice')}</li>
+                <li>{t('legal.terms.sections.disclaimer.items.hypothetical')}</li>
+                <li>{t('legal.terms.sections.disclaimer.items.vary')}</li>
+                <li>{t('legal.terms.sections.disclaimer.items.past')}</li>
+                <li>{t('legal.terms.sections.disclaimer.items.consult')}</li>
               </ul>
               <p className="font-semibold mt-4">
-                We are not responsible for any financial decisions you make based on calculations from this tool.
+                {t('legal.terms.sections.disclaimer.notResponsible')}
               </p>
             </div>
           </section>
@@ -58,112 +58,112 @@ export default function Terms() {
           {/* {t('legal.terms.descriptionTitle')} */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              2. {t('legal.terms.descriptionTitle')}
+              2. {t('legal.terms.sections.serviceDescription.title')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              FIRE Calculator provides free, browser-based financial planning calculators for the FIRE (Financial Independence, Retire Early) community. Our services include:
+              {t('legal.terms.sections.serviceDescription.content')}
             </p>
             <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-400">
-              <li>Various FIRE calculators (Standard, Coast, Lean, Fat, Barista)</li>
-              <li>Withdrawal rate and savings rate calculators</li>
-              <li>Reverse FIRE and debt payoff calculators</li>
-              <li>Healthcare gap planning tools</li>
-              <li>Educational resources and book recommendations</li>
+              <li>{t('legal.terms.sections.serviceDescription.items.calculators')}</li>
+              <li>{t('legal.terms.sections.serviceDescription.items.withdrawal')}</li>
+              <li>{t('legal.terms.sections.serviceDescription.items.reverse')}</li>
+              <li>{t('legal.terms.sections.serviceDescription.items.healthcare')}</li>
+              <li>{t('legal.terms.sections.serviceDescription.items.resources')}</li>
             </ul>
             <p className="text-gray-600 dark:text-gray-400 mt-4">
-              All calculations are performed client-side (in your browser). We do not store your financial data on our servers.
+              {t('legal.terms.sections.serviceDescription.allClientSide')}
             </p>
           </section>
 
           {/* No Professional Advice */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              3. {t('legal.terms.notAdviceTitle')}
+              3. {t('legal.terms.sections.notProfessionalAdvice.title')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              The information provided by FIRE Calculator does not constitute:
+              {t('legal.terms.sections.notProfessionalAdvice.content')}
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-                <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">❌ Financial Advice</h4>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">We do not recommend specific investments, savings strategies, or financial products.</p>
+                <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">❌ {t('legal.terms.sections.notProfessionalAdvice.types.financial.title')}</h4>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.terms.sections.notProfessionalAdvice.types.financial.desc')}</p>
               </div>
               <div className="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-                <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">❌ Investment Advice</h4>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">We do not advise on buying, selling, or holding any securities or assets.</p>
+                <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">❌ {t('legal.terms.sections.notProfessionalAdvice.types.investment.title')}</h4>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.terms.sections.notProfessionalAdvice.types.investment.desc')}</p>
               </div>
               <div className="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-                <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">❌ Tax Advice</h4>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">We do not provide guidance on tax strategies or obligations.</p>
+                <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">❌ {t('legal.terms.sections.notProfessionalAdvice.types.tax.title')}</h4>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.terms.sections.notProfessionalAdvice.types.tax.desc')}</p>
               </div>
               <div className="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-                <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">❌ Legal Advice</h4>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">We do not provide legal guidance on any matters.</p>
+                <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">❌ {t('legal.terms.sections.notProfessionalAdvice.types.legal.title')}</h4>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.terms.sections.notProfessionalAdvice.types.legal.desc')}</p>
               </div>
             </div>
             <p className="text-gray-600 dark:text-gray-400 mt-4">
-              Always consult with qualified professionals (financial advisors, tax professionals, attorneys) before making financial decisions.
+              {t('legal.terms.sections.notProfessionalAdvice.consult')}
             </p>
           </section>
 
           {/* {t('legal.terms.responsibilitiesTitle')} */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              4. {t('legal.terms.responsibilitiesTitle')}
+              4. {t('legal.terms.sections.userResponsibilities.title')}
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 mb-4">By using our service, you agree to:</p>
+            <p className="text-gray-600 dark:text-gray-400 mb-4">{t('legal.terms.sections.userResponsibilities.intro')}</p>
             <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-400">
-              <li>Use the calculator for personal, non-commercial purposes</li>
-              <li>Not attempt to reverse engineer, copy, or redistribute the software</li>
-              <li>Not use automated tools to scrape or abuse the service</li>
-              <li>Verify all calculations with qualified professionals before making financial decisions</li>
-              <li>Accept responsibility for your own financial decisions</li>
+              <li>{t('legal.terms.sections.userResponsibilities.items.personal')}</li>
+              <li>{t('legal.terms.sections.userResponsibilities.items.noReverse')}</li>
+              <li>{t('legal.terms.sections.userResponsibilities.items.noScrape')}</li>
+              <li>{t('legal.terms.sections.userResponsibilities.items.verify')}</li>
+              <li>{t('legal.terms.sections.userResponsibilities.items.accept')}</li>
             </ul>
           </section>
 
           {/* {t('legal.terms.ipTitle')} */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              5. {t('legal.terms.ipTitle')}
+              5. {t('legal.terms.sections.intellectualProperty.title')}
             </h2>
             
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">Our Rights</h3>
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">{t('legal.terms.sections.intellectualProperty.ourRights.title')}</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              The FIRE Calculator software, including its design, code, logos, and content (excluding third-party content and user-generated data), is protected by intellectual property laws. While the core calculator code is open source, the following restrictions apply:
+              {t('legal.terms.sections.intellectualProperty.ourRights.content')}
             </p>
             <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-400 mb-6">
-              <li>You may view and fork the open-source code on GitHub</li>
-              <li>You may not use our branding, logos, or domain names without permission</li>
-              <li>You may not claim the calculator as your own work</li>
-              <li>Derivative works must comply with the applicable open-source license</li>
+              <li>{t('legal.terms.sections.intellectualProperty.ourRights.items.view')}</li>
+              <li>{t('legal.terms.sections.intellectualProperty.ourRights.items.branding')}</li>
+              <li>{t('legal.terms.sections.intellectualProperty.ourRights.items.claim')}</li>
+              <li>{t('legal.terms.sections.intellectualProperty.ourRights.items.derivative')}</li>
             </ul>
 
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">Third-Party Content</h3>
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">{t('legal.terms.sections.intellectualProperty.thirdParty.title')}</h3>
             <p className="text-gray-600 dark:text-gray-400">
-              Some content on our site, such as book recommendations and affiliate links, may link to third-party websites. We are not responsible for the content, privacy practices, or terms of third-party sites.
+              {t('legal.terms.sections.intellectualProperty.thirdParty.content')}
             </p>
           </section>
 
           {/* {t('legal.terms.liabilityTitle')} */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              6. {t('legal.terms.liabilityTitle')}
+              6. {t('legal.terms.sections.limitationOfLiability.title')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              TO THE MAXIMUM EXTENT PERMITTED BY LAW:
+              {t('legal.terms.sections.limitationOfLiability.intro')}
             </p>
             <div className="space-y-4">
               <div className="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-                <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">No Warranty</h4>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">The calculator is provided "AS IS" without warranties of any kind, express or implied, including but not limited to accuracy, fitness for a particular purpose, or non-infringement.</p>
+                <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">{t('legal.terms.sections.limitationOfLiability.items.noWarranty.title')}</h4>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.terms.sections.limitationOfLiability.items.noWarranty.desc')}</p>
               </div>
               <div className="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-                <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">No Guarantee of Results</h4>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">We do not guarantee that calculations will be accurate or that any financial outcomes will be achieved.</p>
+                <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">{t('legal.terms.sections.limitationOfLiability.items.noGuarantee.title')}</h4>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.terms.sections.limitationOfLiability.items.noGuarantee.desc')}</p>
               </div>
               <div className="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-                <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">Limitation of Damages</h4>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">We shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising from your use of the calculator.</p>
+                <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">{t('legal.terms.sections.limitationOfLiability.items.limitation.title')}</h4>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">{t('legal.terms.sections.limitationOfLiability.items.limitation.desc')}</p>
               </div>
             </div>
           </section>
@@ -171,36 +171,36 @@ export default function Terms() {
           {/* Disclaimer of Financial Outcomes */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              7. Disclaimer of Financial Outcomes
+              7. {t('legal.terms.sections.disclaimerOutcomes.title')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              The projections and calculations provided by FIRE Calculator are based on:
+              {t('legal.terms.sections.disclaimerOutcomes.intro')}
             </p>
             <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-400 mb-4">
-              <li>User-provided inputs which may be inaccurate</li>
-              <li>Assumed rates (investment returns, inflation) that may not reflect reality</li>
-              <li>Historical data that may not predict future performance</li>
-              <li>Simplified models that do not account for all real-world factors</li>
+              <li>{t('legal.terms.sections.disclaimerOutcomes.items.inputs')}</li>
+              <li>{t('legal.terms.sections.disclaimerOutcomes.items.assumed')}</li>
+              <li>{t('legal.terms.sections.disclaimerOutcomes.items.historical')}</li>
+              <li>{t('legal.terms.sections.disclaimerOutcomes.items.simplified')}</li>
             </ul>
             <p className="text-gray-600 dark:text-gray-400">
-              <strong>Actual financial outcomes depend on numerous factors beyond our control,</strong> including but not limited to: market conditions, tax laws, healthcare costs, inflation, unexpected expenses, and individual circumstances. Never rely solely on this calculator for financial planning.
+              <strong>{t('legal.terms.sections.disclaimerOutcomes.actualDepends')}</strong>
             </p>
           </section>
 
           {/* Third-Party Services */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              8. Third-Party Services & Affiliate Links
+              8. {t('legal.terms.sections.thirdPartyServices.title')}
             </h2>
             
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">Google AdSense</h3>
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">{t('legal.terms.sections.thirdPartyServices.googleAdsense.title')}</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              We use Google AdSense to display advertisements. Google may use cookies and similar technologies to serve ads. Your use of our service is also subject to Google's terms and privacy policy.
+              {t('legal.terms.sections.thirdPartyServices.googleAdsense.content')}
             </p>
 
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">Affiliate Links</h3>
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">{t('legal.terms.sections.thirdPartyServices.affiliate.title')}</h3>
             <p className="text-gray-600 dark:text-gray-400">
-              Some links on our site (such as book recommendations) are affiliate links. If you make a purchase through these links, we may receive a small commission at no additional cost to you. This helps support the free calculator. We are not responsible for the products, services, or terms of third-party vendors.
+              {t('legal.terms.sections.thirdPartyServices.affiliate.content')}
             </p>
           </section>
 

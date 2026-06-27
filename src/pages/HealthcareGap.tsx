@@ -137,7 +137,7 @@ export default function HealthcareGap() {
               {t('healthcareGap.title')}
             </h1>
             <p className="text-gray-600 dark:text-gray-400 mt-1">
-              Estimate healthcare costs between early retirement and Medicare eligibility.
+              {t('healthcareGap.subtitle')}
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -153,9 +153,7 @@ export default function HealthcareGap() {
           <div>
             <h3 className="font-semibold text-rose-900 dark:text-rose-100">{t('healthcareGap.whatIs.title')}</h3>
             <p className="text-sm text-rose-700 dark:text-rose-300 mt-1">
-              If you retire before age 65 in the US, you'll need to bridge the gap until Medicare. 
-              Healthcare costs are often the #1 overlooked expense in early retirement planning. 
-              This can add <strong>{formatCurrency(results.totalCost)}</strong> or more to your FIRE number!
+              {t('healthcareGap.warning.content', { cost: formatCurrency(results.totalCost) })}
             </p>
           </div>
         </div>
@@ -165,7 +163,7 @@ export default function HealthcareGap() {
         {/* Inputs */}
         <Card className="lg:col-span-1">
           <CardHeader>
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('healthcareGap.situationTitle')}</h2>
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('healthcareGap.yourSituation')}</h2>
           </CardHeader>
           <CardContent className="space-y-4">
             <AgeInput
@@ -182,19 +180,19 @@ export default function HealthcareGap() {
             />
             <div className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                Medicare eligibility: <span className="font-semibold text-gray-900 dark:text-gray-100">Age 65</span>
+                {t('healthcareGap.medicareEligibility')}
               </p>
               <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                Gap to cover: <span className="font-semibold text-gray-900 dark:text-gray-100">{results.gapYears} years</span>
+                {t('healthcareGap.gapToCover', { years: results.gapYears })}
               </p>
             </div>
             
             <div className="border-t border-gray-200 dark:border-gray-700 pt-4">
               <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
-                Healthcare Cost Estimates
+                {t('healthcareGap.healthcareCostEstimates')}
               </h3>
               <p className="text-xs text-gray-500 dark:text-gray-400 mb-3">
-                Defaults based on ACA Silver plan averages. Adjust based on your state and needs.
+                {t('healthcareGap.healthcareCostEstimatesNote')}
               </p>
               <div className="space-y-3">
                 <CurrencyInput

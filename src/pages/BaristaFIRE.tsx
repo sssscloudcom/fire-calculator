@@ -91,7 +91,7 @@ export default function BaristaFIRE() {
         currentSavings={params.currentSavings} 
         fireNumber={results.baristaNumber}
         yearsToFIRE={results.yearsToBaristaFIRE}
-        label="Progress to Barista FIRE"
+        label={t('common.progressToBaristaFire')}
         targetLabel="Barista Number"
       />
 
@@ -102,9 +102,7 @@ export default function BaristaFIRE() {
           <div>
             <h3 className="font-semibold text-amber-900 dark:text-amber-100">{t('baristaFire.whatIs.title')}</h3>
             <p className="text-sm text-amber-700 dark:text-amber-300 mt-1">
-              Barista FIRE (named after the stereotype of working part-time at Starbucks for benefits) means having 
-              enough invested to cover most expenses, while working a part-time or low-stress job to cover the gap 
-              and potentially access health insurance benefits.
+              {t('baristaFire.content')}
             </p>
           </div>
         </div>
@@ -114,7 +112,7 @@ export default function BaristaFIRE() {
         {/* Inputs */}
         <Card className="lg:col-span-1">
           <CardHeader>
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Your Information</h2>
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('common.yourInformation')}</h2>
           </CardHeader>
           <CardContent className="space-y-4">
             <AgeInput
@@ -141,7 +139,7 @@ export default function BaristaFIRE() {
             
             <div className="border-t border-gray-200 dark:border-gray-700 pt-4">
               <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3 flex items-center gap-2">
-                ☕ Part-Time Work
+                ☕ {t('baristaFire.partTimeWork')}
               </h3>
               <CurrencyInput
                 label="Part-Time Annual Income"
@@ -150,7 +148,7 @@ export default function BaristaFIRE() {
                 tooltip="Expected yearly income from part-time work"
               />
               <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
-                Tip: $15-25/hr × 20 hrs/week = $15,600-26,000/year
+                {t('baristaFire.partTimeTip')}
               </p>
             </div>
 
@@ -184,13 +182,13 @@ export default function BaristaFIRE() {
           <div className="bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4">
             <div className="flex items-center justify-between flex-wrap gap-4">
               <div>
-                <p className="text-sm text-amber-700 dark:text-amber-300">Portfolio savings vs Full FIRE</p>
+                <p className="text-sm text-amber-700 dark:text-amber-300">{t('baristaFire.portfolioSavings')}</p>
                 <p className="text-2xl font-bold text-amber-900 dark:text-amber-100">
-                  {formatCurrency(portfolioReduction)} less needed
+                  {formatCurrency(portfolioReduction)} {t('baristaFire.lessNeeded')}
                 </p>
               </div>
               <div className="text-right">
-                <p className="text-sm text-amber-700 dark:text-amber-300">Reduction</p>
+                <p className="text-sm text-amber-700 dark:text-amber-300">{t('baristaFire.reduction')}</p>
                 <p className="text-2xl font-bold text-amber-900 dark:text-amber-100">
                   {reductionPercent.toFixed(0)}%
                 </p>
@@ -274,7 +272,7 @@ export default function BaristaFIRE() {
           {/* Chart */}
           <Card>
             <CardHeader>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Portfolio Projection</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('common.portfolioProjection')}</h2>
             </CardHeader>
             <CardContent>
               <ProjectionChart

@@ -101,9 +101,7 @@ export default function FatFIRE() {
           <div>
             <h3 className="font-semibold text-purple-900 dark:text-purple-100">{t('fatFire.whatIs.title')}</h3>
             <p className="text-sm text-purple-700 dark:text-purple-300 mt-1">
-              Fat FIRE means achieving financial independence while maintaining a luxurious or upper-middle-class 
-              lifestyle (typically $100,000+/year in expenses). It requires a larger nest egg but allows you to 
-              retire without sacrifice.
+              {t('fatFire.bannerContent')}
             </p>
           </div>
         </div>
@@ -113,7 +111,7 @@ export default function FatFIRE() {
         {/* Inputs */}
         <Card className="lg:col-span-1">
           <CardHeader>
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Your Information</h2>
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('common.yourInformation')}</h2>
           </CardHeader>
           <CardContent className="space-y-4">
             <AgeInput
@@ -145,7 +143,7 @@ export default function FatFIRE() {
               />
               <div className="mt-2">
                 <div className="flex justify-between text-xs text-gray-500 dark:text-gray-400 mb-1">
-                  <span>Fat threshold</span>
+                  <span>{t('fatFire.fatThreshold')}</span>
                   <span>{formatCurrency(FAT_THRESHOLD)}</span>
                 </div>
                 <div className="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
@@ -157,7 +155,7 @@ export default function FatFIRE() {
                   />
                 </div>
                 {isFat && (
-                  <p className="text-xs text-purple-600 dark:text-purple-400 mt-1">Fat FIRE territory</p>
+                  <p className="text-xs text-purple-600 dark:text-purple-400 mt-1">{t('fatFire.fatTerritory')}</p>
                 )}
               </div>
             </div>
@@ -214,7 +212,7 @@ export default function FatFIRE() {
           {/* Chart */}
           <Card>
             <CardHeader>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Portfolio Projection</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('common.portfolioProjection')}</h2>
             </CardHeader>
             <CardContent>
               <ProjectionChart
