@@ -138,13 +138,11 @@ export default function Books() {
       {/* Disclaimer */}
       <Card className="bg-gray-50 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700">
         <CardHeader>
-          <h2 className="text-sm font-semibold text-gray-700 dark:text-gray-300">{t('books.affiliateDisclosure')}</h2>
+          <h2 className="text-sm font-semibold text-gray-700 dark:text-gray-300">{t('books.affiliateTitle')}</h2>
         </CardHeader>
         <CardContent>
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            The links above are Amazon affiliate links. If you purchase through these links, we may earn a small 
-            commission at no additional cost to you. This helps support the development of this free calculator. 
-            We only recommend books we genuinely believe will help you on your FIRE journey.
+            {t('books.affiliateContent')}
           </p>
         </CardContent>
       </Card>

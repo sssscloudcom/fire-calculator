@@ -38,10 +38,10 @@ export default function Apps() {
         <div>
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 flex items-center gap-3">
             <span className="text-3xl" role="img" aria-label="Apps emoji">📱</span>
-            Recommended FIRE Apps
+            {t('apps.title')}
           </h1>
           <p className="text-gray-600 dark:text-gray-400 mt-1">
-            Essential apps to accelerate your financial independence journey.
+            {t('apps.subtitle')}
           </p>
         </div>
 
@@ -52,8 +52,7 @@ export default function Apps() {
             <div>
             <h3 className="font-semibold text-amber-900 dark:text-amber-100">{t('apps.smartToolsTitle')}</h3>
             <p className="text-sm text-amber-700 dark:text-amber-300 mt-1">
-              These apps complement your FIRE calculators with practical tools for budgeting, 
-              tracking, and managing your finances. More recommendations coming soon!
+              {t('apps.smartToolsDesc')}
             </p>
           </div>
         </div>
@@ -109,9 +108,7 @@ export default function Apps() {
         </CardHeader>
         <CardContent>
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            We are not affiliated with or endorsed by any of the apps listed above. These recommendations are provided 
-            for informational purposes only. We only recommend apps we genuinely believe will help you on your FIRE journey. 
-            Please do your own research before using any third-party service.
+            {t('apps.disclaimerContent')}
           </p>
         </CardContent>
       </Card>

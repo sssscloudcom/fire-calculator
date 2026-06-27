@@ -265,7 +265,7 @@ export default function Home() {
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 dark:text-gray-100">Client-Side Only</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">All calculations run in your browser. No server processing.</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">{t('home.features.noServer.desc')}</p>
             </div>
           </div>
         </div>
