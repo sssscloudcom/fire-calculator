@@ -1,4 +1,5 @@
 import { useMemo } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useCalculatorParams } from '../hooks/useCalculatorParams'
 import { calculateBaristaFIRE, formatCurrency } from '../utils/calculations'
 import { exportToExcel, prepareInputsForExport, prepareResultsForExport } from '../utils/excelExport'
@@ -9,6 +10,7 @@ import SEO from '../components/SEO'
 import { calculatorSEO } from '../config/seo'
 
 export default function BaristaFIRE() {
+  const { t } = useTranslation()
   const { params, setParam, resetParams, copyUrl, hasCustomParams } = useCalculatorParams()
 
   const results = useMemo(() => {
@@ -72,10 +74,10 @@ export default function BaristaFIRE() {
           <div>
             <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 flex items-center gap-3">
               <span className="text-3xl" role="img" aria-label="Coffee emoji">☕</span>
-              Barista FIRE Calculator
+              {t('baristaFire.title')}
             </h1>
             <p className="text-gray-600 dark:text-gray-400 mt-1">
-              Blend part-time work with portfolio income to retire from corporate life earlier.
+              {t('baristaFire.subtitle')}
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -98,7 +100,7 @@ export default function BaristaFIRE() {
         <div className="flex gap-3">
           <span className="text-2xl">☕</span>
           <div>
-            <h3 className="font-semibold text-amber-900 dark:text-amber-100">What is Barista FIRE?</h3>
+            <h3 className="font-semibold text-amber-900 dark:text-amber-100">{t('baristaFire.whatIs.title')}</h3>
             <p className="text-sm text-amber-700 dark:text-amber-300 mt-1">
               Barista FIRE (named after the stereotype of working part-time at Starbucks for benefits) means having 
               enough invested to cover most expenses, while working a part-time or low-stress job to cover the gap 
