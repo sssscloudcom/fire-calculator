@@ -128,7 +128,7 @@ export default function ReverseFIRE() {
               {t('reverseFire.title')}
             </h1>
             <p className="text-gray-600 dark:text-gray-400 mt-1">
-              Find out how much you need to save monthly to FIRE by your target age.
+              {t('reverseFire.subtitle')}
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -151,9 +151,7 @@ export default function ReverseFIRE() {
           <div>
             <h3 className="font-semibold text-teal-900 dark:text-teal-100">How Reverse FIRE Works</h3>
             <p className="text-sm text-teal-700 dark:text-teal-300 mt-1">
-              Instead of calculating when you'll FIRE based on your savings, this calculator works backwards: 
-              you set your target retirement age, and it tells you exactly how much you need to save each month 
-              to get there.
+              {t('reverseFire.howWorks.content')}
             </p>
           </div>
         </div>
@@ -163,7 +161,7 @@ export default function ReverseFIRE() {
         {/* Inputs */}
         <Card className="lg:col-span-1">
           <CardHeader>
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Your Goals</h2>
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('common.yourGoals')}</h2>
           </CardHeader>
           <CardContent className="space-y-4">
             <AgeInput
@@ -179,7 +177,7 @@ export default function ReverseFIRE() {
               min={params.currentAge + 1}
             />
             <CurrencyInput
-              label="Current Savings"
+              label="{t('reverseFire.currentSavingsLabel')}"
               value={params.currentSavings}
               onChange={(v) => setParam('currentSavings', v)}
             />
@@ -189,7 +187,7 @@ export default function ReverseFIRE() {
               onChange={(v) => setParam('annualExpenses', v)}
             />
             <PercentageInput
-              label="Expected Return"
+              label="{t('reverseFire.expectedReturnLabel')}"
               value={params.expectedReturn}
               onChange={(v) => setParam('expectedReturn', v)}
               min={0}
@@ -219,12 +217,10 @@ export default function ReverseFIRE() {
             <div className="bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl p-6 text-white">
               <div className="flex items-center gap-4">
                 <div>
-                  <p className="text-green-100 text-sm">Great News!</p>
-                  <p className="text-2xl font-bold">You're Already on Track!</p>
+                  <p className="text-green-100 text-sm">{t('reverseFire.greatNews')}</p>
+                  <p className="text-2xl font-bold">{t('reverseFire.alreadyOnTrack')}</p>
                   <p className="text-green-100 mt-1">
-                    Your current savings of {formatCurrency(params.currentSavings)} will grow to{' '}
-                    {formatCurrency(results.currentWillGrowTo)} by age {params.retirementAge}, 
-                    exceeding your FIRE number of {formatCurrency(results.fireNumber)}.
+                    {t('reverseFire.onTrackDesc', { savings: formatCurrency(params.currentSavings), willGrow: formatCurrency(results.currentWillGrowTo), targetAge: params.retirementAge, fireNumber: formatCurrency(results.fireNumber) })}
                   </p>
                 </div>
               </div>
@@ -233,14 +229,14 @@ export default function ReverseFIRE() {
             <div className="bg-gradient-to-r from-teal-500 to-cyan-500 rounded-xl p-6 text-white">
               <div className="flex items-center justify-between flex-wrap gap-4">
                 <div>
-                  <p className="text-teal-100 text-sm">To FIRE by age {params.retirementAge}, you need to save</p>
+                  <p className="text-teal-100 text-sm">{t('reverseFire.toFireByAgeYouNeed', { targetAge: params.retirementAge })}</p>
                   <p className="text-5xl font-bold">{formatCurrency(results.requiredMonthlySavings)}</p>
-                  <p className="text-teal-200 text-lg">per month</p>
+                  <p className="text-teal-200 text-lg">{t('reverseFire.perMonth')}</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-teal-100 text-sm">Or annually</p>
+                  <p className="text-teal-100 text-sm">{t('reverseFire.orAnnually')}</p>
                   <p className="text-3xl font-bold">{formatCurrency(results.requiredAnnualSavings)}</p>
-                  <p className="text-teal-200 text-sm">per year</p>
+                  <p className="text-teal-200 text-sm">{t('reverseFire.perYear')}</p>
                 </div>
               </div>
             </div>
@@ -249,20 +245,20 @@ export default function ReverseFIRE() {
           {/* Key Metrics */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <ResultCard
-              label="FIRE Number"
+              label={t('reverseFire.fireNumber')}
               value={results.fireNumber}
               format="currency"
               highlight
-              subtext="Target portfolio"
+              subtext={t('reverseFire.targetPortfolio')}
             />
             <ResultCard
-              label="Years to FIRE"
+              label="{t('reverseFire.yearsToFireLabel')}"
               value={results.yearsToFIRE}
               format="years"
               subtext={`At age ${params.retirementAge}`}
             />
             <ResultCard
-              label="Current Savings Will Grow To"
+              label={t('reverseFire.currentSavingsWillGrowTo')}
               value={results.currentWillGrowTo}
               format="currency"
               subtext={`By age ${params.retirementAge}`}
@@ -272,17 +268,17 @@ export default function ReverseFIRE() {
           {/* Scenario Comparison */}
           <Card>
             <CardHeader>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Different Target Ages</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('reverseFire.differentTargetAges')}</h2>
             </CardHeader>
             <CardContent>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-gray-200 dark:border-gray-700">
-                      <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">Target Age</th>
-                      <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">Years Away</th>
-                      <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">Monthly Savings</th>
-                      <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">Annual Savings</th>
+                      <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">{t('reverseFire.targetAge')}</th>
+                      <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">{t('reverseFire.yearsAway')}</th>
+                      <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">{t('reverseFire.monthlySavings')}</th>
+                      <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">{t('reverseFire.annualSavings')}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -307,14 +303,14 @@ export default function ReverseFIRE() {
                             Age {targetAge}
                             {targetAge === params.retirementAge && (
                               <span className="ml-2 text-xs bg-teal-100 dark:bg-teal-800 text-teal-700 dark:text-teal-300 px-2 py-0.5 rounded">
-                                Selected
+                                {t('reverseFire.selected')}
                               </span>
                             )}
                           </td>
                           <td className="py-2 px-3 text-gray-600 dark:text-gray-400">{targetAge - params.currentAge} years</td>
                           <td className="py-2 px-3 text-gray-900 dark:text-gray-100 font-medium">
                             {calc.alreadyAchievable ? (
-                              <span className="text-green-600 dark:text-green-400">$0 (on track!)</span>
+                              <span className="text-green-600 dark:text-green-400">{t('reverseFire.onTrack')}</span>
                             ) : (
                               formatCurrency(calc.requiredMonthlySavings)
                             )}
@@ -334,7 +330,7 @@ export default function ReverseFIRE() {
           {/* Chart */}
           <Card>
             <CardHeader>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Portfolio Projection</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('common.portfolioProjection')}</h2>
             </CardHeader>
             <CardContent>
               <ProjectionChart

@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { Card, CardContent } from '../components/ui'
 import { calculators } from '../config/calculators'
 import SEO from '../components/SEO'
 
 export default function Home() {
+  const { t } = useTranslation()
   return (
     <>
       <SEO
@@ -38,7 +40,7 @@ export default function Home() {
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
             </svg>
-            Works Offline
+            {t('home.features.offline.title')}
           </span>
           <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm font-medium">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -203,7 +205,7 @@ export default function Home() {
               </svg>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 dark:text-gray-100">No Financial Data Storage</h3>
+              <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('home.features.noStorage.title')}</h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">Your financial data stays in URLs only—never stored. Only UI preferences (theme, layout) stored locally.</p>
             </div>
           </div>
@@ -215,7 +217,7 @@ export default function Home() {
               </svg>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 dark:text-gray-100">No Analytics</h3>
+              <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('home.features.noAnalytics.title')}</h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">Zero tracking scripts. No Google Analytics, no third-party code.</p>
             </div>
           </div>
@@ -239,8 +241,8 @@ export default function Home() {
               </svg>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 dark:text-gray-100">Works Offline</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">After first load, works without internet. Install as an app on your device.</p>
+              <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('home.features.offline.title')}</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">{t('home.features.offline.desc')}</p>
             </div>
           </div>
           
@@ -251,8 +253,8 @@ export default function Home() {
               </svg>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 dark:text-gray-100">Open Source</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">Verify everything yourself. All code is available on GitHub.</p>
+              <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('home.features.openSource.title')}</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">{t('home.features.openSource.desc')}</p>
             </div>
           </div>
           
@@ -272,7 +274,7 @@ export default function Home() {
 
       {/* What is FIRE Section */}
       <div className="prose dark:prose-invert max-w-none">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">What is FIRE?</h2>
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">{t('home.whatIsFire.title')}</h2>
         <p className="text-gray-600 dark:text-gray-400">
           <strong>FIRE</strong> stands for <strong>Financial Independence, Retire Early</strong>. It's a financial movement 
           focused on extreme savings and investment to retire much earlier than traditional retirement age. 

@@ -147,7 +147,7 @@ export default function SavingsRate() {
 
     // Define formulas for calculated results
     const resultFormulas: Record<string, string> = {
-      // Savings Rate = (Annual Contribution / Annual Income)
+      // {t('savingsRate.savingsRateLabel')} = (Annual Contribution / Annual Income)
       // Note: contributionAmount is monthly in inputs, so we multiply by 12
       savingsRate: '({contributionAmount}*12)/{annualIncome}',
     }
@@ -184,7 +184,7 @@ export default function SavingsRate() {
           </div>
       </div>
 
-      {/* Savings Rate Info Banner */}
+      {/* {t('savingsRate.savingsRateLabel')} Info Banner */}
       <div className="bg-indigo-50 dark:bg-indigo-900/20 border border-indigo-200 dark:border-indigo-800 rounded-xl p-4">
         <div className="flex gap-3">
           <span className="text-2xl">💡</span>
@@ -202,11 +202,11 @@ export default function SavingsRate() {
         {/* Inputs */}
         <Card className="lg:col-span-1">
           <CardHeader>
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Investment Details</h2>
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('savingsRate.investmentDetails')}</h2>
           </CardHeader>
           <CardContent className="space-y-4">
             <CurrencyInput
-              label="Starting Amount"
+              label={t('savingsRate.startingAmount')}
               value={params.currentSavings}
               onChange={(v) => setParam('currentSavings', v)}
               tooltip="How much you're starting with"
@@ -215,7 +215,7 @@ export default function SavingsRate() {
             {/* Contribution Frequency Toggle */}
             <div className="space-y-2">
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                Contribution Frequency
+                {t('savingsRate.contributionFrequency')}
               </label>
               <div className="flex gap-2">
                 <button
@@ -226,7 +226,7 @@ export default function SavingsRate() {
                       : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
                   }`}
                 >
-                  Monthly
+                  {t('savingsRate.monthly')}
                 </button>
                 <button
                   onClick={() => setContributionFrequency('yearly')}
@@ -236,13 +236,13 @@ export default function SavingsRate() {
                       : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
                   }`}
                 >
-                  Yearly
+                  {t('savingsRate.yearly')}
                 </button>
               </div>
             </div>
 
             <CurrencyInput
-              label={`${contributionFrequency === 'monthly' ? 'Monthly' : 'Yearly'} Contribution`}
+              label={`${contributionFrequency === 'monthly' ? t('savingsRate.monthly') : t('savingsRate.yearly')} ${t('input.contribution')}`}
               value={contributionAmount}
               onChange={setContributionAmount}
               tooltip={`Amount you'll invest ${contributionFrequency}`}
@@ -294,23 +294,23 @@ export default function SavingsRate() {
           <div className="bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl p-6 text-white">
             <div className="space-y-4">
               <div>
-                <p className="text-indigo-100 text-sm">Your Investment Will Grow To</p>
+                <p className="text-indigo-100 text-sm">{t('savingsRate.yourInvestmentWillGrowTo')}</p>
                 <p className="text-5xl font-bold">{formatCurrency(results.finalNominalBalance)}</p>
                 <p className="text-indigo-200 text-sm mt-1">in {yearsInvesting} years</p>
               </div>
               <div className="pt-4 border-t border-indigo-400/30">
-                <p className="text-indigo-100 text-sm">Inflation-Adjusted Value (Today's Dollars)</p>
+                <p className="text-indigo-100 text-sm">{t('savingsRate.inflationAdjustedValue')}</p>
                 <p className="text-3xl font-bold">{formatCurrency(results.finalInflationAdjustedBalance)}</p>
               </div>
             </div>
           </div>
 
-          {/* Savings Rate Display */}
+          {/* {t('savingsRate.savingsRateLabel')} Display */}
           {annualIncome > 0 && (
             <div className="bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl p-6 text-white">
               <div className="flex items-center justify-between flex-wrap gap-4">
                 <div>
-                  <p className="text-green-100 text-sm">Your Savings Rate</p>
+                  <p className="text-green-100 text-sm">Your {t('savingsRate.savingsRateLabel')}</p>
                   <p className="text-5xl font-bold">{(results.savingsRate * 100).toFixed(1)}%</p>
                   <p className={`mt-2 font-semibold ${results.savingsRate >= 0.2 ? 'text-green-200' : 'text-amber-200'}`}>
                     {results.savingsCategory}
@@ -319,7 +319,7 @@ export default function SavingsRate() {
                 <div className="text-right">
                   <p className="text-green-100 text-sm">You're Investing</p>
                   <p className="text-3xl font-bold">{formatCurrency(results.annualContribution)}</p>
-                  <p className="text-green-200 text-sm">per year</p>
+                  <p className="text-green-200 text-sm">{t('output.perYear')}</p>
                 </div>
               </div>
             </div>
@@ -328,30 +328,30 @@ export default function SavingsRate() {
           {/* Key Metrics */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <ResultCard
-              label="Total Invested"
+              label={t('savingsRate.totalInvested')}
               value={results.totalInvested}
               format="currency"
-              subtext="Your contributions"
+              subtext={t('savingsRate.yourContributions')}
             />
             <ResultCard
-              label="Investment Growth"
+              label={t('savingsRate.investmentGrowth')}
               value={results.totalGrowth}
               format="currency"
               highlight
-              subtext="Earnings from returns"
+              subtext={t('savingsRate.earningsFromReturns')}
             />
             <ResultCard
-              label="Inflation Impact"
+              label={t('savingsRate.inflationImpact')}
               value={results.inflationImpact}
               format="currency"
-              subtext="Purchasing power loss"
+              subtext={t('savingsRate.purchasingPowerLoss')}
             />
           </div>
 
           {/* Chart */}
           <Card>
             <CardHeader>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Investment Growth Projection</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('savingsRate.investmentGrowthProjection')}</h2>
               <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
                 Compare nominal growth vs. inflation-adjusted purchasing power
               </p>
@@ -370,17 +370,17 @@ export default function SavingsRate() {
           {/* Breakdown Details */}
           <Card>
             <CardHeader>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Investment Breakdown</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('savingsRate.investmentBreakdown')}</h2>
             </CardHeader>
             <CardContent>
               <div className="space-y-3">
                 <div className="flex justify-between items-center py-2 border-b border-gray-200 dark:border-gray-700">
-                  <span className="text-gray-600 dark:text-gray-400">Starting Amount</span>
+                  <span className="text-gray-600 dark:text-gray-400">{t('savingsRate.startingAmount')}</span>
                   <span className="font-semibold text-gray-900 dark:text-gray-100">{formatCurrency(params.currentSavings)}</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-gray-200 dark:border-gray-700">
                   <span className="text-gray-600 dark:text-gray-400">
-                    {contributionFrequency === 'monthly' ? 'Monthly' : 'Yearly'} Contributions
+                    {contributionFrequency === 'monthly' ? t('savingsRate.monthlyContributions') : t('savingsRate.yearlyContributions')}
                   </span>
                   <span className="font-semibold text-gray-900 dark:text-gray-100">{formatCurrency(contributionAmount)}</span>
                 </div>
@@ -397,7 +397,7 @@ export default function SavingsRate() {
                   <span className="font-bold text-lg text-indigo-600 dark:text-indigo-400">{formatCurrency(results.finalNominalBalance)}</span>
                 </div>
                 <div className="flex justify-between items-center py-2">
-                  <span className="text-gray-600 dark:text-gray-400">Inflation-Adjusted Value</span>
+                  <span className="text-gray-600 dark:text-gray-400">{t('savingsRate.inflationAdjustedValue')}</span>
                   <span className="font-bold text-lg text-gray-900 dark:text-gray-100">{formatCurrency(results.finalInflationAdjustedBalance)}</span>
                 </div>
               </div>

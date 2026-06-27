@@ -699,76 +699,110 @@
       "subtitle": "A free, privacy-first tool for planning your path to financial independence",
       "mission": {
         "title": "Our Mission",
-        "content": "To provide accessible, privacy-respecting financial planning tools that help everyone pursue financial independence — regardless of their starting point, income level, or technical expertise."
+        "content": "To provide accessible, privacy-respecting financial planning tools that help everyone pursue financial independence — without compromising their personal data."
       },
-      "whoWeAre": {
-        "title": "Who We Are",
-        "content": "FIRE Calculator is an open-source project built by and for the FIRE (Financial Independence, Retire Early) community. We're a small team of developers and financial enthusiasts who believe everyone deserves access to quality financial planning tools.",
-        "team": "Our Team",
-        "teamDesc": "We're volunteers and contributors from around the world, united by our passion for financial education and privacy-first technology."
-      },
-      "whyFree": {
-        "title": "Why This is Free",
-        "content": "We believe financial planning tools should be accessible to everyone. Here's how we keep the lights on while staying free:",
-        "reasons": {
-          "ads": {
-            "title": "Ethical Advertising",
-            "desc": "We display Google AdSense ads to cover server costs. No tracking, no data selling."
-          },
-          "affiliates": {
-            "title": "Affiliate Links",
-            "desc": "Book recommendations include Amazon affiliate links. You pay nothing extra."
-          },
-          "openSource": {
-            "title": "Open Source",
-            "desc": "Community contributions help improve and maintain the project."
-          }
+      "whatIsFireTitle": "What is FIRE?",
+      "whatIsFireContent": "FIRE (Financial Independence, Retire Early) is a lifestyle movement focused on achieving financial freedom through aggressive saving and smart investing. The goal is to accumulate enough wealth that your investments can cover your living expenses indefinitely, giving you the freedom to retire much earlier than traditional retirement age.",
+      "corePrincipleTitle": "Core Principle",
+      "corePrincipleContent": "The \"4% Rule\" suggests that if you withdraw 4% of your portfolio annually, your savings should last 30+ years. This means you need approximately 25x your annual expenses to achieve FIRE.",
+      "goalTitle": "The Goal",
+      "goalContent": "Financial independence means having enough passive income (from investments) to cover your living expenses, giving you freedom to choose how you spend your time — whether that's early retirement, part-time work, or pursuing passion projects.",
+      "typesTitle": "Types of FIRE",
+      "fireTypes": {
+        "standard": {
+          "title": "Standard FIRE",
+          "desc": "The classic 25x annual expenses approach. Full financial independence with no need for additional income."
+        },
+        "coast": {
+          "title": "Coast FIRE",
+          "desc": "Save enough now so compound growth carries you to traditional retirement. Stop saving early and \"coast\" to FI."
+        },
+        "lean": {
+          "title": "Lean FIRE",
+          "desc": "FI with a frugal lifestyle. Lower expenses mean a smaller target number, achieved faster."
+        },
+        "fat": {
+          "title": "Fat FIRE",
+          "desc": "FI with a comfortable or luxurious lifestyle. Higher expenses require a larger portfolio."
+        },
+        "barista": {
+          "title": "Barista FIRE",
+          "desc": "Partial FI combined with part-time work. Leave full-time corporate work earlier while maintaining some income."
         }
       },
-      "builtDifferent": {
-        "title": "Built Different",
-        "subtitle": "What makes FIRE Calculator unique",
-        "features": {
-          "offline": {
-            "title": "Offline-First",
-            "desc": "Works without internet after initial load. Install as a PWA on any device."
-          },
-          "privacy": {
-            "title": "Privacy-First",
-            "desc": "All calculations happen in your browser. We never see or store your data."
-          },
-          "shareable": {
-            "title": "Shareable URLs",
-            "desc": "Save your calculations in the URL. Bookmark, share, or revisit anytime."
-          },
-          "translations": {
-            "title": "Multi-Language",
-            "desc": "Available in 10+ languages with community-contributed translations."
-          },
-          "accurate": {
-            "title": "Accurate Math",
-            "desc": "Real-world formulas used by financial planners. No approximations."
-          },
-          "mobile": {
-            "title": "Mobile-Friendly",
-            "desc": "Responsive design works great on phones, tablets, and desktops."
-          }
+      "toolsTitle": "Our Calculators",
+      "toolsIntro": "We offer a comprehensive suite of calculators to help you plan every aspect of your FIRE journey:",
+      "tools": {
+        "standardFire": {
+          "title": "Standard FIRE Calculator",
+          "desc": "Calculate your FIRE number and timeline to full financial independence."
+        },
+        "coastFire": {
+          "title": "Coast FIRE Calculator",
+          "desc": "Find your Coast FIRE number — when you can stop saving and let compound growth finish the job."
+        },
+        "leanFatFire": {
+          "title": "Lean & Fat FIRE",
+          "desc": "Calculate FI targets for minimalist or comfortable lifestyles."
+        },
+        "baristaFire": {
+          "title": "Barista FIRE Calculator",
+          "desc": "Blend part-time work with investment income for earlier semi-retirement."
+        },
+        "withdrawalRate": {
+          "title": "Withdrawal Rate Calculator",
+          "desc": "Test portfolio longevity and find your safe withdrawal rate."
+        },
+        "savingsRate": {
+          "title": "Savings Rate Calculator",
+          "desc": "Calculate your savings rate and see how it impacts your FIRE timeline."
         }
       },
+      "whyChooseTitle": "Why Choose FIRE Calculator?",
+      "features": {
+        "free": {
+          "title": "100% Free",
+          "desc": "No subscriptions, no premium tiers, no hidden fees. All calculators are completely free to use."
+        },
+        "privacy": {
+          "title": "Privacy First",
+          "desc": "Your financial data stays in your browser. No accounts, no databases, no server processing."
+        },
+        "offline": {
+          "title": "Works Offline",
+          "desc": "After initial load, the app works without internet. Install as a PWA and calculate anywhere."
+        },
+        "noTracking": {
+          "title": "No Tracking",
+          "desc": "No analytics, no cookies, no third-party trackers. Your usage is completely private."
+        },
+        "shareable": {
+          "title": "Shareable URLs",
+          "desc": "Save calculations in URLs. Bookmark, share with a partner, or revisit later — your data is in the link."
+        },
+        "openSource": {
+          "title": "Open Source",
+          "desc": "All code is publicly available. Verify our privacy claims yourself — transparency is key."
+        }
+      },
+      "openSourceTitle": "Open Source",
       "openSource": {
-        "title": "Open Source",
-        "content": "This project is fully open source. You can:",
-        "actions": {
-          "viewCode": "View the code on GitHub",
-          "reportIssues": "Report issues or suggest features",
-          "contribute": "Contribute code or translations",
-          "fork": "Fork it for your own projects"
-        }
+        "content": "This calculator is open source, meaning anyone can inspect, verify, and contribute to the code. We believe transparency builds trust — especially for financial tools.",
+        "githubTitle": "GitHub Repository",
+        "githubUrl": "github.com/jamesmontemagno/app-fire-calculator",
+        "note": "Feel free to explore the code, report issues, suggest features, or contribute improvements. We welcome community involvement and feedback."
       },
-      "contact": {
-        "title": "Get in Touch",
-        "content": "Have questions, suggestions, or just want to say hi? We'd love to hear from you.",
-        "github": "Open an issue on GitHub"
+      "learnMoreTitle": "Learn More",
+      "learnMoreIntro": "Explore our curated resources to deepen your understanding of financial independence:",
+      "learnMore": {
+        "books": "Recommended Books",
+        "apps": "Recommended Apps",
+        "quiz": "Find Your FIRE Path"
+      },
+      "disclaimer": {
+        "title": "Disclaimer",
+        "content": "This calculator is for educational and informational purposes only. It is not financial, investment, tax, or legal advice. Results are hypothetical projections based on user inputs and assumed rates. Actual results will vary. Please consult a qualified financial advisor before making any financial decisions.",
+        "link": "Read our full Terms of Service"
       },
       "navigation": {
         "startCalculating": "← Start Calculating",
@@ -776,291 +810,79 @@
         "termsOfService": "Terms of Service →"
       }
     },
-    "privacy": {
-      "title": "Privacy Policy",
-      "lastUpdated": "Last updated: June 2025",
-      "summary": {
-        "title": "TL;DR: Your Privacy is Our Priority",
-        "points": {
-          "browserSide": "All calculations happen 100% in your browser",
-          "noCollection": "We do not collect, store, or transmit any personal or financial information",
-          "noAccounts": "No user accounts, no databases, no server-side processing",
-          "noTracking": "No tracking, no analytics, no cookies for user data"
+    "whoWeAre": {
+      "title": "Who We Are",
+      "content": "FIRE Calculator is an open-source project built by and for the FIRE (Financial Independence, Retire Early) community. We're a small team of developers and financial enthusiasts who believe everyone deserves access to quality financial planning tools.",
+      "team": "Our Team",
+      "teamDesc": "We're volunteers and contributors from around the world, united by our passion for financial education and privacy-first technology."
+    },
+    "whyFree": {
+      "title": "Why This is Free",
+      "content": "We believe financial planning tools should be accessible to everyone. Here's how we keep the lights on while staying free:",
+      "reasons": {
+        "ads": {
+          "title": "Ethical Advertising",
+          "desc": "We display Google AdSense ads to cover server costs. No tracking, no data selling."
+        },
+        "affiliates": {
+          "title": "Affiliate Links",
+          "desc": "Book recommendations include Amazon affiliate links. You pay nothing extra."
+        },
+        "openSource": {
+          "title": "Open Source",
+          "desc": "Community contributions help improve and maintain the project."
         }
-      },
-      "sections": {
-        "infoCollect": {
-          "title": "1. Information We Collect",
-          "intro": "We do not collect any personal or financial information. This FIRE Calculator is designed with privacy as a core principle. Here's what that means:",
-          "dontCollect": "What We DON'T Collect:",
-          "items": {
-            "names": "Names, email addresses, or contact information",
-            "financial": "Financial data (income, expenses, savings, investments)",
-            "ip": "IP addresses or location data",
-            "browsing": "Browsing history or usage patterns",
-            "cookies": "Cookies for tracking purposes"
-          }
-        },
-        "howCalculations": {
-          "title": "2. How Your Calculations Work",
-          "intro": "All calculations are performed entirely within your web browser (client-side). When you enter financial information:",
-          "steps": {
-            "browserSide": {
-              "title": "Browser-Side Processing",
-              "desc": "All mathematical calculations happen in JavaScript running in your browser. No data is sent to our servers."
-            },
-            "urlStorage": {
-              "title": "URL-Based Storage (Optional)",
-              "desc": "Your calculation inputs are encoded in the URL when you share or bookmark. This is the only way your data persists — and it's entirely under your control."
-            },
-            "noServer": {
-              "title": "No Server Transmission",
-              "desc": "Your financial data is never transmitted to our servers for processing, storage, or any other purpose."
-            }
-          }
-        },
-        "localStorage": {
-          "title": "3. Local Storage Usage",
-          "intro": "We use browser local storage to save non-sensitive preferences only. This data never leaves your device:",
-          "table": {
-            "dataStored": "Data Stored",
-            "purpose": "Purpose",
-            "containsFinancial": "Contains Financial Data?",
-            "theme": "Theme preference",
-            "themePurpose": "Remember dark/light mode",
-            "language": "Language preference",
-            "languagePurpose": "Remember language selection",
-            "sidebar": "Sidebar collapsed state",
-            "sidebarPurpose": "Remember UI layout",
-            "no": "No"
-          },
-          "clearNote": "You can clear this data at any time through your browser settings. Clearing local storage will not affect your calculations — it only resets your preferences to defaults."
-        },
-        "thirdParty": {
-          "title": "4. Third-Party Services",
-          "googleAdsense": {
-            "title": "Google AdSense",
-            "intro": "We use Google AdSense to display advertisements. Google AdSense may collect certain information to serve relevant ads, including:",
-            "items": {
-              "device": "Device information (browser type, operating system)",
-              "location": "General location (country/region level)",
-              "adInteraction": "Ad interaction data"
-            },
-            "important": "Important: Google's ad tracking is independent of our calculator. Your financial calculations and inputs are never shared with Google or any advertiser."
-          },
-          "amazonAffiliate": {
-            "title": "Amazon Affiliate Links",
-            "content": "Some book recommendations include Amazon affiliate links. When you click these links, Amazon may collect data according to their privacy policy. This does not affect your calculator usage or data."
-          }
-        },
-        "noTracking": {
-          "title": "5. No Tracking Policy",
-          "items": {
-            "noAnalytics": {
-              "title": "No Google Analytics",
-              "desc": "We don't use Google Analytics or similar tracking tools."
-            },
-            "noPixel": {
-              "title": "No Facebook Pixel",
-              "desc": "No social media tracking pixels."
-            },
-            "noUserTracking": {
-              "title": "No User Tracking",
-              "desc": "We don't track individual users or sessions."
-            },
-            "noCrossSite": {
-              "title": "No Cross-Site Tracking",
-              "desc": "We don't follow you across other websites."
-            }
-          }
-        },
-        "dataSecurity": {
-          "title": "6. Data Security",
-          "content": "Since all calculations happen locally in your browser and we don't collect any data, there's no database to breach. Your financial information is as secure as your own device. We recommend:",
-          "recommendations": {
-            "browser": "Using a secure, up-to-date browser",
-            "device": "Keeping your device protected with a password or biometric lock",
-            "urls": "Being cautious when sharing URLs that contain your financial calculations"
-          }
-        },
-        "yourRights": {
-          "title": "7. Your Rights",
-          "intro": "Because we don't collect or store your personal data, many data protection rights are automatically satisfied:",
-          "rights": {
-            "access": "Right to Access: All your data is in your browser — you have complete access.",
-            "deletion": "Right to Deletion: Clear your browser data to delete everything.",
-            "portability": "Right to Portability: Your calculation URLs contain all your data in portable form.",
-            "object": "Right to Object: No processing to object to — your data stays with you."
-          }
-        },
-        "changes": {
-          "title": "8. Changes to This Policy",
-          "content": "We may update this privacy policy from time to time. We will notify users of any material changes by posting the new policy on this page with an updated \"Last updated\" date."
-        },
-        "contact": {
-          "title": "9. Contact Us",
-          "content": "If you have questions about this privacy policy, you can:",
-          "aboutPage": "Visit our About page for more information about the project",
-          "github": "View the open-source code on GitHub"
-        }
-      },
-      "navigation": {
-        "termsOfService": "Terms of Service →",
-        "aboutUs": "About Us →"
       }
     },
-    "terms": {
-      "title": "Terms of Service",
-      "lastUpdated": "Last updated: June 2025",
-      "sections": {
-        "agreement": {
-          "title": "1. Agreement to Terms",
-          "content": "By accessing and using FIRE Calculator (available at firecalc.nextapi.pro and myfirenumber.com), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our service."
+    "builtDifferent": {
+      "title": "Built Different",
+      "subtitle": "What makes FIRE Calculator unique",
+      "features": {
+        "offline": {
+          "title": "Offline-First",
+          "desc": "Works without internet after initial load. Install as a PWA on any device."
         },
-        "disclaimer": {
-          "title": "Important Disclaimer",
-          "content": "This calculator is provided for educational and informational purposes only.",
-          "items": {
-            "notAdvice": "It is NOT financial, investment, tax, or legal advice.",
-            "hypothetical": "Results are hypothetical projections based on user inputs and assumed rates.",
-            "vary": "Actual investment returns, inflation rates, and outcomes will vary.",
-            "past": "Past performance does not guarantee future results.",
-            "consult": "You should consult with qualified professionals before making any financial decisions."
-          },
-          "notResponsible": "We are not responsible for any financial decisions you make based on calculations from this tool."
+        "privacy": {
+          "title": "Privacy-First",
+          "desc": "All calculations happen in your browser. We never see or store your data."
         },
-        "serviceDescription": {
-          "title": "2. Description of Service",
-          "content": "FIRE Calculator provides free, browser-based financial planning calculators for the FIRE (Financial Independence, Retire Early) community. Our services include:",
-          "items": {
-            "calculators": "Various FIRE calculators (Standard, Coast, Lean, Fat, Barista)",
-            "withdrawal": "Withdrawal rate and savings rate calculators",
-            "reverse": "Reverse FIRE and debt payoff calculators",
-            "healthcare": "Healthcare gap planning tools",
-            "resources": "Educational resources and book recommendations"
-          },
-          "allClientSide": "All calculations are performed client-side (in your browser). We do not store your financial data on our servers."
+        "shareable": {
+          "title": "Shareable URLs",
+          "desc": "Save your calculations in the URL. Bookmark, share, or revisit anytime."
         },
-        "notProfessionalAdvice": {
-          "title": "3. Not Professional Advice",
-          "content": "The information provided by FIRE Calculator does not constitute:",
-          "types": {
-            "financial": {
-              "title": "Financial Advice",
-              "desc": "We do not recommend specific investments, savings strategies, or financial products."
-            },
-            "investment": {
-              "title": "Investment Advice",
-              "desc": "We do not advise on buying, selling, or holding any securities or assets."
-            },
-            "tax": {
-              "title": "Tax Advice",
-              "desc": "We do not provide guidance on tax strategies or obligations."
-            },
-            "legal": {
-              "title": "Legal Advice",
-              "desc": "We do not provide legal guidance on any matters."
-            }
-          },
-          "consult": "Always consult with qualified professionals (financial advisors, tax professionals, attorneys) before making financial decisions."
+        "translations": {
+          "title": "Multi-Language",
+          "desc": "Available in 10+ languages with community-contributed translations."
         },
-        "userResponsibilities": {
-          "title": "4. User Responsibilities",
-          "intro": "By using our service, you agree to:",
-          "items": {
-            "personal": "Use the calculator for personal, non-commercial purposes",
-            "noReverse": "Not attempt to reverse engineer, copy, or redistribute the software",
-            "noScrape": "Not use automated tools to scrape or abuse the service",
-            "verify": "Verify all calculations with qualified professionals before making financial decisions",
-            "accept": "Accept responsibility for your own financial decisions"
-          }
+        "accurate": {
+          "title": "Accurate Math",
+          "desc": "Real-world formulas used by financial planners. No approximations."
         },
-        "intellectualProperty": {
-          "title": "5. Intellectual Property",
-          "ourRights": {
-            "title": "Our Rights",
-            "content": "The FIRE Calculator software, including its design, code, logos, and content (excluding third-party content and user-generated data), is protected by intellectual property laws. While the core calculator code is open source, the following restrictions apply:",
-            "items": {
-              "view": "You may view and fork the open-source code on GitHub",
-              "branding": "You may not use our branding, logos, or domain names without permission",
-              "claim": "You may not claim the calculator as your own work",
-              "derivative": "Derivative works must comply with the applicable open-source license"
-            }
-          },
-          "thirdParty": {
-            "title": "Third-Party Content",
-            "content": "Some content on our site, such as book recommendations and affiliate links, may link to third-party websites. We are not responsible for the content, privacy practices, or terms of third-party sites."
-          }
-        },
-        "limitationOfLiability": {
-          "title": "6. Limitation of Liability",
-          "intro": "TO THE MAXIMUM EXTENT PERMITTED BY LAW:",
-          "items": {
-            "noWarranty": {
-              "title": "No Warranty",
-              "desc": "The calculator is provided \"AS IS\" without warranties of any kind, express or implied, including but not limited to accuracy, fitness for a particular purpose, or non-infringement."
-            },
-            "noGuarantee": {
-              "title": "No Guarantee of Results",
-              "desc": "We do not guarantee that calculations will be accurate or that any financial outcomes will be achieved."
-            },
-            "limitation": {
-              "title": "Limitation of Damages",
-              "desc": "We shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising from your use of the calculator."
-            }
-          }
-        },
-        "disclaimerOutcomes": {
-          "title": "7. Disclaimer of Financial Outcomes",
-          "intro": "The projections and calculations provided by FIRE Calculator are based on:",
-          "items": {
-            "inputs": "User-provided inputs which may be inaccurate",
-            "assumed": "Assumed rates (investment returns, inflation) that may not reflect reality",
-            "historical": "Historical data that may not predict future performance",
-            "simplified": "Simplified models that do not account for all real-world factors"
-          },
-          "actualDepends": "Actual financial outcomes depend on numerous factors beyond our control, including but not limited to: market conditions, tax laws, healthcare costs, inflation, unexpected expenses, and individual circumstances. Never rely solely on this calculator for financial planning."
-        },
-        "thirdPartyServices": {
-          "title": "8. Third-Party Services & Affiliate Links",
-          "googleAdsense": {
-            "title": "Google AdSense",
-            "content": "We use Google AdSense to display advertisements. Google may use cookies and similar technologies to serve ads. Your use of our service is also subject to Google's terms and privacy policy."
-          },
-          "affiliate": {
-            "title": "Affiliate Links",
-            "content": "Some links on our site (such as book recommendations) are affiliate links. If you make a purchase through these links, we may receive a small commission at no additional cost to you. This helps support the free calculator. We are not responsible for the products, services, or terms of third-party vendors."
-          }
-        },
-        "changes": {
-          "title": "9. Changes to Terms",
-          "content": "We reserve the right to modify these Terms of Service at any time. Changes will be effective immediately upon posting on this page. Your continued use of the service after changes constitutes acceptance of the new terms. We encourage you to review these terms periodically.",
-          "material": "Material changes will be indicated by updating the \"Last updated\" date at the top of this page."
-        },
-        "termination": {
-          "title": "10. Termination",
-          "content": "We reserve the right to terminate or suspend access to our service at any time, without notice, for any reason, including but not limited to violation of these Terms. Since this is a free, client-side application with no user accounts, termination means you may no longer be able to access our website."
-        },
-        "governingLaw": {
-          "title": "11. Governing Law",
-          "content": "These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law principles. Any disputes arising from these terms or use of the service shall be resolved in the appropriate courts of jurisdiction."
-        },
-        "contact": {
-          "title": "12. Contact Us",
-          "content": "If you have questions about these Terms of Service, please:",
-          "aboutPage": "Visit our About page for more information",
-          "github": "View the open-source code on GitHub",
-          "privacy": "Read our Privacy Policy"
-        },
-        "acknowledgment": {
-          "title": "Acknowledgment",
-          "content": "By using FIRE Calculator, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service, including the important disclaimers about financial advice."
+        "mobile": {
+          "title": "Mobile-Friendly",
+          "desc": "Responsive design works great on phones, tablets, and desktops."
         }
-      },
-      "navigation": {
-        "privacyPolicy": "← Privacy Policy",
-        "aboutUs": "About Us →"
       }
+    },
+    "openSource": {
+      "title": "Open Source",
+      "content": "This project is fully open source. You can:",
+      "actions": {
+        "viewCode": "View the code on GitHub",
+        "reportIssues": "Report issues or suggest features",
+        "contribute": "Contribute code or translations",
+        "fork": "Fork it for your own projects"
+      }
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "content": "Have questions, suggestions, or just want to say hi? We'd love to hear from you.",
+      "github": "Open an issue on GitHub"
+    },
+    "navigation": {
+      "startCalculating": "← Start Calculating",
+      "privacyPolicy": "Privacy Policy →",
+      "termsOfService": "Terms of Service →"
     }
   }
 }

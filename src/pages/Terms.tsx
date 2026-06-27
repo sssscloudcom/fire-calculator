@@ -207,52 +207,52 @@ export default function Terms() {
           {/* {t('legal.terms.changesTitle')} */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              9. {t('legal.terms.changesTitle')}
+              9. {t('legal.terms.sections.changes.title')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
-              We reserve the right to modify these {t('legal.terms.title')} at any time. Changes will be effective immediately upon posting on this page. Your continued use of the service after changes constitutes acceptance of the new terms. We encourage you to review these terms periodically.
+              {t('legal.terms.sections.changes.content')}
             </p>
             <p className="text-gray-600 dark:text-gray-400 mt-4">
-              Material changes will be indicated by updating the "Last updated" date at the top of this page.
+              {t('legal.terms.sections.changes.material')}
             </p>
           </section>
 
           {/* {t('legal.terms.terminationTitle')} */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              10. {t('legal.terms.terminationTitle')}
+              10. {t('legal.terms.sections.termination.title')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
-              We reserve the right to terminate or suspend access to our service at any time, without notice, for any reason, including but not limited to violation of these Terms. Since this is a free, client-side application with no user accounts, termination means you may no longer be able to access our website.
+              {t('legal.terms.sections.termination.content')}
             </p>
           </section>
 
           {/* {t('legal.terms.governingTitle')} */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              11. {t('legal.terms.governingTitle')}
+              11. {t('legal.terms.sections.governingLaw.title')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
-              These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law principles. Any disputes arising from these terms or use of the service shall be resolved in the appropriate courts of jurisdiction.
+              {t('legal.terms.sections.governingLaw.content')}
             </p>
           </section>
 
           {/* Contact */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              12. {t('legal.terms.contactTitle')}
+              12. {t('legal.terms.sections.contact.title')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
-              If you have questions about these {t('legal.terms.title')}, please:
+              {t('legal.terms.sections.contact.content')}
             </p>
             <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-400 mt-2">
-              <li>Visit our{' '}
+              <li>{t('legal.terms.sections.contact.aboutPage')}{' '}
                 <Link to="/about" className="text-fire-600 dark:text-fire-400 hover:underline">
                   About page
                 </Link>
-                {' '}for more information
+                {' '}{t('legal.terms.sections.contact.aboutPageSuffix')}
               </li>
-              <li>View the{' '}
+              <li>{t('legal.terms.sections.contact.github')}{' '}
                 <a 
                   href="https://github.com/jamesmontemagno/app-fire-calculator" 
                   target="_blank" 
@@ -262,7 +262,7 @@ export default function Terms() {
                   open-source code on GitHub
                 </a>
               </li>
-              <li>Read our{' '}
+              <li>{t('legal.terms.sections.contact.privacy')}{' '}
                 <Link to="/privacy" className="text-fire-600 dark:text-fire-400 hover:underline">
                   Privacy Policy
                 </Link>
@@ -273,10 +273,10 @@ export default function Terms() {
           {/* Acceptance */}
           <section className="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-6">
             <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">
-              Acknowledgment
+              {t('legal.terms.sections.acknowledgment.title')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
-              By using FIRE Calculator, you acknowledge that you have read, understood, and agree to be bound by these {t('legal.terms.title')}, including the important disclaimers about financial advice.
+              {t('legal.terms.sections.acknowledgment.content')}
             </p>
           </section>
 
@@ -286,13 +286,13 @@ export default function Terms() {
               to="/privacy" 
               className="text-fire-600 dark:text-fire-400 hover:underline"
             >
-              ← Privacy Policy
+              {t('legal.terms.navigation.privacyPolicy')}
             </Link>
             <Link 
               to="/about" 
               className="text-fire-600 dark:text-fire-400 hover:underline"
             >
-              About Us →
+              {t('legal.terms.navigation.aboutUs')}
             </Link>
           </div>
         </div>

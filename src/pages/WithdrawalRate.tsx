@@ -36,14 +36,14 @@ export default function WithdrawalRate() {
 
     // Define formulas for calculated results
     const resultFormulas: Record<string, string> = {
-      // Annual Withdrawal = Portfolio Value * Withdrawal Rate
+      // {t('withdrawalRate.annualWithdrawalLabel')} = {t('withdrawalRate.portfolioValueLabel')} * {t('withdrawalRate.withdrawalRateLabel')}
       annualWithdrawal: '{portfolioValue}*{withdrawalRate}',
-      // Monthly Withdrawal = Annual Withdrawal / 12
+      // Monthly Withdrawal = {t('withdrawalRate.annualWithdrawalLabel')} / 12
       monthlyWithdrawal: '({portfolioValue}*{withdrawalRate})/12',
     }
 
     exportToExcel({
-      calculatorName: 'Withdrawal Rate',
+      calculatorName: 'Withdrawal Rate Calculator',
       inputs: inputValues,
       results: resultValues,
       projections: results.withdrawalProjections,
@@ -109,13 +109,13 @@ export default function WithdrawalRate() {
           </CardHeader>
           <CardContent className="space-y-4">
             <CurrencyInput
-              label="Portfolio Value"
+              label="{t('withdrawalRate.portfolioValueLabel')}"
               value={params.portfolioValue}
               onChange={(v) => setParam('portfolioValue', v)}
               tooltip="Current total invested assets"
             />
             <PercentageInput
-              label="Withdrawal Rate"
+              label="{t('withdrawalRate.withdrawalRateLabel')}"
               value={params.withdrawalRate}
               onChange={(v) => setParam('withdrawalRate', v)}
               tooltip="Percentage of portfolio to withdraw yearly"
@@ -154,7 +154,7 @@ export default function WithdrawalRate() {
           {/* Key Metrics */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <ResultCard
-              label="Annual Withdrawal"
+              label="{t('withdrawalRate.annualWithdrawalLabel')}"
               value={results.annualWithdrawal}
               format="currency"
               highlight
@@ -194,7 +194,7 @@ export default function WithdrawalRate() {
           {/* Rate Analysis Table */}
           <Card>
             <CardHeader>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Withdrawal Rate Analysis</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('withdrawalRate.withdrawalRateLabel')} Analysis</h2>
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
                 Compare different withdrawal rates for your portfolio of {formatCurrency(params.portfolioValue)}
               </p>
@@ -205,7 +205,7 @@ export default function WithdrawalRate() {
                   <thead>
                     <tr className="border-b border-gray-200 dark:border-gray-700">
                       <th className="text-left py-3 px-4 font-semibold text-gray-900 dark:text-gray-100">Rate</th>
-                      <th className="text-left py-3 px-4 font-semibold text-gray-900 dark:text-gray-100">Annual Withdrawal</th>
+                      <th className="text-left py-3 px-4 font-semibold text-gray-900 dark:text-gray-100">{t('withdrawalRate.annualWithdrawalLabel')}</th>
                       <th className="text-left py-3 px-4 font-semibold text-gray-900 dark:text-gray-100">Monthly</th>
                       <th className="text-left py-3 px-4 font-semibold text-gray-900 dark:text-gray-100">Portfolio Lasts</th>
                       <th className="text-left py-3 px-4 font-semibold text-gray-900 dark:text-gray-100">Status</th>

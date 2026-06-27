@@ -904,8 +904,9 @@
       "contact": {
         "title": "9. Contact Us",
         "content": "If you have questions about this privacy policy, you can:",
-        "aboutPage": "Visit our About page for more information about the project",
-        "github": "View the open-source code on GitHub"
+        "aboutPage": "Visit our",
+        "aboutPageSuffix": "for more information about the project",
+        "github": "View the"
       }
     },
     "navigation": {
@@ -1052,9 +1053,10 @@
       "contact": {
         "title": "12. Contact Us",
         "content": "If you have questions about these Terms of Service, please:",
-        "aboutPage": "Visit our About page for more information",
-        "github": "View the open-source code on GitHub",
-        "privacy": "Read our Privacy Policy"
+        "aboutPage": "Visit our",
+        "aboutPageSuffix": "for more information",
+        "github": "View the",
+        "privacy": "Read our"
       },
       "acknowledgment": {
         "title": "Acknowledgment",
