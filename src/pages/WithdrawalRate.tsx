@@ -1,4 +1,5 @@
 import { useMemo } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useCalculatorParams } from '../hooks/useCalculatorParams'
 import { calculateWithdrawal, formatCurrency } from '../utils/calculations'
 import { exportToExcel, prepareInputsForExport, prepareResultsForExport } from '../utils/excelExport'
@@ -9,6 +10,7 @@ import SEO from '../components/SEO'
 import { calculatorSEO } from '../config/seo'
 
 export default function WithdrawalRate() {
+  const { t } = useTranslation()
   const { params, setParam, resetParams, copyUrl, hasCustomParams } = useCalculatorParams()
 
   const results = useMemo(() => {
@@ -72,7 +74,7 @@ export default function WithdrawalRate() {
           <div>
             <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 flex items-center gap-3">
               <span className="text-3xl" role="img" aria-label="Chart emoji">📊</span>
-              Withdrawal Rate Calculator
+              {t('withdrawalRate.title')}
             </h1>
             <p className="text-gray-600 dark:text-gray-400 mt-1">
               Test your portfolio's longevity and find your safe withdrawal rate.

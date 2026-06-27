@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useCalculatorParams } from '../hooks/useCalculatorParams'
 import { formatCurrency } from '../utils/calculations'
 import { exportToExcel, prepareInputsForExport, prepareResultsForExport } from '../utils/excelExport'
@@ -71,6 +72,7 @@ function calculateHealthcareGap(
 }
 
 export default function HealthcareGap() {
+  const { t } = useTranslation()
   const { params, setParam, resetParams, copyUrl, hasCustomParams } = useCalculatorParams()
   
   // Healthcare-specific params with configurable defaults
@@ -132,7 +134,7 @@ export default function HealthcareGap() {
           <div>
             <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 flex items-center gap-3">
               <span className="text-3xl" role="img" aria-label="Hospital emoji">🏥</span>
-              Healthcare Gap Calculator
+              {t('healthcareGap.title')}
             </h1>
             <p className="text-gray-600 dark:text-gray-400 mt-1">
               Estimate healthcare costs between early retirement and Medicare eligibility.

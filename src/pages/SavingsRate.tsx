@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useCalculatorParams } from '../hooks/useCalculatorParams'
 import { formatCurrency } from '../utils/calculations'
 import { exportToExcel, prepareInputsForExport, prepareResultsForExport } from '../utils/excelExport'
@@ -110,6 +111,7 @@ function calculateInvestmentGrowth(
 }
 
 export default function SavingsRate() {
+  const { t } = useTranslation()
   const { params, setParam, resetParams, copyUrl, hasCustomParams } = useCalculatorParams()
   const [contributionFrequency, setContributionFrequency] = useState<'monthly' | 'yearly'>('monthly')
   const [yearsInvesting, setYearsInvesting] = useState(30)
@@ -170,10 +172,10 @@ export default function SavingsRate() {
           <div>
             <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 flex items-center gap-3">
               <span className="text-3xl" role="img" aria-label="Calculator emoji">🧮</span>
-              Savings & Investment Rate Calculator
+              {t('savingsRate.title')}
             </h1>
             <p className="text-gray-600 dark:text-gray-400 mt-1">
-              See how your investments can grow over time with consistent contributions.
+              {t('savingsRate.subtitle')}
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
