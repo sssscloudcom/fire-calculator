@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import SEO from '../components/SEO'
 
 export default function Privacy() {
+  const { t } = useTranslation()
   return (
     <>
       <SEO
-        title="Privacy Policy - FIRE Calculator | 100% Private & No Data Collection"
+        title="{t('legal.privacy.title')} - FIRE Calculator | 100% Private & No Data Collection"
         description="FIRE Calculator privacy policy: 100% browser-side calculations, no data collection, no tracking, no analytics. Your financial data never leaves your device. Learn how we protect your privacy."
         keywords="FIRE calculator privacy, financial calculator privacy, no tracking, offline calculator, privacy-first, no data collection"
         canonicalPath="/privacy"
@@ -13,10 +15,10 @@ export default function Privacy() {
       <div className="max-w-4xl mx-auto">
         <header className="mb-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-            🔒 Privacy Policy
+            🔒 {t('legal.privacy.title')}
           </h1>
           <p className="text-gray-600 dark:text-gray-400">
-            Last updated: June 2025
+            {t('legal.privacy.lastUpdated')}
           </p>
         </header>
 
@@ -24,7 +26,7 @@ export default function Privacy() {
           {/* Summary */}
           <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl p-6">
             <h2 className="text-xl font-bold text-green-800 dark:text-green-200 mb-3 flex items-center gap-2">
-              <span>✅</span> TL;DR: Your Privacy is Our Priority
+              <span>✅</span> {t('legal.privacy.tldrTitle')}
             </h2>
             <ul className="space-y-2 text-green-800 dark:text-green-200">
               <li className="flex items-start gap-2">
@@ -46,10 +48,10 @@ export default function Privacy() {
             </ul>
           </div>
 
-          {/* Section 1: Information We Collect */}
+          {/* Section 1: {t('legal.privacy.collectTitle')} */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              1. Information We Collect
+              1. {t('legal.privacy.collectTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               <strong>We do not collect any personal or financial information.</strong> This FIRE Calculator is designed with privacy as a core principle. Here's what that means:
@@ -69,7 +71,7 @@ export default function Privacy() {
           {/* Section 2: How Calculations Work */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              2. How Your Calculations Work
+              2. {t('legal.privacy.howWorkTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               All calculations are performed entirely within your web browser (client-side). When you enter financial information:
@@ -108,7 +110,7 @@ export default function Privacy() {
           {/* Section 3: Local Storage */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              3. Local Storage Usage
+              3. {t('legal.privacy.localStorageTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               We use browser local storage to save non-sensitive preferences only. This data never leaves your device:
@@ -146,10 +148,10 @@ export default function Privacy() {
             </p>
           </section>
 
-          {/* Section 4: Third-Party Services */}
+          {/* Section 4: {t('legal.privacy.thirdPartyTitle')} */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              4. Third-Party Services
+              4. {t('legal.privacy.thirdPartyTitle')}
             </h2>
             
             <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">Google AdSense</h3>
@@ -169,7 +171,7 @@ export default function Privacy() {
                 rel="noopener noreferrer"
                 className="text-fire-600 dark:text-fire-400 hover:underline"
               >
-                Google's Privacy Policy
+                Google's {t('legal.privacy.title')}
               </a>.
             </p>
 
@@ -182,7 +184,7 @@ export default function Privacy() {
           {/* Section 5: No Tracking */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              5. No Tracking Policy
+              5. {t('legal.privacy.noTrackingTitle')}
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="flex items-center gap-3 p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
@@ -216,10 +218,10 @@ export default function Privacy() {
             </div>
           </section>
 
-          {/* Section 6: Data Security */}
+          {/* Section 6: {t('legal.privacy.securityTitle')} */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              6. Data Security
+              6. {t('legal.privacy.securityTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
               Since all calculations happen locally in your browser and we don't collect any data, there's no database to breach. Your financial information is as secure as your own device. We recommend:

@@ -1,22 +1,24 @@
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import SEO from '../components/SEO'
 
 export default function Terms() {
+  const { t } = useTranslation()
   return (
     <>
       <SEO
-        title="Terms of Service - FIRE Calculator"
-        description="Terms of Service for FIRE Calculator. Free financial independence planning tool. Read our usage terms, disclaimers, intellectual property rights, and acceptable use policy."
+        title="{t('legal.terms.title')} - FIRE Calculator"
+        description="{t('legal.terms.title')} for FIRE Calculator. Free financial independence planning tool. Read our usage terms, disclaimers, intellectual property rights, and acceptable use policy."
         keywords="FIRE calculator terms, financial calculator terms of service, legal disclaimer, acceptable use policy"
         canonicalPath="/terms"
       />
       <div className="max-w-4xl mx-auto">
         <header className="mb-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-            📜 Terms of Service
+            📜 {t('legal.terms.title')}
           </h1>
           <p className="text-gray-600 dark:text-gray-400">
-            Last updated: June 2025
+            {t('legal.terms.lastUpdated')}
           </p>
         </header>
 
@@ -24,17 +26,17 @@ export default function Terms() {
           {/* Agreement */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              1. Agreement to Terms
+              1. {t('legal.terms.agreementTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
-              By accessing and using FIRE Calculator (available at <a href="https://firecalc.nextapi.pro" target="_blank" rel="noopener noreferrer" className="text-fire-600 dark:text-fire-400 hover:underline">firecalc.nextapi.pro</a> and <a href="https://myfirenumber.com" target="_blank" rel="noopener noreferrer" className="text-fire-600 dark:text-fire-400 hover:underline">myfirenumber.com</a>), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our service.
+              By accessing and using FIRE Calculator (available at <a href="https://firecalc.nextapi.pro" target="_blank" rel="noopener noreferrer" className="text-fire-600 dark:text-fire-400 hover:underline">firecalc.nextapi.pro</a> and <a href="https://myfirenumber.com" target="_blank" rel="noopener noreferrer" className="text-fire-600 dark:text-fire-400 hover:underline">myfirenumber.com</a>), you agree to be bound by these {t('legal.terms.title')}. If you do not agree to these terms, please do not use our service.
             </p>
           </section>
 
-          {/* Important Disclaimer */}
+          {/* {t('legal.terms.disclaimerTitle')} */}
           <section className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl p-6">
             <h2 className="text-xl font-bold text-red-800 dark:text-red-200 mb-3 flex items-center gap-2">
-              <span>⚠️</span> Important Disclaimer
+              <span>⚠️</span> {t('legal.terms.disclaimerTitle')}
             </h2>
             <div className="space-y-3 text-red-800 dark:text-red-200">
               <p>
@@ -53,10 +55,10 @@ export default function Terms() {
             </div>
           </section>
 
-          {/* Description of Service */}
+          {/* {t('legal.terms.descriptionTitle')} */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              2. Description of Service
+              2. {t('legal.terms.descriptionTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               FIRE Calculator provides free, browser-based financial planning calculators for the FIRE (Financial Independence, Retire Early) community. Our services include:
@@ -76,7 +78,7 @@ export default function Terms() {
           {/* No Professional Advice */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              3. Not Professional Advice
+              3. {t('legal.terms.notAdviceTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               The information provided by FIRE Calculator does not constitute:
@@ -104,10 +106,10 @@ export default function Terms() {
             </p>
           </section>
 
-          {/* User Responsibilities */}
+          {/* {t('legal.terms.responsibilitiesTitle')} */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              4. User Responsibilities
+              4. {t('legal.terms.responsibilitiesTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">By using our service, you agree to:</p>
             <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-400">
@@ -119,10 +121,10 @@ export default function Terms() {
             </ul>
           </section>
 
-          {/* Intellectual Property */}
+          {/* {t('legal.terms.ipTitle')} */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              5. Intellectual Property
+              5. {t('legal.terms.ipTitle')}
             </h2>
             
             <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">Our Rights</h3>
@@ -142,10 +144,10 @@ export default function Terms() {
             </p>
           </section>
 
-          {/* Limitation of Liability */}
+          {/* {t('legal.terms.liabilityTitle')} */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              6. Limitation of Liability
+              6. {t('legal.terms.liabilityTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               TO THE MAXIMUM EXTENT PERMITTED BY LAW:
@@ -202,33 +204,33 @@ export default function Terms() {
             </p>
           </section>
 
-          {/* Changes to Terms */}
+          {/* {t('legal.terms.changesTitle')} */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              9. Changes to Terms
+              9. {t('legal.terms.changesTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
-              We reserve the right to modify these Terms of Service at any time. Changes will be effective immediately upon posting on this page. Your continued use of the service after changes constitutes acceptance of the new terms. We encourage you to review these terms periodically.
+              We reserve the right to modify these {t('legal.terms.title')} at any time. Changes will be effective immediately upon posting on this page. Your continued use of the service after changes constitutes acceptance of the new terms. We encourage you to review these terms periodically.
             </p>
             <p className="text-gray-600 dark:text-gray-400 mt-4">
               Material changes will be indicated by updating the "Last updated" date at the top of this page.
             </p>
           </section>
 
-          {/* Termination */}
+          {/* {t('legal.terms.terminationTitle')} */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              10. Termination
+              10. {t('legal.terms.terminationTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
               We reserve the right to terminate or suspend access to our service at any time, without notice, for any reason, including but not limited to violation of these Terms. Since this is a free, client-side application with no user accounts, termination means you may no longer be able to access our website.
             </p>
           </section>
 
-          {/* Governing Law */}
+          {/* {t('legal.terms.governingTitle')} */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              11. Governing Law
+              11. {t('legal.terms.governingTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
               These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law principles. Any disputes arising from these terms or use of the service shall be resolved in the appropriate courts of jurisdiction.
@@ -238,10 +240,10 @@ export default function Terms() {
           {/* Contact */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              12. Contact Us
+              12. {t('legal.terms.contactTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
-              If you have questions about these Terms of Service, please:
+              If you have questions about these {t('legal.terms.title')}, please:
             </p>
             <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-400 mt-2">
               <li>Visit our{' '}
@@ -274,7 +276,7 @@ export default function Terms() {
               Acknowledgment
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
-              By using FIRE Calculator, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service, including the important disclaimers about financial advice.
+              By using FIRE Calculator, you acknowledge that you have read, understood, and agree to be bound by these {t('legal.terms.title')}, including the important disclaimers about financial advice.
             </p>
           </section>
 

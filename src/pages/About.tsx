@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import SEO from '../components/SEO'
 
 export default function About() {
+  const { t } = useTranslation()
   return (
     <>
       <SEO
-        title="About FIRE Calculator - Free Financial Independence Planning Tool"
+        title="{t('legal.about.title')} - Free Financial Independence Planning Tool"
         description="Learn about FIRE Calculator: a free, privacy-first, offline-capable tool for Financial Independence, Retire Early planning. Open source, no tracking, 100% browser-side calculations."
         keywords="FIRE calculator about, financial independence tool, open source calculator, privacy-first FIRE, free retirement calculator"
         canonicalPath="/about"
@@ -14,17 +16,17 @@ export default function About() {
         <header className="mb-8 text-center">
           <span className="text-5xl mb-4 block">🔥</span>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-            About FIRE Calculator
+            {t('legal.about.title')}
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            A free, privacy-first tool for planning your path to financial independence
+            {t('legal.about.subtitle')}
           </p>
         </header>
 
         <div className="prose dark:prose-invert max-w-none space-y-8">
           {/* Mission */}
           <section className="bg-gradient-to-br from-fire-50 via-orange-50 to-amber-50 dark:from-fire-900/20 dark:via-orange-900/20 dark:to-amber-900/20 rounded-2xl p-8 text-center">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">Our Mission</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">{t('legal.about.missionTitle')}</h2>
             <p className="text-lg text-gray-700 dark:text-gray-300">
               To provide accessible, privacy-respecting financial planning tools that help everyone pursue financial independence — 
               <strong className="text-fire-600 dark:text-fire-400"> without compromising their personal data.</strong>
@@ -34,7 +36,7 @@ export default function About() {
           {/* What is FIRE */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              What is FIRE?
+              {t('legal.about.whatIsFireTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
               <strong>FIRE</strong> (Financial Independence, Retire Early) is a lifestyle movement focused on achieving financial freedom through aggressive saving and smart investing. The goal is to accumulate enough wealth that your investments can cover your living expenses indefinitely, giving you the freedom to retire much earlier than traditional retirement age.
@@ -42,20 +44,20 @@ export default function About() {
             
             <div className="mt-6 grid sm:grid-cols-2 gap-6">
               <div className="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">💡 The Core Principle</h3>
+                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">💡 {t('legal.about.corePrincipleTitle')}</h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
                   The "4% Rule" suggests that if you withdraw 4% of your portfolio annually, your savings should last 30+ years. This means you need approximately 25x your annual expenses to achieve FIRE.
                 </p>
               </div>
               <div className="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">🎯 The Goal</h3>
+                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">🎯 {t('legal.about.goalTitle')}</h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
                   Financial independence means having enough passive income (from investments) to cover your living expenses, giving you freedom to choose how you spend your time — whether that's early retirement, part-time work, or pursuing passion projects.
                 </p>
               </div>
             </div>
 
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3 mt-6">Types of FIRE</h3>
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3 mt-6">{t('legal.about.typesTitle')}</h3>
             <div className="space-y-4">
               <div className="flex items-start gap-4 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                 <span className="text-2xl">💰</span>
@@ -95,10 +97,10 @@ export default function About() {
             </div>
           </section>
 
-          {/* Our Tools */}
+          {/* {t('legal.about.toolsTitle')} */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              Our Tools
+              {t('legal.about.toolsTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-6">
               We offer a comprehensive suite of calculators to help you plan every aspect of your FIRE journey:
@@ -134,7 +136,7 @@ export default function About() {
           {/* Key Features */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              Why Choose FIRE Calculator?
+              {t('legal.about.whyChooseTitle')}
             </h2>
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="flex items-start gap-4">
@@ -209,7 +211,7 @@ export default function About() {
           {/* Open Source */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              Open Source Project
+              {t('legal.about.openSourceTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               This calculator is open source, meaning anyone can inspect, verify, and contribute to the code. We believe transparency builds trust — especially for financial tools.
@@ -243,7 +245,7 @@ export default function About() {
           {/* Resources */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-              Learn More About FIRE
+              {t('legal.about.learnMoreTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               Explore our curated resources to deepen your understanding of financial independence:
