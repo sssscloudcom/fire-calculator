@@ -47,7 +47,7 @@ export default function AppLayout() {
           <button
             onClick={() => setSidebarOpen(true)}
             className="p-2 -ml-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
-            aria-label="Open menu"
+            aria-label={t('components.appLayout.ariaLabels.openMenu')}
             aria-expanded={sidebarOpen}
             aria-controls="sidebar-navigation"
           >
@@ -95,7 +95,7 @@ export default function AppLayout() {
                 </Link>
               </div>
               <p className="text-xs text-gray-500 dark:text-gray-500">
-                © {new Date().getFullYear()} FIRE Calculator. 100% Private.
+                {t('components.appLayout.footer', { year: new Date().getFullYear() })}
               </p>
             </div>
           </div>

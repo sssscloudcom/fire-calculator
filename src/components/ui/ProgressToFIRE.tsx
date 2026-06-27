@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { formatCurrency } from '../../utils/calculations'
 
 interface ProgressToFIREProps {
@@ -14,9 +15,15 @@ export default function ProgressToFIRE({
   fireNumber, 
   yearsToFIRE,
   showMilestones = true,
-  label = 'Progress to FIRE',
-  targetLabel = 'FIRE Number',
+  label,
+  targetLabel,
 }: ProgressToFIREProps) {
+  const { t } = useTranslation()
+  
+  // Use provided labels or defaults from i18n
+  const progressLabel = label || t('components.progressBar.progressToFire')
+  const targetLabelText = targetLabel || t('components.progressBar.fireNumber')
+  
   // Safeguard against invalid values
   const safeFireNumber = fireNumber > 0 ? fireNumber : 1
   const rawProgress = (currentSavings / safeFireNumber) * 100
@@ -31,19 +38,19 @@ export default function ProgressToFIRE({
   let statusColor = ''
   
   if (progress >= 100) {
-    statusMessage = "You've reached FIRE!"
+    statusMessage = t('components.progressBar.status.reached')
     statusColor = 'text-green-600 dark:text-green-400'
   } else if (progress >= 75) {
-    statusMessage = "Almost there! Final stretch!"
+    statusMessage = t('components.progressBar.status.almostThere')
     statusColor = 'text-orange-600 dark:text-orange-400'
   } else if (progress >= 50) {
-    statusMessage = "Halfway to freedom!"
+    statusMessage = t('components.progressBar.status.halfway')
     statusColor = 'text-blue-600 dark:text-blue-400'
   } else if (progress >= 25) {
-    statusMessage = "Great progress! Keep going!"
+    statusMessage = t('components.progressBar.status.greatProgress')
     statusColor = 'text-purple-600 dark:text-purple-400'
   } else {
-    statusMessage = "Journey started!"
+    statusMessage = t('components.progressBar.status.journeyStarted')
     statusColor = 'text-gray-600 dark:text-gray-400'
   }
 
@@ -52,7 +59,7 @@ export default function ProgressToFIRE({
       {/* Header */}
       <div className="flex items-center justify-between mb-3">
         <div>
-          <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">{label}</h3>
+          <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">{progressLabel}</h3>
           <p className={`text-sm font-medium ${statusColor}`}>{statusMessage}</p>
         </div>
         <div className="text-right">
@@ -61,7 +68,7 @@ export default function ProgressToFIRE({
           </p>
           {yearsToFIRE !== undefined && yearsToFIRE !== Infinity && yearsToFIRE > 0 && (
             <p className="text-xs text-gray-500 dark:text-gray-400">
-              ~{yearsToFIRE.toFixed(1)} years to go
+              {t('components.progressBar.yearsToGo', { years: yearsToFIRE.toFixed(1) })}
             </p>
           )}
         </div>
@@ -75,7 +82,7 @@ export default function ProgressToFIRE({
           aria-valuenow={Math.round(progress)}
           aria-valuemin={0}
           aria-valuemax={100}
-          aria-label={`${displayProgress}% progress to FIRE goal`}
+          aria-label={t('components.progressBar.ariaLabel', { progress: displayProgress, goal: progressLabel })}
         >
           <div 
             className="h-full bg-gradient-to-r from-fire-400 via-fire-500 to-fire-600 rounded-full transition-all duration-500 ease-out"
@@ -104,11 +111,11 @@ export default function ProgressToFIRE({
       {/* Stats */}
       <div className="flex justify-between mt-3 text-sm">
         <div>
-          <p className="text-gray-500 dark:text-gray-400">Current</p>
+          <p className="text-gray-500 dark:text-gray-400">{t('components.progressBar.current')}</p>
           <p className="font-semibold text-gray-900 dark:text-gray-100">{formatCurrency(currentSavings)}</p>
         </div>
         <div className="text-right">
-          <p className="text-gray-500 dark:text-gray-400">{targetLabel}</p>
+          <p className="text-gray-500 dark:text-gray-400">{targetLabelText}</p>
           <p className="font-semibold text-gray-900 dark:text-gray-100">{formatCurrency(fireNumber)}</p>
         </div>
       </div>

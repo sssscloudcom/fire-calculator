@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import Button from './Button'
 
 interface ExportButtonProps {
@@ -14,6 +15,7 @@ interface ExportButtonProps {
 export default function ExportButton({ onExport, disabled = false, className = '' }: ExportButtonProps) {
   const [isExporting, setIsExporting] = useState(false)
   const [showSuccess, setShowSuccess] = useState(false)
+  const { t } = useTranslation()
 
   const handleExport = async () => {
     setIsExporting(true)
@@ -38,22 +40,22 @@ export default function ExportButton({ onExport, disabled = false, className = '
       disabled={disabled || isExporting}
       variant="secondary"
       className={className}
-      title="Export to Excel spreadsheet"
+      title={t('components.exportButton.title')}
     >
       {isExporting ? (
         <>
           <span className="animate-spin">⏳</span>
-          <span className="ml-2">Exporting...</span>
+          <span className="ml-2">{t('components.exportButton.exporting')}</span>
         </>
       ) : showSuccess ? (
         <>
           <span>✅</span>
-          <span className="ml-2">Exported!</span>
+          <span className="ml-2">{t('components.exportButton.exported')}</span>
         </>
       ) : (
         <>
           <span>📊</span>
-          <span className="ml-2">Export to Excel</span>
+          <span className="ml-2">{t('components.exportButton.exportToExcel')}</span>
         </>
       )}
     </Button>

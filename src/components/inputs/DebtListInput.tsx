@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import type { DebtItem } from '../../utils/calculations'
 import { CurrencyInput, PercentageInput } from './index'
 import { formatCurrency, formatPercent } from '../../utils/calculations'
@@ -10,6 +11,7 @@ interface DebtListInputProps {
 
 export default function DebtListInput({ debts, onChange }: DebtListInputProps) {
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set())
+  const { t } = useTranslation()
 
   const toggleExpanded = (id: string) => {
     setExpandedIds(prev => {
@@ -59,7 +61,7 @@ export default function DebtListInput({ debts, onChange }: DebtListInputProps) {
   return (
     <div className="space-y-4">
       <div className="flex items-center justify-between mb-2">
-        <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">Your Debts</h3>
+        <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">{t('debtPayoff.yourDebts')}</h3>
         <button
           onClick={addDebt}
           className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-fire-700 dark:text-fire-400 bg-fire-50 dark:bg-fire-900/30 hover:bg-fire-100 dark:hover:bg-fire-900/50 rounded-lg transition-colors"
@@ -67,23 +69,23 @@ export default function DebtListInput({ debts, onChange }: DebtListInputProps) {
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
           </svg>
-          Add Debt
+          {t('debtPayoff.addDebt')}
         </button>
       </div>
 
       {debts.length === 0 ? (
         <div className="text-center py-12 bg-gray-50 dark:bg-gray-800/50 rounded-xl border-2 border-dashed border-gray-300 dark:border-gray-700">
           <div className="text-4xl mb-3">💳</div>
-          <h4 className="text-sm font-medium text-gray-900 dark:text-gray-100 mb-1">No debts added yet</h4>
+          <h4 className="text-sm font-medium text-gray-900 dark:text-gray-100 mb-1">{t('debtPayoff.noDebts.title')}</h4>
           <p className="text-xs text-gray-500 dark:text-gray-400 mb-4">
-            Click "Add Debt" to start tracking your debt payoff journey
+            {t('debtPayoff.noDebts.desc')}
           </p>
         </div>
       ) : (
         <div className="space-y-2">
           {debts.map((debt, index) => {
             const isExpanded = expandedIds.has(debt.id)
-            const debtName = debt.name || `Debt #${index + 1}`
+            const debtName = debt.name || t('components.debtListInput.debtNumber', { number: index + 1 })
             
             return (
               <div
@@ -125,7 +127,7 @@ export default function DebtListInput({ debts, onChange }: DebtListInputProps) {
                         removeDebt(debt.id)
                       }}
                       className="p-1 text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-colors"
-                      aria-label="Remove debt"
+                      aria-label={t('components.debtListInput.removeDebt')}
                     >
                       <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -139,26 +141,26 @@ export default function DebtListInput({ debts, onChange }: DebtListInputProps) {
                   <div className="px-4 pb-4 pt-2 border-t border-gray-200 dark:border-gray-700 space-y-3">
                     <div>
                       <label className="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1">
-                        Debt Name
+                        {t('debtPayoff.debtName')}
                       </label>
                       <input
                         type="text"
                         value={debt.name}
                         onChange={(e) => updateDebt(debt.id, 'name', e.target.value)}
-                        placeholder="e.g., Credit Card, Car Loan"
+                        placeholder={t('components.debtListInput.placeholder')}
                         className="w-full px-3 py-2 text-sm bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-fire-500 focus:border-transparent text-gray-900 dark:text-gray-100 placeholder-gray-400"
                       />
                     </div>
 
                     <CurrencyInput
-                      label="Current Balance"
+                      label={t('debtPayoff.currentBalance')}
                       value={debt.balance}
                       onChange={(value) => updateDebt(debt.id, 'balance', value)}
                       min={0}
                     />
 
                     <PercentageInput
-                      label="Annual Interest Rate"
+                      label={t('debtPayoff.annualInterestRate')}
                       value={debt.rate}
                       onChange={(value) => updateDebt(debt.id, 'rate', value)}
                       min={0}
@@ -167,7 +169,7 @@ export default function DebtListInput({ debts, onChange }: DebtListInputProps) {
                     />
 
                     <CurrencyInput
-                      label="Minimum Monthly Payment"
+                      label={t('debtPayoff.minimumMonthlyPayment')}
                       value={debt.minPayment}
                       onChange={(value) => updateDebt(debt.id, 'minPayment', value)}
                       min={0}
@@ -184,13 +186,13 @@ export default function DebtListInput({ debts, onChange }: DebtListInputProps) {
         <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <div className="text-xs text-gray-600 dark:text-gray-400 mb-1">Total Debt</div>
+              <div className="text-xs text-gray-600 dark:text-gray-400 mb-1">{t('debtPayoff.totalDebt')}</div>
               <div className="text-lg font-bold text-red-600 dark:text-red-400">
                 {formatCurrency(totalDebt)}
               </div>
             </div>
             <div>
-              <div className="text-xs text-gray-600 dark:text-gray-400 mb-1">Total Min. Payments</div>
+              <div className="text-xs text-gray-600 dark:text-gray-400 mb-1">{t('debtPayoff.totalMinPayments')}</div>
               <div className="text-lg font-bold text-gray-900 dark:text-gray-100">
                 {formatCurrency(totalMinPayments)}/mo
               </div>
