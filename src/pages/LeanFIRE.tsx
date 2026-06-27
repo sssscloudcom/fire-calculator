@@ -1,4 +1,5 @@
 import { useMemo } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useCalculatorParams } from '../hooks/useCalculatorParams'
 import { calculateLeanFIRE, formatCurrency } from '../utils/calculations'
 import { exportToExcel, prepareInputsForExport, prepareResultsForExport } from '../utils/excelExport'
@@ -11,6 +12,7 @@ import { calculatorSEO } from '../config/seo'
 const LEAN_THRESHOLD = 40000
 
 export default function LeanFIRE() {
+  const { t } = useTranslation()
   const { params, setParam, resetParams, copyUrl, hasCustomParams } = useCalculatorParams()
 
   // Use lean-appropriate defaults
@@ -76,7 +78,7 @@ export default function LeanFIRE() {
           <div>
             <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 flex items-center gap-3">
               <span className="text-3xl" role="img" aria-label="Leaf emoji">🌿</span>
-              Lean FIRE Calculator
+              {t('leanFire.title')}
             </h1>
             <p className="text-gray-600 dark:text-gray-400 mt-1">
               Achieve financial independence faster with a minimalist lifestyle.

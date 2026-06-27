@@ -1,4 +1,5 @@
 import { useMemo } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useCalculatorParams } from '../hooks/useCalculatorParams'
 import { calculateFatFIRE, formatCurrency } from '../utils/calculations'
 import { exportToExcel, prepareInputsForExport, prepareResultsForExport } from '../utils/excelExport'
@@ -11,6 +12,7 @@ import { calculatorSEO } from '../config/seo'
 const FAT_THRESHOLD = 100000
 
 export default function FatFIRE() {
+  const { t } = useTranslation()
   const { params, setParam, resetParams, copyUrl, hasCustomParams } = useCalculatorParams()
 
   const results = useMemo(() => {
@@ -73,10 +75,10 @@ export default function FatFIRE() {
           <div>
             <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 flex items-center gap-3">
               <span className="text-3xl" role="img" aria-label="Diamond emoji">💎</span>
-              Fat FIRE Calculator
+              {t('fatFire.title')}
             </h1>
             <p className="text-gray-600 dark:text-gray-400 mt-1">
-              Retire in style without compromising your lifestyle.
+              {t('fatFire.subtitle')}
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -97,7 +99,7 @@ export default function FatFIRE() {
         <div className="flex gap-3">
           <span className="text-2xl">💎</span>
           <div>
-            <h3 className="font-semibold text-purple-900 dark:text-purple-100">What is Fat FIRE?</h3>
+            <h3 className="font-semibold text-purple-900 dark:text-purple-100">{t('fatFire.whatIs.title')}</h3>
             <p className="text-sm text-purple-700 dark:text-purple-300 mt-1">
               Fat FIRE means achieving financial independence while maintaining a luxurious or upper-middle-class 
               lifestyle (typically $100,000+/year in expenses). It requires a larger nest egg but allows you to 
