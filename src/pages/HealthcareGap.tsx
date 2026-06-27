@@ -151,7 +151,7 @@ export default function HealthcareGap() {
         <div className="flex gap-3">
           <span className="text-2xl">⚠️</span>
           <div>
-            <h3 className="font-semibold text-rose-900 dark:text-rose-100">The Healthcare Gap is Real</h3>
+            <h3 className="font-semibold text-rose-900 dark:text-rose-100">{t('healthcareGap.whatIs.title')}</h3>
             <p className="text-sm text-rose-700 dark:text-rose-300 mt-1">
               If you retire before age 65 in the US, you'll need to bridge the gap until Medicare. 
               Healthcare costs are often the #1 overlooked expense in early retirement planning. 
@@ -165,7 +165,7 @@ export default function HealthcareGap() {
         {/* Inputs */}
         <Card className="lg:col-span-1">
           <CardHeader>
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Your Situation</h2>
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('healthcareGap.situationTitle')}</h2>
           </CardHeader>
           <CardContent className="space-y-4">
             <AgeInput
@@ -229,12 +229,12 @@ export default function HealthcareGap() {
           <div className="bg-gradient-to-r from-rose-500 to-pink-500 rounded-xl p-6 text-white">
             <div className="flex items-center justify-between flex-wrap gap-4">
               <div>
-                <p className="text-rose-100 text-sm">Total Healthcare Gap Cost</p>
+                <p className="text-rose-100 text-sm">{t('healthcareGap.totalCostLabel')}</p>
                 <p className="text-5xl font-bold">{formatCurrency(results.totalCost)}</p>
                 <p className="text-rose-200 mt-1">Over {results.gapYears} years until Medicare</p>
               </div>
               <div className="text-right">
-                <p className="text-rose-100 text-sm">Add to FIRE Number</p>
+                <p className="text-rose-100 text-sm">{t('healthcareGap.addToFireLabel')}</p>
                 <p className="text-2xl font-bold">+{formatCurrency(results.totalCost)}</p>
               </div>
             </div>
@@ -265,7 +265,7 @@ export default function HealthcareGap() {
           {/* ACA Subsidy Info */}
           <Card>
             <CardHeader>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">ACA Subsidy Potential</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('healthcareGap.acaSubsidyTitle')}</h2>
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
                 Your retirement income affects ACA premium subsidies. Lower income = higher subsidies.
               </p>
@@ -277,21 +277,21 @@ export default function HealthcareGap() {
                   <p className="text-xl font-bold text-green-800 dark:text-green-200">
                     ~{formatCurrency(results.estimatedSubsidy30k)}
                   </p>
-                  <p className="text-xs text-green-600 dark:text-green-400">Annual subsidy</p>
+                  <p className="text-xs text-green-600 dark:text-green-400">{t('healthcareGap.annualSubsidyLabel')}</p>
                 </div>
                 <div className="p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg">
                   <p className="text-sm text-amber-700 dark:text-amber-300">$50k Income</p>
                   <p className="text-xl font-bold text-amber-800 dark:text-amber-200">
                     ~{formatCurrency(results.estimatedSubsidy50k)}
                   </p>
-                  <p className="text-xs text-amber-600 dark:text-amber-400">Annual subsidy</p>
+                  <p className="text-xs text-amber-600 dark:text-amber-400">{t('healthcareGap.annualSubsidyLabel')}</p>
                 </div>
                 <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
                   <p className="text-sm text-gray-700 dark:text-gray-300">$75k+ Income</p>
                   <p className="text-xl font-bold text-gray-800 dark:text-gray-200">
                     ~{formatCurrency(results.estimatedSubsidy75k)}
                   </p>
-                  <p className="text-xs text-gray-600 dark:text-gray-400">Annual subsidy</p>
+                  <p className="text-xs text-gray-600 dark:text-gray-400">{t('healthcareGap.annualSubsidyLabel')}</p>
                 </div>
               </div>
               <p className="text-xs text-gray-500 dark:text-gray-400 mt-4">
@@ -351,21 +351,21 @@ export default function HealthcareGap() {
           {/* Tips */}
           <Card>
             <CardHeader>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Healthcare Gap Strategies</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('healthcareGap.strategiesTitle')}</h2>
             </CardHeader>
             <CardContent>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="flex gap-3">
                   <span className="text-xl">☕</span>
                   <div>
-                    <h4 className="font-medium text-gray-900 dark:text-gray-100">Barista FIRE</h4>
+                    <h4 className="font-medium text-gray-900 dark:text-gray-100">{t('healthcareGap.strategies.baristaFire.title')}</h4>
                     <p className="text-sm text-gray-600 dark:text-gray-400">Part-time job with health benefits (Starbucks, Costco, etc.)</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <span className="text-xl">💰</span>
                   <div>
-                    <h4 className="font-medium text-gray-900 dark:text-gray-100">HSA Bridge</h4>
+                    <h4 className="font-medium text-gray-900 dark:text-gray-100">{t('healthcareGap.strategies.hsaBridge.title')}</h4>
                     <p className="text-sm text-gray-600 dark:text-gray-400">Max out HSA while working, use tax-free in retirement</p>
                   </div>
                 </div>

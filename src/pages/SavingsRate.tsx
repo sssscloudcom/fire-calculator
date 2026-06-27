@@ -189,7 +189,7 @@ export default function SavingsRate() {
         <div className="flex gap-3">
           <span className="text-2xl">💡</span>
           <div>
-            <h3 className="font-semibold text-indigo-900 dark:text-indigo-100">The Power of Compound Interest</h3>
+            <h3 className="font-semibold text-indigo-900 dark:text-indigo-100">{t('savingsRate.compoundInterest.title')}</h3>
             <p className="text-sm text-indigo-700 dark:text-indigo-300 mt-1">
               Consistent investing is the key to building wealth. Even small amounts invested regularly can 
               grow substantially over time thanks to compound interest. Start early and stay consistent!

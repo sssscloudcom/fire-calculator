@@ -101,7 +101,7 @@ export default function CoastFIRE() {
         <div className="flex gap-3">
           <span className="text-2xl">💡</span>
           <div>
-            <h3 className="font-semibold text-blue-900 dark:text-blue-100">What is Coast FIRE?</h3>
+            <h3 className="font-semibold text-blue-900 dark:text-blue-100">{t('coastFire.whatIs.title')}</h3>
             <p className="text-sm text-blue-700 dark:text-blue-300 mt-1">
               Coast FIRE is when you've saved enough that compound growth alone will get you to your full FIRE 
               number by traditional retirement age — without any more contributions. You can then "coast" 
@@ -235,7 +235,7 @@ export default function CoastFIRE() {
           {/* Explanation */}
           <Card>
             <CardHeader>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">How Coast FIRE Works</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('coastFire.howWorksTitle')}</h2>
             </CardHeader>
             <CardContent className="prose dark:prose-invert max-w-none text-sm">
               <p>

@@ -161,8 +161,8 @@ export default function DebtPayoff() {
               Two Proven Debt Payoff Methods
             </h3>
             <p className="text-sm text-gray-700 dark:text-gray-300">
-              <strong>Snowball:</strong> Pay smallest debts first for quick wins and motivation. 
-              <strong className="ml-2">Avalanche:</strong> Pay highest interest rates first to save the most money.
+              <strong>{t('debtPayoff.snowballLabel')}</strong> {t('debtPayoff.snowballDesc')} 
+              <strong className="ml-2">{t('debtPayoff.avalancheLabel')}</strong> {t('debtPayoff.avalancheDesc')}
             </p>
           </div>
         </div>
@@ -198,7 +198,7 @@ export default function DebtPayoff() {
         {/* Inputs */}
         <Card className="lg:col-span-1">
           <CardHeader>
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Debt Information</h2>
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('debtPayoff.debtInfoTitle')}</h2>
           </CardHeader>
           <CardContent className="space-y-6">
             <DebtListInput debts={debts} onChange={setDebts} />
@@ -363,30 +363,30 @@ export default function DebtPayoff() {
                 />
               </div>
 
-              {/* Extra Payment Impact */}
+              {/* {t('debtPayoff.extraPaymentLabel')} Impact */}
               {extraPaymentSavings && (
                 <Card className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 border-green-200 dark:border-green-800">
                   <CardHeader>
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
-                      💡 Extra Payment Impact
+                      💡 {t('debtPayoff.extraPaymentLabel')} Impact
                     </h3>
                   </CardHeader>
                   <CardContent>
                     <div className="grid sm:grid-cols-3 gap-4">
                       <div>
-                        <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">Extra Payment</div>
+                        <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">{t('debtPayoff.extraPaymentLabel')}</div>
                         <div className="text-2xl font-bold text-gray-900 dark:text-gray-100">
                           {formatCurrency(extraPayment)}/mo
                         </div>
                       </div>
                       <div>
-                        <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">Time Saved</div>
+                        <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">{t('debtPayoff.timeSavedLabel')}</div>
                         <div className="text-2xl font-bold text-green-600 dark:text-green-400">
                           {extraPaymentSavings.monthsSaved} months
                         </div>
                       </div>
                       <div>
-                        <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">Interest Saved</div>
+                        <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">{t('debtPayoff.interestSavedLabel')}</div>
                         <div className="text-2xl font-bold text-green-600 dark:text-green-400">
                           {formatCurrency(extraPaymentSavings.interestSaved)}
                         </div>
@@ -544,7 +544,7 @@ export default function DebtPayoff() {
                     
                     <div className="mt-4 p-3 bg-green-50 dark:bg-green-900/30 rounded-lg">
                       <p className="text-sm text-gray-700 dark:text-gray-300">
-                        <strong>Winner:</strong> {comparisonResults.avalanche.totalInterest < comparisonResults.snowball.totalInterest ? 'Avalanche' : 'Snowball'} saves{' '}
+                        <strong>{t('debtPayoff.winnerLabel')}</strong> {comparisonResults.avalanche.totalInterest < comparisonResults.snowball.totalInterest ? 'Avalanche' : 'Snowball'} saves{' '}
                         <strong className="text-green-600 dark:text-green-400">
                           {formatCurrency(Math.abs(comparisonResults.snowball.totalInterest - comparisonResults.avalanche.totalInterest))}
                         </strong>{' '}
