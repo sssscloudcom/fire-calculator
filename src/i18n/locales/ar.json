@@ -1288,80 +1288,80 @@
     }
   },
   "home": {
-    "title": "FIRE Calculators",
-    "subtitle": "Plan your path to Financial Independence, Retire Early. Free, private, and works completely offline.",
+    "title": "آلات حاسبة FIRE",
+    "subtitle": "خطط طريقك نحو الاستقلال المالي والتقاعد المبكر. مجاني، خاص، ويعمل بالكامل بدون اتصال بالإنترنت.",
     "badges": {
-      "private": "100% Private",
-      "offline": "Works Offline",
-      "noTracking": "No Tracking",
-      "shareable": "Shareable URLs"
+      "private": "خصوصية 100%",
+      "offline": "يعمل بدون اتصال",
+      "noTracking": "بدون تتبع",
+      "shareable": "روابط قابلة للمشاركة"
     },
     "quiz": {
-      "title": "Not sure which calculator to use?",
-      "desc": "Take our quick quiz to find the perfect FIRE path for your situation. Answer a few questions and we'll recommend the best calculator with your information pre-filled.",
-      "cta": "Find Your FIRE Path",
-      "note": "Takes 2-3 minutes · Personalized recommendation"
+      "title": "غير متأكد أي آلة حاسبة تستخدم؟",
+      "desc": "شارك في اختبارنا السريع لإيجاد مسار FIRE المثالي لحالتك. أجب على بضع أسئلة وسنوصي بأفضل آلة حاسبة مع معلوماتك المدخلة مسبقاً.",
+      "cta": "اعثر على مسار FIRE الخاص بك",
+      "note": "يستغرق 2-3 دقائق · توصية مخصصة"
     },
-    "chooseCalculator": "Choose Your Calculator",
-    "startCalculating": "Start calculating",
+    "chooseCalculator": "اختر آلة حاسبتك",
+    "startCalculating": "ابدأ الحساب",
     "books": {
-      "title": "Recommended FIRE Books",
-      "subtitle": "Essential reading to accelerate your financial independence journey.",
-      "viewAll": "View All Books & Details",
-      "affiliateNote": "Affiliate links — purchases support this free calculator at no extra cost to you."
+      "title": "كتب FIRE الموصى بها",
+      "subtitle": "قراءات أساسية لتسريع رحلتك نحو الاستقلال المالي.",
+      "viewAll": "عرض جميع الكتب والتفاصيل",
+      "affiliateNote": "روابط تابعة — المشتريات تدعم هذه الآلة الحاسبة المجانية بدون تكلفة إضافية عليك."
     },
     "privacy": {
-      "title": "Your Privacy is Our Priority",
-      "subtitle": "We built this calculator with privacy-first principles.",
+      "title": "خصوصيتك هي أولويتنا",
+      "subtitle": "بنينا هذه الآلة الحاسبة بمبادئ الخصوصية أولاً.",
       "features": {
         "noStorage": {
-          "title": "No Financial Data Storage",
-          "desc": "Your financial data stays in URLs only—never stored. Only UI preferences (theme, layout) stored locally."
+          "title": "بدون تخزين البيانات المالية",
+          "desc": "بياناتك المالية تبقى فقط في الروابط — لا يتم تخزينها أبداً. فقط تفضيلات الواجهة (المظهر، التخطيط) مخزنة محلياً."
         },
         "noAnalytics": {
-          "title": "No Analytics",
-          "desc": "Zero tracking scripts. No Google Analytics, no third-party code."
+          "title": "بدون تحليلات",
+          "desc": "صفر سكريبتات التتبع. بدون Google Analytics، بدون كود طرف ثالث."
         },
         "urlBased": {
-          "title": "URL-Based Sharing",
-          "desc": "Save your calculations in the URL. Bookmark or share — your choice."
+          "title": "مشاركة عبر الرابط",
+          "desc": "احفظ حساباتك في الرابط. ضع إشارة مرجعية أو شارك — خيارك."
         },
         "worksOffline": {
-          "title": "Works Offline",
-          "desc": "After first load, works without internet. Install as an app on your device."
+          "title": "يعمل بدون اتصال",
+          "desc": "بعد التحميل الأول، يعمل بدون إنترنت. يمكن تثبيته كتطبيق على جهازك."
         },
         "openSource": {
-          "title": "Open Source",
-          "desc": "Verify everything yourself. All code is available on GitHub."
+          "title": "مفتوح المصدر",
+          "desc": "تحقق من كل شيء بنفسك. كل الكود متاح على GitHub."
         },
         "clientSide": {
-          "title": "Client-Side Only",
-          "desc": "All calculations run in your browser. No server processing."
+          "title": "من جانب العميل فقط",
+          "desc": "جميع الحسابات تعمل في متصفحك. بدون معالجة خادم."
         }
       }
     },
     "whatIsFire": {
-      "title": "What is FIRE?",
-      "para1": "FIRE stands for Financial Independence, Retire Early. It's a financial movement focused on extreme savings and investment to retire much earlier than traditional retirement age. The core principle is simple: save aggressively, invest wisely, and once your investments can cover your living expenses indefinitely, you achieve financial independence.",
-      "para2": "The most common FIRE calculation uses the 4% rule (or 25x rule): if you can live on 4% of your portfolio per year, you need to save 25 times your annual expenses. For example, if you spend $40,000 per year, you need $1,000,000 to be financially independent."
+      "title": "ما هو FIRE؟",
+      "para1": "FIRE يعني الاستقلال المالي، التقاعد المبكر. إنها حركة مالية تركز على الادخار الشديد والاستثمار للتقاعد في سن أبكر بكثير من سن التقاعد التقليدي. المبدأ الأساسي بسيط: ادخر بشكل عدواني، استثمر بحكمة، وبمجرد أن تتمكن استثماراتك من تغطية نفقات معيشتك إلى أجل غير مسمى، تحقق الاستقلال المالي.",
+      "para2": "حساب FIRE الأكثر شيوعاً يستخدم قاعدة 4% (أو قاعدة 25x): إذا كنت تستطيع العيش على 4% من محفظتك سنوياً، تحتاج إلى ادخار 25 ضعف نفقاتك السنوية. على سبيل المثال، إذا تنفق $40,000 سنوياً، تحتاج $1,000,000 لتكون مستقلاً مالياً."
     },
     "tallyAi": {
-      "title": "Track Your Progress with Tally AI",
-      "desc": "Smart financial companion that helps you track spending, manage budgets, and achieve your FIRE goals with AI-powered insights. Perfect complement to these calculators.",
-      "cta": "Learn More About Tally AI"
+      "title": "تتبع تقدمك مع Tally AI",
+      "desc": "رفيق مالي ذكي يساعدك على تتبع الإنفاق، إدارة الميزانيات، وتحقيق أهداف FIRE الخاصة برؤى مدعومة بالذكاء الاصطناعي. مكمل مثالي لهذه الآلات الحاسبة.",
+      "cta": "اعرف المزيد عن Tally AI"
     },
     "disclaimer": {
-      "title": "Disclaimer",
-      "content": "This calculator is provided for educational and informational purposes only. It is not financial, investment, tax, or legal advice. Results are hypothetical projections and actual results will vary. Please consult a qualified financial advisor before making any financial decisions."
+      "title": "إخلاء المسؤولية",
+      "content": "هذه الآلة الحاسبة مقدمة لأغراض تعليمية وإعلامية فقط. ليست نصيحة مالية أو استثمارية أو ضريبية أو قانونية. النتائج هي توقعات افتراضية وستختلف النتائج الفعلية. يرجى استشارة مستشار مالي مؤهل قبل اتخاذ أي قرارات مالية."
     },
-    "builtWith": "Built with privacy in mind. No data ever leaves your browser.",
-    "viewOnGithub": "View on GitHub",
+    "builtWith": "بني مع مراعاة الخصوصية. لا تخرج البيانات أبداً من متصفحك.",
+    "viewOnGithub": "عرض على GitHub",
     "features": {
       "noAnalytics": {
-        "desc": "Zero tracking scripts. No Google Analytics, no third-party code."
+        "desc": "صفر سكريبتات التتبع. بدون Google Analytics، بدون كود طرف ثالث."
       },
       "shareable": {
-        "title": "URL-Based Sharing"
+        "title": "مشاركة عبر الرابط"
       }
     }
   },

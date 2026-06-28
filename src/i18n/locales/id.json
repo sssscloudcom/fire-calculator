@@ -1288,80 +1288,80 @@
     }
   },
   "home": {
-    "title": "FIRE Calculators",
-    "subtitle": "Plan your path to Financial Independence, Retire Early. Free, private, and works completely offline.",
+    "title": "Kalkulator FIRE",
+    "subtitle": "Rencanakan jalan Anda menuju Kemandirian Keuangan dan Pensiun Dini. Gratis, pribadi, dan bekerja sepenuhnya secara offline.",
     "badges": {
-      "private": "100% Private",
-      "offline": "Works Offline",
-      "noTracking": "No Tracking",
-      "shareable": "Shareable URLs"
+      "private": "100% Pribadi",
+      "offline": "Berfungsi Offline",
+      "noTracking": "Tanpa Pelacakan",
+      "shareable": "URL yang Dapat Dibagikan"
     },
     "quiz": {
-      "title": "Not sure which calculator to use?",
-      "desc": "Take our quick quiz to find the perfect FIRE path for your situation. Answer a few questions and we'll recommend the best calculator with your information pre-filled.",
-      "cta": "Find Your FIRE Path",
-      "note": "Takes 2-3 minutes · Personalized recommendation"
+      "title": "Tidak yakin kalkulator mana yang digunakan?",
+      "desc": "Ikuti kuis cepat kami untuk menemukan jalur FIRE yang sempurna untuk situasi Anda. Jawab beberapa pertanyaan dan kami akan merekomendasikan kalkulator terbaik dengan informasi Anda yang sudah diisi sebelumnya.",
+      "cta": "Temukan Jalur FIRE Anda",
+      "note": "Membutuhkan 2-3 menit · Rekomendasi yang dipersonalisasi"
     },
-    "chooseCalculator": "Choose Your Calculator",
-    "startCalculating": "Start calculating",
+    "chooseCalculator": "Pilih Kalkulator Anda",
+    "startCalculating": "Mulai menghitung",
     "books": {
-      "title": "Recommended FIRE Books",
-      "subtitle": "Essential reading to accelerate your financial independence journey.",
-      "viewAll": "View All Books & Details",
-      "affiliateNote": "Affiliate links — purchases support this free calculator at no extra cost to you."
+      "title": "Buku FIRE yang Direkomendasikan",
+      "subtitle": "Bacaan penting untuk mempercepat perjalanan kemandirian keuangan Anda.",
+      "viewAll": "Lihat Semua Buku & Detail",
+      "affiliateNote": "Tautan afiliasi — pembelian mendukung kalkulator gratis ini tanpa biaya tambahan untuk Anda."
     },
     "privacy": {
-      "title": "Your Privacy is Our Priority",
-      "subtitle": "We built this calculator with privacy-first principles.",
+      "title": "Privasi Anda Adalah Prioritas Kami",
+      "subtitle": "Kami membangun kalkulator ini dengan prinsip privasi-pertama.",
       "features": {
         "noStorage": {
-          "title": "No Financial Data Storage",
-          "desc": "Your financial data stays in URLs only—never stored. Only UI preferences (theme, layout) stored locally."
+          "title": "Tanpa Penyimpanan Data Keuangan",
+          "desc": "Data keuangan Anda tetap hanya di URL — tidak pernah disimpan. Hanya preferensi UI (tema, tata letak) yang disimpan secara lokal."
         },
         "noAnalytics": {
-          "title": "No Analytics",
-          "desc": "Zero tracking scripts. No Google Analytics, no third-party code."
+          "title": "Tanpa Analitik",
+          "desc": "Nol skrip pelacakan. Tanpa Google Analytics, tanpa kode pihak ketiga."
         },
         "urlBased": {
-          "title": "URL-Based Sharing",
-          "desc": "Save your calculations in the URL. Bookmark or share — your choice."
+          "title": "Berbagi Berbasis URL",
+          "desc": "Simpan perhitungan Anda di URL. Markah atau bagikan — pilihan Anda."
         },
         "worksOffline": {
-          "title": "Works Offline",
-          "desc": "After first load, works without internet. Install as an app on your device."
+          "title": "Berfungsi Offline",
+          "desc": "Setelah pemuatan pertama, bekerja tanpa internet. Dapat diinstal sebagai aplikasi di perangkat Anda."
         },
         "openSource": {
-          "title": "Open Source",
-          "desc": "Verify everything yourself. All code is available on GitHub."
+          "title": "Sumber Terbuka",
+          "desc": "Verifikasi semuanya sendiri. Semua kode tersedia di GitHub."
         },
         "clientSide": {
-          "title": "Client-Side Only",
-          "desc": "All calculations run in your browser. No server processing."
+          "title": "Hanya Sisi Klien",
+          "desc": "Semua perhitungan berjalan di browser Anda. Tanpa pemrosesan server."
         }
       }
     },
     "whatIsFire": {
-      "title": "What is FIRE?",
-      "para1": "FIRE stands for Financial Independence, Retire Early. It's a financial movement focused on extreme savings and investment to retire much earlier than traditional retirement age. The core principle is simple: save aggressively, invest wisely, and once your investments can cover your living expenses indefinitely, you achieve financial independence.",
-      "para2": "The most common FIRE calculation uses the 4% rule (or 25x rule): if you can live on 4% of your portfolio per year, you need to save 25 times your annual expenses. For example, if you spend $40,000 per year, you need $1,000,000 to be financially independent."
+      "title": "Apa itu FIRE?",
+      "para1": "FIRE adalah singkatan dari Financial Independence, Retire Early (Kemandirian Keuangan, Pensiun Dini). Ini adalah gerakan keuangan yang berfokus pada tabungan ekstrem dan investasi untuk pensiun jauh lebih awal dari usia pensiun tradisional. Prinsip intinya sederhana: tabung secara agresif, investasikan dengan bijak, dan setelah investasi Anda dapat menutupi biaya hidup Anda tanpa batas waktu, Anda mencapai kemandirian keuangan.",
+      "para2": "Perhitungan FIRE yang paling umum menggunakan aturan 4% (atau aturan 25x): jika Anda dapat hidup dengan 4% dari portofolio Anda per tahun, Anda perlu menabung 25 kali pengeluaran tahunan Anda. Misalnya, jika Anda menghabiskan $40.000 per tahun, Anda membutuhkan $1.000.000 untuk menjadi mandiri secara keuangan."
     },
     "tallyAi": {
-      "title": "Track Your Progress with Tally AI",
-      "desc": "Smart financial companion that helps you track spending, manage budgets, and achieve your FIRE goals with AI-powered insights. Perfect complement to these calculators.",
-      "cta": "Learn More About Tally AI"
+      "title": "Lacak Kemajuan Anda dengan Tally AI",
+      "desc": "Teman keuangan cerdas yang membantu Anda melacak pengeluaran, mengelola anggaran, dan mencapai tujuan FIRE Anda dengan wawasan yang didukung AI. Pelengkap sempurna untuk kalkulator ini.",
+      "cta": "Pelajari Lebih Lanjut Tentang Tally AI"
     },
     "disclaimer": {
-      "title": "Disclaimer",
-      "content": "This calculator is provided for educational and informational purposes only. It is not financial, investment, tax, or legal advice. Results are hypothetical projections and actual results will vary. Please consult a qualified financial advisor before making any financial decisions."
+      "title": "Penafian",
+      "content": "Kalkulator ini disediakan hanya untuk tujuan pendidikan dan informasi. Ini bukan saran keuangan, investasi, pajak, atau hukum. Hasil adalah proyeksi hipotetis dan hasil aktual akan bervariasi. Silakan konsultasikan dengan penasihat keuangan yang berkualifikasi sebelum membuat keputusan keuangan."
     },
-    "builtWith": "Built with privacy in mind. No data ever leaves your browser.",
-    "viewOnGithub": "View on GitHub",
+    "builtWith": "Dibangun dengan mempertimbangkan privasi. Tidak ada data yang pernah meninggalkan browser Anda.",
+    "viewOnGithub": "Lihat di GitHub",
     "features": {
       "noAnalytics": {
-        "desc": "Zero tracking scripts. No Google Analytics, no third-party code."
+        "desc": "Nol skrip pelacakan. Tanpa Google Analytics, tanpa kode pihak ketiga."
       },
       "shareable": {
-        "title": "URL-Based Sharing"
+        "title": "Berbagi Berbasis URL"
       }
     }
   },

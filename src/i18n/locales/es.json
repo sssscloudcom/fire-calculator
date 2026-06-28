@@ -1288,80 +1288,80 @@
     }
   },
   "home": {
-    "title": "FIRE Calculators",
-    "subtitle": "Plan your path to Financial Independence, Retire Early. Free, private, and works completely offline.",
+    "title": "Calculadoras FIRE",
+    "subtitle": "Planifica tu camino hacia la Independencia Financiera y Jubilación Anticipada. Gratis, privado y funciona completamente sin conexión.",
     "badges": {
-      "private": "100% Private",
-      "offline": "Works Offline",
-      "noTracking": "No Tracking",
-      "shareable": "Shareable URLs"
+      "private": "100% Privado",
+      "offline": "Sin Conexión",
+      "noTracking": "Sin Rastreo",
+      "shareable": "URLs Compartibles"
     },
     "quiz": {
-      "title": "Not sure which calculator to use?",
-      "desc": "Take our quick quiz to find the perfect FIRE path for your situation. Answer a few questions and we'll recommend the best calculator with your information pre-filled.",
-      "cta": "Find Your FIRE Path",
-      "note": "Takes 2-3 minutes · Personalized recommendation"
+      "title": "¿No estás seguro de qué calculadora usar?",
+      "desc": "Realiza nuestro rápido cuestionario para encontrar el camino FIRE perfecto para tu situación. Responde algunas preguntas y te recomendaremos la mejor calculadora con tu información prellenada.",
+      "cta": "Encuentra Tu Camino FIRE",
+      "note": "Toma 2-3 minutos · Recomendación personalizada"
     },
-    "chooseCalculator": "Choose Your Calculator",
-    "startCalculating": "Start calculating",
+    "chooseCalculator": "Elige Tu Calculadora",
+    "startCalculating": "Comenzar a calcular",
     "books": {
-      "title": "Recommended FIRE Books",
-      "subtitle": "Essential reading to accelerate your financial independence journey.",
-      "viewAll": "View All Books & Details",
-      "affiliateNote": "Affiliate links — purchases support this free calculator at no extra cost to you."
+      "title": "Libros FIRE Recomendados",
+      "subtitle": "Lecturas esenciales para acelerar tu camino hacia la independencia financiera.",
+      "viewAll": "Ver Todos los Libros y Detalles",
+      "affiliateNote": "Enlaces de afiliados — las compras apoyan esta calculadora gratuita sin costo adicional para ti."
     },
     "privacy": {
-      "title": "Your Privacy is Our Priority",
-      "subtitle": "We built this calculator with privacy-first principles.",
+      "title": "Tu Privacidad es Nuestra Prioridad",
+      "subtitle": "Construimos esta calculadora con principios de privacidad primero.",
       "features": {
         "noStorage": {
-          "title": "No Financial Data Storage",
-          "desc": "Your financial data stays in URLs only—never stored. Only UI preferences (theme, layout) stored locally."
+          "title": "Sin Almacenamiento de Datos Financieros",
+          "desc": "Tus datos financieros permanecen solo en URLs — nunca se almacenan. Solo las preferencias de interfaz (tema, diseño) se guardan localmente."
         },
         "noAnalytics": {
-          "title": "No Analytics",
-          "desc": "Zero tracking scripts. No Google Analytics, no third-party code."
+          "title": "Sin Análisis",
+          "desc": "Cero scripts de rastreo. Sin Google Analytics, sin código de terceros."
         },
         "urlBased": {
-          "title": "URL-Based Sharing",
-          "desc": "Save your calculations in the URL. Bookmark or share — your choice."
+          "title": "Compartir Basado en URL",
+          "desc": "Guarda tus cálculos en la URL. Marca o comparte — tú eliges."
         },
         "worksOffline": {
-          "title": "Works Offline",
-          "desc": "After first load, works without internet. Install as an app on your device."
+          "title": "Funciona Sin Conexión",
+          "desc": "Después de la primera carga, funciona sin internet. Instálalo como aplicación en tu dispositivo."
         },
         "openSource": {
-          "title": "Open Source",
-          "desc": "Verify everything yourself. All code is available on GitHub."
+          "title": "Código Abierto",
+          "desc": "Verifica todo tú mismo. Todo el código está disponible en GitHub."
         },
         "clientSide": {
-          "title": "Client-Side Only",
-          "desc": "All calculations run in your browser. No server processing."
+          "title": "Solo del Lado del Cliente",
+          "desc": "Todos los cálculos se ejecutan en tu navegador. Sin procesamiento en servidor."
         }
       }
     },
     "whatIsFire": {
-      "title": "What is FIRE?",
-      "para1": "FIRE stands for Financial Independence, Retire Early. It's a financial movement focused on extreme savings and investment to retire much earlier than traditional retirement age. The core principle is simple: save aggressively, invest wisely, and once your investments can cover your living expenses indefinitely, you achieve financial independence.",
-      "para2": "The most common FIRE calculation uses the 4% rule (or 25x rule): if you can live on 4% of your portfolio per year, you need to save 25 times your annual expenses. For example, if you spend $40,000 per year, you need $1,000,000 to be financially independent."
+      "title": "¿Qué es FIRE?",
+      "para1": "FIRE significa Independencia Financiera, Jubilación Anticipada. Es un movimiento financiero enfocado en ahorro extremo e inversión para jubilarse mucho antes de la edad tradicional de jubilación. El principio central es simple: ahorra agresivamente, invierte sabiamente, y una vez que tus inversiones pueden cubrir tus gastos de vida indefinidamente, logras la independencia financiera.",
+      "para2": "El cálculo FIRE más común usa la regla del 4% (o regla 25x): si puedes vivir con el 4% de tu portafolio por año, necesitas ahorrar 25 veces tus gastos anuales. Por ejemplo, si gastas $40,000 por año, necesitas $1,000,000 para ser financieramente independiente."
     },
     "tallyAi": {
-      "title": "Track Your Progress with Tally AI",
-      "desc": "Smart financial companion that helps you track spending, manage budgets, and achieve your FIRE goals with AI-powered insights. Perfect complement to these calculators.",
-      "cta": "Learn More About Tally AI"
+      "title": "Sigue Tu Progreso con Tally AI",
+      "desc": "Compañero financiero inteligente que te ayuda a rastrear gastos, administrar presupuestos y alcanzar tus objetivos FIRE con insights potenciados por IA. Complemento perfecto para estas calculadoras.",
+      "cta": "Aprende Más Sobre Tally AI"
     },
     "disclaimer": {
-      "title": "Disclaimer",
-      "content": "This calculator is provided for educational and informational purposes only. It is not financial, investment, tax, or legal advice. Results are hypothetical projections and actual results will vary. Please consult a qualified financial advisor before making any financial decisions."
+      "title": "Aviso Legal",
+      "content": "Esta calculadora se proporciona solo con fines educativos e informativos. No es asesoramiento financiero, de inversión, fiscal o legal. Los resultados son proyecciones hipotéticas y los resultados reales variarán. Por favor consulta con un asesor financiero calificado antes de tomar cualquier decisión financiera."
     },
-    "builtWith": "Built with privacy in mind. No data ever leaves your browser.",
-    "viewOnGithub": "View on GitHub",
+    "builtWith": "Construido con privacidad en mente. Ningún dato sale jamás de tu navegador.",
+    "viewOnGithub": "Ver en GitHub",
     "features": {
       "noAnalytics": {
-        "desc": "Zero tracking scripts. No Google Analytics, no third-party code."
+        "desc": "Cero scripts de rastreo. Sin Google Analytics, sin código de terceros."
       },
       "shareable": {
-        "title": "URL-Based Sharing"
+        "title": "Compartir Basado en URL"
       }
     }
   },
