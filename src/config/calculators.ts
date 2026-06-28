@@ -1,143 +1,137 @@
 /**
  * Centralized calculator metadata
- * Single source of truth for calculator names, colors, icons, and descriptions
+ * i18n keys are used for translatable fields (name, description, audience)
  */
 
 export interface CalculatorMetadata {
   path: string
   icon: string
-  name: string
-  label: string // Short label for navigation
-  description: string
-  color: string // Tailwind text color class
-  bgColor: string // Background color class
-  borderColor: string // Border color class
-  audience: string // Target audience description
+  nameKey: string
+  label: string
+  descKey: string
+  audienceKey: string
+  color: string
+  bgColor: string
+  borderColor: string
 }
 
 export const calculators: CalculatorMetadata[] = [
   {
     path: '/standard',
     icon: '🎯',
-    name: 'Standard FIRE',
+    nameKey: 'calculators.standard.name',
     label: 'Standard FIRE',
-    description: 'The classic 25x expenses rule — calculate your "magic number" for full financial independence.',
+    descKey: 'calculators.standard.desc',
+    audienceKey: 'calculators.standard.audience',
     color: 'text-orange-500',
     bgColor: 'bg-orange-50 dark:bg-orange-900/20',
     borderColor: 'border-orange-200 dark:border-orange-800',
-    audience: 'Best for: Anyone starting their FI journey',
   },
   {
     path: '/coast',
     icon: '⛵',
-    name: 'Coast FIRE',
+    nameKey: 'calculators.coast.name',
     label: 'Coast FIRE',
-    description: 'Find how much you need now so compound growth does the rest — then coast to retirement.',
+    descKey: 'calculators.coast.desc',
+    audienceKey: 'calculators.coast.audience',
     color: 'text-blue-500',
     bgColor: 'bg-blue-50 dark:bg-blue-900/20',
     borderColor: 'border-blue-200 dark:border-blue-800',
-    audience: 'Best for: Young savers wanting flexibility',
   },
   {
     path: '/lean',
     icon: '🌿',
-    name: 'Lean FIRE',
+    nameKey: 'calculators.lean.name',
     label: 'Lean FIRE',
-    description: 'Achieve FI faster with a minimalist lifestyle — perfect for frugal-minded planners.',
+    descKey: 'calculators.lean.desc',
+    audienceKey: 'calculators.lean.audience',
     color: 'text-green-500',
     bgColor: 'bg-green-50 dark:bg-green-900/20',
     borderColor: 'border-green-200 dark:border-green-800',
-    audience: 'Best for: Minimalists & early retirees',
   },
   {
     path: '/fat',
     icon: '💎',
-    name: 'Fat FIRE',
+    nameKey: 'calculators.fat.name',
     label: 'Fat FIRE',
-    description: 'Retire without compromise — calculate FI while maintaining a comfortable lifestyle.',
+    descKey: 'calculators.fat.desc',
+    audienceKey: 'calculators.fat.audience',
     color: 'text-purple-500',
     bgColor: 'bg-purple-50 dark:bg-purple-900/20',
     borderColor: 'border-purple-200 dark:border-purple-800',
-    audience: 'Best for: High earners & luxury seekers',
   },
   {
     path: '/barista',
     icon: '☕',
-    name: 'Barista FIRE',
+    nameKey: 'calculators.barista.name',
     label: 'Barista FIRE',
-    description: 'Blend part-time work with portfolio income — retire from corporate life earlier.',
+    descKey: 'calculators.barista.desc',
+    audienceKey: 'calculators.barista.audience',
     color: 'text-amber-600',
     bgColor: 'bg-amber-50 dark:bg-amber-900/20',
     borderColor: 'border-amber-200 dark:border-amber-800',
-    audience: 'Best for: Those wanting work-life balance',
   },
   {
     path: '/reverse',
     icon: '🔄',
-    name: 'Reverse FIRE',
+    nameKey: 'calculators.reverse.name',
     label: 'Reverse FIRE',
-    description: 'Work backwards — set your target age and find out how much you need to save monthly.',
+    descKey: 'calculators.reverse.desc',
+    audienceKey: 'calculators.reverse.audience',
     color: 'text-teal-500',
     bgColor: 'bg-teal-50 dark:bg-teal-900/20',
     borderColor: 'border-teal-200 dark:border-teal-800',
-    audience: 'Best for: Goal-oriented planners',
   },
   {
     path: '/withdrawal',
     icon: '📊',
-    name: 'Withdrawal Rate',
+    nameKey: 'calculators.withdrawal.name',
     label: 'Withdrawal Rate',
-    description: "Test your portfolio's longevity — find your safe withdrawal rate for any scenario.",
+    descKey: 'calculators.withdrawal.desc',
+    audienceKey: 'calculators.withdrawal.audience',
     color: 'text-sky-500',
     bgColor: 'bg-sky-50 dark:bg-sky-900/20',
     borderColor: 'border-sky-200 dark:border-sky-800',
-    audience: 'Best for: Those at or near FIRE',
   },
   {
     path: '/savings-rate',
     icon: '🧮',
-    name: 'Savings & Investment Rate',
+    nameKey: 'calculators.savingsRate.name',
     label: 'Savings & Investment Rate',
-    description: 'The most important metric — see how your savings rate impacts your time to FIRE.',
+    descKey: 'calculators.savingsRate.desc',
+    audienceKey: 'calculators.savingsRate.audience',
     color: 'text-indigo-500',
     bgColor: 'bg-indigo-50 dark:bg-indigo-900/20',
     borderColor: 'border-indigo-200 dark:border-indigo-800',
-    audience: 'Best for: Understanding your FI timeline',
   },
   {
     path: '/debt-payoff',
     icon: '💳',
-    name: 'Debt Payoff',
+    nameKey: 'calculators.debtPayoff.name',
     label: 'Debt Payoff',
-    description: 'Eliminate debt faster with Snowball or Avalanche strategies — compare methods and see the impact of extra payments.',
+    descKey: 'calculators.debtPayoff.desc',
+    audienceKey: 'calculators.debtPayoff.audience',
     color: 'text-red-500',
     bgColor: 'bg-red-50 dark:bg-red-900/20',
     borderColor: 'border-red-200 dark:border-red-800',
-    audience: 'Best for: Tackling multiple debts strategically',
   },
   {
     path: '/healthcare',
     icon: '🏥',
-    name: 'Healthcare Gap',
+    nameKey: 'calculators.healthcare.name',
     label: 'Healthcare Gap',
-    description: 'The hidden cost of early retirement — estimate healthcare costs before Medicare.',
+    descKey: 'calculators.healthcare.desc',
+    audienceKey: 'calculators.healthcare.audience',
     color: 'text-rose-500',
     bgColor: 'bg-rose-50 dark:bg-rose-900/20',
     borderColor: 'border-rose-200 dark:border-rose-800',
-    audience: 'Best for: US-based early retirees',
   },
 ]
 
-/**
- * Get calculator metadata by path
- */
 export function getCalculatorByPath(path: string): CalculatorMetadata | undefined {
   return calculators.find(calc => calc.path === path)
 }
 
-/**
- * Get calculator metadata by name
- */
 export function getCalculatorByName(name: string): CalculatorMetadata | undefined {
-  return calculators.find(calc => calc.name.toLowerCase() === name.toLowerCase())
+  return calculators.find(calc => calc.label.toLowerCase() === name.toLowerCase())
 }

@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <>
       <SEO
-        title={t('home.seo.title')}
-        description={t('home.seo.description')}
-        keywords={t('home.seo.keywords')}
+        title={t('home.title')}
+        description={t('home.subtitle')}
+        keywords="FIRE calculator, financial independence calculator, retire early calculator"
         canonicalPath="/"
       />
       <div className="space-y-12">
@@ -64,22 +64,22 @@ export default function Home() {
             {t('home.quiz.title')}
           </h2>
           <p className="text-base text-gray-600 dark:text-gray-400 mb-4">
-            {t('home.quiz.subtitle')}
+            {t('home.quiz.desc')}
           </p>
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-            {t('home.quiz.description')}
+            {t('home.quiz.desc')}
           </p>
           <Link
             to="/quiz"
             className="inline-flex items-center gap-2 px-6 py-3 bg-fire-600 hover:bg-fire-700 text-white text-base font-semibold rounded-lg transition-colors shadow-lg hover:shadow-xl"
           >
-            {t('home.quiz.buttonText')}
+            {t('home.quiz.cta')}
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </Link>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">
-            {t('home.quiz.meta')}
+            {t('home.quiz.note')}
           </p>
         </div>
       </div>
@@ -100,13 +100,13 @@ export default function Home() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 group-hover:text-fire-600 dark:group-hover:text-fire-400 transition-colors">
-                        {calc.name}
+                        {t(calc.nameKey)}
                       </h3>
                       <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                        {calc.description}
+                        {t(calc.descKey)}
                       </p>
                       <p className="text-xs text-gray-500 dark:text-gray-500 mt-3 font-medium">
-                        {calc.audience}
+                        {t(calc.audienceKey)}
                       </p>
                     </div>
                   </div>
@@ -183,7 +183,7 @@ export default function Home() {
         </div>
         
         <p className="text-xs text-gray-500 dark:text-gray-400 text-center mt-4">
-          {t('home.books.affiliateNotice')}
+          {t('home.books.affiliateNote')}
         </p>
       </div>
 
@@ -297,7 +297,7 @@ export default function Home() {
               {t('home.tallyAi.title')}
             </h3>
             <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
-              {t('home.tallyAi.description')}
+              {t('home.tallyAi.desc')}
             </p>
             <a
               href="https://tallyai.money/"
@@ -305,7 +305,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-sm font-semibold rounded-lg transition-all shadow-md hover:shadow-lg"
             >
-              {t('home.tallyAi.learnMore')}
+              {t('home.tallyAi.cta')}
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>

@@ -74,6 +74,14 @@ export default function SEO({
     const languages = [
       { lang: 'en', href: `${url}?lang=en` },
       { lang: 'zh', href: `${url}?lang=zh` },
+      { lang: 'es', href: `${url}?lang=es` },
+      { lang: 'ja', href: `${url}?lang=ja` },
+      { lang: 'de', href: `${url}?lang=de` },
+      { lang: 'fr', href: `${url}?lang=fr` },
+      { lang: 'ru', href: `${url}?lang=ru` },
+      { lang: 'pt', href: `${url}?lang=pt` },
+      { lang: 'id', href: `${url}?lang=id` },
+      { lang: 'ar', href: `${url}?lang=ar` },
       { lang: 'x-default', href: url },
     ];
 

@@ -186,10 +186,10 @@ export default function Sidebar({ isOpen, onClose, isCollapsed, onToggleCollapse
                   : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
                 }
               `}
-              title={isCollapsed ? calc.label : ''}
+              title={isCollapsed ? t(calc.nameKey) : ''}
             >
               <span className="text-xl">{calc.icon}</span>
-              {!isCollapsed && <span>{calc.label}</span>}
+              {!isCollapsed && <span>{t(calc.nameKey)}</span>}
             </NavLink>
           ))}
         </div>

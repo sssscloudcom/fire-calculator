@@ -1426,7 +1426,7 @@
       "ariaLabels": {
         "openMenu": "Open menu"
       },
-      "footer": "© {year} FIRE Calculator. 100% Private."
+      "footer": "© {{year}} FIRE Calculator. 100% Private."
     },
     "debtListInput": {
       "placeholder": "e.g., Credit Card, Car Loan",
