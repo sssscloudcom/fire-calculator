@@ -39,7 +39,7 @@ export default function Home() {
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
             </svg>
-            {t('home.features.offline.title')}
+            {t('home.privacy.features.worksOffline.title')}
           </span>
           <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm font-medium">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -206,8 +206,8 @@ export default function Home() {
               </svg>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('home.features.noStorage.title')}</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">{t('home.features.noStorage.desc')}</p>
+              <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('home.privacy.features.noStorage.title')}</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">{t('home.privacy.features.noStorage.desc')}</p>
             </div>
           </div>
           
@@ -218,8 +218,8 @@ export default function Home() {
               </svg>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('home.features.noAnalytics.title')}</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">{t('home.features.noAnalytics.desc')}</p>
+              <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('home.privacy.features.noAnalytics.title')}</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">{t('home.privacy.features.noAnalytics.desc')}</p>
             </div>
           </div>
           
@@ -230,8 +230,8 @@ export default function Home() {
               </svg>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('home.features.shareable.title')}</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">{t('home.features.shareable.desc')}</p>
+              <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('home.privacy.features.urlBased.title')}</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">{t('home.privacy.features.urlBased.desc')}</p>
             </div>
           </div>
           
@@ -242,8 +242,8 @@ export default function Home() {
               </svg>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('home.features.offline.title')}</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">{t('home.features.offline.desc')}</p>
+              <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('home.privacy.features.worksOffline.title')}</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">{t('home.privacy.features.worksOffline.desc')}</p>
             </div>
           </div>
           
@@ -254,8 +254,8 @@ export default function Home() {
               </svg>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('home.features.openSource.title')}</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">{t('home.features.openSource.desc')}</p>
+              <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('home.privacy.features.openSource.title')}</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">{t('home.privacy.features.openSource.desc')}</p>
             </div>
           </div>
           
@@ -266,8 +266,8 @@ export default function Home() {
               </svg>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('home.features.noServer.title')}</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">{t('home.features.noServer.desc')}</p>
+              <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('home.privacy.features.clientSide.title')}</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">{t('home.privacy.features.clientSide.desc')}</p>
             </div>
           </div>
         </div>
