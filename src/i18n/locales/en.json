@@ -1,4 +1,56 @@
 {
+  "calculators": {
+    "standard": {
+      "name": "Standard FIRE",
+      "desc": "The classic 25x expenses rule — calculate your "magic number" for full financial independence.",
+      "audience": "Best for: Anyone starting their FI journey"
+    },
+    "coast": {
+      "name": "Coast FIRE",
+      "desc": "Find how much you need now so compound growth does the rest — then coast to retirement.",
+      "audience": "Best for: Young savers wanting flexibility"
+    },
+    "lean": {
+      "name": "Lean FIRE",
+      "desc": "Achieve FI faster with a minimalist lifestyle — perfect for frugal-minded planners.",
+      "audience": "Best for: Minimalists & early retirees"
+    },
+    "fat": {
+      "name": "Fat FIRE",
+      "desc": "Retire without compromise — calculate FI while maintaining a comfortable lifestyle.",
+      "audience": "Best for: High earners & luxury seekers"
+    },
+    "barista": {
+      "name": "Barista FIRE",
+      "desc": "Blend part-time work with portfolio income — retire from corporate life earlier.",
+      "audience": "Best for: Those wanting work-life balance"
+    },
+    "reverse": {
+      "name": "Reverse FIRE",
+      "desc": "Work backwards — set your target age and find out how much you need to save monthly.",
+      "audience": "Best for: Goal-oriented planners"
+    },
+    "withdrawal": {
+      "name": "Withdrawal Rate",
+      "desc": "Test your portfolio's longevity — find your safe withdrawal rate for any scenario.",
+      "audience": "Best for: Those at or near FIRE"
+    },
+    "savingsRate": {
+      "name": "Savings & Investment Rate",
+      "desc": "The most important metric — see how your savings rate impacts your time to FIRE.",
+      "audience": "Best for: Understanding your FI timeline"
+    },
+    "debtPayoff": {
+      "name": "Debt Payoff",
+      "desc": "Eliminate debt faster with Snowball or Avalanche strategies — compare methods and see the impact of extra payments.",
+      "audience": "Best for: Tackling multiple debts strategically"
+    },
+    "healthcare": {
+      "name": "Healthcare Gap",
+      "desc": "The hidden cost of early retirement — estimate healthcare costs before Medicare.",
+      "audience": "Best for: US-based early retirees"
+    }
+  },
   "app": {
     "title": "FIRE Calculators",
     "description": "Private, offline-first FIRE (Financial Independence, Retire Early) calculators"

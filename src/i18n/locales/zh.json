@@ -1,4 +1,56 @@
 {
+  "calculators": {
+    "standard": {
+      "name": "标准 FIRE",
+      "desc": "经典25倍支出法则 — 计算实现财务独立所需的“神奇数字”。",
+      "audience": "适合：刚刚开始财务独立之旅的人"
+    },
+    "coast": {
+      "name": "Coast FIRE",
+      "desc": "计算现在需要多少资金让复利增长完成其余工作 — 然后轻松退休。",
+      "audience": "适合：追求灵活性的年轻储户"
+    },
+    "lean": {
+      "name": "Lean FIRE",
+      "desc": "以简约生活方式更快实现财务独立 — 完美适合节俭型规划者。",
+      "audience": "适合：极简主义者和早期退休者"
+    },
+    "fat": {
+      "name": "Fat FIRE",
+      "desc": "无妥协退休 — 计算在保持舒适生活方式的同时实现财务独立。",
+      "audience": "适合：高收入者和追求奢华生活的人"
+    },
+    "barista": {
+      "name": "Barista FIRE",
+      "desc": "结合兼职工作和投资收入 — 更早告别企业生活。",
+      "audience": "适合：追求工作生活平衡的人"
+    },
+    "reverse": {
+      "name": "逆向 FIRE",
+      "desc": "反向计算 — 设定目标年龄，找出每月需要储蓄多少。",
+      "audience": "适合：目标导向型规划者"
+    },
+    "withdrawal": {
+      "name": "提取率",
+      "desc": "测试投资组合的持久性 — 为任何场景找到安全提取率。",
+      "audience": "适合：已接近或达到 FIRE 的人"
+    },
+    "savingsRate": {
+      "name": "储蓄与投资率",
+      "desc": "最重要的指标 — 查看储蓄率如何影响达到 FIRE 的时间。",
+      "audience": "适合：了解财务独立时间线"
+    },
+    "debtPayoff": {
+      "name": "债务偿还",
+      "desc": "用雪球法或雪崩法更快消除债务 — 比较方法并查看额外付款的影响。",
+      "audience": "适合：战略性处理多项债务"
+    },
+    "healthcare": {
+      "name": "医疗缺口",
+      "desc": "早期退休的隐性成本 — 估算 Medicare 之前的医疗费用。",
+      "audience": "适合：美国早期退休者"
+    }
+  },
   "app": {
     "title": "FIRE 财务自由计算器",
     "description": "隐私优先、离线可用的 FIRE（财务自由，提前退休）计算器"

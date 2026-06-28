@@ -1,4 +1,56 @@
 {
+  "calculators": {
+    "standard": {
+      "name": "Standard FIRE",
+      "desc": "Die klassische 25x-Ausgaben-Regel — berechne deine "magische Zahl" für volle finanzielle Unabhängigkeit.",
+      "audience": "Ideal für: Alle, die ihre FI-Reise beginnen"
+    },
+    "coast": {
+      "name": "Coast FIRE",
+      "desc": "Finde heraus, wie viel du jetzt brauchst, damit compound growth den Rest erledigt — dann coast zur Rente.",
+      "audience": "Ideal für: Junge Sparer, die Flexibilität wünschen"
+    },
+    "lean": {
+      "name": "Lean FIRE",
+      "desc": "Erreiche FI schneller mit minimalistischem Lebensstil — perfekt für sparsame Planer.",
+      "audience": "Ideal für: Minimalisten & Frührentner"
+    },
+    "fat": {
+      "name": "Fat FIRE",
+      "desc": "Rente ohne Kompromisse — berechne FI bei bequemem Lebensstil.",
+      "audience": "Ideal für: Hohe Einkommen & Luxus-Sucher"
+    },
+    "barista": {
+      "name": "Barista FIRE",
+      "desc": "Kombiniere Teilzeitarbeit mit Portfolio-Einkommen — früher aus dem Corporate-Life raus.",
+      "audience": "Ideal für: Work-Life-Balance-Wünscher"
+    },
+    "reverse": {
+      "name": "Reverse FIRE",
+      "desc": "Arbeite rückwärts — setze dein Zielalter und finde heraus, wie viel du monatlich sparen musst.",
+      "audience": "Ideal für: Zielorientierte Planer"
+    },
+    "withdrawal": {
+      "name": "Entnahmerate",
+      "desc": "Teste die Langlebigkeit deines Portfolios — finde deine sichere Entnahmerate für jedes Scenario.",
+      "audience": "Ideal für: Diejenigen bei oder nahe FIRE"
+    },
+    "savingsRate": {
+      "name": "Spar- & Investitionsrate",
+      "desc": "Die wichtigste Kennzahl — sieh, wie deine Sparrate deine Zeit zu FIRE beeinflusst.",
+      "audience": "Ideal für: Verstehen deiner FI-Zeitlinie"
+    },
+    "debtPayoff": {
+      "name": "Schuldentilgung",
+      "desc": "Eliminiere Schulden schneller mit Snowball- oder Avalanche-Strategien — vergleiche Methoden und sieh den Impact von Extra-Zahlungen.",
+      "audience": "Ideal für: Strategisches Handhaben multipler Schulden"
+    },
+    "healthcare": {
+      "name": "Healthcare Gap",
+      "desc": "Der versteckte Kosten früher Rente — schätze Healthcare-Kosten vor Medicare.",
+      "audience": "Ideal für: US-basierte Frührentner"
+    }
+  },
   "app": {
     "title": "FIRE Calculators",
     "description": "Private, offline-first FIRE (Financial Independence, Retire Early) Rechner"

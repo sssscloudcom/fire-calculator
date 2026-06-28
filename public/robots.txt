@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fire.nextapi.pro/sitemap.xml
+Sitemap: https://firecalc.nextapi.pro/sitemap.xml

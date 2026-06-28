@@ -4,8 +4,11 @@ import { useTranslation } from 'react-i18next';
 
 interface SEOProps {
   title?: string;
+  titleKey?: string;
   description?: string;
+  descKey?: string;
   keywords?: string;
+  keywordsKey?: string;
   canonicalPath?: string;
 }
 
@@ -13,13 +16,20 @@ const BASE_URL = 'https://firecalc.nextapi.pro';
 
 export default function SEO({
   title,
+  titleKey,
   description,
+  descKey,
   keywords,
+  keywordsKey,
   canonicalPath = '',
 }: SEOProps = {}) {
   const location = useLocation();
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const lang = i18n.language;
+
+  const resolvedTitle = titleKey ? t(titleKey) : title;
+  const resolvedDesc = descKey ? t(descKey) : description;
+  const resolvedKeywords = keywordsKey ? t(keywordsKey) : keywords;
 
   const path = canonicalPath || location.pathname;
   const url = `${BASE_URL}${path}`;
@@ -29,34 +39,34 @@ export default function SEO({
     document.documentElement.lang = lang;
 
     // Update title
-    if (title) {
-      document.title = title;
+    if (resolvedTitle) {
+      document.title = resolvedTitle;
     }
 
     // Update meta tags
-    if (description) {
+    if (resolvedDesc) {
       const descMeta = document.querySelector('meta[name="description"]');
-      if (descMeta) descMeta.setAttribute('content', description);
+      if (descMeta) descMeta.setAttribute('content', resolvedDesc);
       
       const ogDesc = document.querySelector('meta[property="og:description"]');
-      if (ogDesc) ogDesc.setAttribute('content', description);
+      if (ogDesc) ogDesc.setAttribute('content', resolvedDesc);
       
       const twitterDesc = document.querySelector('meta[name="twitter:description"]');
-      if (twitterDesc) twitterDesc.setAttribute('content', description);
+      if (twitterDesc) twitterDesc.setAttribute('content', resolvedDesc);
     }
 
-    if (keywords) {
+    if (resolvedKeywords) {
       const keywordsMeta = document.querySelector('meta[name="keywords"]');
-      if (keywordsMeta) keywordsMeta.setAttribute('content', keywords);
+      if (keywordsMeta) keywordsMeta.setAttribute('content', resolvedKeywords);
     }
 
     // Update OG title
-    if (title) {
+    if (resolvedTitle) {
       const ogTitle = document.querySelector('meta[property="og:title"]');
-      if (ogTitle) ogTitle.setAttribute('content', title);
+      if (ogTitle) ogTitle.setAttribute('content', resolvedTitle);
       
       const twitterTitle = document.querySelector('meta[name="twitter:title"]');
-      if (twitterTitle) twitterTitle.setAttribute('content', title);
+      if (twitterTitle) twitterTitle.setAttribute('content', resolvedTitle);
     }
 
     // Update canonical
@@ -92,7 +102,7 @@ export default function SEO({
       link.href = href;
       document.head.appendChild(link);
     });
-  }, [title, description, keywords, url, lang]);
+  }, [resolvedTitle, resolvedDesc, resolvedKeywords, url, lang]);
 
   return null;
 }

@@ -1,4 +1,56 @@
 {
+  "calculators": {
+    "standard": {
+      "name": "Standard FIRE",
+      "desc": "古典的な25倍支出ルール — 完全な財務独立のための「魔法の数字」を計算。",
+      "audience": "最適：FIの旅を始めるすべての人"
+    },
+    "coast": {
+      "name": "Coast FIRE",
+      "desc": "複利成長が残りをやってくれるために今必要な額を見つける — その後退職まで coast。",
+      "audience": "最適：柔軟性を求める若い貯蓄者"
+    },
+    "lean": {
+      "name": "Lean FIRE",
+      "desc": "ミニマリスト生活でより早くFIを達成 — 経済的な計画者に最適。",
+      "audience": "最適：ミニマリスト & 早期退職者"
+    },
+    "fat": {
+      "name": "Fat FIRE",
+      "desc": "妥協なく退職 — 快適な生活を維持しながらFIを計算。",
+      "audience": "最適：高所得者 & 豪華追求者"
+    },
+    "barista": {
+      "name": "Barista FIRE",
+      "desc": "パートタイム仕事とポートフォリオ収入を組み合わせ — 企業生活からより早く退職。",
+      "audience": "最適：ワークライフバランスを求める人"
+    },
+    "reverse": {
+      "name": "Reverse FIRE",
+      "desc": "逆算で作業 — 目標年齢を設定し、毎月いくら貯蓄が必要かを見つける。",
+      "audience": "最適：目標指向の計画者"
+    },
+    "withdrawal": {
+      "name": "引出率",
+      "desc": "ポートフォリオの寿命をテスト — どんなシナリオでも安全な引出率を見つける。",
+      "audience": "最適：FIREに近い、または到達した人"
+    },
+    "savingsRate": {
+      "name": "貯蓄 & 投資率",
+      "desc": "最も重要な指標 — 貯蓄率がFIRE到達時間にどう影響するかを見る。",
+      "audience": "最適：FIタイムラインの理解"
+    },
+    "debtPayoff": {
+      "name": "債務返済",
+      "desc": "Snowballまたは Avalanche戦略でより早く債務を消除 — 方法を比較し、追加支払いの影響を見る。",
+      "audience": "最適：複数の債務を戦略的に処理"
+    },
+    "healthcare": {
+      "name": "医療ギャップ",
+      "desc": "早期退職の隠れたコスト — Medicare前の医療費用を見積もり。",
+      "audience": "最適：米国ベースの早期退職者"
+    }
+  },
   "app": {
     "title": "FIRE Calculators",
     "description": "プライベート、オフライン優先のFIRE（Financial Independence, Retire Early）計算ツール"
