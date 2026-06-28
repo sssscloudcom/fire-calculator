@@ -2,7 +2,7 @@
   "calculators": {
     "standard": {
       "name": "Standard FIRE",
-      "desc": "Aturan klasik 25x pengeluaran — hitung 'angka magis' Anda untuk kemandirian finansial penuh.",
+      "desc": "Aturan klasik 25x pengeluaran — hitung "angka magis" Anda untuk kemandirian finansial penuh.",
       "audience": "Terbaik untuk: Siapa pun memulai journey FI"
     },
     "coast": {
@@ -1525,6 +1525,7 @@
     "affiliateTitle": "Affiliate Disclosure",
     "affiliateContent": "The links above are Amazon affiliate links. If you purchase through these links, we may earn a small commission at no additional cost to you. This helps support the development of this free calculator. We only recommend books we genuinely believe will help you on your FIRE journey."
   },
+{
   "seo": {
     "standard": {
       "title": "Kalkulator FIRE Standar - Hitung Angka Kemandirian Keuangan Anda",

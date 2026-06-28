@@ -1,4 +1,56 @@
 {
+  "calculators": {
+    "standard": {
+      "name": "FIRE Estándar",
+      "desc": "La regla clásica de 25x gastos — calcula tu 'número mágico' para la independencia financiera completa.",
+      "audience": "Ideal para: Quienes comienzan su viaje hacia FI"
+    },
+    "coast": {
+      "name": "Coast FIRE",
+      "desc": "Encuentra cuánto necesitas ahora para que el crecimiento compuesto haga el resto — luego navega hasta la jubilación.",
+      "audience": "Ideal para: Ahorradores jóvenes que buscan flexibilidad"
+    },
+    "lean": {
+      "name": "Lean FIRE",
+      "desc": "Logra FI más rápido con un estilo de vida minimalista — perfecto para planificadores frugales.",
+      "audience": "Ideal para: Minimalistas y jubilados tempranos"
+    },
+    "fat": {
+      "name": "Fat FIRE",
+      "desc": "Jubilación sin compromisos — calcula FI mientras mantienes un estilo de vida cómodo.",
+      "audience": "Ideal para: Altos ingresos y buscadores de lujo"
+    },
+    "barista": {
+      "name": "Barista FIRE",
+      "desc": "Combina trabajo parcial con ingresos de portafolio — jubilación de la vida corporativa más temprano.",
+      "audience": "Ideal para: Quienes buscan equilibrio trabajo-vida"
+    },
+    "reverse": {
+      "name": "FIRE Inverso",
+      "desc": "Trabaja hacia atrás — establece tu edad objetivo y descubre cuánto necesitas ahorrar mensualmente.",
+      "audience": "Ideal para: Planificadores orientados a objetivos"
+    },
+    "withdrawal": {
+      "name": "Tasa de Retiro",
+      "desc": "Prueba la longevidad de tu portafolio — encuentra tu tasa de retiro segura para cualquier escenario.",
+      "audience": "Ideal para: Quienes están cerca de FIRE"
+    },
+    "savingsRate": {
+      "name": "Tasa de Ahorro e Inversión",
+      "desc": "La métrica más importante — ve cómo tu tasa de ahorro impacta tu tiempo para FIRE.",
+      "audience": "Ideal para: Entender tu cronograma de FI"
+    },
+    "debtPayoff": {
+      "name": "Pago de Deudas",
+      "desc": "Elimina deudas más rápido con estrategias Snowball o Avalanche — compara métodos y ve el impacto de pagos extra.",
+      "audience": "Ideal para: Manejar múltiples deudas estratégicamente"
+    },
+    "healthcare": {
+      "name": "Brecha de Salud",
+      "desc": "El costo oculto de la jubilación temprana — estima los costos de salud antes de Medicare.",
+      "audience": "Ideal para: Jubilados tempranos en EE.UU."
+    }
+  },
   "app": {
     "title": "FIRE Calculators",
     "description": "Calculadoras FIRE privadas y offline-first (Financial Independence, Retire Early)"
@@ -1472,5 +1524,72 @@
     "viewOnAmazon": "View on Amazon",
     "affiliateTitle": "Affiliate Disclosure",
     "affiliateContent": "The links above are Amazon affiliate links. If you purchase through these links, we may earn a small commission at no additional cost to you. This helps support the development of this free calculator. We only recommend books we genuinely believe will help you on your FIRE journey."
+  },
+  "seo": {
+    "standard": {
+      "title": "Calculadora FIRE Estándar - Calcula Tu Número de Independencia Financiera",
+      "description": "Calculadora FIRE estándar gratuita usando la regla del 25x. Calcula tu número FIRE basado en la regla del 4% y ve cuánto tiempo hasta alcanzar la independencia financiera. 100% privado, funciona sin conexión.",
+      "keywords": "calculadora FIRE estándar, calculadora regla 25x, regla del 4%, número FIRE, calculadora de independencia financiera, jubilación anticipada, estudio Trinity"
+    },
+    "coast": {
+      "title": "Calculadora Coast FIRE - Calcula Tu Número de Coast FI",
+      "description": "Calculadora Coast FIRE gratuita para determinar cuánto necesitas ahorrar ahora para que el crecimiento compuesto haga el resto. Calcula tu número coast y ve cuándo puedes dejar de ahorrar para la jubilación.",
+      "keywords": "calculadora Coast FIRE, Coast FI, calculadora de interés compuesto, planificación de jubilación, calculadora de semi-jubilación"
+    },
+    "lean": {
+      "title": "Calculadora Lean FIRE - Planificación de Jubilación Anticipada Minimalista",
+      "description": "Calculadora Lean FIRE gratuita para planificación de estilo de vida minimalista. Calcula tu número FIRE con gastos menores ($40k o menos anualmente) y jubílate antes con un enfoque frugal.",
+      "keywords": "calculadora Lean FIRE, jubilación frugal, FIRE minimalista, jubilación de bajo costo, jubilación anticipada con presupuesto ajustado"
+    },
+    "fat": {
+      "title": "Calculadora Fat FIRE - Planificación de Jubilación Anticipada de Lujo",
+      "description": "Calculadora Fat FIRE gratuita para planificar una jubilación anticipada lujosa. Calcula tu número FIRE para un estilo de vida cómodo ($100k+ anualmente) sin compromisos financieros.",
+      "keywords": "calculadora Fat FIRE, jubilación de lujo, FIRE de altos ingresos, jubilación cómoda, jubilación anticipada acomodada"
+    },
+    "barista": {
+      "title": "Calculadora Barista FIRE - Trabajo a Tiempo Parcial y Jubilación Anticipada",
+      "description": "Calculadora Barista FIRE gratuita para combinar ingresos a tiempo parcial con retiros de cartera. Calcula cuánto necesitas para semi-jubilarte y trabajar de forma flexible manteniendo la independencia financiera.",
+      "keywords": "calculadora Barista FIRE, semi-jubilación, jubilación trabajo parcial, jubilación flexible, FIRE con ingresos adicionales"
+    },
+    "reverse": {
+      "title": "Calculadora FIRE Inversa - Trabaja Hacia Atrás Desde la Edad de Jubilación",
+      "description": "Calculadora FIRE inversa gratuita - establece tu edad objetivo de jubilación y descubre cuánto necesitas ahorrar mensualmente. Trabaja hacia atrás desde tu meta para crear un plan de ahorro accionable.",
+      "keywords": "calculadora FIRE inversa, calculadora de ahorro para jubilación, meta de ahorro mensual, edad objetivo de jubilación, calculadora de tasa de ahorro"
+    },
+    "withdrawal": {
+      "title": "Calculadora de Tasa de Retiro - Tasas de Retiro Seguras para Jubilación",
+      "description": "Calculadora de tasa de retiro gratuita para probar la longevidad de tu cartera. Calcula tasas de retiro seguras, ve cuánto durará tu dinero y planifica ingresos de jubilación sostenibles.",
+      "keywords": "calculadora de tasa de retiro, tasa de retiro segura, regla del 4%, calculadora de ingresos de jubilación, longevidad de cartera, sostenibilidad de jubilación"
+    },
+    "savingsRate": {
+      "title": "Calculadora de Tasa de Ahorro - Calcula el Tiempo hasta la Independencia Financiera",
+      "description": "Calculadora de tasa de ahorro gratuita que muestra cómo tu tasa de ahorro impacta tu tiempo hasta FIRE. La métrica más importante para la jubilación anticipada - ve exactamente cuándo puedes lograr la independencia financiera.",
+      "keywords": "calculadora de tasa de ahorro, tiempo hasta FIRE, cronología de independencia financiera, tasa de ahorro para jubilación, calculadora de jubilación anticipada"
+    },
+    "debtPayoff": {
+      "title": "Calculadora de Pago de Deudas - Método Bola de Nieve vs Avalancha",
+      "description": "Calculadora de pago de deudas gratuita comparando estrategias Bola de Nieve y Avalancha. Calcula plazos de pago, ve ahorros en intereses y planifica pagos extra para eliminar deudas más rápido.",
+      "keywords": "calculadora de pago de deudas, calculadora bola de nieve, calculadora avalancha de deudas, eliminación de deudas, pagar deudas más rápido, calculadora vida sin deudas"
+    },
+    "healthcare": {
+      "title": "Calculadora de Brecha Sanitaria - Costos de Salud en Jubilación Anticipada",
+      "description": "Calculadora de brecha sanitaria gratuita para jubilados anticipados. Estima los costos de salud entre la jubilación anticipada y la elegibilidad para Medicare a los 65. Planificación esencial para buscadores de FIRE en EE.UU.",
+      "keywords": "calculadora de brecha sanitaria, salud en jubilación anticipada, cobertura pre-Medicare, costos de salud, mercado ACA, planificación sanitaria de jubilación"
+    },
+    "books": {
+      "title": "Mejores Libros FIRE - Lectura Recomendada de Independencia Financiera",
+      "description": "Lista curada de los mejores libros FIRE para acelerar tu camino hacia la independencia financiera. Lectura esencial sobre inversión, finanzas personales, jubilación anticipada y creación de riqueza.",
+      "keywords": "libros FIRE, libros de independencia financiera, libros de jubilación anticipada, libros de finanzas personales, libros de inversión, libros de creación de riqueza"
+    },
+    "apps": {
+      "title": "Apps FIRE Recomendadas - Herramientas de Independencia Financiera",
+      "description": "Lista curada de las mejores apps FIRE para ayudarte a rastrear gastos, gestionar presupuestos y lograr la independencia financiera. Herramientas esenciales para complementar tus calculadoras FIRE.",
+      "keywords": "apps FIRE, apps de independencia financiera, apps de presupuestos, apps de seguimiento de gastos, apps de finanzas personales, apps de gestión de dinero"
+    },
+    "quiz": {
+      "title": "Quiz de Calculadora FIRE - Encuentra Tu Camino FIRE Perfecto",
+      "description": "Toma nuestro quiz FIRE gratuito para descubrir qué calculadora y estrategia se adapta a tu situación. Responde algunas preguntas y obtén recomendaciones personalizadas con valores prellenados.",
+      "keywords": "quiz FIRE, qué calculadora FIRE, test de personalidad FIRE, quiz de independencia financiera, quiz de jubilación anticipada"
+    }
   }
 }

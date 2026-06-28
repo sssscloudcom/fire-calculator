@@ -1,4 +1,56 @@
 {
+  "calculators": {
+    "standard": {
+      "name": "FIRE Standard",
+      "desc": "La règle classique des 25x dépenses — calculez votre 'numéro magique' pour une indépendance financière complète.",
+      "audience": "Idéal pour: Tous ceux qui débutent leur voyage FI"
+    },
+    "coast": {
+      "name": "Coast FIRE",
+      "desc": "Trouvez combien vous devez maintenant pour que la croissance composée fasse le reste — puis coast jusqu'à la retraite.",
+      "audience": "Idéal pour: Jeunes épargnants cherchant flexibilité"
+    },
+    "lean": {
+      "name": "Lean FIRE",
+      "desc": "Atteignez FI plus vite avec un style de vie minimaliste — parfait pour les planificateurs économes.",
+      "audience": "Idéal pour: Minimalistes & retraités précoces"
+    },
+    "fat": {
+      "name": "Fat FIRE",
+      "desc": "Retraite sans compromis — calculez FI en maintenant un style de vie confortable.",
+      "audience": "Idéal pour: Hauts revenus & chercheurs de luxe"
+    },
+    "barista": {
+      "name": "Barista FIRE",
+      "desc": "Combinez travail partiel et revenus de portefeuille — quittez la vie corporate plus tôt.",
+      "audience": "Idéal pour: Ceux cherchant équilibre travail-vie"
+    },
+    "reverse": {
+      "name": "FIRE Inversé",
+      "desc": "Travaillez à rebours — fixez votre âge cible et découvrez combien économiser mensuellement.",
+      "audience": "Idéal pour: Planificateurs orientés objectifs"
+    },
+    "withdrawal": {
+      "name": "Taux de Retrait",
+      "desc": "Testez la longévité de votre portefeuille — trouvez votre taux de retrait sûr pour tout scénario.",
+      "audience": "Idéal pour: Ceux près de FIRE"
+    },
+    "savingsRate": {
+      "name": "Taux d'Épargne & d'Investissement",
+      "desc": "La métrique la plus importante — voyez comment votre taux d'épargne impacte votre temps vers FIRE.",
+      "audience": "Idéal pour: Comprendre votre timeline FI"
+    },
+    "debtPayoff": {
+      "name": "Remboursement de Dettes",
+      "desc": "Eliminez les dettes plus vite avec stratégies Snowball ou Avalanche — comparez méthodes et voyez l'impact des paiements extra.",
+      "audience": "Idéal pour: Gérer plusieurs dettes stratégiquement"
+    },
+    "healthcare": {
+      "name": "Gap Santé",
+      "desc": "Le coût caché de la retraite précoce — estimez les coûts santé avant Medicare.",
+      "audience": "Idéal pour: Retraités précoces basés aux US"
+    }
+  },
   "app": {
     "title": "FIRE Calculators",
     "description": "Calculateurs FIRE privés et hors-ligne (Financial Independence, Retire Early)"
@@ -1472,5 +1524,72 @@
     "viewOnAmazon": "View on Amazon",
     "affiliateTitle": "Affiliate Disclosure",
     "affiliateContent": "The links above are Amazon affiliate links. If you purchase through these links, we may earn a small commission at no additional cost to you. This helps support the development of this free calculator. We only recommend books we genuinely believe will help you on your FIRE journey."
+  },
+  "seo": {
+    "standard": {
+      "title": "Calculateur FIRE Standard - Calculez Votre Nombre d'Indépendance Financière",
+      "description": "Calculateur FIRE standard gratuit utilisant la règle des 25x. Calculez votre nombre FIRE basé sur la règle des 4% et voyez combien de temps avant d'atteindre l'indépendance financière. 100% privé, fonctionne hors ligne.",
+      "keywords": "calculateur FIRE standard, calculateur règle 25x, règle des 4%, nombre FIRE, calculateur d'indépendance financière, retraite anticipée, étude Trinity"
+    },
+    "coast": {
+      "title": "Calculateur Coast FIRE - Calculez Votre Nombre Coast FI",
+      "description": "Calculateur Coast FIRE gratuit pour déterminer combien vous devez épargner maintenant pour que la croissance composée fasse le reste. Calculez votre nombre coast et voyez quand vous pouvez arrêter d'épargner pour la retraite.",
+      "keywords": "calculateur Coast FIRE, Coast FI, calculateur d'intérêts composés, planification retraite, calculateur de semi-retraite"
+    },
+    "lean": {
+      "title": "Calculateur Lean FIRE - Planification de Retraite Anticipée Minimaliste",
+      "description": "Calculateur Lean FIRE gratuit pour une planification de vie minimaliste. Calculez votre nombre FIRE avec des dépenses inférieures (40k$ ou moins annuellement) et prenez votre retraite plus tôt avec une approche frugale.",
+      "keywords": "calculateur Lean FIRE, retraite frugale, FIRE minimaliste, retraite à faible coût, retraite anticipée avec petit budget"
+    },
+    "fat": {
+      "title": "Calculateur Fat FIRE - Planification de Retraite Anticipée de Luxe",
+      "description": "Calculateur Fat FIRE gratuit pour planifier une retraite anticipée luxueuse. Calculez votre nombre FIRE pour un style de vie confortable (100k$+ annuellement) sans compromis financiers.",
+      "keywords": "calculateur Fat FIRE, retraite de luxe, FIRE hauts revenus, retraite confortable, retraite anticipée aisée"
+    },
+    "barista": {
+      "title": "Calculateur Barista FIRE - Travail à Temps Partiel & Retraite Anticipée",
+      "description": "Calculateur Barista FIRE gratuit pour combiner revenus à temps partiel et retraits de portefeuille. Calculez combien vous avez besoin pour semi-retraite et travaillez flexiblement tout en maintenant l'indépendance financière.",
+      "keywords": "calculateur Barista FIRE, semi-retraite, retraite temps partiel, retraite flexible, FIRE revenus complémentaires"
+    },
+    "reverse": {
+      "title": "Calculateur FIRE Inversé - Remontez Depuis l'Âge de Retraite",
+      "description": "Calculateur FIRE inversé gratuit - fixez votre âge cible de retraite et découvrez combien épargner mensuellement. Remontez depuis votre objectif pour créer un plan d'épargne concret.",
+      "keywords": "calculateur FIRE inversé, calculateur d'épargne retraite, objectif d'épargne mensuel, âge cible de retraite, calculateur de taux d'épargne"
+    },
+    "withdrawal": {
+      "title": "Calculateur de Taux de Retrait - Taux de Retrait Sécurisés pour la Retraite",
+      "description": "Calculateur de taux de retrait gratuit pour tester la longévité de votre portefeuille. Calculez les taux de retrait sécurisés, voyez combien de temps durera votre argent et planifiez un revenu de retraite durable.",
+      "keywords": "calculateur de taux de retrait, taux de retrait sécurisé, règle des 4%, calculateur de revenu de retraite, longévité du portefeuille, durabilité de la retraite"
+    },
+    "savingsRate": {
+      "title": "Calculateur de Taux d'Épargne - Calculez le Temps vers l'Indépendance Financière",
+      "description": "Calculateur de taux d'épargne gratuit montrant comment votre taux d'épargne impacte votre temps vers FIRE. La métrique la plus importante pour la retraite anticipée - voyez exactement quand vous pouvez atteindre l'indépendance financière.",
+      "keywords": "calculateur de taux d'épargne, temps vers FIRE, calendrier d'indépendance financière, taux d'épargne retraite, calculateur de retraite anticipée"
+    },
+    "debtPayoff": {
+      "title": "Calculateur de Remboursement de Dettes - Méthode Boule de Neige vs Avalanche",
+      "description": "Calculateur de remboursement de dettes gratuit comparant les stratégies Boule de Neige et Avalanche. Calculez les délais, voyez les économies d'intérêts et planifiez des paiements supplémentaires pour éliminer les dettes plus vite.",
+      "keywords": "calculateur de remboursement de dettes, calculateur boule de neige, calculateur avalanche, élimination de dettes, rembourser plus vite, calculateur sans dettes"
+    },
+    "healthcare": {
+      "title": "Calculateur de Lacune Sanitaire - Coûts de Santé en Retraite Anticipée",
+      "description": "Calculateur de lacune sanitaire gratuit pour les retraités anticipés. Estimez les coûts de santé entre la retraite anticipée et l'éligibilité Medicare à 65 ans. Planification essentielle pour les chercheurs de FIRE aux États-Unis.",
+      "keywords": "calculateur de lacune sanitaire, santé retraite anticipée, couverture pré-Medicare, coûts de santé, marché ACA, planification santé retraite"
+    },
+    "books": {
+      "title": "Meilleurs Livres FIRE - Lecture Recommandée sur l'Indépendance Financière",
+      "description": "Liste sélectionnée des meilleurs livres FIRE pour accélérer votre parcours vers l'indépendance financière. Lecture essentielle sur l'investissement, les finances personnelles, la retraite anticipée et la constitution de patrimoine.",
+      "keywords": "livres FIRE, livres indépendance financière, livres retraite anticipée, livres finances personnelles, livres investissement, livres constitution de patrimoine"
+    },
+    "apps": {
+      "title": "Apps FIRE Recommandées - Outils d'Indépendance Financière",
+      "description": "Liste sélectionnée des meilleures apps FIRE pour suivre vos dépenses, gérer vos budgets et atteindre l'indépendance financière. Outils essentiels pour compléter vos calculateurs FIRE.",
+      "keywords": "apps FIRE, apps indépendance financière, apps budget, apps suivi des dépenses, apps finances personnelles, apps gestion d'argent"
+    },
+    "quiz": {
+      "title": "Quiz Calculateur FIRE - Trouvez Votre Parcours FIRE Parfait",
+      "description": "Répondez à notre quiz FIRE gratuit pour découvrir quel calculateur et quelle stratégie correspondent à votre situation. Répondez à quelques questions et obtenez des recommandations personnalisées avec des valeurs pré-remplies.",
+      "keywords": "quiz FIRE, quel calculateur FIRE, quiz de personnalité FIRE, quiz indépendance financière, quiz retraite anticipée"
+    }
   }
 }

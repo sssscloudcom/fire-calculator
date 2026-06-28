@@ -1,338 +1,338 @@
 {
   "calculators": {
     "standard": {
-      "name": "Standard FIRE",
-      "desc": "Aturan klasik 25x pengeluaran — hitung 'angka magis' Anda untuk kemandirian finansial penuh.",
-      "audience": "Terbaik untuk: Siapa pun memulai journey FI"
+      "name": "FIRE Standard",
+      "desc": "La règle classique des 25x dépenses — calculez votre "numéro magique" pour une indépendance financière complète.",
+      "audience": "Idéal pour: Tous ceux qui débutent leur voyage FI"
     },
     "coast": {
       "name": "Coast FIRE",
-      "desc": "Temukan berapa banyak yang Anda butuhkan sekarang agar pertumbuhan compounding melakukan sisanya — lalu coast ke pensiun.",
-      "audience": "Terbaik untuk: Penabung muda menginginkan fleksibilitas"
+      "desc": "Trouvez combien vous devez maintenant pour que la croissance composée fasse le reste — puis coast jusqu'à la retraite.",
+      "audience": "Idéal pour: Jeunes épargnants cherchant flexibilité"
     },
     "lean": {
       "name": "Lean FIRE",
-      "desc": "Raih FI lebih cepat dengan gaya hidup minimalis — sempurna untuk planner yang hemat.",
-      "audience": "Terbaik untuk: Minimalis & pensiunan awal"
+      "desc": "Atteignez FI plus vite avec un style de vie minimaliste — parfait pour les planificateurs économes.",
+      "audience": "Idéal pour: Minimalistes & retraités précoces"
     },
     "fat": {
       "name": "Fat FIRE",
-      "desc": "Pensiun tanpa kompromi — hitung FI sambil mempertahankan gaya hidup nyaman.",
-      "audience": "Terbaik untuk: Penghasilan tinggi & pencari kemewahan"
+      "desc": "Retraite sans compromis — calculez FI en maintenant un style de vie confortable.",
+      "audience": "Idéal pour: Hauts revenus & chercheurs de luxe"
     },
     "barista": {
       "name": "Barista FIRE",
-      "desc": "Gabungkan kerja paruh waktu dengan pendapatan portofolio — pensiun dari kehidupan corporate lebih awal.",
-      "audience": "Terbaik untuk: Yang menginginkan keseimbangan kerja-hidup"
+      "desc": "Combinez travail partiel et revenus de portefeuille — quittez la vie corporate plus tôt.",
+      "audience": "Idéal pour: Ceux cherchant équilibre travail-vie"
     },
     "reverse": {
-      "name": "Reverse FIRE",
-      "desc": "Bekerja mundur — tetapkan usia target dan temukan berapa banyak yang harus tabung bulanan.",
-      "audience": "Terbaik untuk: Planner yang berorientasi tujuan"
+      "name": "FIRE Inversé",
+      "desc": "Travaillez à rebours — fixez votre âge cible et découvrez combien économiser mensuellement.",
+      "audience": "Idéal pour: Planificateurs orientés objectifs"
     },
     "withdrawal": {
-      "name": "Rate Penarikan",
-      "desc": "Uji longevity portofolio Anda — temukan rate penarikan aman untuk skenario apa pun.",
-      "audience": "Terbaik untuk: Yang di atau dekat FIRE"
+      "name": "Taux de Retrait",
+      "desc": "Testez la longévité de votre portefeuille — trouvez votre taux de retrait sûr pour tout scénario.",
+      "audience": "Idéal pour: Ceux près de FIRE"
     },
     "savingsRate": {
-      "name": "Rate Tabungan & Investasi",
-      "desc": "Metrik terpenting — lihat bagaimana rate tabungan Anda memengaruhi waktu ke FIRE.",
-      "audience": "Terbaik untuk: Memahami timeline FI Anda"
+      "name": "Taux d'Épargne & d'Investissement",
+      "desc": "La métrique la plus importante — voyez comment votre taux d'épargne impacte votre temps vers FIRE.",
+      "audience": "Idéal pour: Comprendre votre timeline FI"
     },
     "debtPayoff": {
-      "name": "Pelunasan Hutang",
-      "desc": "Eliminasi hutang lebih cepat dengan strategi Snowball atau Avalanche — bandingkan metode dan lihat dampak pembayaran ekstra.",
-      "audience": "Terbaik untuk: Menangani multiple hutang secara strategis"
+      "name": "Remboursement de Dettes",
+      "desc": "Eliminez les dettes plus vite avec stratégies Snowball ou Avalanche — comparez méthodes et voyez l'impact des paiements extra.",
+      "audience": "Idéal pour: Gérer plusieurs dettes stratégiquement"
     },
     "healthcare": {
-      "name": "Gap Healthcare",
-      "desc": "Biaya tersembunyi dari pensiun awal — estimasi biaya healthcare sebelum Medicare.",
-      "audience": "Terbaik untuk: Pensiunan awal berbasis US"
+      "name": "Gap Santé",
+      "desc": "Le coût caché de la retraite précoce — estimez les coûts santé avant Medicare.",
+      "audience": "Idéal pour: Retraités précoces basés aux US"
     }
   },
   "app": {
     "title": "FIRE Calculators",
-    "description": "Kalkulator FIRE privat dan offline-first (Financial Independence, Retire Early)"
+    "description": "Calculateurs FIRE privés et hors-ligne (Financial Independence, Retire Early)"
   },
   "nav": {
-    "home": "Beranda",
-    "books": "Buku Rekomendasi",
-    "apps": "Aplikasi Rekomendasi",
-    "quiz": "Temukan Jalannya",
-    "calculators": "Kalkulator",
-    "standard": "FIRE Standar",
+    "home": "Accueil",
+    "books": "Livres recommandés",
+    "apps": "Applications recommandées",
+    "quiz": "Trouvez votre voie",
+    "calculators": "Calculateurs",
+    "standard": "FIRE Standard",
     "coast": "Coast FIRE",
     "lean": "Lean FIRE",
     "fat": "Fat FIRE",
     "barista": "Barista FIRE",
-    "reverse": "FIRE Terbalik",
-    "withdrawal": "Tarik Penarikan",
-    "savingsRate": "Tabungan",
-    "debtPayoff": "Pelunasan Utang",
-    "healthcare": "Celah Kesehatan"
+    "reverse": "FIRE Inversé",
+    "withdrawal": "Taux de retrait",
+    "savingsRate": "Taux d'épargne",
+    "debtPayoff": "Remboursement de dettes",
+    "healthcare": "Écart santé"
   },
   "quiz": {
     "questions": {
       "currentAge": {
-        "title": "Berapa usia Anda?",
-        "subtitle": "Ini membantu kami memahami timeline Anda"
+        "title": "Quel âge avez-vous ?",
+        "subtitle": "Cela nous aide à comprendre votre chronologie"
       },
       "retirementAge": {
-        "title": "Kapan Anda ingin mencapai independensi finansial?",
-        "subtitle": "Usia target FIRE Anda"
+        "title": "Quand voulez-vous atteindre l'indépendance financière ?",
+        "subtitle": "Votre âge cible pour FIRE"
       },
       "currentSavings": {
-        "title": "Berapa yang Anda simpan/investasikan saat ini?",
-        "subtitle": "Termasuk semua rekening pensiun dan investasi"
+        "title": "Combien avez-vous actuellement épargné/investi ?",
+        "subtitle": "Inclure tous les comptes de retraite et investissements"
       },
       "annualIncome": {
-        "title": "Berapa pendapatan keluarga tahunan Anda saat ini?",
-        "subtitle": "Sebelum pajak"
+        "title": "Quel est votre revenu annuel familial actuel ?",
+        "subtitle": "Avant impôts"
       },
       "annualExpenses": {
-        "title": "Berapa pengeluaran tahunan Anda saat ini?",
-        "subtitle": "Atau yang Anda harapkan keluar saat pensiun"
+        "title": "Quelles sont vos dépenses annuelles actuelles ?",
+        "subtitle": "Ou ce que vous prévoyez dépenser à la retraite"
       },
       "lifestyle": {
-        "title": "Gaya hidup apa yang Anda inginkan saat pensiun?",
-        "subtitle": "Ini mempengaruhi jumlah tabungan target Anda"
+        "title": "Quel style de vie voulez-vous à la retraite ?",
+        "subtitle": "Cela impacte votre montant d'épargne cible"
       },
       "workPreference": {
-        "title": "Apa situasi kerja ideal Anda setelah mencapai FI?",
-        "subtitle": "Bagaimana Anda ingin menghabiskan waktu"
+        "title": "Quelle est votre situation de travail idéale après FI ?",
+        "subtitle": "Comment vous voulez passer votre temps"
       },
       "primaryGoal": {
-        "title": "Apa yang paling penting untuk Anda?",
-        "subtitle": "Motivasi utama Anda untuk FIRE"
+        "title": "Qu'est-ce qui est le plus important pour vous ?",
+        "subtitle": "Votre motivation principale pour FIRE"
       }
     },
     "choices": {
       "lifestyle": {
         "minimal": {
-          "label": "Minimal/Frugal",
-          "desc": "Hidup sederhana, $30K-$40K/tahun"
+          "label": "Minimaliste/Frugal",
+          "desc": "Vivre simplement, 30K-40K$/an"
         },
         "moderate": {
-          "label": "Moderat",
-          "desc": "Kenyamanan dasar, $40K-$70K/tahun"
+          "label": "Modéré",
+          "desc": "Confort de base, 40K-70K$/an"
         },
         "comfortable": {
-          "label": "Nyaman",
-          "desc": "Tanpa pengorbanan besar, $70K-$100K/tahun"
+          "label": "Confortable",
+          "desc": "Sans sacrifice majeur, 70K-100K$/an"
         },
         "luxury": {
-          "label": "Luxury/Fat",
-          "desc": "Gaya hidup tinggi, $100K+/tahun"
+          "label": "Luxe/Fat",
+          "desc": "Style de vie haut de gamme, 100K+$/an"
         }
       },
       "workPreference": {
         "quit": {
-          "label": "Berhenti Sepenuhnya",
-          "desc": "Tidak bekerja lagi"
+          "label": "Arrêter Complètement",
+          "desc": "Ne plus jamais travailler"
         },
         "partTime": {
-          "label": "Kerja Paruh Waktu",
-          "desc": "Bekerja untuk tunjangan atau pendapatan extra"
+          "label": "Travail à Temps Partiel",
+          "desc": "Travailler pour les avantages ou revenus supplémentaires"
         },
         "coast": {
           "label": "Mode Coast",
-          "desc": "Kerja rendah stres menutupi pengeluaran"
+          "desc": "Travail peu stressant couvrant les dépenses"
         },
         "flexible": {
-          "label": "Tetap Fleksibel",
-          "desc": "Biarkan opsi terbuka"
+          "label": "Rester Flexible",
+          "desc": "Garder des options ouvertes"
         }
       },
       "primaryGoal": {
         "retireEarly": {
-          "label": "Pensiun ASAP",
-          "desc": "Keluar dari pekerjaan secepat mungkin"
+          "label": "Prendre sa Retraite ASAP",
+          "desc": "Quitter le monde du travail le plus tôt possible"
         },
         "financialSecurity": {
-          "label": "Keamanan Finansial",
-          "desc": "Ketenangan dan kebebasan"
+          "label": "Sécurité Financière",
+          "desc": "Tranquillité d'esprit et liberté"
         },
         "maintainLifestyle": {
-          "label": "Pertahankan Gaya Hidup",
-          "desc": "Pensiun tanpa pengorbanan"
+          "label": "Maintenir le Style de Vie",
+          "desc": "Prendre sa retraite sans sacrifice"
         },
         "flexibility": {
-          "label": "Fleksibilitas",
-          "desc": "Opsi dan keseimbangan kerja-hidup"
+          "label": "Flexibilité",
+          "desc": "Options et équilibre travail-vie"
         }
       }
     },
     "recommendations": {
       "lean": {
         "title": "Lean FIRE",
-        "reason": "Gaya hidup minimalis dan pengeluaran lebih rendah Anda membuat Lean FIRE terjangkau",
-        "description": "Capai FI lebih cepat dengan hidup hemat. Membutuhkan lebih sedikit tabungan tapi menuntut disiplin gaya hidup.",
+        "reason": "Votre style de vie minimaliste et vos dépenses plus faibles rendent Lean FIRE accessible",
+        "description": "Atteignez l'IF plus rapidement en vivant frugalement. Moins d'épargne nécessaire mais discipline de vie requise.",
         "benefits": [
-          "Pensiun tahun lebih awal dari FIRE tradisional",
-          "Butuh lebih sedikit tabungan total untuk mencapai tujuan",
-          "Memaksa kebiasaan pengeluaran yang intentional",
-          "Kebebasan dengan gaya hidup minimalis"
+          "Prendre sa retraite des années avant le FIRE traditionnel",
+          "Moins d'épargne totale nécessaire pour atteindre votre objectif",
+          "Force des habitudes de dépenses intentionnelles",
+          "Liberté avec un style de vie minimaliste"
         ]
       },
       "fat": {
         "title": "Fat FIRE",
-        "reason": "Keinginan gaya hidup nyaman tanpa kompromi sesuai dengan Fat FIRE",
-        "description": "Capai FI dengan mempertahankan gaya hidup mewah atau middle-upper class. Membutuhkan lebih banyak tabungan tapi tanpa pengorbanan.",
+        "reason": "Votre désir d'un style de vie confortable sans compromission correspond à Fat FIRE",
+        "description": "Atteignez l'IF tout en maintenant un style de vie luxueux ou de classe moyenne supérieure. Plus d'épargne nécessaire mais aucun sacrifice.",
         "benefits": [
-          "Pensiun tanpa perubahan gaya hidup",
-          "Buffer ekstra untuk penurunan pasar",
-          "Travel, dining, dan experiences tanpa khawatir",
-          "Bantu keluarga dan tinggalan legacy"
+          "Prendre sa retraite sans changements de style de vie",
+          "Tampon supplémentaire pour les baisses du marché",
+          "Voyages, restaurants et expériences sans souci",
+          "Aider la famille et laisser un héritage"
         ]
       },
       "barista": {
         "title": "Barista FIRE",
-        "reason": "Ketertarikan Anda pada kerja paruh waktu membuat Barista FIRE menjadi stepping stone ideal",
-        "description": "Gabungkan pendapatan portofolio dengan kerja paruh waktu. Capai FI lebih cepat dengan mempertahankan tunjangan kesehatan dan koneksi sosial.",
+        "reason": "Votre intérêt pour le travail à temps partiel fait de Barista FIRE une étape idéale",
+        "description": "Combinez revenus de portefeuille et travail à temps partiel. Atteignez l'IF plus rapidement tout en maintenant avantages sociaux et connexions.",
         "benefits": [
-          "Keluar kerja korporat tahun lebih awal",
-          "Kerja paruh waktu menutupi beberapa pengeluaran",
-          "Asuransi kesehatan dari employer",
-          "Tetap aktif dan socially engaged"
+          "Quitter le travail de bureau des années plus tôt",
+          "Le travail à temps partiel couvre certaines dépenses",
+          "Assurance maladie de l'employeur",
+          "Rester actif et socialement engagé"
         ]
       },
       "coast": {
         "title": "Coast FIRE",
-        "reason": "Timeline dan usia Anda membuat Coast FIRE pendekatan strategis",
-        "description": "Tabung agresif sekarang, lalu biarkan compound growth melakukan kerja. Sempurna untuk penabung muda yang ingin fleksibilitas.",
+        "reason": "Votre chronologie et âge font de Coast FIRE une approche stratégique",
+        "description": "Épargnez agressivement maintenant, puis laissez la croissance composée faire le travail. Parfait pour les épargnants jeunes voulant de la flexibilité.",
         "benefits": [
-          "Tabung keras awal, lalu rileks",
-          "Compound growth melakukan kerja berat",
-          "Ambil kerja kurang dibayar tapi fulfilling",
-          "Mengurangi tekanan di 30s-40s Anda"
+          "Épargner dur au début, puis se détendre",
+          "La croissance composée fait le gros du travail",
+          "Accepter un travail moins rémunérateur mais épanouissant",
+          "Réduit la pression dans vos 30-40 ans"
         ]
       },
       "reverse": {
-        "title": "FIRE Terbalik",
-        "reason": "Target usia pensiun spesifik Anda membutuhkan strategi tabungan targeted",
-        "description": "Kerja mundur dari usia target untuk menghitung persis apa yang Anda butuhkan tabung bulanan.",
+        "title": "FIRE Inversé",
+        "reason": "Votre objectif d'âge de retraite spécifique nécessite une stratégie d'épargne ciblée",
+        "description": "Travaillez à rebours depuis votre âge cible pour calculer exactement ce que vous devez épargner mensuellement.",
         "benefits": [
-          "Target tabungan bulanan yang jelas",
-          "Pendekatan goal-oriented",
-          "Adjust timeline atau tabungan sesuai kebutuhan",
-          "Sempurna untuk planner deadline-driven"
+          "Objectif d'épargne mensuel clair",
+          "Approche orientée objectifs",
+          "Ajuster la chronologie ou l'épargne selon les besoins",
+          "Parfait pour les planificateurs orientés deadlines"
         ]
       },
       "savingsRate": {
-        "title": "Kalkulator Tabungan",
-        "reason": "Memahami rate tabungan Anda adalah fondasi untuk semua path FIRE",
-        "description": "Rate tabungan Anda adalah metrik paling penting dalam FIRE. Kalkulator ini menunjukkan persis bagaimana impact timeline Anda.",
+        "title": "Calculateur de Taux d'Épargne",
+        "reason": "Comprendre votre taux d'épargne est la base de tous les chemins FIRE",
+        "description": "Votre taux d'épargne est la métrique la plus importante dans FIRE. Ce calculateur montre exactement comment il impacte votre chronologie.",
         "benefits": [
-          "Lihat impact langsung dari tabung lebih",
-          "Metrik FIRE paling penting",
-          "Works untuk level pendapatan any",
-          "Path jelas ke kebebasan finansial"
+          "Voir l'impact direct d'épargner plus",
+          "La métrique FIRE la plus importante",
+          "Fonctionne pour tous les niveaux de revenu",
+          "Chemin clair vers la liberté financière"
         ]
       },
       "standard": {
-        "title": "FIRE Standar",
-        "reason": "Pendekatan FIRE klasik cocok dengan goals balanced dan timeline Anda",
-        "description": "Aturan tradisional 25x expenses. Pendekatan proven, balanced untuk independensi finansial.",
+        "title": "FIRE Standard",
+        "reason": "L'approche FIRE classique correspond à vos objectifs équilibrés et votre chronologie",
+        "description": "La règle traditionnelle des 25x les dépenses. Une approche éprouvée et équilibrée vers l'indépendance financière.",
         "benefits": [
-          "Aturan withdrawal 4% time-tested",
-          "Pendekatan balanced untuk most people",
-          "Framework planning comprehensive",
-          "Pensiun di usia tradisional atau lebih awal"
+          "Règle de retrait de 4% éprouvée",
+          "Approche équilibrée pour la plupart des gens",
+          "Cadre de planification complet",
+          "Prendre sa retraite à l'âge traditionnel ou avant"
         ]
       }
     },
     "results": {
-      "title": "Path Rekomendasi Anda",
-      "subtitle": "Berdasarkan jawaban Anda, ini strategi FIRE terbaik untuk Anda",
-      "whyWorks": "Mengapa path ini works untuk Anda:",
-      "goToCalculator": "Ke Kalkulator {{title}} →",
-      "startOver": "Mulai Lagi",
-      "exploreOther": "Ingin explore path lain?",
-      "exploreOtherDesc": "Semua path FIRE bisa bekerja tergantung situasi Anda. Bebas explore kalkulator multiple untuk menemukan yang resonate dengan Anda.",
-      "viewAllCalculators": "Lihat Semua Kalkulator"
+      "title": "Votre Chemin Recommandé",
+      "subtitle": "Selon vos réponses, voici la meilleure stratégie FIRE pour vous",
+      "whyWorks": "Pourquoi ce chemin fonctionne pour vous :",
+      "goToCalculator": "Aller au Calculateur {{title}} →",
+      "startOver": "Recommencer",
+      "exploreOther": "Voulez-vous explorer d'autres chemins ?",
+      "exploreOtherDesc": "Tous les chemins FIRE peuvent fonctionner selon vos circonstances. N'hésitez pas à explorer plusieurs calculateurs pour trouver ce qui vous correspond.",
+      "viewAllCalculators": "Voir Tous les Calculateurs"
     },
     "progress": {
-      "question": "Pertanyaan {{current}} dari {{total}}",
-      "percent": "{{percent}}% selesai"
+      "question": "Question {{current}} sur {{total}}",
+      "percent": "{{percent}}% complété"
     },
     "navigation": {
-      "previous": "Sebelumnya",
-      "next": "Berikutnya",
-      "getRecommendation": "Dapatkan Rekomendasi"
+      "previous": "Précédent",
+      "next": "Suivant",
+      "getRecommendation": "Obtenir la Recommandation"
     }
   },
   "calculator": {
     "standard": {
-      "title": "Kalkulator FIRE Standar",
-      "description": "Aturan klasik 25x pengeluaran — hitung \"angka ajaib\" Anda untuk kemandirian finansial penuh.",
-      "fireNumber": "Angka FIRE",
-      "yearsToFIRE": "Tahun ke FIRE",
-      "fireAge": "Usia FIRE",
-      "monthlyContribution": "Kontribusi Bulanan",
-      "savingsRate": "Tabungan",
-      "coastFireNumber": "Angka Coast FIRE"
+      "title": "Calculateur FIRE Standard",
+      "description": "La règle classique des 25x les dépenses — calculez votre « nombre magique » pour une indépendance financière complète.",
+      "fireNumber": "Nombre FIRE",
+      "yearsToFIRE": "Années jusqu'au FIRE",
+      "fireAge": "Âge FIRE",
+      "monthlyContribution": "Contribution mensuelle",
+      "savingsRate": "Taux d'épargne",
+      "coastFireNumber": "Nombre Coast FIRE"
     },
     "coast": {
-      "title": "Kalkulator Coast FIRE",
-      "description": "Temukan berapa yang Anda butuhkan sekarang agar bunga majemuk melakukan sisanya — lalu santai hingga pensiun.",
-      "coastNumber": "Angka Coast",
-      "yearsToCoast": "Tahun ke Coast",
-      "alreadyCoasting": "Sudah Santai!",
-      "notYetCoasting": "Belum Santai"
+      "title": "Calculateur Coast FIRE",
+      "description": "Découvrez combien vous devez épargner maintenant pour laisser les intérêts composés faire le reste — puis laissez-vous porter jusqu'à la retraite.",
+      "coastNumber": "Nombre Coast",
+      "yearsToCoast": "Années jusqu'au Coast",
+      "alreadyCoasting": "Déjà en mode Coast !",
+      "notYetCoasting": "Pas encore en mode Coast"
     },
     "lean": {
-      "title": "Kalkulator Lean FIRE",
-      "description": "Capai FI lebih cepat dengan gaya hidup minimalis — sempurna untuk perencana hemat.",
-      "isLean": "Lean FIRE",
-      "leanThreshold": "Ambang Lean"
+      "title": "Calculateur Lean FIRE",
+      "description": "Atteignez l'IF plus rapidement avec un style de vie minimaliste — parfait pour les planificateurs économes.",
+      "isLean": "Est Lean FIRE",
+      "leanThreshold": "Seuil Lean"
     },
     "fat": {
-      "title": "Kalkulator Fat FIRE",
-      "description": "Pensiun tanpa kompromi — hitung FI sambil mempertahankan gaya hidup nyaman.",
-      "isFat": "Fat FIRE",
-      "fatThreshold": "Ambang Fat"
+      "title": "Calculateur Fat FIRE",
+      "description": "Prenez votre retraite sans compromis — calculez l'IF tout en maintenant un style de vie confortable.",
+      "isFat": "Est Fat FIRE",
+      "fatThreshold": "Seuil Fat"
     },
     "barista": {
-      "title": "Kalkulator Barista FIRE",
-      "description": "Gabungkan kerja paruh waktu dengan pendapatan portofolio — keluar dari dunia korporat lebih awal.",
-      "baristaNumber": "Angka Barista",
-      "fullFireNumber": "Angka FIRE Penuh",
-      "yearsToBarista": "Tahun ke Barista FIRE",
-      "partTimeIncomeNeeded": "Pendapatan Paruh Waktu Dibutuhkan",
-      "savingsFromPartTime": "Tabungan dari Paruh Waktu"
+      "title": "Calculateur Barista FIRE",
+      "description": "Combinez travail à temps partiel et revenus de portefeuille — quittez le monde corporatif plus tôt.",
+      "baristaNumber": "Nombre Barista",
+      "fullFireNumber": "Nombre FIRE complet",
+      "yearsToBarista": "Années jusqu'au Barista FIRE",
+      "partTimeIncomeNeeded": "Revenu temps partiel requis",
+      "savingsFromPartTime": "Épargne du temps partiel"
     },
     "withdrawal": {
-      "title": "Kalkulator Tarik Penarikan",
-      "description": "Uji keawetan portofolio Anda — temukan tarif penarikan aman untuk skenario apa pun.",
-      "portfolioLongevity": "Keawetan Portofolio",
-      "successRate": "Tingkat Keberhasilan",
-      "annualWithdrawal": "Penarikan Tahunan",
-      "monthlyWithdrawal": "Penarikan Bulanan"
+      "title": "Calculateur de taux de retrait",
+      "description": "Testez la longévité de votre portefeuille — trouvez votre taux de retrait sûr pour tout scénario.",
+      "portfolioLongevity": "Longévité du portefeuille",
+      "successRate": "Taux de réussite",
+      "annualWithdrawal": "Retrait annuel",
+      "monthlyWithdrawal": "Retrait mensuel"
     },
     "healthcare": {
-      "title": "Kalkulator Celah Kesehatan",
-      "description": "Perkirakan biaya kesehatan antara pensiun dini dan kelayakan Medicare.",
-      "gapYears": "Tahun Celah",
-      "totalCost": "Biaya Total",
-      "annualCost": "Biaya Tahunan"
+      "title": "Calculateur d'écart santé",
+      "description": "Estimez les coûts de santé entre la retraite anticipée et l'éligibilité à la Medicare.",
+      "gapYears": "Années d'écart",
+      "totalCost": "Coût total",
+      "annualCost": "Coût annuel"
     }
   },
   "input": {
-    "currentAge": "Usia Saat Ini",
-    "retirementAge": "Usia Pensiun",
-    "currentSavings": "Tabungan Saat Ini",
-    "annualContribution": "Kontribusi Tahunan",
-    "annualIncome": "Pendapatan Tahunan",
-    "annualExpenses": "Pengeluaran Tahunan",
-    "expectedReturn": "Pengembalian yang Diharapkan",
-    "inflationRate": "Tingkat Inflasi",
-    "withdrawalRate": "Tarif Penarikan",
-    "partTimeIncome": "Pendapatan Paruh Waktu",
-    "portfolioValue": "Nilai Portofolio",
-    "monthlyPremium": "Premi Bulanan",
-    "annualDeductible": "Deductible Tahunan",
-    "annualOutOfPocket": "Biaya Tunai Tahunan",
+    "currentAge": "Âge actuel",
+    "retirementAge": "Âge de retraite",
+    "currentSavings": "Épargne actuelle",
+    "annualContribution": "Contribution annuelle",
+    "annualIncome": "Revenu annuel",
+    "annualExpenses": "Dépenses annuelles",
+    "expectedReturn": "Rendement attendu",
+    "inflationRate": "Taux d'inflation",
+    "withdrawalRate": "Taux de retrait",
+    "partTimeIncome": "Revenu temps partiel",
+    "portfolioValue": "Valeur du portefeuille",
+    "monthlyPremium": "Prime mensuelle",
+    "annualDeductible": "Franchise annuelle",
+    "annualOutOfPocket": "Coûts annuels à charge",
     "targetRetirementAge": "Target Retirement Age",
     "safeWithdrawalRate": "Safe Withdrawal Rate",
     "currentAgeTooltip": "Your current age",
@@ -344,25 +344,25 @@
     "swrTooltip": "The 4% rule - withdraw 4% of portfolio yearly"
   },
   "output": {
-    "years": "tahun",
-    "months": "bulan",
-    "perYear": "per tahun",
-    "perMonth": "per bulan",
+    "years": "années",
+    "months": "mois",
+    "perYear": "par an",
+    "perMonth": "par mois",
     "total": "Total",
-    "average": "Rata-rata",
+    "average": "Moyenne",
     "targetPortfolioValue": "Target portfolio value",
     "good": "Good",
     "risky": "Risky"
   },
   "common": {
-    "calculate": "Hitung",
-    "reset": "Reset",
-    "export": "Ekspor ke Excel",
-    "copyUrl": "Salin URL",
-    "share": "Bagikan",
-    "disclaimer": "Penyangkalan",
-    "bestFor": "Terbaik untuk",
-    "privacy": "100% Privat & Offline",
+    "calculate": "Calculer",
+    "reset": "Réinitialiser",
+    "export": "Exporter vers Excel",
+    "copyUrl": "Copier l'URL",
+    "share": "Partager",
+    "disclaimer": "Avertissement",
+    "bestFor": "Idéal pour",
+    "privacy": "100% Privé & Hors-ligne",
     "yourInformation": "Your Information",
     "portfolioProjection": "Portfolio Projection",
     "yourGoals": "Your Goals",
@@ -372,8 +372,8 @@
     "progressToCoastFire": "Progress to Coast FIRE"
   },
   "disclaimer": {
-    "title": "Penyangkalan",
-    "content": "Kalkulator ini hanya untuk tujuan edukasi. Ini tidak dimaksudkan sebagai, dan tidak boleh ditafsirkan sebagai, saran keuangan, investasi, pajak, atau hukum. Silakan konsultasikan dengan penasihat keuangan yang berkualitas, profesional pajak, atau profesional lain yang sesuai."
+    "title": "Avertissement",
+    "content": "Ce calculateur est uniquement à des fins éducatives. Il n'est pas destiné à être, et ne doit pas être interprété comme, un conseil financier, d'investissement, fiscal ou juridique. Veuillez consulter un conseiller financier qualifié, un professionnel fiscal ou autre professionnel approprié."
   },
   "language": {
     "en": "English",
@@ -386,12 +386,12 @@
     "pt": "Português",
     "id": "Bahasa Indonesia",
     "ar": "العربية",
-    "switch": "Ganti Bahasa"
+    "switch": "Changer de langue"
   },
   "footer": {
-    "privacy": "Kebijakan Privasi",
-    "terms": "Ketentuan Layanan",
-    "about": "Tentang Kami"
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "about": "À propos"
   },
   "baristaFire": {
     "title": "Barista FIRE Calculator",
@@ -1340,80 +1340,80 @@
     }
   },
   "home": {
-    "title": "Kalkulator FIRE",
-    "subtitle": "Rencanakan jalan Anda menuju Kemandirian Keuangan dan Pensiun Dini. Gratis, pribadi, dan bekerja sepenuhnya secara offline.",
+    "title": "Calculateurs FIRE",
+    "subtitle": "Planifiez votre chemin vers l'indépendance financière et la retraite anticipée. Gratuit, privé et fonctionne entièrement hors ligne.",
     "badges": {
-      "private": "100% Pribadi",
-      "offline": "Berfungsi Offline",
-      "noTracking": "Tanpa Pelacakan",
-      "shareable": "URL yang Dapat Dibagikan"
+      "private": "100% Privé",
+      "offline": "Fonctionne hors ligne",
+      "noTracking": "Aucun suivi",
+      "shareable": "URLs partageables"
     },
     "quiz": {
-      "title": "Tidak yakin kalkulator mana yang digunakan?",
-      "desc": "Ikuti kuis cepat kami untuk menemukan jalur FIRE yang sempurna untuk situasi Anda. Jawab beberapa pertanyaan dan kami akan merekomendasikan kalkulator terbaik dengan informasi Anda yang sudah diisi sebelumnya.",
-      "cta": "Temukan Jalur FIRE Anda",
-      "note": "Membutuhkan 2-3 menit · Rekomendasi yang dipersonalisasi"
+      "title": "Pas sûr du calculateur à utiliser ?",
+      "desc": "Répondez à notre quiz rapide pour trouver le parcours FIRE parfait pour votre situation. Répondez à quelques questions et nous vous recommanderons le meilleur calculateur avec vos informations pré-remplies.",
+      "cta": "Trouvez votre parcours FIRE",
+      "note": "Prend 2-3 minutes · Recommandation personnalisée"
     },
-    "chooseCalculator": "Pilih Kalkulator Anda",
-    "startCalculating": "Mulai menghitung",
+    "chooseCalculator": "Choisissez votre calculateur",
+    "startCalculating": "Commencer le calcul",
     "books": {
-      "title": "Buku FIRE yang Direkomendasikan",
-      "subtitle": "Bacaan penting untuk mempercepat perjalanan kemandirian keuangan Anda.",
-      "viewAll": "Lihat Semua Buku & Detail",
-      "affiliateNote": "Tautan afiliasi — pembelian mendukung kalkulator gratis ini tanpa biaya tambahan untuk Anda."
+      "title": "Livres FIRE recommandés",
+      "subtitle": "Lectures essentielles pour accélérer votre parcours vers l'indépendance financière.",
+      "viewAll": "Voir tous les livres et détails",
+      "affiliateNote": "Liens d'affiliation — les achats soutiennent ce calculateur gratuit sans coût supplémentaire pour vous."
     },
     "privacy": {
-      "title": "Privasi Anda Adalah Prioritas Kami",
-      "subtitle": "Kami membangun kalkulator ini dengan prinsip privasi-pertama.",
+      "title": "Votre vie privée est notre priorité",
+      "subtitle": "Nous avons construit ce calculateur selon les principes du privacy-first.",
       "features": {
         "noStorage": {
-          "title": "Tanpa Penyimpanan Data Keuangan",
-          "desc": "Data keuangan Anda tetap hanya di URL — tidak pernah disimpan. Hanya preferensi UI (tema, tata letak) yang disimpan secara lokal."
+          "title": "Aucun stockage de données financières",
+          "desc": "Vos données financières restent uniquement dans les URLs — jamais stockées. Seules les préférences d'interface (thème, disposition) sont stockées localement."
         },
         "noAnalytics": {
-          "title": "Tanpa Analitik",
-          "desc": "Nol skrip pelacakan. Tanpa Google Analytics, tanpa kode pihak ketiga."
+          "title": "Aucune analyse",
+          "desc": "Zéro script de suivi. Pas de Google Analytics, pas de code tiers."
         },
         "urlBased": {
-          "title": "Berbagi Berbasis URL",
-          "desc": "Simpan perhitungan Anda di URL. Markah atau bagikan — pilihan Anda."
+          "title": "Partage basé sur l'URL",
+          "desc": "Sauvegardez vos calculs dans l'URL. Marque-page ou partage — votre choix."
         },
         "worksOffline": {
-          "title": "Berfungsi Offline",
-          "desc": "Setelah pemuatan pertama, bekerja tanpa internet. Dapat diinstal sebagai aplikasi di perangkat Anda."
+          "title": "Fonctionne hors ligne",
+          "desc": "Après le premier chargement, fonctionne sans internet. Installable comme application sur votre appareil."
         },
         "openSource": {
-          "title": "Sumber Terbuka",
-          "desc": "Verifikasi semuanya sendiri. Semua kode tersedia di GitHub."
+          "title": "Open Source",
+          "desc": "Vérifiez tout vous-même. Tout le code est disponible sur GitHub."
         },
         "clientSide": {
-          "title": "Hanya Sisi Klien",
-          "desc": "Semua perhitungan berjalan di browser Anda. Tanpa pemrosesan server."
+          "title": "Côté client uniquement",
+          "desc": "Tous les calculs s'exécutent dans votre navigateur. Aucun traitement serveur."
         }
       }
     },
     "whatIsFire": {
-      "title": "Apa itu FIRE?",
-      "para1": "FIRE adalah singkatan dari Financial Independence, Retire Early (Kemandirian Keuangan, Pensiun Dini). Ini adalah gerakan keuangan yang berfokus pada tabungan ekstrem dan investasi untuk pensiun jauh lebih awal dari usia pensiun tradisional. Prinsip intinya sederhana: tabung secara agresif, investasikan dengan bijak, dan setelah investasi Anda dapat menutupi biaya hidup Anda tanpa batas waktu, Anda mencapai kemandirian keuangan.",
-      "para2": "Perhitungan FIRE yang paling umum menggunakan aturan 4% (atau aturan 25x): jika Anda dapat hidup dengan 4% dari portofolio Anda per tahun, Anda perlu menabung 25 kali pengeluaran tahunan Anda. Misalnya, jika Anda menghabiskan $40.000 per tahun, Anda membutuhkan $1.000.000 untuk menjadi mandiri secara keuangan."
+      "title": "Qu'est-ce que le FIRE ?",
+      "para1": "FIRE signifie Financial Independence, Retire Early (Indépendance Financière, Retraite Anticipée). C'est un mouvement financier axé sur l'épargne extrême et l'investissement pour prendre sa retraite bien plus tôt que l'âge traditionnel. Le principe fondamental est simple : épargnez agressivement, investissez sagement, et une fois que vos investissements peuvent couvrir vos dépenses de vie indéfiniment, vous atteignez l'indépendance financière.",
+      "para2": "Le calcul FIRE le plus courant utilise la règle des 4% (ou règle des 25x) : si vous pouvez vivre avec 4% de votre portefeuille par an, vous devez épargner 25 fois vos dépenses annuelles. Par exemple, si vous dépensez 40 000 $ par an, vous avez besoin de 1 000 000 $ pour être financièrement indépendant."
     },
     "tallyAi": {
-      "title": "Lacak Kemajuan Anda dengan Tally AI",
-      "desc": "Teman keuangan cerdas yang membantu Anda melacak pengeluaran, mengelola anggaran, dan mencapai tujuan FIRE Anda dengan wawasan yang didukung AI. Pelengkap sempurna untuk kalkulator ini.",
-      "cta": "Pelajari Lebih Lanjut Tentang Tally AI"
+      "title": "Suivez vos progrès avec Tally AI",
+      "desc": "Compagnon financier intelligent qui vous aide à suivre vos dépenses, gérer vos budgets et atteindre vos objectifs FIRE avec des insights propulsés par l'IA. Complément parfait à ces calculateurs.",
+      "cta": "En savoir plus sur Tally AI"
     },
     "disclaimer": {
-      "title": "Penafian",
-      "content": "Kalkulator ini disediakan hanya untuk tujuan pendidikan dan informasi. Ini bukan saran keuangan, investasi, pajak, atau hukum. Hasil adalah proyeksi hipotetis dan hasil aktual akan bervariasi. Silakan konsultasikan dengan penasihat keuangan yang berkualifikasi sebelum membuat keputusan keuangan."
+      "title": "Avertissement",
+      "content": "Ce calculateur est fourni à des fins éducatives et informatives uniquement. Ce n'est pas un conseil financier, d'investissement, fiscal ou juridique. Les résultats sont des projections hypothétiques et les résultats réels varieront. Veuillez consulter un conseiller financier qualifié avant de prendre toute décision financière."
     },
-    "builtWith": "Dibangun dengan mempertimbangkan privasi. Tidak ada data yang pernah meninggalkan browser Anda.",
-    "viewOnGithub": "Lihat di GitHub",
+    "builtWith": "Conçu avec la confidentialité à l'esprit. Aucune donnée ne quitte jamais votre navigateur.",
+    "viewOnGithub": "Voir sur GitHub",
     "features": {
       "noAnalytics": {
-        "desc": "Nol skrip pelacakan. Tanpa Google Analytics, tanpa kode pihak ketiga."
+        "desc": "Zéro script de suivi. Pas de Google Analytics, pas de code tiers."
       },
       "shareable": {
-        "title": "Berbagi Berbasis URL"
+        "title": "Partage basé sur l'URL"
       }
     }
   },
@@ -1525,71 +1525,72 @@
     "affiliateTitle": "Affiliate Disclosure",
     "affiliateContent": "The links above are Amazon affiliate links. If you purchase through these links, we may earn a small commission at no additional cost to you. This helps support the development of this free calculator. We only recommend books we genuinely believe will help you on your FIRE journey."
   },
+{
   "seo": {
     "standard": {
-      "title": "Kalkulator FIRE Standar - Hitung Angka Kemandirian Keuangan Anda",
-      "description": "Kalkulator FIRE standar gratis menggunakan aturan 25x. Hitung angka FIRE Anda berdasarkan aturan 4% dan lihat berapa lama hingga mencapai kemandirian keuangan. 100% privat, berfungsi offline.",
-      "keywords": "kalkulator FIRE standar, kalkulator aturan 25x, aturan 4%, angka FIRE, kalkulator kemandirian keuangan, pensiun dini, studi Trinity"
+      "title": "Calculateur FIRE Standard - Calculez Votre Nombre d'Indépendance Financière",
+      "description": "Calculateur FIRE standard gratuit utilisant la règle des 25x. Calculez votre nombre FIRE basé sur la règle des 4% et voyez combien de temps avant d'atteindre l'indépendance financière. 100% privé, fonctionne hors ligne.",
+      "keywords": "calculateur FIRE standard, calculateur règle 25x, règle des 4%, nombre FIRE, calculateur d'indépendance financière, retraite anticipée, étude Trinity"
     },
     "coast": {
-      "title": "Kalkulator Coast FIRE - Hitung Angka Coast FI Anda",
-      "description": "Kalkulator Coast FIRE gratis untuk menentukan berapa banyak yang perlu Anda tabung sekarang agar pertumbuhan bunga majemuk menangani sisanya. Hitung angka coast Anda dan lihat kapan Anda bisa berhenti menabung untuk pensiun.",
-      "keywords": "kalkulator Coast FIRE, Coast FI, kalkulator bunga majemuk, perencanaan pensiun, kalkulator semi-pensiun"
+      "title": "Calculateur Coast FIRE - Calculez Votre Nombre Coast FI",
+      "description": "Calculateur Coast FIRE gratuit pour déterminer combien vous devez épargner maintenant pour que la croissance composée fasse le reste. Calculez votre nombre coast et voyez quand vous pouvez arrêter d'épargner pour la retraite.",
+      "keywords": "calculateur Coast FIRE, Coast FI, calculateur d'intérêts composés, planification retraite, calculateur de semi-retraite"
     },
     "lean": {
-      "title": "Kalkulator Lean FIRE - Perencanaan Pensiun Dini Minimalis",
-      "description": "Kalkulator Lean FIRE gratis untuk perencanaan gaya hidup minimalis. Hitung angka FIRE Anda dengan pengeluaran lebih rendah ($40k atau kurang per tahun) dan pensiun lebih awal dengan pendekatan hemat.",
-      "keywords": "kalkulator Lean FIRE, pensiun hemat, FIRE minimalis, pensiun biaya rendah, pensiun dini dengan anggaran ketat"
+      "title": "Calculateur Lean FIRE - Planification de Retraite Anticipée Minimaliste",
+      "description": "Calculateur Lean FIRE gratuit pour une planification de vie minimaliste. Calculez votre nombre FIRE avec des dépenses inférieures (40k$ ou moins annuellement) et prenez votre retraite plus tôt avec une approche frugale.",
+      "keywords": "calculateur Lean FIRE, retraite frugale, FIRE minimaliste, retraite à faible coût, retraite anticipée avec petit budget"
     },
     "fat": {
-      "title": "Kalkulator Fat FIRE - Perencanaan Pensiun Dini Mewah",
-      "description": "Kalkulator Fat FIRE gratis untuk merencanakan pensiun dini yang mewah. Hitung angka FIRE Anda untuk gaya hidup nyaman ($100k+ per tahun) tanpa kompromi keuangan.",
-      "keywords": "kalkulator Fat FIRE, pensiun mewah, FIRE berpenghasilan tinggi, pensiun nyaman, pensiun dini mapan"
+      "title": "Calculateur Fat FIRE - Planification de Retraite Anticipée de Luxe",
+      "description": "Calculateur Fat FIRE gratuit pour planifier une retraite anticipée luxueuse. Calculez votre nombre FIRE pour un style de vie confortable (100k$+ annuellement) sans compromis financiers.",
+      "keywords": "calculateur Fat FIRE, retraite de luxe, FIRE hauts revenus, retraite confortable, retraite anticipée aisée"
     },
     "barista": {
-      "title": "Kalkulator Barista FIRE - Kerja Paruh Waktu & Pensiun Dini",
-      "description": "Kalkulator Barista FIRE gratis untuk menggabungkan penghasilan paruh waktu dengan penarikan portofolio. Hitung berapa banyak yang Anda butuhkan untuk semi-pensiun dan bekerja secara fleksibel sambil mempertahankan kemandirian keuangan.",
-      "keywords": "kalkulator Barista FIRE, semi-pensiun, pensiun kerja paruh waktu, pensiun fleksibel, FIRE penghasilan sampingan"
+      "title": "Calculateur Barista FIRE - Travail à Temps Partiel & Retraite Anticipée",
+      "description": "Calculateur Barista FIRE gratuit pour combiner revenus à temps partiel et retraits de portefeuille. Calculez combien vous avez besoin pour semi-retraite et travaillez flexiblement tout en maintenant l'indépendance financière.",
+      "keywords": "calculateur Barista FIRE, semi-retraite, retraite temps partiel, retraite flexible, FIRE revenus complémentaires"
     },
     "reverse": {
-      "title": "Kalkulator FIRE Terbalik - Hitung Mundur dari Usia Pensiun",
-      "description": "Kalkulator FIRE terbalik gratis - tetapkan usia target pensiun Anda dan temukan berapa banyak yang perlu ditabung setiap bulan. Hitung mundur dari tujuan Anda untuk membuat rencana tabungan yang dapat ditindaklanjuti.",
-      "keywords": "kalkulator FIRE terbalik, kalkulator tabungan pensiun, target tabungan bulanan, usia target pensiun, kalkulator tingkat tabungan"
+      "title": "Calculateur FIRE Inversé - Remontez Depuis l'Âge de Retraite",
+      "description": "Calculateur FIRE inversé gratuit - fixez votre âge cible de retraite et découvrez combien épargner mensuellement. Remontez depuis votre objectif pour créer un plan d'épargne concret.",
+      "keywords": "calculateur FIRE inversé, calculateur d'épargne retraite, objectif d'épargne mensuel, âge cible de retraite, calculateur de taux d'épargne"
     },
     "withdrawal": {
-      "title": "Kalkulator Tingkat Penarikan - Tingkat Penarikan Aman untuk Pensiun",
-      "description": "Kalkulator tingkat penarikan gratis untuk menguji umur panjang portofolio Anda. Hitung tingkat penarikan aman, lihat berapa lama uang Anda akan bertahan, dan rencanakan pendapatan pensiun yang berkelanjutan.",
-      "keywords": "kalkulator tingkat penarikan, tingkat penarikan aman, aturan 4%, kalkulator pendapatan pensiun, umur panjang portofolio, keberlanjutan pensiun"
+      "title": "Calculateur de Taux de Retrait - Taux de Retrait Sécurisés pour la Retraite",
+      "description": "Calculateur de taux de retrait gratuit pour tester la longévité de votre portefeuille. Calculez les taux de retrait sécurisés, voyez combien de temps durera votre argent et planifiez un revenu de retraite durable.",
+      "keywords": "calculateur de taux de retrait, taux de retrait sécurisé, règle des 4%, calculateur de revenu de retraite, longévité du portefeuille, durabilité de la retraite"
     },
     "savingsRate": {
-      "title": "Kalkulator Tingkat Tabungan - Hitung Waktu menuju Kemandirian Keuangan",
-      "description": "Kalkulator tingkat tabungan gratis menunjukkan bagaimana tingkat tabungan Anda memengaruhi waktu menuju FIRE. Metrik terpenting untuk pensiun dini - lihat tepat kapan Anda dapat mencapai kemandirian keuangan.",
-      "keywords": "kalkulator tingkat tabungan, waktu menuju FIRE, linimasa kemandirian keuangan, tingkat tabungan pensiun, kalkulator pensiun dini"
+      "title": "Calculateur de Taux d'Épargne - Calculez le Temps vers l'Indépendance Financière",
+      "description": "Calculateur de taux d'épargne gratuit montrant comment votre taux d'épargne impacte votre temps vers FIRE. La métrique la plus importante pour la retraite anticipée - voyez exactement quand vous pouvez atteindre l'indépendance financière.",
+      "keywords": "calculateur de taux d'épargne, temps vers FIRE, calendrier d'indépendance financière, taux d'épargne retraite, calculateur de retraite anticipée"
     },
     "debtPayoff": {
-      "title": "Kalkulator Pelunasan Utang - Metode Bola Salju vs Longsoran",
-      "description": "Kalkulator pelunasan utang gratis membandingkan strategi Bola Salju dan Longsoran. Hitung jadwal pelunasan, lihat penghematan bunga, dan rencanakan pembayaran ekstra untuk menghilangkan utang lebih cepat.",
-      "keywords": "kalkulator pelunasan utang, kalkulator bola salju, kalkulator longsoran utang, eliminasi utang, melunasi utang lebih cepat, kalkulator bebas utang"
+      "title": "Calculateur de Remboursement de Dettes - Méthode Boule de Neige vs Avalanche",
+      "description": "Calculateur de remboursement de dettes gratuit comparant les stratégies Boule de Neige et Avalanche. Calculez les délais, voyez les économies d'intérêts et planifiez des paiements supplémentaires pour éliminer les dettes plus vite.",
+      "keywords": "calculateur de remboursement de dettes, calculateur boule de neige, calculateur avalanche, élimination de dettes, rembourser plus vite, calculateur sans dettes"
     },
     "healthcare": {
-      "title": "Kalkulator Celah Kesehatan - Biaya Kesehatan Pensiun Dini",
-      "description": "Kalkulator celah kesehatan gratis untuk pensiunan dini. Estimasikan biaya kesehatan antara pensiun dini dan kelayakan Medicare di usia 65 tahun. Perencanaan penting bagi pencari FIRE yang berbasis di AS.",
-      "keywords": "kalkulator celah kesehatan, kesehatan pensiun dini, cakupan pra-Medicare, biaya kesehatan, pasar ACA, perencanaan kesehatan pensiun"
+      "title": "Calculateur de Lacune Sanitaire - Coûts de Santé en Retraite Anticipée",
+      "description": "Calculateur de lacune sanitaire gratuit pour les retraités anticipés. Estimez les coûts de santé entre la retraite anticipée et l'éligibilité Medicare à 65 ans. Planification essentielle pour les chercheurs de FIRE aux États-Unis.",
+      "keywords": "calculateur de lacune sanitaire, santé retraite anticipée, couverture pré-Medicare, coûts de santé, marché ACA, planification santé retraite"
     },
     "books": {
-      "title": "Buku FIRE Terbaik - Bacaan Kemandirian Keuangan yang Direkomendasikan",
-      "description": "Daftar kurasi buku FIRE terbaik untuk mempercepat perjalanan kemandirian keuangan Anda. Bacaan penting tentang investasi, keuangan pribadi, pensiun dini, dan membangun kekayaan.",
-      "keywords": "buku FIRE, buku kemandirian keuangan, buku pensiun dini, buku keuangan pribadi, buku investasi, buku membangun kekayaan"
+      "title": "Meilleurs Livres FIRE - Lecture Recommandée sur l'Indépendance Financière",
+      "description": "Liste sélectionnée des meilleurs livres FIRE pour accélérer votre parcours vers l'indépendance financière. Lecture essentielle sur l'investissement, les finances personnelles, la retraite anticipée et la constitution de patrimoine.",
+      "keywords": "livres FIRE, livres indépendance financière, livres retraite anticipée, livres finances personnelles, livres investissement, livres constitution de patrimoine"
     },
     "apps": {
-      "title": "Aplikasi FIRE yang Direkomendasikan - Alat Kemandirian Keuangan",
-      "description": "Daftar kurasi aplikasi FIRE terbaik untuk membantu Anda melacak pengeluaran, mengelola anggaran, dan mencapai kemandirian keuangan. Alat penting untuk melengkapi kalkulator FIRE Anda.",
-      "keywords": "aplikasi FIRE, aplikasi kemandirian keuangan, aplikasi anggaran, aplikasi pelacak pengeluaran, aplikasi keuangan pribadi, aplikasi manajemen uang"
+      "title": "Apps FIRE Recommandées - Outils d'Indépendance Financière",
+      "description": "Liste sélectionnée des meilleures apps FIRE pour suivre vos dépenses, gérer vos budgets et atteindre l'indépendance financière. Outils essentiels pour compléter vos calculateurs FIRE.",
+      "keywords": "apps FIRE, apps indépendance financière, apps budget, apps suivi des dépenses, apps finances personnelles, apps gestion d'argent"
     },
     "quiz": {
-      "title": "Kuis Kalkulator FIRE - Temukan Jalur FIRE Sempurna Anda",
-      "description": "Ikuti kuis FIRE gratis kami untuk menemukan kalkulator dan strategi mana yang cocok untuk situasi Anda. Jawab beberapa pertanyaan dan dapatkan rekomendasi kalkulator yang dipersonalisasi dengan nilai yang sudah diisi.",
-      "keywords": "kuis FIRE, kalkulator FIRE mana, kuis kepribadian FIRE, kuis kemandirian keuangan, kuis pensiun dini"
+      "title": "Quiz Calculateur FIRE - Trouvez Votre Parcours FIRE Parfait",
+      "description": "Répondez à notre quiz FIRE gratuit pour découvrir quel calculateur et quelle stratégie correspondent à votre situation. Répondez à quelques questions et obtenez des recommandations personnalisées avec des valeurs pré-remplies.",
+      "keywords": "quiz FIRE, quel calculateur FIRE, quiz de personnalité FIRE, quiz indépendance financière, quiz retraite anticipée"
     }
   }
 }

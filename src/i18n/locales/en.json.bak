@@ -2,396 +2,265 @@
   "calculators": {
     "standard": {
       "name": "Standard FIRE",
-      "desc": "Aturan klasik 25x pengeluaran — hitung 'angka magis' Anda untuk kemandirian finansial penuh.",
-      "audience": "Terbaik untuk: Siapa pun memulai journey FI"
+      "desc": "The classic 25x expenses rule — calculate your "magic number" for full financial independence.",
+      "audience": "Best for: Anyone starting their FI journey"
     },
     "coast": {
       "name": "Coast FIRE",
-      "desc": "Temukan berapa banyak yang Anda butuhkan sekarang agar pertumbuhan compounding melakukan sisanya — lalu coast ke pensiun.",
-      "audience": "Terbaik untuk: Penabung muda menginginkan fleksibilitas"
+      "desc": "Find how much you need now so compound growth does the rest — then coast to retirement.",
+      "audience": "Best for: Young savers wanting flexibility"
     },
     "lean": {
       "name": "Lean FIRE",
-      "desc": "Raih FI lebih cepat dengan gaya hidup minimalis — sempurna untuk planner yang hemat.",
-      "audience": "Terbaik untuk: Minimalis & pensiunan awal"
+      "desc": "Achieve FI faster with a minimalist lifestyle — perfect for frugal-minded planners.",
+      "audience": "Best for: Minimalists & early retirees"
     },
     "fat": {
       "name": "Fat FIRE",
-      "desc": "Pensiun tanpa kompromi — hitung FI sambil mempertahankan gaya hidup nyaman.",
-      "audience": "Terbaik untuk: Penghasilan tinggi & pencari kemewahan"
+      "desc": "Retire without compromise — calculate FI while maintaining a comfortable lifestyle.",
+      "audience": "Best for: High earners & luxury seekers"
     },
     "barista": {
       "name": "Barista FIRE",
-      "desc": "Gabungkan kerja paruh waktu dengan pendapatan portofolio — pensiun dari kehidupan corporate lebih awal.",
-      "audience": "Terbaik untuk: Yang menginginkan keseimbangan kerja-hidup"
+      "desc": "Blend part-time work with portfolio income — retire from corporate life earlier.",
+      "audience": "Best for: Those wanting work-life balance"
     },
     "reverse": {
       "name": "Reverse FIRE",
-      "desc": "Bekerja mundur — tetapkan usia target dan temukan berapa banyak yang harus tabung bulanan.",
-      "audience": "Terbaik untuk: Planner yang berorientasi tujuan"
+      "desc": "Work backwards — set your target age and find out how much you need to save monthly.",
+      "audience": "Best for: Goal-oriented planners"
     },
     "withdrawal": {
-      "name": "Rate Penarikan",
-      "desc": "Uji longevity portofolio Anda — temukan rate penarikan aman untuk skenario apa pun.",
-      "audience": "Terbaik untuk: Yang di atau dekat FIRE"
+      "name": "Withdrawal Rate",
+      "desc": "Test your portfolio's longevity — find your safe withdrawal rate for any scenario.",
+      "audience": "Best for: Those at or near FIRE"
     },
     "savingsRate": {
-      "name": "Rate Tabungan & Investasi",
-      "desc": "Metrik terpenting — lihat bagaimana rate tabungan Anda memengaruhi waktu ke FIRE.",
-      "audience": "Terbaik untuk: Memahami timeline FI Anda"
+      "name": "Savings & Investment Rate",
+      "desc": "The most important metric — see how your savings rate impacts your time to FIRE.",
+      "audience": "Best for: Understanding your FI timeline"
     },
     "debtPayoff": {
-      "name": "Pelunasan Hutang",
-      "desc": "Eliminasi hutang lebih cepat dengan strategi Snowball atau Avalanche — bandingkan metode dan lihat dampak pembayaran ekstra.",
-      "audience": "Terbaik untuk: Menangani multiple hutang secara strategis"
+      "name": "Debt Payoff",
+      "desc": "Eliminate debt faster with Snowball or Avalanche strategies — compare methods and see the impact of extra payments.",
+      "audience": "Best for: Tackling multiple debts strategically"
     },
     "healthcare": {
-      "name": "Gap Healthcare",
-      "desc": "Biaya tersembunyi dari pensiun awal — estimasi biaya healthcare sebelum Medicare.",
-      "audience": "Terbaik untuk: Pensiunan awal berbasis US"
+      "name": "Healthcare Gap",
+      "desc": "The hidden cost of early retirement — estimate healthcare costs before Medicare.",
+      "audience": "Best for: US-based early retirees"
     }
   },
   "app": {
     "title": "FIRE Calculators",
-    "description": "Kalkulator FIRE privat dan offline-first (Financial Independence, Retire Early)"
+    "description": "Private, offline-first FIRE (Financial Independence, Retire Early) calculators"
   },
   "nav": {
-    "home": "Beranda",
-    "books": "Buku Rekomendasi",
-    "apps": "Aplikasi Rekomendasi",
-    "quiz": "Temukan Jalannya",
-    "calculators": "Kalkulator",
-    "standard": "FIRE Standar",
+    "home": "Home",
+    "books": "Recommended Books",
+    "apps": "Recommended Apps",
+    "quiz": "Find Your Path",
+    "calculators": "Calculators",
+    "standard": "Standard FIRE",
     "coast": "Coast FIRE",
     "lean": "Lean FIRE",
     "fat": "Fat FIRE",
     "barista": "Barista FIRE",
-    "reverse": "FIRE Terbalik",
-    "withdrawal": "Tarik Penarikan",
-    "savingsRate": "Tabungan",
-    "debtPayoff": "Pelunasan Utang",
-    "healthcare": "Celah Kesehatan"
+    "reverse": "Reverse FIRE",
+    "withdrawal": "Withdrawal Rate",
+    "savingsRate": "Savings Rate",
+    "debtPayoff": "Debt Payoff",
+    "healthcare": "Healthcare Gap"
   },
   "quiz": {
     "questions": {
       "currentAge": {
-        "title": "Berapa usia Anda?",
-        "subtitle": "Ini membantu kami memahami timeline Anda"
+        "title": "How old are you?",
+        "subtitle": "This helps us understand your timeline"
       },
       "retirementAge": {
-        "title": "Kapan Anda ingin mencapai independensi finansial?",
-        "subtitle": "Usia target FIRE Anda"
+        "title": "When do you want to achieve financial independence?",
+        "subtitle": "Your target age for FIRE"
       },
       "currentSavings": {
-        "title": "Berapa yang Anda simpan/investasikan saat ini?",
-        "subtitle": "Termasuk semua rekening pensiun dan investasi"
+        "title": "How much do you currently have saved/invested?",
+        "subtitle": "Include all retirement accounts and investments"
       },
       "annualIncome": {
-        "title": "Berapa pendapatan keluarga tahunan Anda saat ini?",
-        "subtitle": "Sebelum pajak"
+        "title": "What's your current annual household income?",
+        "subtitle": "Before taxes"
       },
       "annualExpenses": {
-        "title": "Berapa pengeluaran tahunan Anda saat ini?",
-        "subtitle": "Atau yang Anda harapkan keluar saat pensiun"
+        "title": "What are your current annual expenses?",
+        "subtitle": "Or what you expect to spend in retirement"
       },
       "lifestyle": {
-        "title": "Gaya hidup apa yang Anda inginkan saat pensiun?",
-        "subtitle": "Ini mempengaruhi jumlah tabungan target Anda"
+        "title": "What lifestyle do you want in retirement?",
+        "subtitle": "This impacts your target savings amount"
       },
       "workPreference": {
-        "title": "Apa situasi kerja ideal Anda setelah mencapai FI?",
-        "subtitle": "Bagaimana Anda ingin menghabiskan waktu"
+        "title": "What's your ideal work situation after reaching FI?",
+        "subtitle": "How you want to spend your time"
       },
       "primaryGoal": {
-        "title": "Apa yang paling penting untuk Anda?",
-        "subtitle": "Motivasi utama Anda untuk FIRE"
+        "title": "What's most important to you?",
+        "subtitle": "Your primary motivation for FIRE"
       }
     },
     "choices": {
       "lifestyle": {
         "minimal": {
           "label": "Minimal/Frugal",
-          "desc": "Hidup sederhana, $30K-$40K/tahun"
+          "desc": "Living simply, $30K-$40K/year"
         },
         "moderate": {
-          "label": "Moderat",
-          "desc": "Kenyamanan dasar, $40K-$70K/tahun"
+          "label": "Moderate",
+          "desc": "Comfortable basics, $40K-$70K/year"
         },
         "comfortable": {
-          "label": "Nyaman",
-          "desc": "Tanpa pengorbanan besar, $70K-$100K/tahun"
+          "label": "Comfortable",
+          "desc": "No major sacrifices, $70K-$100K/year"
         },
         "luxury": {
           "label": "Luxury/Fat",
-          "desc": "Gaya hidup tinggi, $100K+/tahun"
+          "desc": "High-end lifestyle, $100K+/year"
         }
       },
       "workPreference": {
         "quit": {
-          "label": "Berhenti Sepenuhnya",
-          "desc": "Tidak bekerja lagi"
+          "label": "Quit Completely",
+          "desc": "Never work again"
         },
         "partTime": {
-          "label": "Kerja Paruh Waktu",
-          "desc": "Bekerja untuk tunjangan atau pendapatan extra"
+          "label": "Part-Time Work",
+          "desc": "Work for benefits or extra income"
         },
         "coast": {
-          "label": "Mode Coast",
-          "desc": "Kerja rendah stres menutupi pengeluaran"
+          "label": "Coast Mode",
+          "desc": "Low-stress job covering expenses"
         },
         "flexible": {
-          "label": "Tetap Fleksibel",
-          "desc": "Biarkan opsi terbuka"
+          "label": "Stay Flexible",
+          "desc": "Keep options open"
         }
       },
       "primaryGoal": {
         "retireEarly": {
-          "label": "Pensiun ASAP",
-          "desc": "Keluar dari pekerjaan secepat mungkin"
+          "label": "Retire ASAP",
+          "desc": "Leave workforce as early as possible"
         },
         "financialSecurity": {
-          "label": "Keamanan Finansial",
-          "desc": "Ketenangan dan kebebasan"
+          "label": "Financial Security",
+          "desc": "Peace of mind and freedom"
         },
         "maintainLifestyle": {
-          "label": "Pertahankan Gaya Hidup",
-          "desc": "Pensiun tanpa pengorbanan"
+          "label": "Maintain Lifestyle",
+          "desc": "Retire without sacrifice"
         },
         "flexibility": {
-          "label": "Fleksibilitas",
-          "desc": "Opsi dan keseimbangan kerja-hidup"
+          "label": "Flexibility",
+          "desc": "Options and work-life balance"
         }
       }
     },
     "recommendations": {
       "lean": {
         "title": "Lean FIRE",
-        "reason": "Gaya hidup minimalis dan pengeluaran lebih rendah Anda membuat Lean FIRE terjangkau",
-        "description": "Capai FI lebih cepat dengan hidup hemat. Membutuhkan lebih sedikit tabungan tapi menuntut disiplin gaya hidup.",
+        "reason": "Your minimalist lifestyle and lower expenses make Lean FIRE achievable",
+        "description": "Achieve FI faster by living frugally. Requires less savings but demands lifestyle discipline.",
         "benefits": [
-          "Pensiun tahun lebih awal dari FIRE tradisional",
-          "Butuh lebih sedikit tabungan total untuk mencapai tujuan",
-          "Memaksa kebiasaan pengeluaran yang intentional",
-          "Kebebasan dengan gaya hidup minimalis"
+          "Retire years earlier than traditional FIRE",
+          "Need less total savings to reach your goal",
+          "Forces intentional spending habits",
+          "Freedom with minimalist lifestyle"
         ]
       },
       "fat": {
         "title": "Fat FIRE",
-        "reason": "Keinginan gaya hidup nyaman tanpa kompromi sesuai dengan Fat FIRE",
-        "description": "Capai FI dengan mempertahankan gaya hidup mewah atau middle-upper class. Membutuhkan lebih banyak tabungan tapi tanpa pengorbanan.",
+        "reason": "Your desire for a comfortable lifestyle without compromise aligns with Fat FIRE",
+        "description": "Achieve FI while maintaining a luxurious or upper-middle-class lifestyle. Requires more savings but no sacrifices.",
         "benefits": [
-          "Pensiun tanpa perubahan gaya hidup",
-          "Buffer ekstra untuk penurunan pasar",
-          "Travel, dining, dan experiences tanpa khawatir",
-          "Bantu keluarga dan tinggalan legacy"
+          "Retire without lifestyle changes",
+          "Extra buffer for market downturns",
+          "Travel, dining, and experiences without worry",
+          "Help family and leave a legacy"
         ]
       },
       "barista": {
         "title": "Barista FIRE",
-        "reason": "Ketertarikan Anda pada kerja paruh waktu membuat Barista FIRE menjadi stepping stone ideal",
-        "description": "Gabungkan pendapatan portofolio dengan kerja paruh waktu. Capai FI lebih cepat dengan mempertahankan tunjangan kesehatan dan koneksi sosial.",
+        "reason": "Your interest in part-time work makes Barista FIRE an ideal stepping stone",
+        "description": "Blend portfolio income with part-time work. Reach FI faster while maintaining health benefits and social connections.",
         "benefits": [
-          "Keluar kerja korporat tahun lebih awal",
-          "Kerja paruh waktu menutupi beberapa pengeluaran",
-          "Asuransi kesehatan dari employer",
-          "Tetap aktif dan socially engaged"
+          "Quit corporate job years earlier",
+          "Part-time work covers some expenses",
+          "Health insurance from employer",
+          "Stay active and socially engaged"
         ]
       },
       "coast": {
         "title": "Coast FIRE",
-        "reason": "Timeline dan usia Anda membuat Coast FIRE pendekatan strategis",
-        "description": "Tabung agresif sekarang, lalu biarkan compound growth melakukan kerja. Sempurna untuk penabung muda yang ingin fleksibilitas.",
+        "reason": "Your timeline and age make Coast FIRE a strategic approach",
+        "description": "Save aggressively now, then let compound growth do the work. Perfect for young savers wanting flexibility.",
         "benefits": [
-          "Tabung keras awal, lalu rileks",
-          "Compound growth melakukan kerja berat",
-          "Ambil kerja kurang dibayar tapi fulfilling",
-          "Mengurangi tekanan di 30s-40s Anda"
+          "Save hard early, then ease off",
+          "Compound growth does the heavy lifting",
+          "Take lower-paying but fulfilling work",
+          "Reduces pressure in your 30s-40s"
         ]
       },
       "reverse": {
-        "title": "FIRE Terbalik",
-        "reason": "Target usia pensiun spesifik Anda membutuhkan strategi tabungan targeted",
-        "description": "Kerja mundur dari usia target untuk menghitung persis apa yang Anda butuhkan tabung bulanan.",
+        "title": "Reverse FIRE",
+        "reason": "Your specific retirement age goal calls for a targeted savings strategy",
+        "description": "Work backwards from your target age to calculate exactly what you need to save monthly.",
         "benefits": [
-          "Target tabungan bulanan yang jelas",
-          "Pendekatan goal-oriented",
-          "Adjust timeline atau tabungan sesuai kebutuhan",
-          "Sempurna untuk planner deadline-driven"
+          "Clear monthly savings target",
+          "Goal-oriented approach",
+          "Adjust timeline or savings as needed",
+          "Perfect for deadline-driven planners"
         ]
       },
       "savingsRate": {
-        "title": "Kalkulator Tabungan",
-        "reason": "Memahami rate tabungan Anda adalah fondasi untuk semua path FIRE",
-        "description": "Rate tabungan Anda adalah metrik paling penting dalam FIRE. Kalkulator ini menunjukkan persis bagaimana impact timeline Anda.",
+        "title": "Savings Rate Calculator",
+        "reason": "Understanding your savings rate is the foundation for all FIRE paths",
+        "description": "Your savings rate is the most important metric in FIRE. This calculator shows exactly how it impacts your timeline.",
         "benefits": [
-          "Lihat impact langsung dari tabung lebih",
-          "Metrik FIRE paling penting",
-          "Works untuk level pendapatan any",
-          "Path jelas ke kebebasan finansial"
+          "See direct impact of saving more",
+          "Most important FIRE metric",
+          "Works for any income level",
+          "Clear path to financial freedom"
         ]
       },
       "standard": {
-        "title": "FIRE Standar",
-        "reason": "Pendekatan FIRE klasik cocok dengan goals balanced dan timeline Anda",
-        "description": "Aturan tradisional 25x expenses. Pendekatan proven, balanced untuk independensi finansial.",
+        "title": "Standard FIRE",
+        "reason": "The classic FIRE approach fits your balanced goals and timeline",
+        "description": "The traditional 25x expenses rule. A proven, balanced approach to financial independence.",
         "benefits": [
-          "Aturan withdrawal 4% time-tested",
-          "Pendekatan balanced untuk most people",
-          "Framework planning comprehensive",
-          "Pensiun di usia tradisional atau lebih awal"
+          "Time-tested 4% withdrawal rule",
+          "Balanced approach for most people",
+          "Comprehensive planning framework",
+          "Retire at traditional age or earlier"
         ]
       }
     },
     "results": {
-      "title": "Path Rekomendasi Anda",
-      "subtitle": "Berdasarkan jawaban Anda, ini strategi FIRE terbaik untuk Anda",
-      "whyWorks": "Mengapa path ini works untuk Anda:",
-      "goToCalculator": "Ke Kalkulator {{title}} →",
-      "startOver": "Mulai Lagi",
-      "exploreOther": "Ingin explore path lain?",
-      "exploreOtherDesc": "Semua path FIRE bisa bekerja tergantung situasi Anda. Bebas explore kalkulator multiple untuk menemukan yang resonate dengan Anda.",
-      "viewAllCalculators": "Lihat Semua Kalkulator"
+      "title": "Your Recommended Path",
+      "subtitle": "Based on your answers, here's the best FIRE strategy for you",
+      "whyWorks": "Why this path works for you:",
+      "goToCalculator": "Go to {{title}} Calculator →",
+      "startOver": "Start Over",
+      "exploreOther": "Want to explore other paths?",
+      "exploreOtherDesc": "All FIRE paths can work depending on your circumstances. Feel free to explore multiple calculators to find what resonates with you.",
+      "viewAllCalculators": "View All Calculators"
     },
     "progress": {
-      "question": "Pertanyaan {{current}} dari {{total}}",
-      "percent": "{{percent}}% selesai"
+      "question": "Question {{current}} of {{total}}",
+      "percent": "{{percent}}% complete"
     },
     "navigation": {
-      "previous": "Sebelumnya",
-      "next": "Berikutnya",
-      "getRecommendation": "Dapatkan Rekomendasi"
+      "previous": "Previous",
+      "next": "Next",
+      "getRecommendation": "Get Recommendation"
     }
-  },
-  "calculator": {
-    "standard": {
-      "title": "Kalkulator FIRE Standar",
-      "description": "Aturan klasik 25x pengeluaran — hitung \"angka ajaib\" Anda untuk kemandirian finansial penuh.",
-      "fireNumber": "Angka FIRE",
-      "yearsToFIRE": "Tahun ke FIRE",
-      "fireAge": "Usia FIRE",
-      "monthlyContribution": "Kontribusi Bulanan",
-      "savingsRate": "Tabungan",
-      "coastFireNumber": "Angka Coast FIRE"
-    },
-    "coast": {
-      "title": "Kalkulator Coast FIRE",
-      "description": "Temukan berapa yang Anda butuhkan sekarang agar bunga majemuk melakukan sisanya — lalu santai hingga pensiun.",
-      "coastNumber": "Angka Coast",
-      "yearsToCoast": "Tahun ke Coast",
-      "alreadyCoasting": "Sudah Santai!",
-      "notYetCoasting": "Belum Santai"
-    },
-    "lean": {
-      "title": "Kalkulator Lean FIRE",
-      "description": "Capai FI lebih cepat dengan gaya hidup minimalis — sempurna untuk perencana hemat.",
-      "isLean": "Lean FIRE",
-      "leanThreshold": "Ambang Lean"
-    },
-    "fat": {
-      "title": "Kalkulator Fat FIRE",
-      "description": "Pensiun tanpa kompromi — hitung FI sambil mempertahankan gaya hidup nyaman.",
-      "isFat": "Fat FIRE",
-      "fatThreshold": "Ambang Fat"
-    },
-    "barista": {
-      "title": "Kalkulator Barista FIRE",
-      "description": "Gabungkan kerja paruh waktu dengan pendapatan portofolio — keluar dari dunia korporat lebih awal.",
-      "baristaNumber": "Angka Barista",
-      "fullFireNumber": "Angka FIRE Penuh",
-      "yearsToBarista": "Tahun ke Barista FIRE",
-      "partTimeIncomeNeeded": "Pendapatan Paruh Waktu Dibutuhkan",
-      "savingsFromPartTime": "Tabungan dari Paruh Waktu"
-    },
-    "withdrawal": {
-      "title": "Kalkulator Tarik Penarikan",
-      "description": "Uji keawetan portofolio Anda — temukan tarif penarikan aman untuk skenario apa pun.",
-      "portfolioLongevity": "Keawetan Portofolio",
-      "successRate": "Tingkat Keberhasilan",
-      "annualWithdrawal": "Penarikan Tahunan",
-      "monthlyWithdrawal": "Penarikan Bulanan"
-    },
-    "healthcare": {
-      "title": "Kalkulator Celah Kesehatan",
-      "description": "Perkirakan biaya kesehatan antara pensiun dini dan kelayakan Medicare.",
-      "gapYears": "Tahun Celah",
-      "totalCost": "Biaya Total",
-      "annualCost": "Biaya Tahunan"
-    }
-  },
-  "input": {
-    "currentAge": "Usia Saat Ini",
-    "retirementAge": "Usia Pensiun",
-    "currentSavings": "Tabungan Saat Ini",
-    "annualContribution": "Kontribusi Tahunan",
-    "annualIncome": "Pendapatan Tahunan",
-    "annualExpenses": "Pengeluaran Tahunan",
-    "expectedReturn": "Pengembalian yang Diharapkan",
-    "inflationRate": "Tingkat Inflasi",
-    "withdrawalRate": "Tarif Penarikan",
-    "partTimeIncome": "Pendapatan Paruh Waktu",
-    "portfolioValue": "Nilai Portofolio",
-    "monthlyPremium": "Premi Bulanan",
-    "annualDeductible": "Deductible Tahunan",
-    "annualOutOfPocket": "Biaya Tunai Tahunan",
-    "targetRetirementAge": "Target Retirement Age",
-    "safeWithdrawalRate": "Safe Withdrawal Rate",
-    "currentAgeTooltip": "Your current age",
-    "targetRetirementAgeTooltip": "Traditional retirement age (e.g., 60-67)",
-    "annualExpensesTooltip": "Total yearly spending needs",
-    "annualContributionTooltip": "How much you're currently saving per year",
-    "expectedReturnTooltip": "Average annual investment return (7% is typical for stocks)",
-    "inflationRateTooltip": "Expected annual inflation (3% is historical average)",
-    "swrTooltip": "The 4% rule - withdraw 4% of portfolio yearly"
-  },
-  "output": {
-    "years": "tahun",
-    "months": "bulan",
-    "perYear": "per tahun",
-    "perMonth": "per bulan",
-    "total": "Total",
-    "average": "Rata-rata",
-    "targetPortfolioValue": "Target portfolio value",
-    "good": "Good",
-    "risky": "Risky"
-  },
-  "common": {
-    "calculate": "Hitung",
-    "reset": "Reset",
-    "export": "Ekspor ke Excel",
-    "copyUrl": "Salin URL",
-    "share": "Bagikan",
-    "disclaimer": "Penyangkalan",
-    "bestFor": "Terbaik untuk",
-    "privacy": "100% Privat & Offline",
-    "yourInformation": "Your Information",
-    "portfolioProjection": "Portfolio Projection",
-    "yourGoals": "Your Goals",
-    "yourPortfolio": "Your Portfolio",
-    "investmentDetails": "Investment Details",
-    "progressToBaristaFire": "Progress to Barista FIRE",
-    "progressToCoastFire": "Progress to Coast FIRE"
-  },
-  "disclaimer": {
-    "title": "Penyangkalan",
-    "content": "Kalkulator ini hanya untuk tujuan edukasi. Ini tidak dimaksudkan sebagai, dan tidak boleh ditafsirkan sebagai, saran keuangan, investasi, pajak, atau hukum. Silakan konsultasikan dengan penasihat keuangan yang berkualitas, profesional pajak, atau profesional lain yang sesuai."
-  },
-  "language": {
-    "en": "English",
-    "zh": "中文",
-    "es": "Español",
-    "de": "Deutsch",
-    "ja": "日本語",
-    "fr": "Français",
-    "ru": "Русский",
-    "pt": "Português",
-    "id": "Bahasa Indonesia",
-    "ar": "العربية",
-    "switch": "Ganti Bahasa"
-  },
-  "footer": {
-    "privacy": "Kebijakan Privasi",
-    "terms": "Ketentuan Layanan",
-    "about": "Tentang Kami"
   },
   "baristaFire": {
     "title": "Barista FIRE Calculator",
@@ -447,6 +316,62 @@
     "portfolioWithdrawals": "Portfolio Withdrawals",
     "totalAnnualIncome": "Total Annual Income"
   },
+  "calculator": {
+    "standard": {
+      "title": "Standard FIRE Calculator",
+      "description": "The classic 25x expenses rule — calculate your \"magic number\" for full financial independence.",
+      "fireNumber": "FIRE Number",
+      "yearsToFIRE": "Years to FIRE",
+      "fireAge": "FIRE Age",
+      "monthlyContribution": "Monthly Contribution",
+      "savingsRate": "Savings Rate",
+      "coastFireNumber": "Coast FIRE Number"
+    },
+    "coast": {
+      "title": "Coast FIRE Calculator",
+      "description": "Find how much you need now so compound growth does the rest — then coast to retirement.",
+      "coastNumber": "Coast Number",
+      "yearsToCoast": "Years to Coast",
+      "alreadyCoasting": "Already Coasting!",
+      "notYetCoasting": "Not Yet Coasting"
+    },
+    "lean": {
+      "title": "Lean FIRE Calculator",
+      "description": "Achieve FI faster with a minimalist lifestyle — perfect for frugal-minded planners.",
+      "isLean": "Is Lean FIRE",
+      "leanThreshold": "Lean Threshold"
+    },
+    "fat": {
+      "title": "Fat FIRE Calculator",
+      "description": "Retire without compromise — calculate FI while maintaining a comfortable lifestyle.",
+      "isFat": "Is Fat FIRE",
+      "fatThreshold": "Fat Threshold"
+    },
+    "barista": {
+      "title": "Barista FIRE Calculator",
+      "description": "Blend part-time work with portfolio income — retire from corporate life earlier.",
+      "baristaNumber": "Barista Number",
+      "fullFireNumber": "Full FIRE Number",
+      "yearsToBarista": "Years to Barista FIRE",
+      "partTimeIncomeNeeded": "Part-Time Income Needed",
+      "savingsFromPartTime": "Savings from Part-Time"
+    },
+    "withdrawal": {
+      "title": "Withdrawal Rate Calculator",
+      "description": "Test your portfolio's longevity — find your safe withdrawal rate for any scenario.",
+      "portfolioLongevity": "Portfolio Longevity",
+      "successRate": "Success Rate",
+      "annualWithdrawal": "Annual Withdrawal",
+      "monthlyWithdrawal": "Monthly Withdrawal"
+    },
+    "healthcare": {
+      "title": "Healthcare Gap Calculator",
+      "description": "Estimate healthcare costs between early retirement and Medicare eligibility.",
+      "gapYears": "Gap Years",
+      "totalCost": "Total Cost",
+      "annualCost": "Annual Cost"
+    }
+  },
   "fatFire": {
     "title": "Fat FIRE Calculator",
     "subtitle": "Retire in style without compromising your lifestyle.",
@@ -458,6 +383,8 @@
     "fatThreshold": "Fat threshold",
     "fatTerritory": "Fat FIRE territory",
     "swrTooltip": "Fat FIRE often uses 3.5% for extra safety",
+    "bannerContent": "Fat FIRE means achieving financial independence while maintaining a luxurious or upper-middle-class lifestyle (typically $100,000+/year in expenses). It requires a larger nest egg but allows you to retire without sacrifice.",
+    "targetPortfolio": "Target portfolio value",
     "fatFireNumber": "Fat FIRE Number",
     "yearsToFat": "Years to Fat FIRE",
     "monthlyLifestyle": "Monthly Lifestyle",
@@ -489,8 +416,6 @@
         "desc": "Extra cushion for market downturns or surprises"
       }
     },
-    "bannerContent": "Fat FIRE means achieving financial independence while maintaining a luxurious or upper-middle-class lifestyle (typically $100,000+/year in expenses). It requires a larger nest egg but allows you to retire without sacrifice.",
-    "targetPortfolio": "Target portfolio value",
     "lifestyleTitle": "What Fat FIRE Lifestyle Includes",
     "lifestyle": {
       "premiumHousing": {
@@ -531,6 +456,7 @@
     "annualExpensesLean": "Annual Expenses (Lean)",
     "leanThreshold": "Lean threshold",
     "leanTerritory": "Lean FIRE territory",
+    "bannerContent": "Lean FIRE means achieving financial independence with minimal expenses (typically ≤$40,000/year for a household). It requires living frugally but allows you to retire much earlier than traditional or Fat FIRE approaches.",
     "leanFireNumber": "Lean FIRE Number",
     "yearsToLean": "Years to Lean FIRE",
     "monthlyBudget": "Monthly Budget",
@@ -558,7 +484,6 @@
         "desc": "Free hobbies, libraries, nature, community events"
       }
     },
-    "bannerContent": "Lean FIRE means achieving financial independence with minimal expenses (typically ≤$40,000/year for a household). It requires living frugally but allows you to retire much earlier than traditional or Fat FIRE approaches.",
     "leanTerritoryLabel": "You're in Lean territory!",
     "basedOnExpenses": "Based on your expenses",
     "yearsToLeanFire": "Years to Lean FIRE",
@@ -629,9 +554,9 @@
       "desc": "Enter your debt information in the left panel to see your payoff strategy."
     },
     "snowballMethod": "Snowball Method",
-    "snowballDesc": "Pay off debts from smallest to largest balance, regardless of interest rate. This method provides quick wins and builds momentum as you eliminate debts one by one. Best for staying motivated on your debt-free journey.",
+    "snowballDesc": "Pay smallest debts first for quick wins and motivation.",
     "avalancheMethod": "Avalanche Method",
-    "avalancheDesc": "Pay off debts from highest to lowest interest rate, regardless of balance. This method saves you the most money on interest over time and is mathematically optimal. Best for maximizing long-term savings.",
+    "avalancheDesc": "Pay highest interest rates first to save the most money.",
     "debtFreeIn": "Debt-Free In",
     "totalInterest": "Total Interest",
     "plusPrincipal": "Plus {principal} principal",
@@ -668,196 +593,80 @@
     "totalMonthlyBudget": "Total Monthly Budget",
     "totalMonthlyBudgetTooltip": "Total amount you can pay toward debts each month"
   },
-  "healthcareGap": {
-    "title": "Healthcare Gap Calculator",
-    "subtitle": "Estimate healthcare costs between early retirement and Medicare eligibility.",
-    "warning": {
-      "title": "The Healthcare Gap is Real",
-      "content": "If you retire before age 65 in the US, you'll need to bridge the gap until Medicare. Healthcare costs are often the #1 overlooked expense in early retirement planning. This can add {cost} or more to your FIRE number!"
-    },
-    "yourSituation": "Your Situation",
-    "earlyRetirementAgeTooltip": "When you plan to leave employer-sponsored insurance",
-    "medicareEligibility": "Medicare eligibility: Age 65",
-    "gapToCover": "Gap to cover: {years} years",
-    "healthcareCostEstimates": "Healthcare Cost Estimates",
-    "healthcareCostEstimatesNote": "Defaults based on ACA Silver plan averages. Adjust based on your state and needs.",
-    "monthlyPremiumTooltip": "Monthly health insurance premium",
-    "annualDeductibleTooltip": "Yearly deductible before insurance pays",
-    "annualOutOfPocketTooltip": "Expected annual out-of-pocket medical costs",
-    "totalHealthcareGapCost": "Total Healthcare Gap Cost",
-    "overYearsUntilMedicare": "Over {years} years until Medicare",
-    "addToFireNumber": "Add to FIRE Number",
-    "gapYears": "Gap Years",
-    "year1Cost": "Year 1 Cost",
-    "beforeInflation": "Before inflation",
-    "avgAnnualCost": "Avg Annual Cost",
-    "withInflation": "With inflation",
-    "acaSubsidyPotential": {
-      "title": "ACA Subsidy Potential",
-      "desc": "Your retirement income affects ACA premium subsidies. Lower income = higher subsidies.",
-      "income30k": "$30k Income",
-      "annualSubsidy": "Annual subsidy",
-      "income50k": "$50k Income",
-      "income75k": "$75k+ Income"
-    },
-    "acaSubsidyNote": "* Subsidies are estimates based on simplified calculations. Actual amounts depend on your state, household size, plan type, and exact income. Check healthcare.gov for accurate quotes.",
-    "yearByYearBreakdown": "Year-by-Year Breakdown",
-    "totalYears": "Total ({years} years)",
-    "strategies": {
-      "title": "Healthcare Gap Strategies",
-      "baristaFire": {
-        "title": "Barista FIRE",
-        "desc": "Part-time job with health benefits (Starbucks, Costco, etc.)"
-      },
-      "hsaBridge": {
-        "title": "HSA Bridge",
-        "desc": "Max out HSA while working, use tax-free in retirement"
-      },
-      "incomeManagement": {
-        "title": "Income Management",
-        "desc": "Keep income low to qualify for ACA subsidies"
-      },
-      "geoArbitrage": {
-        "title": "Geo-Arbitrage",
-        "desc": "Retire abroad with affordable healthcare options"
-      }
-    },
-    "warningTitle": "The Healthcare Gap is Real",
-    "warningContent": "If you retire before age 65 in the US, you'll need to bridge the gap until Medicare. Healthcare costs are often the #1 overlooked expense in early retirement planning. This can add {cost} or more to your FIRE number!",
-    "situationTitle": "Your Situation",
-    "totalCostLabel": "Total Healthcare Gap Cost",
-    "addToFireLabel": "Add to FIRE Number",
-    "acaSubsidyTitle": "ACA Subsidy Potential",
-    "acaSubsidyDesc": "Your retirement income affects ACA premium subsidies. Lower income = higher subsidies.",
-    "annualSubsidyLabel": "Annual subsidy",
-    "strategiesTitle": "Healthcare Gap Strategies",
-    "earlyRetirementAge": "Early Retirement Age",
+  "input": {
+    "currentAge": "Current Age",
+    "retirementAge": "Retirement Age",
+    "currentSavings": "Current Savings",
+    "annualContribution": "Annual Contribution",
+    "annualIncome": "Annual Income",
+    "annualExpenses": "Annual Expenses",
+    "expectedReturn": "Expected Return",
+    "inflationRate": "Inflation Rate",
+    "withdrawalRate": "Withdrawal Rate",
+    "partTimeIncome": "Part-Time Income",
+    "portfolioValue": "Portfolio Value",
     "monthlyPremium": "Monthly Premium",
     "annualDeductible": "Annual Deductible",
-    "estOutOfPocket": "Est. Out-of-Pocket",
-    "table": {
-      "outOfPocket": "Out-of-Pocket"
-    }
+    "annualOutOfPocket": "Annual Out-of-Pocket",
+    "targetRetirementAge": "Target Retirement Age",
+    "safeWithdrawalRate": "Safe Withdrawal Rate",
+    "currentAgeTooltip": "Your current age",
+    "targetRetirementAgeTooltip": "Traditional retirement age (e.g., 60-67)",
+    "annualExpensesTooltip": "Total yearly spending needs",
+    "annualContributionTooltip": "How much you're currently saving per year",
+    "expectedReturnTooltip": "Average annual investment return (7% is typical for stocks)",
+    "inflationRateTooltip": "Expected annual inflation (3% is historical average)",
+    "swrTooltip": "The 4% rule - withdraw 4% of portfolio yearly"
   },
-  "reverseFire": {
-    "title": "Reverse FIRE Calculator",
-    "subtitle": "Find out how much you need to save monthly to FIRE by your target age.",
-    "howWorks": {
-      "title": "How Reverse FIRE Works",
-      "content": "Instead of calculating when you'll FIRE based on your savings, this calculator works backwards: you set your target retirement age, and it tells you exactly how much you need to save each month to get there."
-    },
-    "yourGoals": "Your Goals",
-    "targetFireAgeTooltip": "When do you want to achieve FIRE?",
-    "greatNews": "Great News!",
-    "youreOnTrack": "You're Already on Track!",
-    "onTrackDesc": "Your current savings of {savings} will grow to {willGrow} by age {targetAge}, exceeding your FIRE number of {fireNumber}.",
-    "toFireByAgeYouNeed": "To FIRE by age {targetAge}, you need to save",
-    "perMonth": "per month",
-    "orAnnually": "Or annually",
+  "output": {
+    "years": "years",
+    "months": "months",
     "perYear": "per year",
-    "fireNumber": "FIRE Number",
-    "targetPortfolio": "Target portfolio",
-    "yearsToFire": "Years to FIRE",
-    "atAge": "At age {age}",
-    "currentSavingsWillGrowTo": "Current Savings Will Grow To",
-    "differentTargetAges": "Different Target Ages",
-    "targetAge": "Target Age",
-    "yearsAway": "Years Away",
-    "monthlySavings": "Monthly Savings",
-    "annualSavings": "Annual Savings",
-    "selected": "Selected",
-    "onTrack": "$0 (on track!)",
+    "perMonth": "per month",
+    "total": "Total",
+    "average": "Average",
+    "targetPortfolioValue": "Target portfolio value",
+    "good": "Good",
+    "risky": "Risky"
+  },
+  "common": {
+    "calculate": "Calculate",
+    "reset": "Reset",
+    "export": "Export to Excel",
+    "copyUrl": "Copy URL",
+    "share": "Share",
+    "disclaimer": "Disclaimer",
+    "bestFor": "Best for",
+    "privacy": "100% Private & Offline",
+    "yourInformation": "Your Information",
     "portfolioProjection": "Portfolio Projection",
-    "bannerContent": "Instead of calculating when you'll FIRE based on your savings, this calculator works backwards: you set your target retirement age, and it tells you exactly how much you need to save each month to get there.",
-    "howWorksTitle": "How Reverse FIRE Works",
-    "alreadyOnTrack": "You're Already on Track!",
-    "toFireByAgeDesc": "To FIRE by age {targetAge}, you need to save",
-    "targetFireAge": "Target FIRE Age",
-    "annualExpensesInRetirement": "Annual Expenses in Retirement"
-  },
-  "savingsRate": {
-    "title": "Savings & Investment Rate Calculator",
-    "subtitle": "See how your investments can grow over time with consistent contributions.",
-    "powerOfCompound": {
-      "title": "The Power of Compound Interest",
-      "content": "Consistent investing is the key to building wealth. Even small amounts invested regularly can grow substantially over time thanks to compound interest. Start early and stay consistent!"
-    },
-    "investmentDetails": "Investment Details",
-    "startingAmountTooltip": "How much you're starting with",
-    "contributionFrequency": "Contribution Frequency",
-    "monthly": "Monthly",
-    "yearly": "Yearly",
-    "contributionTooltip": "Amount you'll invest {frequency}",
-    "yearsInvesting": "Years Investing",
-    "annualIncomeOptional": "Annual Income (Optional)",
-    "annualIncomeTooltip": "For calculating your savings rate",
-    "yourInvestmentWillGrowTo": "Your Investment Will Grow To",
-    "inYears": "in {years} years",
-    "inflationAdjustedValue": "Inflation-Adjusted Value (Today's Dollars)",
-    "yourSavingsRate": "Your Savings Rate",
-    "youreInvesting": "You're Investing",
-    "totalInvested": "Total Invested",
-    "yourContributions": "Your contributions",
-    "investmentGrowth": "Investment Growth",
-    "earningsFromReturns": "Earnings from returns",
-    "inflationImpact": "Inflation Impact",
-    "purchasingPowerLoss": "Purchasing power loss",
-    "investmentGrowthProjection": "Investment Growth Projection",
-    "compareNominalVsInflation": "Compare nominal growth vs. inflation-adjusted purchasing power",
-    "investmentBreakdown": "Investment Breakdown",
-    "startingAmount": "Starting Amount",
-    "monthlyContributions": "Monthly Contributions",
-    "yearlyContributions": "Yearly Contributions",
-    "totalContributions": "Total Contributions ({years} years)",
-    "investmentEarnings": "Investment Earnings",
-    "finalBalance": "Final Balance",
-    "inflationAdjustedValueNote": "Note: Inflation will reduce your purchasing power by {impact} over {years} years at {rate}% annual inflation.",
-    "compoundInterestTitle": "The Power of Compound Interest",
-    "compoundInterestContent": "Consistent investing is the key to building wealth. Even small amounts invested regularly can grow substantially over time thanks to compound interest. Start early and stay consistent!",
-    "expectedAnnualReturn": "Expected Annual Return",
-    "youAreInvesting": "You're Investing",
-    "noteLabel": "Note:"
-  },
-  "withdrawalRate": {
-    "title": "Withdrawal Rate Calculator",
-    "subtitle": "Test your portfolio's longevity and find your safe withdrawal rate.",
-    "fourPercentRule": {
-      "title": "The 4% Rule",
-      "content": "The famous '4% rule' from the Trinity Study suggests withdrawing 4% of your portfolio in year one, then adjusting for inflation each year. This has historically provided a 95%+ success rate over 30-year retirements. However, longer retirements may require lower rates (3-3.5%)."
-    },
+    "yourGoals": "Your Goals",
     "yourPortfolio": "Your Portfolio",
-    "portfolioValueTooltip": "Current total invested assets",
-    "withdrawalRateTooltip": "Percentage of portfolio to withdraw yearly",
-    "retirementDurationTooltip": "How many years you need the portfolio to last",
-    "portfolioBalanceOverTime": "Portfolio Balance Over Time",
-    "rateAnalysis": {
-      "title": "Withdrawal Rate Analysis",
-      "desc": "Compare different withdrawal rates for your portfolio of {portfolioValue}",
-      "rate": "Rate",
-      "annualWithdrawal": "Annual Withdrawal",
-      "monthly": "Monthly",
-      "portfolioLasts": "Portfolio Lasts",
-      "status": "Status",
-      "sustainable": "Sustainable",
-      "tooHigh": "Too High"
-    },
-    "recommendations": {
-      "title": "Recommendations",
-      "sustainable": {
-        "title": "Your withdrawal rate is sustainable!",
-        "content": "At {rate}%, your portfolio of {portfolioValue} should last {longevity} years, meeting your {retirementYears}-year goal."
-      },
-      "considerLowering": {
-        "title": "Consider lowering your withdrawal rate.",
-        "content": "At {rate}%, your portfolio would only last {longevity} years. Try reducing to 3.5% or 3% for a longer-lasting portfolio."
-      },
-      "earlyRetirees": "For early retirees (40+ year retirements): Consider a 3-3.5% withdrawal rate for extra safety margin.",
-      "flexibleSpending": "Flexible spending: Being willing to reduce spending during market downturns significantly improves success rates."
-    },
-    "fourPercentRuleTitle": "The 4% Rule",
-    "fourPercentRuleContent": "The famous \"4% rule\" from the Trinity Study suggests withdrawing 4% of your portfolio in year one, then adjusting for inflation each year. This has historically provided a 95%+ success rate over 30-year retirements. However, longer retirements may require lower rates (3-3.5%).",
-    "retirementDuration": "Retirement Duration",
-    "annualWithdrawalLabel": "Annual Withdrawal"
+    "investmentDetails": "Investment Details",
+    "progressToBaristaFire": "Progress to Barista FIRE",
+    "progressToCoastFire": "Progress to Coast FIRE"
+  },
+  "disclaimer": {
+    "title": "Disclaimer",
+    "content": "This calculator is for educational purposes only. It is not intended to be, and should not be construed as, financial, investment, tax, or legal advice. Please consult with a qualified financial advisor, tax professional, or other appropriate professional."
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文",
+    "es": "Español",
+    "de": "Deutsch",
+    "ja": "日本語",
+    "fr": "Français",
+    "ru": "Русский",
+    "pt": "Português",
+    "id": "Bahasa Indonesia",
+    "ar": "العربية",
+    "switch": "Switch Language"
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "about": "About Us"
   },
   "legal": {
     "about": {
@@ -1340,82 +1149,272 @@
     }
   },
   "home": {
-    "title": "Kalkulator FIRE",
-    "subtitle": "Rencanakan jalan Anda menuju Kemandirian Keuangan dan Pensiun Dini. Gratis, pribadi, dan bekerja sepenuhnya secara offline.",
+    "title": "FIRE Calculators",
+    "subtitle": "Plan your path to Financial Independence, Retire Early. Free, private, and works completely offline.",
     "badges": {
-      "private": "100% Pribadi",
-      "offline": "Berfungsi Offline",
-      "noTracking": "Tanpa Pelacakan",
-      "shareable": "URL yang Dapat Dibagikan"
+      "private": "100% Private",
+      "offline": "Works Offline",
+      "noTracking": "No Tracking",
+      "shareable": "Shareable URLs"
     },
     "quiz": {
-      "title": "Tidak yakin kalkulator mana yang digunakan?",
-      "desc": "Ikuti kuis cepat kami untuk menemukan jalur FIRE yang sempurna untuk situasi Anda. Jawab beberapa pertanyaan dan kami akan merekomendasikan kalkulator terbaik dengan informasi Anda yang sudah diisi sebelumnya.",
-      "cta": "Temukan Jalur FIRE Anda",
-      "note": "Membutuhkan 2-3 menit · Rekomendasi yang dipersonalisasi"
+      "title": "Not sure which calculator to use?",
+      "desc": "Take our quick quiz to find the perfect FIRE path for your situation. Answer a few questions and we'll recommend the best calculator with your information pre-filled.",
+      "cta": "Find Your FIRE Path",
+      "note": "Takes 2-3 minutes · Personalized recommendation"
     },
-    "chooseCalculator": "Pilih Kalkulator Anda",
-    "startCalculating": "Mulai menghitung",
+    "chooseCalculator": "Choose Your Calculator",
+    "startCalculating": "Start calculating",
     "books": {
-      "title": "Buku FIRE yang Direkomendasikan",
-      "subtitle": "Bacaan penting untuk mempercepat perjalanan kemandirian keuangan Anda.",
-      "viewAll": "Lihat Semua Buku & Detail",
-      "affiliateNote": "Tautan afiliasi — pembelian mendukung kalkulator gratis ini tanpa biaya tambahan untuk Anda."
+      "title": "Recommended FIRE Books",
+      "subtitle": "Essential reading to accelerate your financial independence journey.",
+      "viewAll": "View All Books & Details",
+      "affiliateNote": "Affiliate links — purchases support this free calculator at no extra cost to you."
     },
     "privacy": {
-      "title": "Privasi Anda Adalah Prioritas Kami",
-      "subtitle": "Kami membangun kalkulator ini dengan prinsip privasi-pertama.",
+      "title": "Your Privacy is Our Priority",
+      "subtitle": "We built this calculator with privacy-first principles.",
       "features": {
         "noStorage": {
-          "title": "Tanpa Penyimpanan Data Keuangan",
-          "desc": "Data keuangan Anda tetap hanya di URL — tidak pernah disimpan. Hanya preferensi UI (tema, tata letak) yang disimpan secara lokal."
+          "title": "No Financial Data Storage",
+          "desc": "Your financial data stays in URLs only—never stored. Only UI preferences (theme, layout) stored locally."
         },
         "noAnalytics": {
-          "title": "Tanpa Analitik",
-          "desc": "Nol skrip pelacakan. Tanpa Google Analytics, tanpa kode pihak ketiga."
+          "title": "No Analytics",
+          "desc": "Zero tracking scripts. No Google Analytics, no third-party code."
         },
         "urlBased": {
-          "title": "Berbagi Berbasis URL",
-          "desc": "Simpan perhitungan Anda di URL. Markah atau bagikan — pilihan Anda."
+          "title": "URL-Based Sharing",
+          "desc": "Save your calculations in the URL. Bookmark or share — your choice."
         },
         "worksOffline": {
-          "title": "Berfungsi Offline",
-          "desc": "Setelah pemuatan pertama, bekerja tanpa internet. Dapat diinstal sebagai aplikasi di perangkat Anda."
+          "title": "Works Offline",
+          "desc": "After first load, works without internet. Install as an app on your device."
         },
         "openSource": {
-          "title": "Sumber Terbuka",
-          "desc": "Verifikasi semuanya sendiri. Semua kode tersedia di GitHub."
+          "title": "Open Source",
+          "desc": "Verify everything yourself. All code is available on GitHub."
         },
         "clientSide": {
-          "title": "Hanya Sisi Klien",
-          "desc": "Semua perhitungan berjalan di browser Anda. Tanpa pemrosesan server."
+          "title": "Client-Side Only",
+          "desc": "All calculations run in your browser. No server processing."
         }
       }
     },
     "whatIsFire": {
-      "title": "Apa itu FIRE?",
-      "para1": "FIRE adalah singkatan dari Financial Independence, Retire Early (Kemandirian Keuangan, Pensiun Dini). Ini adalah gerakan keuangan yang berfokus pada tabungan ekstrem dan investasi untuk pensiun jauh lebih awal dari usia pensiun tradisional. Prinsip intinya sederhana: tabung secara agresif, investasikan dengan bijak, dan setelah investasi Anda dapat menutupi biaya hidup Anda tanpa batas waktu, Anda mencapai kemandirian keuangan.",
-      "para2": "Perhitungan FIRE yang paling umum menggunakan aturan 4% (atau aturan 25x): jika Anda dapat hidup dengan 4% dari portofolio Anda per tahun, Anda perlu menabung 25 kali pengeluaran tahunan Anda. Misalnya, jika Anda menghabiskan $40.000 per tahun, Anda membutuhkan $1.000.000 untuk menjadi mandiri secara keuangan."
+      "title": "What is FIRE?",
+      "para1": "FIRE stands for Financial Independence, Retire Early. It's a financial movement focused on extreme savings and investment to retire much earlier than traditional retirement age. The core principle is simple: save aggressively, invest wisely, and once your investments can cover your living expenses indefinitely, you achieve financial independence.",
+      "para2": "The most common FIRE calculation uses the 4% rule (or 25x rule): if you can live on 4% of your portfolio per year, you need to save 25 times your annual expenses. For example, if you spend $40,000 per year, you need $1,000,000 to be financially independent."
     },
     "tallyAi": {
-      "title": "Lacak Kemajuan Anda dengan Tally AI",
-      "desc": "Teman keuangan cerdas yang membantu Anda melacak pengeluaran, mengelola anggaran, dan mencapai tujuan FIRE Anda dengan wawasan yang didukung AI. Pelengkap sempurna untuk kalkulator ini.",
-      "cta": "Pelajari Lebih Lanjut Tentang Tally AI"
+      "title": "Track Your Progress with Tally AI",
+      "desc": "Smart financial companion that helps you track spending, manage budgets, and achieve your FIRE goals with AI-powered insights. Perfect complement to these calculators.",
+      "cta": "Learn More About Tally AI"
     },
     "disclaimer": {
-      "title": "Penafian",
-      "content": "Kalkulator ini disediakan hanya untuk tujuan pendidikan dan informasi. Ini bukan saran keuangan, investasi, pajak, atau hukum. Hasil adalah proyeksi hipotetis dan hasil aktual akan bervariasi. Silakan konsultasikan dengan penasihat keuangan yang berkualifikasi sebelum membuat keputusan keuangan."
+      "title": "Disclaimer",
+      "content": "This calculator is provided for educational and informational purposes only. It is not financial, investment, tax, or legal advice. Results are hypothetical projections and actual results will vary. Please consult a qualified financial advisor before making any financial decisions."
     },
-    "builtWith": "Dibangun dengan mempertimbangkan privasi. Tidak ada data yang pernah meninggalkan browser Anda.",
-    "viewOnGithub": "Lihat di GitHub",
+    "builtWith": "Built with privacy in mind. No data ever leaves your browser.",
+    "viewOnGithub": "View on GitHub",
     "features": {
       "noAnalytics": {
-        "desc": "Nol skrip pelacakan. Tanpa Google Analytics, tanpa kode pihak ketiga."
+        "desc": "Zero tracking scripts. No Google Analytics, no third-party code."
       },
       "shareable": {
-        "title": "Berbagi Berbasis URL"
+        "title": "URL-Based Sharing"
       }
     }
+  },
+  "healthcareGap": {
+    "title": "Healthcare Gap Calculator",
+    "subtitle": "Estimate healthcare costs between early retirement and Medicare eligibility.",
+    "warning": {
+      "title": "The Healthcare Gap is Real",
+      "content": "If you retire before age 65 in the US, you'll need to bridge the gap until Medicare. Healthcare costs are often the #1 overlooked expense in early retirement planning. This can add {cost} or more to your FIRE number!"
+    },
+    "yourSituation": "Your Situation",
+    "earlyRetirementAgeTooltip": "When you plan to leave employer-sponsored insurance",
+    "medicareEligibility": "Medicare eligibility: Age 65",
+    "gapToCover": "Gap to cover: {years} years",
+    "healthcareCostEstimates": "Healthcare Cost Estimates",
+    "healthcareCostEstimatesNote": "Defaults based on ACA Silver plan averages. Adjust based on your state and needs.",
+    "monthlyPremiumTooltip": "Monthly health insurance premium",
+    "annualDeductibleTooltip": "Yearly deductible before insurance pays",
+    "annualOutOfPocketTooltip": "Expected annual out-of-pocket medical costs",
+    "totalHealthcareGapCost": "Total Healthcare Gap Cost",
+    "overYearsUntilMedicare": "Over {years} years until Medicare",
+    "addToFireNumber": "Add to FIRE Number",
+    "gapYears": "Gap Years",
+    "year1Cost": "Year 1 Cost",
+    "beforeInflation": "Before inflation",
+    "avgAnnualCost": "Avg Annual Cost",
+    "withInflation": "With inflation",
+    "acaSubsidyPotential": {
+      "title": "ACA Subsidy Potential",
+      "desc": "Your retirement income affects ACA premium subsidies. Lower income = higher subsidies.",
+      "income30k": "$30k Income",
+      "annualSubsidy": "Annual subsidy",
+      "income50k": "$50k Income",
+      "income75k": "$75k+ Income"
+    },
+    "acaSubsidyNote": "* Subsidies are estimates based on simplified calculations. Actual amounts depend on your state, household size, plan type, and exact income. Check healthcare.gov for accurate quotes.",
+    "yearByYearBreakdown": "Year-by-Year Breakdown",
+    "totalYears": "Total ({years} years)",
+    "strategies": {
+      "baristaFire": {
+        "title": "Barista FIRE",
+        "desc": "Part-time job with health benefits (Starbucks, Costco, etc.)"
+      },
+      "hsaBridge": {
+        "title": "HSA Bridge",
+        "desc": "Max out HSA while working, use tax-free in retirement"
+      },
+      "incomeManagement": {
+        "title": "Income Management",
+        "desc": "Keep income low to qualify for ACA subsidies"
+      },
+      "geoArbitrage": {
+        "title": "Geo-Arbitrage",
+        "desc": "Retire abroad with affordable healthcare options"
+      }
+    },
+    "warningTitle": "The Healthcare Gap is Real",
+    "warningContent": "If you retire before age 65 in the US, you'll need to bridge the gap until Medicare. Healthcare costs are often the #1 overlooked expense in early retirement planning. This can add {cost} or more to your FIRE number!",
+    "situationTitle": "Your Situation",
+    "totalCostLabel": "Total Healthcare Gap Cost",
+    "addToFireLabel": "Add to FIRE Number",
+    "acaSubsidyTitle": "ACA Subsidy Potential",
+    "acaSubsidyDesc": "Your retirement income affects ACA premium subsidies. Lower income = higher subsidies.",
+    "annualSubsidyLabel": "Annual subsidy",
+    "strategiesTitle": "Healthcare Gap Strategies",
+    "earlyRetirementAge": "Early Retirement Age",
+    "monthlyPremium": "Monthly Premium",
+    "annualDeductible": "Annual Deductible",
+    "estOutOfPocket": "Est. Out-of-Pocket",
+    "table": {
+      "outOfPocket": "Out-of-Pocket"
+    }
+  },
+  "reverseFire": {
+    "title": "Reverse FIRE Calculator",
+    "subtitle": "Find out how much you need to save monthly to FIRE by your target age.",
+    "howWorks": {
+      "title": "How Reverse FIRE Works",
+      "content": "Instead of calculating when you'll FIRE based on your savings, this calculator works backwards: you set your target retirement age, and it tells you exactly how much you need to save each month to get there."
+    },
+    "yourGoals": "Your Goals",
+    "targetFireAgeTooltip": "When do you want to achieve FIRE?",
+    "greatNews": "Great News!",
+    "youreOnTrack": "You're Already on Track!",
+    "onTrackDesc": "Your current savings of {savings} will grow to {willGrow} by age {targetAge}, exceeding your FIRE number of {fireNumber}.",
+    "toFireByAgeYouNeed": "To FIRE by age {targetAge}, you need to save",
+    "perMonth": "per month",
+    "orAnnually": "Or annually",
+    "perYear": "per year",
+    "fireNumber": "FIRE Number",
+    "targetPortfolio": "Target portfolio",
+    "yearsToFire": "Years to FIRE",
+    "atAge": "At age {age}",
+    "currentSavingsWillGrowTo": "Current Savings Will Grow To",
+    "differentTargetAges": "Different Target Ages",
+    "targetAge": "Target Age",
+    "yearsAway": "Years Away",
+    "monthlySavings": "Monthly Savings",
+    "annualSavings": "Annual Savings",
+    "selected": "Selected",
+    "onTrack": "$0 (on track!)",
+    "portfolioProjection": "Portfolio Projection",
+    "bannerContent": "Instead of calculating when you'll FIRE based on your savings, this calculator works backwards: you set your target retirement age, and it tells you exactly how much you need to save each month to get there.",
+    "howWorksTitle": "How Reverse FIRE Works",
+    "alreadyOnTrack": "You're Already on Track!",
+    "toFireByAgeDesc": "To FIRE by age {targetAge}, you need to save",
+    "targetFireAge": "Target FIRE Age",
+    "annualExpensesInRetirement": "Annual Expenses in Retirement"
+  },
+  "savingsRate": {
+    "title": "Savings & Investment Rate Calculator",
+    "subtitle": "See how your investments can grow over time with consistent contributions.",
+    "powerOfCompound": {
+      "title": "The Power of Compound Interest",
+      "content": "Consistent investing is the key to building wealth. Even small amounts invested regularly can grow substantially over time thanks to compound interest. Start early and stay consistent!"
+    },
+    "investmentDetails": "Investment Details",
+    "startingAmountTooltip": "How much you're starting with",
+    "contributionFrequency": "Contribution Frequency",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "contributionTooltip": "Amount you'll invest {frequency}",
+    "yearsInvesting": "Years Investing",
+    "annualIncomeOptional": "Annual Income (Optional)",
+    "annualIncomeTooltip": "For calculating your savings rate",
+    "yourInvestmentWillGrowTo": "Your Investment Will Grow To",
+    "inYears": "in {years} years",
+    "inflationAdjustedValue": "Inflation-Adjusted Value (Today's Dollars)",
+    "yourSavingsRate": "Your Savings Rate",
+    "youreInvesting": "You're Investing",
+    "totalInvested": "Total Invested",
+    "yourContributions": "Your contributions",
+    "investmentGrowth": "Investment Growth",
+    "earningsFromReturns": "Earnings from returns",
+    "inflationImpact": "Inflation Impact",
+    "purchasingPowerLoss": "Purchasing power loss",
+    "investmentGrowthProjection": "Investment Growth Projection",
+    "compareNominalVsInflation": "Compare nominal growth vs. inflation-adjusted purchasing power",
+    "investmentBreakdown": "Investment Breakdown",
+    "startingAmount": "Starting Amount",
+    "monthlyContributions": "Monthly Contributions",
+    "yearlyContributions": "Yearly Contributions",
+    "totalContributions": "Total Contributions ({years} years)",
+    "investmentEarnings": "Investment Earnings",
+    "finalBalance": "Final Balance",
+    "inflationAdjustedValueNote": "Note: Inflation will reduce your purchasing power by {impact} over {years} years at {rate}% annual inflation.",
+    "compoundInterestTitle": "The Power of Compound Interest",
+    "compoundInterestContent": "Consistent investing is the key to building wealth. Even small amounts invested regularly can grow substantially over time thanks to compound interest. Start early and stay consistent!",
+    "expectedAnnualReturn": "Expected Annual Return",
+    "youAreInvesting": "You're Investing",
+    "noteLabel": "Note:"
+  },
+  "withdrawalRate": {
+    "title": "Withdrawal Rate Calculator",
+    "subtitle": "Test your portfolio's longevity and find your safe withdrawal rate.",
+    "fourPercentRule": {
+      "title": "The 4% Rule",
+      "content": "The famous '4% rule' from the Trinity Study suggests withdrawing 4% of your portfolio in year one, then adjusting for inflation each year. This has historically provided a 95%+ success rate over 30-year retirements. However, longer retirements may require lower rates (3-3.5%)."
+    },
+    "yourPortfolio": "Your Portfolio",
+    "portfolioValueTooltip": "Current total invested assets",
+    "withdrawalRateTooltip": "Percentage of portfolio to withdraw yearly",
+    "retirementDurationTooltip": "How many years you need the portfolio to last",
+    "portfolioBalanceOverTime": "Portfolio Balance Over Time",
+    "rateAnalysis": {
+      "title": "Withdrawal Rate Analysis",
+      "desc": "Compare different withdrawal rates for your portfolio of {portfolioValue}",
+      "rate": "Rate",
+      "annualWithdrawal": "Annual Withdrawal",
+      "monthly": "Monthly",
+      "portfolioLasts": "Portfolio Lasts",
+      "status": "Status",
+      "sustainable": "Sustainable",
+      "tooHigh": "Too High"
+    },
+    "recommendations": {
+      "title": "Recommendations",
+      "sustainable": {
+        "title": "Your withdrawal rate is sustainable!",
+        "content": "Your withdrawal rate is sustainable! At {rate}%, your portfolio of {portfolioValue} should last {longevity} years, meeting your {retirementYears}-year goal."
+      },
+      "considerLowering": {
+        "title": "Consider lowering your withdrawal rate.",
+        "content": "Consider lowering your withdrawal rate. At {rate}%, your portfolio would only last {longevity} years. Try reducing to 3.5% or 3% for a longer-lasting portfolio."
+      },
+      "earlyRetirees": "For early retirees (40+ year retirements): Consider a 3-3.5% withdrawal rate for extra safety margin.",
+      "flexibleSpending": "Flexible spending: Being willing to reduce spending during market downturns significantly improves success rates."
+    },
+    "fourPercentRuleTitle": "The 4% Rule",
+    "fourPercentRuleContent": "The famous \"4% rule\" from the Trinity Study suggests withdrawing 4% of your portfolio in year one, then adjusting for inflation each year. This has historically provided a 95%+ success rate over 30-year retirements. However, longer retirements may require lower rates (3-3.5%).",
+    "retirementDuration": "Retirement Duration",
+    "annualWithdrawalLabel": "Annual Withdrawal"
   },
   "components": {
     "progressBar": {
@@ -1525,71 +1524,72 @@
     "affiliateTitle": "Affiliate Disclosure",
     "affiliateContent": "The links above are Amazon affiliate links. If you purchase through these links, we may earn a small commission at no additional cost to you. This helps support the development of this free calculator. We only recommend books we genuinely believe will help you on your FIRE journey."
   },
+{
   "seo": {
     "standard": {
-      "title": "Kalkulator FIRE Standar - Hitung Angka Kemandirian Keuangan Anda",
-      "description": "Kalkulator FIRE standar gratis menggunakan aturan 25x. Hitung angka FIRE Anda berdasarkan aturan 4% dan lihat berapa lama hingga mencapai kemandirian keuangan. 100% privat, berfungsi offline.",
-      "keywords": "kalkulator FIRE standar, kalkulator aturan 25x, aturan 4%, angka FIRE, kalkulator kemandirian keuangan, pensiun dini, studi Trinity"
+      "title": "Standard FIRE Calculator - Calculate Your Financial Independence Number",
+      "description": "Free Standard FIRE calculator using the 25x rule. Calculate your FIRE number based on the 4% rule and see how long until you reach financial independence. 100% private, works offline.",
+      "keywords": "standard FIRE calculator, 25x rule calculator, 4% rule, FIRE number, financial independence calculator, early retirement, trinity study"
     },
     "coast": {
-      "title": "Kalkulator Coast FIRE - Hitung Angka Coast FI Anda",
-      "description": "Kalkulator Coast FIRE gratis untuk menentukan berapa banyak yang perlu Anda tabung sekarang agar pertumbuhan bunga majemuk menangani sisanya. Hitung angka coast Anda dan lihat kapan Anda bisa berhenti menabung untuk pensiun.",
-      "keywords": "kalkulator Coast FIRE, Coast FI, kalkulator bunga majemuk, perencanaan pensiun, kalkulator semi-pensiun"
+      "title": "Coast FIRE Calculator - Calculate Your Coast FI Number",
+      "description": "Free Coast FIRE calculator to determine how much you need to save now so compound growth handles the rest. Calculate your coast number and see when you can stop saving for retirement.",
+      "keywords": "coast FIRE calculator, coast FI, compound interest calculator, retirement planning, semi-retirement calculator"
     },
     "lean": {
-      "title": "Kalkulator Lean FIRE - Perencanaan Pensiun Dini Minimalis",
-      "description": "Kalkulator Lean FIRE gratis untuk perencanaan gaya hidup minimalis. Hitung angka FIRE Anda dengan pengeluaran lebih rendah ($40k atau kurang per tahun) dan pensiun lebih awal dengan pendekatan hemat.",
-      "keywords": "kalkulator Lean FIRE, pensiun hemat, FIRE minimalis, pensiun biaya rendah, pensiun dini dengan anggaran ketat"
+      "title": "Lean FIRE Calculator - Minimalist Early Retirement Planning",
+      "description": "Free Lean FIRE calculator for minimalist lifestyle planning. Calculate your FIRE number with lower expenses ($40k or less annually) and retire earlier with a frugal approach.",
+      "keywords": "lean FIRE calculator, frugal retirement, minimalist FIRE, low cost retirement, early retirement on a budget"
     },
     "fat": {
-      "title": "Kalkulator Fat FIRE - Perencanaan Pensiun Dini Mewah",
-      "description": "Kalkulator Fat FIRE gratis untuk merencanakan pensiun dini yang mewah. Hitung angka FIRE Anda untuk gaya hidup nyaman ($100k+ per tahun) tanpa kompromi keuangan.",
-      "keywords": "kalkulator Fat FIRE, pensiun mewah, FIRE berpenghasilan tinggi, pensiun nyaman, pensiun dini mapan"
+      "title": "Fat FIRE Calculator - Luxury Early Retirement Planning",
+      "description": "Free Fat FIRE calculator for planning a luxurious early retirement. Calculate your FIRE number for a comfortable lifestyle ($100k+ annually) without financial compromises.",
+      "keywords": "fat FIRE calculator, luxury retirement, high income FIRE, comfortable retirement, affluent early retirement"
     },
     "barista": {
-      "title": "Kalkulator Barista FIRE - Kerja Paruh Waktu & Pensiun Dini",
-      "description": "Kalkulator Barista FIRE gratis untuk menggabungkan penghasilan paruh waktu dengan penarikan portofolio. Hitung berapa banyak yang Anda butuhkan untuk semi-pensiun dan bekerja secara fleksibel sambil mempertahankan kemandirian keuangan.",
-      "keywords": "kalkulator Barista FIRE, semi-pensiun, pensiun kerja paruh waktu, pensiun fleksibel, FIRE penghasilan sampingan"
+      "title": "Barista FIRE Calculator - Part-Time Work & Early Retirement",
+      "description": "Free Barista FIRE calculator to blend part-time income with portfolio withdrawals. Calculate how much you need to semi-retire and work flexibly while maintaining financial independence.",
+      "keywords": "barista FIRE calculator, semi-retirement, part-time work retirement, flexible retirement, side income FIRE"
     },
     "reverse": {
-      "title": "Kalkulator FIRE Terbalik - Hitung Mundur dari Usia Pensiun",
-      "description": "Kalkulator FIRE terbalik gratis - tetapkan usia target pensiun Anda dan temukan berapa banyak yang perlu ditabung setiap bulan. Hitung mundur dari tujuan Anda untuk membuat rencana tabungan yang dapat ditindaklanjuti.",
-      "keywords": "kalkulator FIRE terbalik, kalkulator tabungan pensiun, target tabungan bulanan, usia target pensiun, kalkulator tingkat tabungan"
+      "title": "Reverse FIRE Calculator - Work Backwards From Retirement Age",
+      "description": "Free Reverse FIRE calculator - set your target retirement age and discover how much you need to save monthly. Work backwards from your goal to create an actionable savings plan.",
+      "keywords": "reverse FIRE calculator, retirement savings calculator, monthly savings goal, target retirement age, savings rate calculator"
     },
     "withdrawal": {
-      "title": "Kalkulator Tingkat Penarikan - Tingkat Penarikan Aman untuk Pensiun",
-      "description": "Kalkulator tingkat penarikan gratis untuk menguji umur panjang portofolio Anda. Hitung tingkat penarikan aman, lihat berapa lama uang Anda akan bertahan, dan rencanakan pendapatan pensiun yang berkelanjutan.",
-      "keywords": "kalkulator tingkat penarikan, tingkat penarikan aman, aturan 4%, kalkulator pendapatan pensiun, umur panjang portofolio, keberlanjutan pensiun"
+      "title": "Withdrawal Rate Calculator - Safe Retirement Withdrawal Rates",
+      "description": "Free withdrawal rate calculator to test your portfolio longevity. Calculate safe withdrawal rates, see how long your money will last, and plan for sustainable retirement income.",
+      "keywords": "withdrawal rate calculator, safe withdrawal rate, 4% rule, retirement income calculator, portfolio longevity, retirement sustainability"
     },
     "savingsRate": {
-      "title": "Kalkulator Tingkat Tabungan - Hitung Waktu menuju Kemandirian Keuangan",
-      "description": "Kalkulator tingkat tabungan gratis menunjukkan bagaimana tingkat tabungan Anda memengaruhi waktu menuju FIRE. Metrik terpenting untuk pensiun dini - lihat tepat kapan Anda dapat mencapai kemandirian keuangan.",
-      "keywords": "kalkulator tingkat tabungan, waktu menuju FIRE, linimasa kemandirian keuangan, tingkat tabungan pensiun, kalkulator pensiun dini"
+      "title": "Savings Rate Calculator - Calculate Time to Financial Independence",
+      "description": "Free savings rate calculator showing how your savings rate impacts your time to FIRE. The most important metric for early retirement - see exactly when you can achieve financial independence.",
+      "keywords": "savings rate calculator, time to FIRE, financial independence timeline, retirement savings rate, early retirement calculator"
     },
     "debtPayoff": {
-      "title": "Kalkulator Pelunasan Utang - Metode Bola Salju vs Longsoran",
-      "description": "Kalkulator pelunasan utang gratis membandingkan strategi Bola Salju dan Longsoran. Hitung jadwal pelunasan, lihat penghematan bunga, dan rencanakan pembayaran ekstra untuk menghilangkan utang lebih cepat.",
-      "keywords": "kalkulator pelunasan utang, kalkulator bola salju, kalkulator longsoran utang, eliminasi utang, melunasi utang lebih cepat, kalkulator bebas utang"
+      "title": "Debt Payoff Calculator - Snowball vs Avalanche Method",
+      "description": "Free debt payoff calculator comparing Snowball and Avalanche strategies. Calculate payoff timelines, see interest savings, and plan extra payments to eliminate debt faster.",
+      "keywords": "debt payoff calculator, debt snowball calculator, debt avalanche calculator, debt elimination, pay off debt faster, debt free calculator"
     },
     "healthcare": {
-      "title": "Kalkulator Celah Kesehatan - Biaya Kesehatan Pensiun Dini",
-      "description": "Kalkulator celah kesehatan gratis untuk pensiunan dini. Estimasikan biaya kesehatan antara pensiun dini dan kelayakan Medicare di usia 65 tahun. Perencanaan penting bagi pencari FIRE yang berbasis di AS.",
-      "keywords": "kalkulator celah kesehatan, kesehatan pensiun dini, cakupan pra-Medicare, biaya kesehatan, pasar ACA, perencanaan kesehatan pensiun"
+      "title": "Healthcare Gap Calculator - Early Retirement Healthcare Costs",
+      "description": "Free healthcare gap calculator for early retirees. Estimate healthcare costs between early retirement and Medicare eligibility at 65. Essential planning for US-based FIRE seekers.",
+      "keywords": "healthcare gap calculator, early retirement healthcare, pre-Medicare coverage, healthcare costs, ACA marketplace, retirement healthcare planning"
     },
     "books": {
-      "title": "Buku FIRE Terbaik - Bacaan Kemandirian Keuangan yang Direkomendasikan",
-      "description": "Daftar kurasi buku FIRE terbaik untuk mempercepat perjalanan kemandirian keuangan Anda. Bacaan penting tentang investasi, keuangan pribadi, pensiun dini, dan membangun kekayaan.",
-      "keywords": "buku FIRE, buku kemandirian keuangan, buku pensiun dini, buku keuangan pribadi, buku investasi, buku membangun kekayaan"
+      "title": "Best FIRE Books - Recommended Financial Independence Reading",
+      "description": "Curated list of the best FIRE books to accelerate your financial independence journey. Essential reading on investing, personal finance, early retirement, and wealth building.",
+      "keywords": "FIRE books, financial independence books, early retirement books, personal finance books, investing books, wealth building books"
     },
     "apps": {
-      "title": "Aplikasi FIRE yang Direkomendasikan - Alat Kemandirian Keuangan",
-      "description": "Daftar kurasi aplikasi FIRE terbaik untuk membantu Anda melacak pengeluaran, mengelola anggaran, dan mencapai kemandirian keuangan. Alat penting untuk melengkapi kalkulator FIRE Anda.",
-      "keywords": "aplikasi FIRE, aplikasi kemandirian keuangan, aplikasi anggaran, aplikasi pelacak pengeluaran, aplikasi keuangan pribadi, aplikasi manajemen uang"
+      "title": "Recommended FIRE Apps - Financial Independence Tools & Software",
+      "description": "Curated list of the best FIRE apps to help you track spending, manage budgets, and achieve financial independence. Essential tools to complement your FIRE calculators.",
+      "keywords": "FIRE apps, financial independence apps, budgeting apps, expense tracking apps, personal finance apps, money management apps"
     },
     "quiz": {
-      "title": "Kuis Kalkulator FIRE - Temukan Jalur FIRE Sempurna Anda",
-      "description": "Ikuti kuis FIRE gratis kami untuk menemukan kalkulator dan strategi mana yang cocok untuk situasi Anda. Jawab beberapa pertanyaan dan dapatkan rekomendasi kalkulator yang dipersonalisasi dengan nilai yang sudah diisi.",
-      "keywords": "kuis FIRE, kalkulator FIRE mana, kuis kepribadian FIRE, kuis kemandirian keuangan, kuis pensiun dini"
+      "title": "FIRE Calculator Quiz - Find Your Perfect FIRE Path",
+      "description": "Take our free FIRE quiz to discover which calculator and strategy fits your situation. Answer a few questions and get personalized calculator recommendations with pre-filled values.",
+      "keywords": "FIRE quiz, which FIRE calculator, FIRE personality quiz, financial independence quiz, early retirement quiz"
     }
   }
 }

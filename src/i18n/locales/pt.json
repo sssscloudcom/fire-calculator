@@ -1,4 +1,56 @@
 {
+  "calculators": {
+    "standard": {
+      "name": "FIRE Standard",
+      "desc": "A regra clássica de 25x despesas — calcule seu 'número mágico' para independência financeira completa.",
+      "audience": "Melhor para: Qualquer um iniciando sua jornada FI"
+    },
+    "coast": {
+      "name": "Coast FIRE",
+      "desc": "Encontre quanto você precisa agora para que crescimento composto faça o resto — depois coast até a aposentadoria.",
+      "audience": "Melhor para: Jovens poupadores buscando flexibilidade"
+    },
+    "lean": {
+      "name": "Lean FIRE",
+      "desc": "Alcance FI mais rápido com estilo de vida minimalista — perfeito para planejadores frugais.",
+      "audience": "Melhor para: Minimalistas & aposentados precoces"
+    },
+    "fat": {
+      "name": "Fat FIRE",
+      "desc": "Aposentadoria sem compromisso — calcule FI mantendo estilo de vida confortável.",
+      "audience": "Melhor para: Altos ganhos & buscadores de luxo"
+    },
+    "barista": {
+      "name": "Barista FIRE",
+      "desc": "Combine trabalho parcial com renda de portfólio — aposente-se da vida corporativa mais cedo.",
+      "audience": "Melhor para: Aqueles buscando equilíbrio trabalho-vida"
+    },
+    "reverse": {
+      "name": "FIRE Reverso",
+      "desc": "Trabalhe de trás para frente — defina sua idade alvo e descubra quanto precisa poupar mensalmente.",
+      "audience": "Melhor para: Planejadores orientados a objetivos"
+    },
+    "withdrawal": {
+      "name": "Taxa de Retirada",
+      "desc": "Teste a longevidade de seu portfólio — encontre sua taxa de retirada segura para qualquer cenário.",
+      "audience": "Melhor para: Aqueles perto de FIRE"
+    },
+    "savingsRate": {
+      "name": "Taxa de Poupança & Investimento",
+      "desc": "A métrica mais importante — veja como sua taxa de poupança impacta seu tempo até FIRE.",
+      "audience": "Melhor para: Entender seu cronograma FI"
+    },
+    "debtPayoff": {
+      "name": "Pagamento de Dívidas",
+      "desc": "Elimine dívidas mais rápido com estratégias Snowball ou Avalanche — compare métodos e veja impacto de pagamentos extras.",
+      "audience": "Melhor para: Lidar com múltiplas dívidas estrategicamente"
+    },
+    "healthcare": {
+      "name": "Gap de Saúde",
+      "desc": "O custo oculto de aposentadoria precoce — estime custos de saúde antes do Medicare.",
+      "audience": "Melhor para: Aposentados precoces baseados nos EUA"
+    }
+  },
   "app": {
     "title": "FIRE Calculators",
     "description": "Calculadoras FIRE privadas e offline-first (Financial Independence, Retire Early)"
@@ -1472,5 +1524,72 @@
     "viewOnAmazon": "View on Amazon",
     "affiliateTitle": "Affiliate Disclosure",
     "affiliateContent": "The links above are Amazon affiliate links. If you purchase through these links, we may earn a small commission at no additional cost to you. This helps support the development of this free calculator. We only recommend books we genuinely believe will help you on your FIRE journey."
+  },
+  "seo": {
+    "standard": {
+      "title": "Calculadora FIRE Padrão - Calcule Seu Número de Independência Financeira",
+      "description": "Calculadora FIRE padrão gratuita usando a regra 25x. Calcule seu número FIRE baseado na regra dos 4% e veja quanto tempo até atingir a independência financeira. 100% privado, funciona offline.",
+      "keywords": "calculadora FIRE padrão, calculadora regra 25x, regra dos 4%, número FIRE, calculadora de independência financeira, aposentadoria antecipada, estudo Trinity"
+    },
+    "coast": {
+      "title": "Calculadora Coast FIRE - Calcule Seu Número Coast FI",
+      "description": "Calculadora Coast FIRE gratuita para determinar quanto você precisa economizar agora para que o crescimento composto cuide do resto. Calcule seu número coast e veja quando pode parar de poupar para a aposentadoria.",
+      "keywords": "calculadora Coast FIRE, Coast FI, calculadora de juros compostos, planejamento de aposentadoria, calculadora de semi-aposentadoria"
+    },
+    "lean": {
+      "title": "Calculadora Lean FIRE - Planejamento de Aposentadoria Antecipada Minimalista",
+      "description": "Calculadora Lean FIRE gratuita para planejamento de estilo de vida minimalista. Calcule seu número FIRE com despesas menores ($40k ou menos anualmente) e aposente-se mais cedo com uma abordagem frugal.",
+      "keywords": "calculadora Lean FIRE, aposentadoria frugal, FIRE minimalista, aposentadoria de baixo custo, aposentadoria antecipada com orçamento apertado"
+    },
+    "fat": {
+      "title": "Calculadora Fat FIRE - Planejamento de Aposentadoria Antecipada de Luxo",
+      "description": "Calculadora Fat FIRE gratuita para planejar uma aposentadoria antecipada luxuosa. Calcule seu número FIRE para um estilo de vida confortável ($100k+ anualmente) sem compromissos financeiros.",
+      "keywords": "calculadora Fat FIRE, aposentadoria de luxo, FIRE de alta renda, aposentadoria confortável, aposentadoria antecipada abastada"
+    },
+    "barista": {
+      "title": "Calculadora Barista FIRE - Trabalho em Tempo Parcial e Aposentadoria Antecipada",
+      "description": "Calculadora Barista FIRE gratuita para combinar renda de tempo parcial com saques de portfólio. Calcule quanto precisa para semi-aposentar e trabalhe de forma flexível mantendo a independência financeira.",
+      "keywords": "calculadora Barista FIRE, semi-aposentadoria, aposentadoria tempo parcial, aposentadoria flexível, FIRE com renda extra"
+    },
+    "reverse": {
+      "title": "Calculadora FIRE Reversa - Trabalhe de Trás Para a Frente a Partir da Idade de Aposentadoria",
+      "description": "Calculadora FIRE reversa gratuita - defina sua idade alvo de aposentadoria e descubra quanto precisa economizar mensalmente. Trabalhe de trás para frente a partir de sua meta para criar um plano de poupança acionável.",
+      "keywords": "calculadora FIRE reversa, calculadora de poupança para aposentadoria, meta de poupança mensal, idade alvo de aposentadoria, calculadora de taxa de poupança"
+    },
+    "withdrawal": {
+      "title": "Calculadora de Taxa de Saque - Taxas de Saque Seguras para Aposentadoria",
+      "description": "Calculadora de taxa de saque gratuita para testar a longevidade do seu portfólio. Calcule taxas de saque seguras, veja quanto tempo seu dinheiro durará e planeje uma renda de aposentadoria sustentável.",
+      "keywords": "calculadora de taxa de saque, taxa de saque segura, regra dos 4%, calculadora de renda de aposentadoria, longevidade do portfólio, sustentabilidade da aposentadoria"
+    },
+    "savingsRate": {
+      "title": "Calculadora de Taxa de Poupança - Calcule o Tempo até a Independência Financeira",
+      "description": "Calculadora de taxa de poupança gratuita mostrando como sua taxa de poupança impacta seu tempo até FIRE. A métrica mais importante para a aposentadoria antecipada - veja exatamente quando pode alcançar a independência financeira.",
+      "keywords": "calculadora de taxa de poupança, tempo até FIRE, cronograma de independência financeira, taxa de poupança para aposentadoria, calculadora de aposentadoria antecipada"
+    },
+    "debtPayoff": {
+      "title": "Calculadora de Quitação de Dívidas - Método Bola de Neve vs Avalanche",
+      "description": "Calculadora de quitação de dívidas gratuita comparando estratégias Bola de Neve e Avalanche. Calcule prazos de quitação, veja economias de juros e planeje pagamentos extras para eliminar dívidas mais rápido.",
+      "keywords": "calculadora de quitação de dívidas, calculadora bola de neve, calculadora avalanche, eliminação de dívidas, quitar dívidas mais rápido, calculadora vida sem dívidas"
+    },
+    "healthcare": {
+      "title": "Calculadora de Lacuna de Saúde - Custos de Saúde na Aposentadoria Antecipada",
+      "description": "Calculadora de lacuna de saúde gratuita para aposentados antecipados. Estime custos de saúde entre a aposentadoria antecipada e a elegibilidade para Medicare aos 65 anos. Planejamento essencial para buscadores de FIRE nos EUA.",
+      "keywords": "calculadora de lacuna de saúde, saúde na aposentadoria antecipada, cobertura pré-Medicare, custos de saúde, mercado ACA, planejamento de saúde na aposentadoria"
+    },
+    "books": {
+      "title": "Melhores Livros FIRE - Leitura Recomendada de Independência Financeira",
+      "description": "Lista curada dos melhores livros FIRE para acelerar sua jornada de independência financeira. Leitura essencial sobre investimentos, finanças pessoais, aposentadoria antecipada e construção de riqueza.",
+      "keywords": "livros FIRE, livros de independência financeira, livros de aposentadoria antecipada, livros de finanças pessoais, livros de investimento, livros de construção de riqueza"
+    },
+    "apps": {
+      "title": "Apps FIRE Recomendados - Ferramentas de Independência Financeira",
+      "description": "Lista curada dos melhores apps FIRE para ajudá-lo a rastrear despesas, gerenciar orçamentos e alcançar a independência financeira. Ferramentas essenciais para complementar suas calculadoras FIRE.",
+      "keywords": "apps FIRE, apps de independência financeira, apps de orçamento, apps de rastreamento de despesas, apps de finanças pessoais, apps de gestão de dinheiro"
+    },
+    "quiz": {
+      "title": "Quiz da Calculadora FIRE - Encontre Seu Caminho FIRE Perfeito",
+      "description": "Faça nosso quiz FIRE gratuito para descobrir qual calculadora e estratégia se adapta à sua situação. Responda algumas perguntas e obtenha recomendações personalizadas com valores pré-preenchidos.",
+      "keywords": "quiz FIRE, qual calculadora FIRE, quiz de personalidade FIRE, quiz de independência financeira, quiz de aposentadoria antecipada"
+    }
   }
 }

@@ -2,7 +2,7 @@
   "calculators": {
     "standard": {
       "name": "Standard FIRE",
-      "desc": "Die klassische 25x-Ausgaben-Regel — berechne deine "magische Zahl" für volle finanzielle Unabhängigkeit.",
+      "desc": "Die klassische 25x-Ausgaben-Regel — berechne deine 'magische Zahl' für volle finanzielle Unabhängigkeit.",
       "audience": "Ideal für: Alle, die ihre FI-Reise beginnen"
     },
     "coast": {
@@ -1524,5 +1524,72 @@
     "viewOnAmazon": "View on Amazon",
     "affiliateTitle": "Affiliate Disclosure",
     "affiliateContent": "The links above are Amazon affiliate links. If you purchase through these links, we may earn a small commission at no additional cost to you. This helps support the development of this free calculator. We only recommend books we genuinely believe will help you on your FIRE journey."
+  },
+  "seo": {
+    "standard": {
+      "title": "Standard FIRE Rechner - Berechne Deine Finanzielle Unabhängigkeit",
+      "description": "Kostenloser Standard FIRE Rechner mit der 25x-Regel. Berechne deine FIRE-Zahl basierend auf der 4%-Regel und sieh, wie lange es bis zur finanziellen Unabhängigkeit dauert. 100% privat, funktioniert offline.",
+      "keywords": "Standard FIRE Rechner, 25x-Regel Rechner, 4%-Regel, FIRE-Zahl, Rechner für finanzielle Unabhängigkeit, Frühverrentung, Trinity-Studie"
+    },
+    "coast": {
+      "title": "Coast FIRE Rechner - Berechne Deine Coast FI Zahl",
+      "description": "Kostenloser Coast FIRE Rechner zur Bestimmung, wie viel du jetzt sparen musst, damit der Zinseszins den Rest erledigt. Berechne deine Coast-Zahl und sieh, wann du aufhören kannst für die Rente zu sparen.",
+      "keywords": "Coast FIRE Rechner, Coast FI, Zinseszinsrechner, Rentenplanung, Teilruhestand-Rechner"
+    },
+    "lean": {
+      "title": "Lean FIRE Rechner - Minimalistische Frühverrentung",
+      "description": "Kostenloser Lean FIRE Rechner für minimalistische Lebensplanung. Berechne deine FIRE-Zahl mit niedrigeren Ausgaben (40.000$ oder weniger jährlich) und gehe früher mit einem sparsamen Ansatz in Rente.",
+      "keywords": "Lean FIRE Rechner, sparsame Rente, minimalistisches FIRE, kostengünstige Rente, Frühverrentung mit kleinem Budget"
+    },
+    "fat": {
+      "title": "Fat FIRE Rechner - Luxuriöse Frühverrentung",
+      "description": "Kostenloser Fat FIRE Rechner zur Planung eines luxuriösen Frühruhestands. Berechne deine FIRE-Zahl für einen komfortablen Lebensstil (100.000$+ jährlich) ohne finanzielle Kompromisse.",
+      "keywords": "Fat FIRE Rechner, Luxus-Rente, hohes Einkommen FIRE, komfortable Rente, wohlhabende Frühverrentung"
+    },
+    "barista": {
+      "title": "Barista FIRE Rechner - Teilzeitarbeit & Frühverrentung",
+      "description": "Kostenloser Barista FIRE Rechner zur Kombination von Teilzeiteinkommen mit Portfolio-Entnahmen. Berechne, wie viel du für den Teilruhestand brauchst und arbeite flexibel bei finanzieller Unabhängigkeit.",
+      "keywords": "Barista FIRE Rechner, Teilruhestand, Teilzeit-Rente, flexible Rente, Nebenverdienst FIRE"
+    },
+    "reverse": {
+      "title": "Reverse FIRE Rechner - Rückwärts vom Rentenalter rechnen",
+      "description": "Kostenloser Reverse FIRE Rechner - lege dein Ziel-Rentenalter fest und entdecke, wie viel du monatlich sparen musst. Rechne rückwärts von deinem Ziel für einen umsetzbaren Sparplan.",
+      "keywords": "Reverse FIRE Rechner, Rentensparrechner, monatliches Sparziel, Ziel-Rentenalter, Sparquoten-Rechner"
+    },
+    "withdrawal": {
+      "title": "Entnahmerechner - Sichere Renten-Entnahmeraten",
+      "description": "Kostenloser Entnahmerechner zum Testen der Portfolio-Langlebigkeit. Berechne sichere Entnahmeraten, sieh wie lange dein Geld reicht und plane nachhaltiges Renteneinkommen.",
+      "keywords": "Entnahmerechner, sichere Entnahmerate, 4%-Regel, Renteneinkommen-Rechner, Portfolio-Langlebigkeit, Renten-Nachhaltigkeit"
+    },
+    "savingsRate": {
+      "title": "Sparquoten-Rechner - Berechne die Zeit zur Finanziellen Unabhängigkeit",
+      "description": "Kostenloser Sparquoten-Rechner zeigt, wie deine Sparquote deine Zeit bis FIRE beeinflusst. Die wichtigste Kennzahl für die Frühverrentung - sieh genau, wann du finanzielle Unabhängigkeit erreichst.",
+      "keywords": "Sparquoten-Rechner, Zeit bis FIRE, Zeitleiste finanzielle Unabhängigkeit, Renten-Sparquote, Frühverrentungs-Rechner"
+    },
+    "debtPayoff": {
+      "title": "Schuldenabbezahl-Rechner - Schneeball vs Lawine",
+      "description": "Kostenloser Schuldenabbezahl-Rechner zum Vergleich von Schneeball- und Lawinenstrategien. Berechne Tilgungszeiträume, sieh Zinsersparnisse und plane Extra-Zahlungen für schnelleren Schuldenabbau.",
+      "keywords": "Schuldenabbezahl-Rechner, Schneeball-Rechner, Lawinen-Rechner, Schuldeneliminierung, Schulden schneller abbezahlen, schuldenfrei Rechner"
+    },
+    "healthcare": {
+      "title": "Krankenversicherungslücken-Rechner - Krankenkosten bei Frühverrentung",
+      "description": "Kostenloser Krankenversicherungslücken-Rechner für Frührentner. Schätze Krankenkosten zwischen Frühverrentung und Medicare-Berechtigung mit 65. Essentielle Planung für US-basierte FIRE-Sucher.",
+      "keywords": "Krankenversicherungslücken-Rechner, Krankenversicherung Frühverrentung, Pre-Medicare Abdeckung, Krankenkosten, ACA-Marktplatz, Renten-Krankenversicherungsplanung"
+    },
+    "books": {
+      "title": "Beste FIRE Bücher - Empfohlene Lektüre zur Finanziellen Unabhängigkeit",
+      "description": "Kuratierte Liste der besten FIRE Bücher zur Beschleunigung deiner Reise zur finanziellen Unabhängigkeit. Essentialle Lektüre über Investieren, persönliche Finanzen, Frühverrentung und Vermehren.",
+      "keywords": "FIRE Bücher, Bücher finanzielle Unabhängigkeit, Frühverrentung Bücher, persönliche Finanzen Bücher, Investition Bücher, Vermögensaufbau Bücher"
+    },
+    "apps": {
+      "title": "Empfohlene FIRE Apps - Werkzeuge für Finanzielle Unabhängigkeit",
+      "description": "Kuratierte Liste der besten FIRE Apps zur Ausgabenverfolgung, Budgetverwaltung und Erreichung finanzieller Unabhängigkeit. Unverzichtbare Werkzeuge ergänzend zu deinen FIRE-Rechnern.",
+      "keywords": "FIRE Apps, Apps finanzielle Unabhängigkeit, Budget-Apps, Ausgaben-Tracker, persönliche Finanzen Apps, Geldverwaltungs-Apps"
+    },
+    "quiz": {
+      "title": "FIRE Rechner Quiz - Finde Deinen Perfekten FIRE-Weg",
+      "description": "Mach unser kostenloses FIRE Quiz und entdecke, welcher Rechner und welche Strategie zu deiner Situation passt. Beantworte ein paar Fragen und erhalte personalisierte Empfehlungen mit vorausgefüllten Werten.",
+      "keywords": "FIRE Quiz, welcher FIRE Rechner, FIRE Persönlichkeitstest, Quiz finanzielle Unabhängigkeit, Frühverrentung Quiz"
+    }
   }
 }
