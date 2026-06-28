@@ -218,7 +218,7 @@ export default function StandardFIRE() {
             </CardHeader>
             <CardContent className="prose dark:prose-invert max-w-none text-sm">
               <p>
-                Your <strong>FIRE Number</strong> ({formatCurrency(results.fireNumber)}) is calculated as your 
+                Your <strong>{t('standardFire.fireNumber')}</strong> ({formatCurrency(results.fireNumber)}) is calculated as your 
                 annual expenses ({formatCurrency(params.annualExpenses)}) divided by your withdrawal 
                 rate ({(params.withdrawalRate * 100).toFixed(1)}%).
               </p>

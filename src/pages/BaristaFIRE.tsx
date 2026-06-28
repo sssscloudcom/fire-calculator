@@ -223,14 +223,14 @@ export default function BaristaFIRE() {
           {/* Income Breakdown */}
           <Card>
             <CardHeader>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Income Breakdown in Barista FIRE</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('baristaFire.incomeBreakdownTitle')}</h2>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
                 <div className="flex items-center gap-4">
                   <div className="flex-1">
                     <div className="flex justify-between text-sm mb-1">
-                      <span className="text-gray-600 dark:text-gray-400">Portfolio Withdrawals</span>
+                      <span className="text-gray-600 dark:text-gray-400">{t('baristaFire.portfolioWithdrawals')}</span>
                       <span className="font-medium text-gray-900 dark:text-gray-100">
                         {formatCurrency(params.annualExpenses - params.partTimeIncome)}/year
                       </span>
@@ -246,7 +246,7 @@ export default function BaristaFIRE() {
                 <div className="flex items-center gap-4">
                   <div className="flex-1">
                     <div className="flex justify-between text-sm mb-1">
-                      <span className="text-gray-600 dark:text-gray-400">Part-Time Income</span>
+                      <span className="text-gray-600 dark:text-gray-400">{t('baristaFire.partTimeIncome')}</span>
                       <span className="font-medium text-gray-900 dark:text-gray-100">
                         {formatCurrency(params.partTimeIncome)}/year
                       </span>
@@ -261,7 +261,7 @@ export default function BaristaFIRE() {
                 </div>
                 <div className="pt-2 border-t border-gray-200 dark:border-gray-700">
                   <div className="flex justify-between">
-                    <span className="font-medium text-gray-900 dark:text-gray-100">Total Annual Income</span>
+                    <span className="font-medium text-gray-900 dark:text-gray-100">{t('baristaFire.totalAnnualIncome')}</span>
                     <span className="font-bold text-gray-900 dark:text-gray-100">{formatCurrency(params.annualExpenses)}</span>
                   </div>
                 </div>

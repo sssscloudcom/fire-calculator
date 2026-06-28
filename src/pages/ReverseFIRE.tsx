@@ -149,7 +149,7 @@ export default function ReverseFIRE() {
         <div className="flex gap-3">
           <span className="text-2xl">🔄</span>
           <div>
-            <h3 className="font-semibold text-teal-900 dark:text-teal-100">How Reverse FIRE Works</h3>
+            <h3 className="font-semibold text-teal-900 dark:text-teal-100">{t('reverseFire.howWorksTitle')}</h3>
             <p className="text-sm text-teal-700 dark:text-teal-300 mt-1">
               {t('reverseFire.howWorks.content')}
             </p>

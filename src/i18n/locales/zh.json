@@ -390,7 +390,10 @@
     "yearsToBaristaFire": "Years to Barista FIRE",
     "partTimeAnnualIncome": "Part-Time Annual Income",
     "withoutPartTimeWork": "Without part-time work",
-    "partTimeIncomeTooltip": "Expected yearly income from part-time work"
+    "partTimeIncomeTooltip": "Expected yearly income from part-time work",
+    "incomeBreakdownTitle": "Income Breakdown in Barista FIRE",
+    "portfolioWithdrawals": "Portfolio Withdrawals",
+    "totalAnnualIncome": "Total Annual Income"
   },
   "fatFire": {
     "title": "Fat FIRE Calculator",
@@ -679,7 +682,10 @@
     "earlyRetirementAge": "Early Retirement Age",
     "monthlyPremium": "Monthly Premium",
     "annualDeductible": "Annual Deductible",
-    "estOutOfPocket": "Est. Out-of-Pocket"
+    "estOutOfPocket": "Est. Out-of-Pocket",
+    "table": {
+      "outOfPocket": "Out-of-Pocket"
+    }
   },
   "reverseFire": {
     "title": "Reverse FIRE Calculator",
@@ -756,7 +762,9 @@
     "inflationAdjustedValueNote": "Note: Inflation will reduce your purchasing power by {impact} over {years} years at {rate}% annual inflation.",
     "compoundInterestTitle": "The Power of Compound Interest",
     "compoundInterestContent": "Consistent investing is the key to building wealth. Even small amounts invested regularly can grow substantially over time thanks to compound interest. Start early and stay consistent!",
-    "expectedAnnualReturn": "Expected Annual Return"
+    "expectedAnnualReturn": "Expected Annual Return",
+    "youAreInvesting": "You're Investing",
+    "noteLabel": "Note:"
   },
   "withdrawalRate": {
     "title": "Withdrawal Rate Calculator",
@@ -1280,74 +1288,82 @@
     }
   },
   "home": {
-    "title": "FIRE Calculators",
-    "subtitle": "Plan your path to Financial Independence, Retire Early. Free, private, and works completely offline.",
+    "title": "FIRE 财务自由计算器",
+    "subtitle": "规划你的财务自由之路，提前退休。免费、隐私安全、完全离线可用。",
     "badges": {
-      "private": "100% Private",
-      "offline": "Works Offline",
-      "noTracking": "No Tracking",
-      "shareable": "Shareable URLs"
+      "private": "100% 隐私",
+      "offline": "离线可用",
+      "noTracking": "无追踪",
+      "shareable": "可分享链接"
     },
     "quiz": {
-      "title": "Not sure which calculator to use?",
-      "desc": "Take our quick quiz to find the perfect FIRE path for your situation. Answer a few questions and we'll recommend the best calculator with your information pre-filled.",
-      "cta": "Find Your FIRE Path",
-      "note": "Takes 2-3 minutes · Personalized recommendation"
+      "title": "不知道该用哪个计算器？",
+      "desc": "参加我们的快速测验，找到最适合你的 FIRE 路径。回答几个问题，我们会推荐最佳计算器并预填你的信息。",
+      "cta": "找到你的 FIRE 路径",
+      "note": "需要 2-3 分钟 · 个性化推荐"
     },
-    "chooseCalculator": "Choose Your Calculator",
-    "startCalculating": "Start calculating",
+    "chooseCalculator": "选择你的计算器",
+    "startCalculating": "开始计算",
     "books": {
-      "title": "Recommended FIRE Books",
-      "subtitle": "Essential reading to accelerate your financial independence journey.",
-      "viewAll": "View All Books & Details",
-      "affiliateNote": "Affiliate links — purchases support this free calculator at no extra cost to you."
+      "title": "推荐 FIRE 书籍",
+      "subtitle": "加速你的财务自由之旅的必备读物。",
+      "viewAll": "查看所有书籍和详情",
+      "affiliateNote": "联盟链接 — 购买支持此免费计算器，无需额外费用。"
     },
     "privacy": {
-      "title": "Your Privacy is Our Priority",
-      "subtitle": "We built this calculator with privacy-first principles.",
+      "title": "你的隐私是我们的首要任务",
+      "subtitle": "我们以隐私优先原则构建了这个计算器。",
       "features": {
         "noStorage": {
-          "title": "No Financial Data Storage",
-          "desc": "Your financial data stays in URLs only—never stored. Only UI preferences (theme, layout) stored locally."
+          "title": "无财务数据存储",
+          "desc": "你的财务数据只存在于 URL 中，永不存储。只有界面偏好（主题、布局）本地存储。"
         },
         "noAnalytics": {
-          "title": "No Analytics",
-          "desc": "Zero tracking scripts. No Google Analytics, no third-party code."
+          "title": "无分析",
+          "desc": "零追踪脚本。无 Google Analytics，无第三方代码。"
         },
         "urlBased": {
-          "title": "URL-Based Sharing",
-          "desc": "Save your calculations in the URL. Bookmark or share — your choice."
+          "title": "基于 URL 的分享",
+          "desc": "将计算保存到 URL 中。收藏或分享 — 你的选择。"
         },
         "worksOffline": {
-          "title": "Works Offline",
-          "desc": "After first load, works without internet. Install as an app on your device."
+          "title": "离线可用",
+          "desc": "首次加载后，无需网络即可工作。可作为应用安装到你的设备。"
         },
         "openSource": {
-          "title": "Open Source",
-          "desc": "Verify everything yourself. All code is available on GitHub."
+          "title": "开源",
+          "desc": "自己验证一切。所有代码可在 GitHub 上查看。"
         },
         "clientSide": {
-          "title": "Client-Side Only",
-          "desc": "All calculations run in your browser. No server processing."
+          "title": "仅客户端",
+          "desc": "所有计算在你的浏览器中运行。无服务器处理。"
         }
       }
     },
     "whatIsFire": {
-      "title": "What is FIRE?",
-      "para1": "FIRE stands for Financial Independence, Retire Early. It's a financial movement focused on extreme savings and investment to retire much earlier than traditional retirement age. The core principle is simple: save aggressively, invest wisely, and once your investments can cover your living expenses indefinitely, you achieve financial independence.",
-      "para2": "The most common FIRE calculation uses the 4% rule (or 25x rule): if you can live on 4% of your portfolio per year, you need to save 25 times your annual expenses. For example, if you spend $40,000 per year, you need $1,000,000 to be financially independent."
+      "title": "什么是 FIRE？",
+      "para1": "FIRE 代表财务自由，提前退休。这是一场专注于极端储蓄和投资以比传统退休年龄更早退休的财务运动。核心原则很简单：激进储蓄，明智投资，一旦你的投资可以无限期覆盖你的生活费用，你就实现了财务自由。",
+      "para2": "最常见的 FIRE 计算使用 4% 规则（或 25x 规则）：如果你每年可以靠投资组合的 4% 生活，你需要储蓄年度开支的 25 倍。例如，如果你每年花费 $40,000，你需要 $1,000,000 才能财务自由。"
     },
     "tallyAi": {
-      "title": "Track Your Progress with Tally AI",
-      "desc": "Smart financial companion that helps you track spending, manage budgets, and achieve your FIRE goals with AI-powered insights. Perfect complement to these calculators.",
-      "cta": "Learn More About Tally AI"
+      "title": "用 Tally AI 跟踪你的进度",
+      "desc": "智能财务伴侣，帮助你跟踪支出、管理预算，并通过 AI 智能洞察实现你的 FIRE 目标。这些计算器的完美补充。",
+      "cta": "了解更多关于 Tally AI"
     },
     "disclaimer": {
-      "title": "Disclaimer",
-      "content": "This calculator is provided for educational and informational purposes only. It is not financial, investment, tax, or legal advice. Results are hypothetical projections and actual results will vary. Please consult a qualified financial advisor before making any financial decisions."
+      "title": "免责声明",
+      "content": "此计算器仅用于教育和信息目的。它不是财务、投资、税务或法律建议。结果是假设性预测，实际结果会有所不同。在做任何财务决定之前，请咨询合格的财务顾问。"
     },
-    "builtWith": "Built with privacy in mind. No data ever leaves your browser.",
-    "viewOnGithub": "View on GitHub"
+    "builtWith": "隐私优先构建。数据永不离开你的浏览器。",
+    "viewOnGithub": "在 GitHub 上查看",
+    "features": {
+      "noAnalytics": {
+        "desc": "Zero tracking scripts. No Google Analytics, no third-party code."
+      },
+      "shareable": {
+        "title": "URL-Based Sharing"
+      }
+    }
   },
   "components": {
     "progressBar": {

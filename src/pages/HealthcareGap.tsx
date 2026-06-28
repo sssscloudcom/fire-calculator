@@ -314,7 +314,7 @@ export default function HealthcareGap() {
                         <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">{t('healthcareGap.table.year')}</th>
                         <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">{t('healthcareGap.table.premium')}</th>
                         <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">{t('healthcareGap.table.deductible')}</th>
-                        <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">Out-of-Pocket</th>
+                        <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">{t('healthcareGap.table.outOfPocket')}</th>
                         <th className="text-left py-2 px-3 font-semibold text-gray-900 dark:text-gray-100">{t('healthcareGap.table.total')}</th>
                       </tr>
                     </thead>

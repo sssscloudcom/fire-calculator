@@ -148,7 +148,7 @@ export default function SavingsRate() {
     // Define formulas for calculated results
     const resultFormulas: Record<string, string> = {
       // {t('savingsRate.savingsRateLabel')} = (Annual Contribution / Annual Income)
-      // Note: contributionAmount is monthly in inputs, so we multiply by 12
+      // {t('savingsRate.noteLabel')} contributionAmount is monthly in inputs, so we multiply by 12
       savingsRate: '({contributionAmount}*12)/{annualIncome}',
     }
 
@@ -317,7 +317,7 @@ export default function SavingsRate() {
                   </p>
                 </div>
                 <div className="text-right">
-                  <p className="text-green-100 text-sm">You're Investing</p>
+                  <p className="text-green-100 text-sm">{t('savingsRate.youAreInvesting')}</p>
                   <p className="text-3xl font-bold">{formatCurrency(results.annualContribution)}</p>
                   <p className="text-green-200 text-sm">{t('output.perYear')}</p>
                 </div>
@@ -389,11 +389,11 @@ export default function SavingsRate() {
                   <span className="font-semibold text-gray-900 dark:text-gray-100">{formatCurrency(results.totalInvested)}</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-gray-200 dark:border-gray-700">
-                  <span className="text-gray-600 dark:text-gray-400">Investment Earnings</span>
+                  <span className="text-gray-600 dark:text-gray-400">{t('savingsRate.investmentEarnings')}</span>
                   <span className="font-semibold text-green-600 dark:text-green-400">{formatCurrency(results.totalGrowth)}</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-gray-200 dark:border-gray-700">
-                  <span className="text-gray-600 dark:text-gray-400">Final Balance</span>
+                  <span className="text-gray-600 dark:text-gray-400">{t('savingsRate.finalBalance')}</span>
                   <span className="font-bold text-lg text-indigo-600 dark:text-indigo-400">{formatCurrency(results.finalNominalBalance)}</span>
                 </div>
                 <div className="flex justify-between items-center py-2">
@@ -404,7 +404,7 @@ export default function SavingsRate() {
               
               <div className="mt-4 p-3 bg-amber-50 dark:bg-amber-900/20 rounded-lg">
                 <p className="text-sm text-amber-800 dark:text-amber-200">
-                  <strong>Note:</strong> Inflation will reduce your purchasing power by {formatCurrency(results.inflationImpact)} 
+                  <strong>{t('savingsRate.noteLabel')}</strong> Inflation will reduce your purchasing power by {formatCurrency(results.inflationImpact)} 
                   over {yearsInvesting} years at {(params.inflationRate * 100).toFixed(1)}% annual inflation.
                 </p>
               </div>

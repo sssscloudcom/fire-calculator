@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="FIRE Calculators - Free Financial Independence Calculator | Retire Early Planning Tools"
-        description="Free FIRE calculators to plan your path to Financial Independence, Retire Early. Calculate Standard FIRE, Coast FIRE, Lean FIRE, Fat FIRE & more. 100% private, works offline, no tracking."
-        keywords="FIRE calculator, financial independence calculator, retire early calculator, coast FIRE, lean FIRE, fat FIRE, barista FIRE, withdrawal rate, savings rate, 4% rule, retirement planning, early retirement"
+        title={t('home.seo.title')}
+        description={t('home.seo.description')}
+        keywords={t('home.seo.keywords')}
         canonicalPath="/"
       />
       <div className="space-y-12">
@@ -33,7 +33,7 @@ export default function Home() {
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
-            100% Private
+            {t('home.badges.private')}
           </span>
           <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -45,13 +45,13 @@ export default function Home() {
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
             </svg>
-            No Tracking
+            {t('home.badges.noTracking')}
           </span>
           <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded-full text-sm font-medium">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
             </svg>
-            Shareable URLs
+            {t('home.badges.shareable')}
           </span>
         </div>
       </header>
@@ -61,23 +61,25 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <span className="text-3xl mb-2 block">🧭</span>
           <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">
-            Not sure which calculator to use?
+            {t('home.quiz.title')}
           </h2>
           <p className="text-base text-gray-600 dark:text-gray-400 mb-4">
-            Take our quick quiz to find the perfect FIRE path for your situation. 
-            Answer a few questions and we'll recommend the best calculator with your information pre-filled.
+            {t('home.quiz.subtitle')}
+          </p>
+          <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+            {t('home.quiz.description')}
           </p>
           <Link
             to="/quiz"
             className="inline-flex items-center gap-2 px-6 py-3 bg-fire-600 hover:bg-fire-700 text-white text-base font-semibold rounded-lg transition-colors shadow-lg hover:shadow-xl"
           >
-            Find Your FIRE Path
+            {t('home.quiz.buttonText')}
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </Link>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">
-            Takes 2-3 minutes · Personalized recommendation
+            {t('home.quiz.meta')}
           </p>
         </div>
       </div>
@@ -85,7 +87,7 @@ export default function Home() {
       {/* Calculator Grid */}
       <div>
         <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6 text-center">
-          Choose Your Calculator
+          {t('home.chooseCalculator')}
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {calculators.map((calc) => (
@@ -109,7 +111,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="mt-4 flex items-center text-sm font-medium text-fire-600 dark:text-fire-400 group-hover:translate-x-1 transition-transform">
-                    Start calculating
+                    {t('home.startCalculating')}
                     <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
@@ -126,10 +128,10 @@ export default function Home() {
         <div className="text-center mb-8">
           <span className="text-4xl mb-4 block">📚</span>
           <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">
-            Recommended FIRE Books
+            {t('home.books.title')}
           </h2>
           <p className="text-gray-600 dark:text-gray-400">
-            Essential reading to accelerate your financial independence journey.
+            {t('home.books.subtitle')}
           </p>
         </div>
         
@@ -173,7 +175,7 @@ export default function Home() {
             to="/books"
             className="inline-flex items-center gap-2 px-6 py-3 bg-fire-600 hover:bg-fire-700 text-white font-medium rounded-lg transition-colors"
           >
-            View All Books & Details
+            {t('home.books.viewAll')}
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
@@ -181,7 +183,7 @@ export default function Home() {
         </div>
         
         <p className="text-xs text-gray-500 dark:text-gray-400 text-center mt-4">
-          Affiliate links — purchases support this free calculator at no extra cost to you.
+          {t('home.books.affiliateNotice')}
         </p>
       </div>
 
@@ -189,10 +191,10 @@ export default function Home() {
       <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 rounded-2xl p-8">
         <div className="text-center mb-8">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">
-            Your Privacy is Our Priority
+            {t('home.privacy.title')}
           </h2>
           <p className="text-gray-600 dark:text-gray-400">
-            We built this calculator with privacy-first principles.
+            {t('home.privacy.subtitle')}
           </p>
         </div>
         
@@ -205,7 +207,7 @@ export default function Home() {
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('home.features.noStorage.title')}</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">Your financial data stays in URLs only—never stored. Only UI preferences (theme, layout) stored locally.</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">{t('home.features.noStorage.desc')}</p>
             </div>
           </div>
           
@@ -217,7 +219,7 @@ export default function Home() {
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('home.features.noAnalytics.title')}</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">Zero tracking scripts. No Google Analytics, no third-party code.</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">{t('home.features.noAnalytics.desc')}</p>
             </div>
           </div>
           
@@ -228,8 +230,8 @@ export default function Home() {
               </svg>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 dark:text-gray-100">URL-Based Sharing</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">Save your calculations in the URL. Bookmark or share — your choice.</p>
+              <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('home.features.shareable.title')}</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">{t('home.features.shareable.desc')}</p>
             </div>
           </div>
           
@@ -264,7 +266,7 @@ export default function Home() {
               </svg>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 dark:text-gray-100">Client-Side Only</h3>
+              <h3 className="font-semibold text-gray-900 dark:text-gray-100">{t('home.features.noServer.title')}</h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">{t('home.features.noServer.desc')}</p>
             </div>
           </div>
@@ -292,11 +294,10 @@ export default function Home() {
           </div>
           <div className="flex-1 text-center sm:text-left">
             <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">
-              Track Your Progress with Tally AI
+              {t('home.tallyAi.title')}
             </h3>
             <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
-              Smart financial companion that helps you track spending, manage budgets, and achieve your FIRE goals 
-              with AI-powered insights. Perfect complement to these calculators.
+              {t('home.tallyAi.description')}
             </p>
             <a
               href="https://tallyai.money/"
@@ -304,7 +305,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-sm font-semibold rounded-lg transition-all shadow-md hover:shadow-lg"
             >
-              Learn More About Tally AI
+              {t('home.tallyAi.learnMore')}
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -316,16 +317,13 @@ export default function Home() {
       {/* Footer */}
       <footer className="text-center text-sm text-gray-500 dark:text-gray-400 pt-8 border-t border-gray-200 dark:border-gray-800">
         <div className="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-4 text-xs text-left mb-6">
-          <p className="font-semibold text-gray-600 dark:text-gray-300 mb-2">⚠️ Disclaimer</p>
+          <p className="font-semibold text-gray-600 dark:text-gray-300 mb-2">⚠️ {t('home.disclaimer.title')}</p>
           <p>
-            This calculator is provided for <strong>educational and informational purposes only</strong>. 
-            It is not financial, investment, tax, or legal advice. Results are hypothetical projections 
-            and <strong>actual results will vary</strong>. Please consult a qualified financial advisor 
-            before making any financial decisions.
+            {t('home.disclaimer.content')}
           </p>
         </div>
         <p>
-          Built with privacy in mind. No data ever leaves your browser.
+          {t('home.builtWith')}
         </p>
         <p className="mt-2">
           <a 
@@ -334,7 +332,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            View on GitHub
+            {t('home.viewOnGithub')}
           </a>
         </p>
       </footer>

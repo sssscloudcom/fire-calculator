@@ -390,7 +390,10 @@
     "yearsToBaristaFire": "Years to Barista FIRE",
     "partTimeAnnualIncome": "Part-Time Annual Income",
     "withoutPartTimeWork": "Without part-time work",
-    "partTimeIncomeTooltip": "Expected yearly income from part-time work"
+    "partTimeIncomeTooltip": "Expected yearly income from part-time work",
+    "incomeBreakdownTitle": "Income Breakdown in Barista FIRE",
+    "portfolioWithdrawals": "Portfolio Withdrawals",
+    "totalAnnualIncome": "Total Annual Income"
   },
   "fatFire": {
     "title": "Fat FIRE Calculator",
@@ -679,7 +682,10 @@
     "earlyRetirementAge": "Early Retirement Age",
     "monthlyPremium": "Monthly Premium",
     "annualDeductible": "Annual Deductible",
-    "estOutOfPocket": "Est. Out-of-Pocket"
+    "estOutOfPocket": "Est. Out-of-Pocket",
+    "table": {
+      "outOfPocket": "Out-of-Pocket"
+    }
   },
   "reverseFire": {
     "title": "Reverse FIRE Calculator",
@@ -756,7 +762,9 @@
     "inflationAdjustedValueNote": "Note: Inflation will reduce your purchasing power by {impact} over {years} years at {rate}% annual inflation.",
     "compoundInterestTitle": "The Power of Compound Interest",
     "compoundInterestContent": "Consistent investing is the key to building wealth. Even small amounts invested regularly can grow substantially over time thanks to compound interest. Start early and stay consistent!",
-    "expectedAnnualReturn": "Expected Annual Return"
+    "expectedAnnualReturn": "Expected Annual Return",
+    "youAreInvesting": "You're Investing",
+    "noteLabel": "Note:"
   },
   "withdrawalRate": {
     "title": "Withdrawal Rate Calculator",
@@ -1347,7 +1355,15 @@
       "content": "This calculator is provided for educational and informational purposes only. It is not financial, investment, tax, or legal advice. Results are hypothetical projections and actual results will vary. Please consult a qualified financial advisor before making any financial decisions."
     },
     "builtWith": "Built with privacy in mind. No data ever leaves your browser.",
-    "viewOnGithub": "View on GitHub"
+    "viewOnGithub": "View on GitHub",
+    "features": {
+      "noAnalytics": {
+        "desc": "Zero tracking scripts. No Google Analytics, no third-party code."
+      },
+      "shareable": {
+        "title": "URL-Based Sharing"
+      }
+    }
   },
   "components": {
     "progressBar": {
